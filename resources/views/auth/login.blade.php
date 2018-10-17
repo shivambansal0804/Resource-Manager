@@ -1,6 +1,6 @@
 @extends('layouts.app') 
 @section('content')
-<section class="height-100 imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1">
+<section class="height-100 height-100--xs imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1">
 	<div class="container pos-vertical-center">
         <div class="row">
             <div class="col-md-7 col-lg-5">
