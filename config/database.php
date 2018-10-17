@@ -1,6 +1,6 @@
 <?php
 
-$DATABASE_URL = parse_url('postgres://yfjxjzotqnfwsq:24d7697d5132bd2fb47afb2c7786c07fb4aad99dfbe21e6919b1e693bc879665@ec2-107-20-211-10.compute-1.amazonaws.com:5432/d3m3nd1gor48no');
+// $DATABASE_URL = parse_url('postgres://yfjxjzotqnfwsq:24d7697d5132bd2fb47afb2c7786c07fb4aad99dfbe21e6919b1e693bc879665@ec2-107-20-211-10.compute-1.amazonaws.com:5432/d3m3nd1gor48no');
 
 return [
 
@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'pgsql'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -45,9 +45,9 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', 'keep_writing'),
+            'username' => env('DB_USERNAME', 'mani_sh999'),
+            'password' => env('DB_PASSWORD', 'manish.s19'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
