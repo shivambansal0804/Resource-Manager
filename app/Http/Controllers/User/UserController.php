@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UpdateUser;
 
 class UserController extends Controller
 {
@@ -44,9 +45,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        return view('users.auth.show');
     }
 
     /**
@@ -67,22 +68,28 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $uuid)
+    public function update(UpdateUser $request, $uuid)
     {
-        return $request;
         $data = [
-            'email' => $request->email,
-            "name" => $request->name,
-            "password" => bcrypt($request->password)
+            'name' => $request->name,
+            'password' => bcrypt($request->password),
+            'username' => $request->username,
+            'bio' => $request->bio,
+            'linkedin' => $request->linkedin,
+            'facebook' => $request->facebook,
+            'instagram' => $request->instagram,
+            'medium' => $request->medium,
+            'display_mail' => $request->display_mail,
+            'activated' => true
         ];
         
-        return $data;
+        $user = auth()->user();
 
-        $user = auth()->user()->update($data);
+        $updated = $user->update($data);
 
-        auth()->user()->update([
-            'activated' => true
-        ]);
+        if (isset($request['avatar'])) {
+            $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
+        }
 
         return redirect()->route('dashboard');
     }
@@ -101,6 +108,6 @@ class UserController extends Controller
     public function info()
     {
         $user = auth()->user();
-        return view('users.info', ['user' => $user]);
+        return view('users.auth.info', ['user' => $user]);
     }
 }

@@ -10,6 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     @yield('links')
@@ -22,6 +23,8 @@
             @include('inc.sidebar')
         @endauth
         <div class="main-container p-1-lg">
+            @include('inc.session')
+            @include('inc.errors')
             @yield('content')
         </div>
     </div>

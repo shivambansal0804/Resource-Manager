@@ -94,7 +94,7 @@ Route::middleware('auth')->group(function () {
 Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
-
+    Route::get('/me', 'User\UserController@show')->name('me.show');
     // Categories Routes 
 
         // Create Category
@@ -139,6 +139,7 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::get('/{uuid}/edit', 'StoryController@edit')->name('stories.edit');
         Route::get('/{uuid}/submit', 'StoryController@submit')->name('stories.submit');
         Route::put('/{uuid}', 'StoryController@update')->name('stories.update');
+        Route::put('/{uuid}/autosave', 'StoryController@autoSave')->name('stories.autosave');
         Route::delete('/{uuid}', 'StoryController@destroy')->name('stories.destroy');
 
     });

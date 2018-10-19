@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\{Category, Tag, Story};
 use App\Http\Requests\StoreStory;
+use Session;
+use Carbon\Carbon;
+use Ramsey\Uuid\Uuid;
+use Log;
+use App\Events\StorySubmittedForApproval;
 
 class StoryController extends Controller
 {
@@ -29,8 +34,14 @@ class StoryController extends Controller
      */
     public function create()
     {
-        $categories = Category::all();
-        return view('stories.create', ['categories' => $categories]);
+        $title = 'New Story';
+
+        $story = auth()->user()->story()->create([
+            'title' => $title,
+            'slug' => str_slug($title, "-").'-'.rand(10, 9999)
+        ]);
+
+        return redirect()->route('stories.edit', $story->uuid );
     }
 
     /**
@@ -39,23 +50,19 @@ class StoryController extends Controller
      * @param  \Illuminate\Http\Request  $gi
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreStory $request)
+    public function autoSave(Request $request)
     {
         $data = [
             'title'             => $request->title,
             'body'              => $request->body,
             'meta_title'        => $request->meta_title,
             'meta_description'  => $request->meta_description,
-            'category_id'       => $request->category,
             'biliner'           => $request->biliner,
-            'slug'              => str_slug($request->title, "-").'-'.rand(100, 999),
-            'cover'             => $request->cover,
-            'status'            => $request->status
         ];
+        Log::info($data);
+        $story = auth()->user()->story()->update($data);
 
-        $story = auth()->user()->story()->create($data);
-
-        return redirect()->route('stories.show', $story->uuid);
+        return response()->json('saved');
     }
 
     /**
@@ -66,7 +73,7 @@ class StoryController extends Controller
      */
     public function show($uuid)
     {
-        $story = auth()->user()->story()->whereUuid($uuid)->with(['user', 'category'])->firstOrFail();
+        $story = auth()->user()->story()->whereUuid($uuid)->with(['user', 'category'])->firstOrFail();            
 
         return view('stories.show', ['story' => $story]);
     }
@@ -80,12 +87,15 @@ class StoryController extends Controller
     public function edit($uuid)
     {
         $story = auth()->user()->story()->whereUuid($uuid)->with(['user', 'category'])->firstOrFail();
-        if($story->status != 'draft')
+
+        if($story->status != 'draft'){
+            session()->flash('success', $story->title.', is '.$story->status.'. You cannot edit it right now.');
             return redirect()->route('stories.show', $story->uuid );
+        }
 
         $categories = Category::all();
 
-        return view('stories.edit', ['story' => $story, 'categories' => $categories ]);
+        return view('stories.create', ['story' => $story, 'categories' => $categories ]);
     }
 
     /**
@@ -105,10 +115,13 @@ class StoryController extends Controller
             'category_id'       => $request->category,
             'biliner'           => $request->biliner,
             'slug'              => str_slug($request->title, "-").'-'.rand(100, 999),
-            'cover'             => $request->cover
+            'cover'             => $request->cover,
+            'status'            => $request->status
         ];
 
         auth()->user()->story()->where('uuid' , $uuid)->first()->update($data);
+
+        $request->session()->flash('success', $data['title'].', Updated!');
         
         return redirect()->route('stories.index');
     }
@@ -121,16 +134,26 @@ class StoryController extends Controller
      */
     public function destroy($uuid)
     {
-        auth()->user()->story()->whereUuid($uuid)->firstOrFail()->delete();
+        $story = auth()->user()->story()->whereUuid($uuid)->firstOrFail();
+        $title = $story->title;
+        
+        $story->delete();
+
+        session()->flash('success', $title.', Deleted!');
         return redirect()->route('stories.index');
     }
 
    public function submit($uuid)
    {
-       $story = auth()->user()->story()->whereUuid($uuid)->firstOrFail()->update([
+       $story = auth()->user()->story()->whereUuid($uuid)->firstOrFail();
+       
+       $story->update([
            'status' => 'pending'
        ]);
 
+       event(new StorySubmittedForApproval($story));
+    
+       session()->flash('success', $story->title.', Submitted for approval.');
        return redirect()->route('stories.index');
    }
 }

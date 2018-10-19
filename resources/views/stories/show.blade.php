@@ -26,15 +26,15 @@
                         @if ($story->status == 'draft')
                         <div>
                             <a class="btn btn--primary btn--sm" href="{{ route('stories.edit', $story->uuid)}}">
-                                                        <span class="btn__text">Edit</span>
-                                                    </a>
+                                <span class="btn__text">Edit</span>
+                            </a>
                             <a class="btn btn--sm" href="{{ route('stories.submit', $story->uuid )}}">
-                                                        <span class="btn__text">Submit for Approval</span>
-                                                    </a>
+                                <span class="btn__text">Submit for Approval</span>
+                            </a>
                             <a class="btn btn--sm" href="{{ route('stories.index' )}}" onclick="event.preventDefault();
                                                             document.getElementById('delete-form').submit();">
-                                                        <span class="btn__text">Delete</span>
-                                                    </a>
+                                <span class="btn__text">Delete</span>
+                            </a>
                             <form id="delete-form" action="{{route('stories.destroy', $story->uuid)}}" method="post">
                                 @csrf @method('DELETE')
                             </form>
@@ -42,9 +42,11 @@
                         @endif
                         
                         <hr>
-                        <small>
-                            Posted in <a href="{{ route('categories.show', $story->category->slug)}}">{{ $story->category->name }}</a>
-                        </small>
+                        @if ($story->category)
+                            <small>
+                                Posted in <a href="{{ route('categories.show', $story->category->slug)}}">{{ $story->category->name }}</a>
+                            </small>
+                        @endif
                     </div>
                 </article>
             </div>
