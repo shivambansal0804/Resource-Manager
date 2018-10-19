@@ -51,7 +51,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('lOCAL_APP_URL'),
+            'url' => env('lOCAL_APP_URL', 'https://whispering-wildwood-98624.herokuapp.com'),
             'visibility' => 'public',
         ],
 
