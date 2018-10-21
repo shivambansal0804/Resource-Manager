@@ -51,7 +51,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => 'http://dtutimes.herokuapp.com/storage',
+            'url' => 'http://localhost:8000/storage',
             'visibility' => 'public',
         ],
 
