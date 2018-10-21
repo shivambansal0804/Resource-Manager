@@ -88,7 +88,10 @@ class UserController extends Controller
         $updated = $user->update($data);
 
         if (isset($request['avatar'])) {
-            $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
+            $image = $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
+            
+            dump($user->getFirstMediaUrl('avatars', 'thumb'));
+            dump($user->getMedia('avatars'));
         }
 
         return redirect()->route('dashboard');
