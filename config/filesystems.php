@@ -51,7 +51,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => 'https://whispering-wildwood-98624.herokuapp.com'.'/storage',
+            'url' => 'http://dtutimes.herokuapp.com/storage',
             'visibility' => 'public',
         ],
 
