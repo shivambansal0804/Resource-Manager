@@ -56,7 +56,44 @@
                                         <a href="{{ route('council.stories.index')}}" >
                                             Pending 
                                         </a>
-                                    </li> @endif
+                                    </li> 
+                                    @endif
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                @endif
+
+                @if (!auth()->user()->hasRole('columnist'))
+                    <li class="dropdown">
+                        <span class="dropdown__trigger">
+                            Album
+                        </span>
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <ul class="menu-vertical">
+                                    <li>
+                                        <a href="{{ route('albums.index')}}">
+                                            All
+                                        </a>
+                                    </li>
+
+                                    @if (auth()->user()->can('create-album'))
+                                    <li>
+                                        <a href="{{ route('albums.create') }}">
+                                            Create 
+                                        </a>
+                                    </li>
+                                    @endif
+
+                                    {{-- Publish Story --}}
+                                    @if (auth()->user()->can('publish-album'))
+                                    <li>
+                                        <a href="{{ route('council.stories.index')}}" >
+                                            Pending 
+                                        </a>
+                                    </li> 
+                                    @endif
                                 </ul>
                             </div>
                         </div>

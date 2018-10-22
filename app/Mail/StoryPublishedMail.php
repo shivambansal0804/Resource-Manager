@@ -32,7 +32,6 @@ class StoryPublishedMail extends Mailable
      */
     public function build()
     {
-        Log::info($this->story);
         return $this->from('mani00manu@gmail.com')->subject("Story Published, {$this->story->title}")
                  ->view('emails.stories.published')->with([
                      'story' => $this->story

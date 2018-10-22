@@ -111,6 +111,7 @@ class UserController extends Controller
     public function info()
     {
         $user = auth()->user();
+        if ($user->activated) return redirect()->route('dashboard');
         return view('users.auth.info', ['user' => $user]);
     }
 }
