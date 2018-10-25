@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreAlbum;
+use App\Models\Album;
+
 
 class AlbumController extends Controller
 {
@@ -14,7 +16,7 @@ class AlbumController extends Controller
      */
     public function index()
     {
-        $albums = \App\Album::all();
+        $albums = Album::where('album_id', NULL)->get();
         return view('albums.index', ['albums' => $albums]);
     }
 
@@ -25,7 +27,7 @@ class AlbumController extends Controller
      */
     public function create()
     {
-        return view('albums.create');
+        return view('albums.create')->withAlbums(Album::all());
     }
 
     /**
@@ -37,7 +39,10 @@ class AlbumController extends Controller
     public function store(StoreAlbum $request)
     {
         $album = auth()->user()->album()->create([
-            'name' => $request->name
+            'name'      => $request->name,
+            'biliner'   => $request->biliner,
+            'album_id'  => isset($request->album_id) ? $request->album_id : NULL,
+            'status'    => 'draft'
         ]); 
 
         if (isset($request['cover'])) {
@@ -55,13 +60,13 @@ class AlbumController extends Controller
      */
     public function show($uuid)
     {
-        $images = [];
+        $album = Album::whereUuid($uuid)->firstOrFail();
 
-        $album = \App\Album::whereUuid($uuid)->with('image')->first();
+        $images = $album->image()->where('status', '!=', 'draft')->get();
 
-        $subs = $album->child()->get();
-
-        return view('albums.show', ['album' => $album, 'subs' => $subs]);
+        $subs = $album->child()->with('user')->get();
+        
+        return view('albums.show', ['album' => $album, 'subs' => $subs, 'images' => $images ]);
     }
 
     /**
@@ -70,9 +75,17 @@ class AlbumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($uuid)
     {
-        //
+        $album = auth()->user()->album()->whereUuid($uuid)->with(['image'])->firstOrFail();
+        $subs = $album->child()->get();
+
+        if($album->status != 'draft'){
+            session()->flash('success', $album->title.', is '.$album->status.'. You cannot edit it right now.');
+            return redirect()->route('albums.show', ['album' => $album, 'subs' => $subs]);
+        }
+
+        return view('albums.edit', ['album' => $album, 'subs' => $subs]);
     }
 
     /**
@@ -82,9 +95,35 @@ class AlbumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $uuid)
     {
-        //
+
+        $album = Album::whereUuid($uuid)->firstOrFail();
+        
+        $album->update([
+            'name'      => $request->name,
+            'biliner'   => $request->biliner,
+            'cover'     => $request->cover
+        ]);
+
+        if (isset($request['cover'])) {
+            $album->clearMediaCollection('covers');
+            $album->addMediaFromRequest('cover')->toMediaCollection('covers');
+        } 
+
+        return redirect()->route('albums.show', $album->uuid);
+    }
+
+    public function submit($uuid)
+    {
+        $album = Album::whereUuid($uuid)->firstOrFail();
+        
+        $album->update([
+            'status' => 'pending'
+        ]);
+
+        session()->flash('success', $album->name.', Submitted for approval.');
+        return redirect()->route('albums.show', $album->uuid);
     }
 
     /**
@@ -93,8 +132,14 @@ class AlbumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($uuid)
     {
-        //
+        $album = auth()->user()->album()->whereUuid($uuid)->firstOrFail();
+        $name = $album->name;
+       
+        $album->delete();
+
+        session()->flash('success', $name.', Deleted!');
+        return redirect()->route('albums.index');
     }
 }

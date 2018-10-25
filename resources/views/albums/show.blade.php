@@ -1,46 +1,56 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="cover height-100 cover-features imagebg space--lg" data-overlay="2">
+<section class="cover cover-fullscreen height-100 cover-features imagebg space--lg" data-overlay="2">
     <div class="background-image-holder">
         <img alt="background" src="{{ $album->getFirstMediaUrl('covers', 'fullscreen') }}" />
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-9 col-lg-7">
+            <div class="col-md-8 col-lg-6" >
                 <h1>
                     {{ $album->name }}
                 </h1>
-                <p class="lead">
-                    Stack offers a clean and contemporary look to suit a range of purposes from corporate, tech startup, marketing site to digital
-                    storefront.
+                <p class="">
+                    {{ $album->biliner }}
                 </p>
+                
                 @if (auth()->user()->can('delete-album'))
-                    <a class="btn btn--sm type--uppercase" href="#">
+                    <a class="btn btn--sm type--uppercase" href="{{ route('albums.index') }}" onclick="event.preventDefault();
+                        document.getElementById('delete-form').submit();">
                         <span class="btn__text">
                             Delete 
                         </span>
                     </a>
+                    
                 @endif
 
                 @if (auth()->user()->can('update-album'))
-                    
-                @endif
-                <a class="btn btn--sm type--uppercase" href="{{ route('images.create', $album->uuid) }}">
+                    <a class="btn btn--sm type--uppercase" href="{{ route('albums.edit', $album->uuid) }}">
                     <span class="btn__text">
-                        Add Images
+                        Edit
                     </span>
                 </a>
+                @endif
+                <a class="btn btn--sm type--uppercase" href="{{ route('images.create', $album->uuid) }}">
+                    <span class="btn__text">Add Images</span>
+                </a>
+                <a class="btn btn--sm type--uppercase" href="{{ route('images.index', $album->uuid) }}">
+                    <span class="btn__text">Uploads</span>
+                </a>
+           
             </div>
+            
         </div>
         <!--end of row-->
+         <form id="delete-form" action="{{route('albums.destroy', $album->uuid)}}" method="post">@csrf @method('DELETE')</form>
     </div>
     <!--end of container-->
+
 </section>
 
-@if ($subs)
-    <section class="cover cover-fullscreen height-100 imagebg slider text-center" data-paging="{{ ($subs->count() > 3) ? 'true' : 'false' }}"
-        data-arrows="{{ ($subs->count() > 3) ? 'true' : 'false' }}" data-timing="9000">
+@if ($subs->count())
+    <section class="cover cover-fullscreen height-100 imagebg slider text-center" data-paging="true" data-arrows="true" data-timing="9000">
         <ul class="slides">
             @foreach ($subs as $item)
             <li class="imagebg col-lg-4 col-md-6 col-12" data-overlay="1">
@@ -61,7 +71,6 @@
                 <!--end of container-->
             </li>
             @endforeach
-    
         </ul>
     </section>
 @endif
@@ -75,7 +84,7 @@
                 $first  = true;
                 $i = 0;
             @endphp
-            @foreach ($album->image as $item)
+            @foreach ($images as $item)
 
                 
                 <div class="masonry__item {{ ($open) ? 'col-lg-8' : 'col-lg-4' }} col-md-6 col-12" data-masonry-filter="Digital">
@@ -90,6 +99,8 @@
                                 <div class="project-thumb__title middle text-center">
                                     <h5>Name </h5>
                                     <span>{{ $item->biliner }}</span>
+                                    <br>
+                                    <span><small>Posted by {{ $item->user->name}}</small></span>
                                 </div>
                             </div>
                         </a>
