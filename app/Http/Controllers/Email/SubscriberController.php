@@ -17,9 +17,6 @@ class SubscriberController extends Controller
      */
     public function index()
     {
-        for ($i=0; $i < 100; $i++) { 
-            $this->create('testemail'.$i.'@app.com');
-        }
         return view('subscribers.index')->withSubscribers(Subscriber::all());
     }
 
@@ -43,7 +40,9 @@ class SubscriberController extends Controller
      */
     public function store(StoreSubscriber $request)
     {
-        return $this->create($request->email);
+        $this->create($request->email);
+
+        return redirect()->route('subscribers.index');
     }
 
     /**
