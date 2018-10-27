@@ -9,7 +9,7 @@ use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use App\Models\Story;
+use App\Models\{Story};
 
 class StorySubmittedForApproval
 {
@@ -23,7 +23,6 @@ class StorySubmittedForApproval
      */
     public function __construct(Story $story)
     {
-        // dump('1');
         $this->story = $story;
     }
 
