@@ -33,22 +33,22 @@
     </a>
 
         {{-- Theme Scripts --}}
-        <script src="/js/app/jquery-3.1.1.min.js"></script>
-        <script src="/js/app/flickity.min.js"></script>
-        <script src="/js/app/easypiechart.min.js"></script>
-        <script src="/js/app/parallax.js"></script>
-        <script src="/js/app/typed.min.js"></script>
-        <script src="/js/app/datepicker.js"></script>
-        <script src="/js/app/isotope.min.js"></script>
-        <script src="/js/app/ytplayer.min.js"></script>
-        <script src="/js/app/lightbox.min.js"></script>
-        <script src="/js/app/granim.min.js"></script>
-        <script src="/js/app/jquery.steps.min.js"></script>
-        <script src="/js/app/countdown.min.js"></script>
-        <script src="/js/app/twitterfetcher.min.js"></script>
-        <script src="/js/app/spectragram.min.js"></script>
-        <script src="/js/app/smooth-scroll.min.js"></script>
-        <script src="/js/app/scripts.js"></script>
+        <script src="{{ asset('js/app/jquery-3.1.1.min.js') }}"></script>
+        <script src="{{ asset('js/app/flickity.min.js') }}"></script>
+        <script src="{{ asset('js/app/easypiechart.min.js') }}"></script>
+        <script src="{{ asset('js/app/parallax.js') }}"></script>
+        <script src="{{ asset('js/app/typed.min.js') }}"></script>
+        <script src="{{ asset('js/app/datepicker.js') }}"></script>
+        <script src="{{ asset('js/app/isotope.min.js') }}"></script>
+        <script src="{{ asset('js/app/ytplayer.min.js') }}"></script>
+        <script src="{{ asset('js/app/lightbox.min.js') }}"></script>
+        <script src="{{ asset('js/app/granim.min.js') }}"></script>
+        <script src="{{ asset('js/app/jquery.steps.min.js') }}"></script>
+        <script src="{{ asset('js/app/countdown.min.js') }}"></script>
+        <script src="{{ asset('js/app/twitterfetcher.min.js') }}"></script>
+        <script src="{{ asset('js/app/spectragram.min.js') }}"></script>
+        <script src="{{ asset('js/app/smooth-scroll.min.js') }}"></script>
+        <script src="{{ asset('js/app/scripts.js') }}"></script>
 
         {{-- Page Scripts --}}
         @yield('scripts')
