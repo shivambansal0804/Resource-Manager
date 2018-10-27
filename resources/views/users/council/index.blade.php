@@ -4,7 +4,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-lg-8">
-                <h1>All Stories</h1>
+                <h1>
+                    @if (Route::currentRouteName() == 'stories.index')
+                        All Stories
+                    @else
+                        All Pending Stories
+                    @endif
+                    </h1>
                 <p class="lead">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nisi? Saepe, itaque error. Totam, fuga quia a
                 </p>

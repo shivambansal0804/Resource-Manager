@@ -33,7 +33,6 @@ class StorySubmittedForApprovalListener
 
         $users = User::with('roles')->where('name','council')->get();
 
-        \Log::info($story);
         foreach ($users as $user) {
             Mail::to($user->email)->send(new StorySubmittedForApprovalMail($story));            
         }
