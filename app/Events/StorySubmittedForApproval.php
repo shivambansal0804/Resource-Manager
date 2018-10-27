@@ -15,15 +15,15 @@ class StorySubmittedForApproval
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $story;
+    public $uuid;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Story $story)
+    public function __construct($uuid)
     {
-        $this->story = $story;
+        $this->uuid = $uuid;
     }
 
     /**

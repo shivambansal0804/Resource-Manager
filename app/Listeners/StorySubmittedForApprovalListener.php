@@ -6,7 +6,9 @@ use App\Events\StorySubmittedForApproval;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Mail\StorySubmittedForApprovalMail;
+use App\Models\{Story};
 use App\Role;
+
 
 class StorySubmittedForApprovalListener implements ShouldQueue
 {
@@ -28,11 +30,11 @@ class StorySubmittedForApprovalListener implements ShouldQueue
      */
     public function handle(StorySubmittedForApproval $event)
     {
-
+        $story = Story::whereUuid($event->uuid)->firstOrFail();
         $council = Role::where('name', 'council')->with('users')->first();
         $users = $council->users;
         foreach ($users as $user) {
-            \Mail::to($user->email)->send(new StorySubmittedForApprovalMail($event->story));
+            \Mail::to($user->email)->send(new StorySubmittedForApprovalMail($story));
         }
     }
 }

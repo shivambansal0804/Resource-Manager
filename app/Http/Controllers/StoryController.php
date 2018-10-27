@@ -120,7 +120,10 @@ class StoryController extends Controller
             'status'            => $request->status
         ];
 
-        auth()->user()->story()->where('uuid' , $uuid)->first()->update($data);
+        $story = auth()->user()->story()->where('uuid' , $uuid)->firstOrFail()->update($data);
+        
+        if($data['status'] == 'pending') 
+            $this->callSubmitEvent($uuid);
 
         $request->session()->flash('success', $data['title'].', Updated!');
         
@@ -158,10 +161,15 @@ class StoryController extends Controller
             'status' => 'pending'
         ]);
 
-        event(new SubmitEvent($story));
+        $this->callSubmitEvent($uuid);
 
         session()->flash('success', $story->title.', Submitted for approval.');
 
         return redirect()->route('stories.index');
+    }
+
+    public function callSubmitEvent($uuid)
+    {
+        return event(new SubmitEvent($uuid));
     }
 }
