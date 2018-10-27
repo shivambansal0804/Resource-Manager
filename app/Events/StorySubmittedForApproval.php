@@ -23,6 +23,7 @@ class StorySubmittedForApproval
      */
     public function __construct(Story $story)
     {
+        // dump('1');
         $this->story = $story;
     }
 

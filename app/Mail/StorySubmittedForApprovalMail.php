@@ -31,7 +31,8 @@ class StorySubmittedForApprovalMail extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        \Log::info($this->story);
+        // \Log::info($this->story);
+        // dump('Approval Mail');
         return $this->from('mani00manu@gmail.com')->subject("Story Submitted for Approval, {$this->story->title}")
                  ->view('emails.stories.pending')->with([
                      'story' => $this->story

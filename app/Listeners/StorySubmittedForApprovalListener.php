@@ -30,7 +30,7 @@ class StorySubmittedForApprovalListener
     public function handle(StorySubmittedForApproval $event)
     {
         $story = $event->story;
-
+        // dump('storySubmittedforApproval.php listener');
         $users = User::with('roles')->where('name','council')->get();
 
         foreach ($users as $user) {

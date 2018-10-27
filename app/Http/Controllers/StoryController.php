@@ -153,6 +153,8 @@ class StoryController extends Controller
        ]);
 
        event(new StorySubmittedForApproval($story));
+
+    //    return story;
     
        session()->flash('success', $story->title.', Submitted for approval.');
        return redirect()->route('stories.index');
