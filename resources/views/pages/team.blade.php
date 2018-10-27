@@ -4,6 +4,32 @@
 @endsection
 @section('links')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<style type="text/css">
+	.btn-primary{
+			
+			background: #fff;
+			color: #252525;
+			border-color: #252525;
+			font-weight: bold;
+		}
+		.btn-primary:hover{
+			color:#fff;
+			background: #252525;
+			border-color: #fff;
+		}
+		.jumbotron{
+			background-color: #fff;	
+		}
+
+		.hrstyle { 
+			  border: 0; 
+			  height: 1px; 
+			  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+		}
+</style>
 @endsection
 @section('content') 
 <!-- Page Title
@@ -98,8 +124,24 @@
 						</div>
 </div>
                 </div>
-			
-				</div>  
+
+                <hr class="hrstyle">
+                
+                <!--Team Login Section -->
+					<div class="jumbotron text-center">
+						<h2 class="login">Are you a member of DTU Times?</h2>
+                                <a class="btn btn-primary type-uppercase " href="#">
+                                    <span class="btnlog">
+                                        Login Here !
+                                    </span>
+                                    
+                                </a>
+					</div>
+
+				 
+
+				<!-- Team Login Section ends -->
+				</div> 
 				<div class="tab-pane fade" id="profile" style="margin-left:10%; margin-right:10%">
 						  							
 					<div class="fancy-title title-border">
