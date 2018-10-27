@@ -42,8 +42,8 @@
                 </form>
                 
                 <span class="type--fine-print block">Forgot your username or password?
-                                    <a href="page-accounts-recover.html">Recover account</a>
-                                </span>
+                    <a href="{{ route('password.email') }}">Recover account</a>
+                </span>
             </div>
         </div>
 </section>
