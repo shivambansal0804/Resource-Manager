@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title')
+<title>DTU Times Blog</title>
+@endsection
 @section('content')
     <div class="container">
 
