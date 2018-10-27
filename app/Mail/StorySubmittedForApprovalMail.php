@@ -8,7 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Models\Story;
 
-class StorySubmittedForApprovalMail extends Mailable
+class StorySubmittedForApprovalMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 

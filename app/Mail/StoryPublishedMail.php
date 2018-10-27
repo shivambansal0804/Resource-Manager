@@ -9,7 +9,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Models\Story;
 use Log;
 
-class StoryPublishedMail extends Mailable
+class StoryPublishedMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
