@@ -32,7 +32,7 @@ class CampaignMail extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->from('mani00manu@gmail.com')->subject("{$this->campaign->name}")
+        return $this->from('dtutimes@dtu.ac.in')->subject("{$this->campaign->name}")
                  ->view('emails.campaigns.default')->with([
                      'campaign' => $this->campaign
                  ]);
