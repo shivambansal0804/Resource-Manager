@@ -1,26 +1,41 @@
 @extends('layouts.app') 
+@section('links')
+<style type="text/css">
+.login{
+    margin:auto;
+}
+.dtulog{
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+</style>
+@endsection
 @section('content')
-<section class="height-100 imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1">
-	<div class="container pos-vertical-center">
-        <div class="row">
-            <div class="col-md-7 col-lg-5">
-                <h2>Login to DTUtimes</h2>
-                <p class="lead">
-                    Welcome back, sign in with your existing Stack account credentials
-                </p>
+<section class="cover cover-fullscreen height-100 imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1">
+
+    <div class="container pos-vertical-center">
+        <div class="row" >
+            <div class="login col-md-6 col-lg-5" >
+                <div style="padding-bottom: 50px;">
+                <img src="" class="dtulog">
+                </div>
+
+                <div>
+                    <img src="{{ asset('img/logo-dark1.png') }}">
+                </div>
+
                 
-                <form method="POST" action="{{ route('login') }}">
-                    @csrf
-                    <div class="row">
+                <form method="POST" action="http://dtutimes.me/login">
+                    <input type="hidden" name="_token" value="GQRDgzl4WOdyAhm1fgSFr2Iknhj3YGCTsyuKFD9C">                    <div class="row">
                         <div class="col-md-12">
-                            <input placeholder="Email" type="email" name="email" value="{{ old('email') }}"
+                            <input placeholder="Email" type="email" name="email" value=""
                                 required autofocus> 
-                                @if ($errors->has('email'))
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $errors->first('email') }}</strong>
-                                </span>
-                                @endif
-                        </div>
+                                                        </div>
                         <div class="col-md-12">
                             <input placeholder="Password" type="password" name="password"
                                 required>
@@ -28,7 +43,7 @@
                         
                         <div class="col-md-12">
                             <div class="input-checkbox">
-                                <input id="checkbox" type="checkbox" name="remember" {{ old( 'remember') ? 'checked' : '' }}>
+                                <input id="checkbox" type="checkbox" name="remember" >
                                 <label for="checkbox"></label>
                             </div>
                             <span>Remember me</span>
@@ -41,12 +56,15 @@
                     <!--end of row-->
                 </form>
                 
-                <span class="type--fine-print block">Forgot your username or password?
-                    <a href="{{ route('password.email') }}">Recover account</a>
+                <span class="type--fine-print block" >Forgot your username or password?
+                    <a href="http://dtutimes.me/password/email">Recover account</a>
                 </span>
             </div>
         </div>
+     </div>
 </section>
+    
+
 @endsection
  
 {{-- 
