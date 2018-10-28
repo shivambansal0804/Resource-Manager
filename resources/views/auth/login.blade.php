@@ -20,18 +20,19 @@
 
     <div class="container pos-vertical-center">
         <div class="row" >
-            <div class="login col-md-6 col-lg-5" >
-                <div style="padding-bottom: 50px;">
-                <img src="" class="dtulog">
-                </div>
-
-                <div>
-                    <img src="{{ asset('img/logo-dark1.png') }}">
-                </div>
+            <div class="login col-md-4 col-lg-4" >
 
                 
-                <form method="POST" action="http://dtutimes.me/login">
-                    <input type="hidden" name="_token" value="GQRDgzl4WOdyAhm1fgSFr2Iknhj3YGCTsyuKFD9C">                    <div class="row">
+
+                
+                <form method="POST" action="http://dtutimes.me/login" class="row">
+                    <input type="hidden" name="_token" value="GQRDgzl4WOdyAhm1fgSFr2Iknhj3YGCTsyuKFD9C">
+                        <div class="col-md-12 text-center">
+                            <img src="{{ asset('img/logo-white.png') }}">
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <h3>DTUTIMES</h3>
+                        </div>
                         <div class="col-md-12">
                             <input placeholder="Email" type="email" name="email" value=""
                                 required autofocus> 
@@ -41,24 +42,29 @@
                                 required>
                         </div>
                         
+                        
                         <div class="col-md-12">
+                            <button class="btn btn--primary type--uppercase" type="submit">Login</button>
+                        </div>
+
+                        <div class="col-md-12 text-center">
                             <div class="input-checkbox">
                                 <input id="checkbox" type="checkbox" name="remember" >
                                 <label for="checkbox"></label>
                             </div>
                             <span>Remember me</span>
+
+                            <br>
+                            <span class="type--fine-print block" >Forgot your username or password?
+                                <a href="http://dtutimes.me/password/email">Recover account</a>
+                            </span>
                            
                         </div>
-                        <div class="col-md-12">
-                            <button class="btn btn--primary type--uppercase" type="submit">Login</button>
-                        </div>
-                    </div>
-                    <!--end of row-->
                 </form>
                 
-                <span class="type--fine-print block" >Forgot your username or password?
-                    <a href="http://dtutimes.me/password/email">Recover account</a>
-                </span>
+                <div class="text-block text-center">
+                    
+                </div>
             </div>
         </div>
      </div>
