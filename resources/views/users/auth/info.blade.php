@@ -125,11 +125,12 @@
                         </div>
 
                         <div class="col-md-2 text-center pt-2">
-                            <i class="socicon socicon-google icon icon--xs"></i>
+                            <i class="socicon socicon-mail icon icon--xs"></i>
                         </div>
                         <div class="col-md-10">
                             <input type="text" class="validate-required" name="display_mail" value="{{ old('display_mail') ? old('display_mail') : $user->display_mail }}"
                                 required />
+                                <span><small>This will be your public email.</small></span>
                         </div>
                     </div>
 
