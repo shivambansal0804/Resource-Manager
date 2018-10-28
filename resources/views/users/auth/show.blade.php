@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> 
         </div>
         <!--end of row-->
     </div>

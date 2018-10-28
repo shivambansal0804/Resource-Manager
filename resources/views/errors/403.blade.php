@@ -1,59 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
+<!-- Mirrored from trystack.mediumra.re/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 17:13:28 GMT -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<meta charset="utf-8">
+	<title>DTUtimes | Not found</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Site Description Here">
 
-    <title>DTUTImes</title>
-    <style type="text/css">
-    	body {
- 		   background: #252525;
-		}
-		.page-wrap {
-    		min-height: 100vh;
-		}
-		.title{
-			color: #fff;
-			font-size: 100px;
-		}
-		.sub{
-			color: #fff;
-			font-size: 25px;
-		}
-		
-		.btn-primary{
-			margin: 60px;
-			background: #fff;
-			color: #252525;
-			border-color: #252525;
-		}
-		.btn-primary:hover{
-			color:#fff;
-			background: #252525;
-			border-color: #fff;
-		}
-    </style>
+	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
 
+<body class=" ">
 
-
-<div class="page-wrap d-flex flex-row align-items-center">
-    <div class="container col-xs-12">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-xs-12 text-center">
-                <span class="title">403 Forbidden</span>
-                <div class="sub">You don't have permission to access this resource.</div>
-                <div class="button"><a href="{{ route('welcome') }}" class="btn btn-primary">Back to Home</a></div>
-            </div>
-        </div>
-    </div>
-</div>
-    
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<div class="main-container">
+		<section class="height-100 text-center">
+			<div class="container pos-vertical-center">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="h1--large">403</h1>
+						<p class="lead">
+							We're currently making some improvements — Check back soon
+						</p>
+						<a href="/">Go back to home page</a>
+					</div>
+				</div>
+				<!--end of row-->
+			</div>
+			<!--end of container-->
+		</section>
+	</div>
+	<!--<div class="loader"></div>-->
+	<a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+	<script src="{{ asset('js/app/jquery-3.1.1.min.js') }}"></script>
+	<script src="{{ asset('js/app/flickity.min.js') }}"></script>
+	<script src="{{ asset('js/app/easypiechart.min.js') }}"></script>
+	<script src="{{ asset('js/app/parallax.js') }}"></script>
+	<script src="{{ asset('js/app/typed.min.js') }}"></script>
+	<script src="{{ asset('js/app/datepicker.js') }}"></script>
+	<script src="{{ asset('js/app/isotope.min.js') }}"></script>
+	<script src="{{ asset('js/app/ytplayer.min.js') }}"></script>
+	<script src="{{ asset('js/app/lightbox.min.js') }}"></script>
+	<script src="{{ asset('js/app/granim.min.js') }}"></script>
+	<script src="{{ asset('js/app/jquery.steps.min.js') }}"></script>
+	<script src="{{ asset('js/app/countdown.min.js') }}"></script>
+	<script src="{{ asset('js/app/twitterfetcher.min.js') }}"></script>
+	<script src="{{ asset('js/app/spectragram.min.js') }}"></script>
+	<script src="{{ asset('js/app/smooth-scroll.min.js') }}"></script>
+	<script src="{{ asset('js/app/scripts.js') }}"></script>
 </body>
 
 </html>

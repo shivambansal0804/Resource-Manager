@@ -120,4 +120,22 @@ class ImageController extends Controller
 
         return redirect()->route('albums.show', $uuid);
     }
+
+    public function publish($uuid, $image)
+    {
+        \App\Models\Album::whereUuid($uuid)->firstOrFail()->image()->whereUuid($image)->firstOrFail()->update([
+            'status'    => 'published'
+        ]);
+
+        return redirect()->route('albums.show', $uuid);
+    }
+
+    public function draft($uuid, $image)
+    {
+        \App\Models\Album::whereUuid($uuid)->firstOrFail()->image()->whereUuid($image)->firstOrFail()->update([
+            'status'    => 'draft'
+        ]);
+
+        return redirect()->route('albums.show', $uuid);
+    }
 }
