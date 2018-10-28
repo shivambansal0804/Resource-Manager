@@ -22,27 +22,27 @@
                     </p>
                     <ul class="social-list list-inline list--hover">
                         <li>
-                            <a href="{{ $user->display_mail }}">
+                            <a target="_blank" href="{{ $user->display_mail }}">
                                 <i class="socicon socicon-mail icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $user->medium }}">
+                            <a target="_blank" href="{{ $user->medium }}">
                                 <i class="socicon socicon-medium icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $user->linkedin }}">
+                            <a target="_blank" href="{{ $user->linkedin }}">
                                 <i class="socicon socicon-linkedin icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $user->instagram }}">
+                            <a target="_blank" href="{{ $user->instagram }}">
                                 <i class="socicon socicon-instagram icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ $user->facebook }}">
+                            <a target="_blank" href="{{ $user->facebook }}">
                                 <i class="socicon socicon-facebook icon icon--xs"></i>
                             </a>
                         </li>

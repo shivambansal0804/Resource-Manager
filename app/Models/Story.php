@@ -19,6 +19,21 @@ class Story extends Model
         'meta_title', 'meta_description'
     ];
 
+    public function registerMediaConversions(Media $media = null)
+    {
+        $this->addMediaConversion('cover')
+            ->width(1000)
+            ->height(1250);
+
+        $this->addMediaConversion('fullscreen')
+            ->width(1900)
+            ->height(800);
+
+        $this->addMediaConversion('thumb')
+        ->width(800)
+        ->height(800);
+    }
+
     /**
      * Inverse of User's has Many
      */

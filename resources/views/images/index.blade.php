@@ -47,7 +47,14 @@
         <!--end of masonry-->
     </section>
 @else
-    nothing here
+    <section class="space--lg">
+        <div class="container">
+            <div class="text-center">
+                <img width="150" src="{{ asset('svg/albums.svg') }}" alt="" srcset="">
+                <h3>Nothing here</h3>
+            </div>
+        </div>
+    </section>
 @endif
 
 @endsection

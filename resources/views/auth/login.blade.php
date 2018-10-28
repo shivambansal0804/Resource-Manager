@@ -8,7 +8,8 @@
             <div class="login col-md-4 col-lg-4" >
                 
                 <form method="POST" action="{{ route('login') }}" class="row mt-0">
-                    <input type="hidden" name="_token" value="GQRDgzl4WOdyAhm1fgSFr2Iknhj3YGCTsyuKFD9C">
+                    @csrf
+                    
                         <div class="col-md-12 text-center">
                             <img src="{{ asset('img/logo-white.png') }}">
                         </div>

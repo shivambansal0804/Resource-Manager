@@ -11,7 +11,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-8">
                 <span id="status"></span>
-                <form action="{{ route('stories.update', $story->uuid) }}" method="POST" class="row">
+                <form action="{{ route('stories.update', $story->uuid) }}" method="POST" class="row" enctype="multipart/form-data">
                     @csrf @method('PUT')
 
                     <div class="col-md-12">
@@ -32,17 +32,24 @@
                         <h3>SEO Details</h3>
                     </div>
                     <div class="col-md-12">
-                        <select name="category" class="">
+                        <label>Category</label>
+                        <select name="category" class="text-dark">
                             <option value="">Give this story a Category</option>
                             @if ($story->category)
-                                <option value="{{ $story->category->name }}">{{$story->category->display_name}}</option>
+                                <option value="{{ $story->category->name }}">{{$story->category->name}}</option>
                             @endif
-                                
+                                 
                             @foreach ($categories as $item)
-                                <option value="{{$item->id}}">{{$item->display_name}}</option>
+                                <option value="{{$item->id}}">{{$item->name}}</option>
                             @endforeach
                         </select>
                     </div>
+
+                    <div class="col-md-12">
+                        <label>Blog image</label>
+                        <input id="cover" type="file" class="validate-required" name="blog_image" value="{{ old('blog_image') ? old('blog_image') : ''}}">                            
+                    </div>
+
 
                     <div class="col-md-12">
                         <textarea name="meta_description" id="" cols="30" rows="3" class="form-control" placeholder="Meta Description here" required>{{ old('meta_description') ? old('meta_description'): $story->meta_description }}</textarea>

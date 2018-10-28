@@ -22,29 +22,31 @@
             </div>
             <div class="masonry__container ">
                 @foreach ($images as $item)
-                <div class="col-md-4 col-12 masonry__item" data-masonry-filter="{{ $item->album->name }}">
-                    <div class="project-thumb hover-element height-40">
-                        <a href="#">
-                            <div class="hover-element__initial">
-                                <div class="background-image-holder">
-                                    <img alt="background" src="{{ $item->getFirstMediaUrl('images', 'fullscreen') }}" />
+                @if($item->album)
+                    <div class="col-md-4 col-12 masonry__item" data-masonry-filter="{{ $item->album->name }}">
+                        <div class="project-thumb hover-element height-40">
+                            <a href="#">
+                                <div class="hover-element__initial">
+                                    <div class="background-image-holder">
+                                        <img alt="background" src="{{ $item->getFirstMediaUrl('images', 'fullscreen') }}" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="hover-element__reveal" data-overlay="9">
-                                <div class="project-thumb__title">
-                                    <h5>{{ $item->name }}</h5>
-                                    <span>{{ $item->biliner }}</span>
-                                    <br>
-                                    <span>
-                                        <small>
-                                            {{ $item->status }}
-                                        </small>
-                                    </span>
+                                <div class="hover-element__reveal" data-overlay="9">
+                                    <div class="project-thumb__title">
+                                        <h5>{{ $item->name }}</h5>
+                                        <span>{{ $item->biliner }}</span>
+                                        <br>
+                                        <span>
+                                            <small>
+                                                {{ $item->status }}
+                                            </small>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                @endif
                 @endforeach
             </div>
             <!--end of masonry__container-->
@@ -52,6 +54,13 @@
         <!--end of masonry-->
     </section>
 @else
-    notheing here
+    <section class="space--lg">
+        <div class="container">
+            <div class="text-center">
+                <img width="150" src="{{ asset('svg/albums.svg') }}" alt="" srcset="">
+                <h3>Nothing here</h3>
+            </div>
+        </div>
+    </section>
 @endif
 @endsection
