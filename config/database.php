@@ -43,11 +43,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'db4free.net'),
+            'host' => env('DB_HOST', 'hostname'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'keep_writing'),
-            'username' => env('DB_USERNAME', 'mani_sh999'),
-            'password' => env('DB_PASSWORD', 'manish.s19'),
+            'database' => env('DB_DATABASE', 'databasename'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', 'password'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
