@@ -49,6 +49,7 @@ class ImageController extends Controller
             'user_id' => auth()->user()->id,
             'name'    => $request->name,
             'biliner' => $request->biliner,
+            'slug'      => str_slug($request->name, "-").'-'.rand(100, 999),
             'status'  => 'draft'
         ]);
 

@@ -41,7 +41,7 @@
                                 <ul class="menu-vertical">
                                     <li>
                                         <a href="{{ route('stories.index')}}">
-                                            your stories
+                                            Your stories
                                         </a>
                                     </li>
                                     <li>
