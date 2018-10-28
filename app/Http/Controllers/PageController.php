@@ -45,6 +45,12 @@ class PageController extends Controller
         return view('pages.team');
     }
 
+     public function editions()
+    {
+        return view('pages.editions');
+    }
+
+
     public function test ()
     {
         return $this->report->sendWeeklyReport();

@@ -8,7 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Models\Story;
 
-class StorySubmittedForApprovalMail extends Mailable
+class StorySubmittedForApprovalMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
@@ -31,7 +31,6 @@ class StorySubmittedForApprovalMail extends Mailable
      */
     public function build()
     {
-        \Log::info($this->story);
         return $this->from('mani00manu@gmail.com')->subject("Story Submitted for Approval, {$this->story->title}")
                  ->view('emails.stories.pending')->with([
                      'story' => $this->story

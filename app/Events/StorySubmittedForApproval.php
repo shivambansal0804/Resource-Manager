@@ -9,21 +9,21 @@ use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use App\Models\Story;
+use App\Models\{Story};
 
 class StorySubmittedForApproval
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $story;
+    public $uuid;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Story $story)
+    public function __construct($uuid)
     {
-        $this->story = $story;
+        $this->uuid = $uuid;
     }
 
     /**

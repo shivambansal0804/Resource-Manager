@@ -8,7 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Services\ReportService;
 
-class DailyReportMail extends Mailable
+class DailyReportMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 

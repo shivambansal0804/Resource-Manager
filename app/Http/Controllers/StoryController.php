@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\{Category, Tag, Story};
 use App\Http\Requests\StoreStory;
-use App\Events\StorySubmittedForApproval;
+use App\Events\StorySubmittedForApproval as SubmitEvent;
 use Session;
 use Carbon\Carbon;
 use Ramsey\Uuid\Uuid;
@@ -60,7 +60,7 @@ class StoryController extends Controller
             'meta_description'  => $request->meta_description,
             'biliner'           => $request->biliner,
         ];
-        Log::info($data);
+
         $story = auth()->user()->story()->update($data);
 
         return response()->json('saved');
@@ -120,7 +120,10 @@ class StoryController extends Controller
             'status'            => $request->status
         ];
 
-        auth()->user()->story()->where('uuid' , $uuid)->first()->update($data);
+        $story = auth()->user()->story()->where('uuid' , $uuid)->firstOrFail()->update($data);
+        
+        if($data['status'] == 'pending') 
+            $this->callSubmitEvent($uuid);
 
         $request->session()->flash('success', $data['title'].', Updated!');
         
@@ -144,17 +147,29 @@ class StoryController extends Controller
         return redirect()->route('stories.index');
     }
 
-   public function submit($uuid)
-   {
-       $story = auth()->user()->story()->whereUuid($uuid)->firstOrFail();
-       
-       $story->update([
-           'status' => 'pending'
-       ]);
+    public function submit($uuid)
+    {
+        $story = auth()->user()->story()->whereUuid($uuid)->firstOrFail();
 
-       event(new StorySubmittedForApproval($story));
-    
-       session()->flash('success', $story->title.', Submitted for approval.');
-       return redirect()->route('stories.index');
-   }
+        if($story->status != 'draft')
+        {
+            session()->flash('success', $story->title.', is '.$story->status );
+            return redirect()->route('stories.index');
+        }
+        
+        $story->update([
+            'status' => 'pending'
+        ]);
+
+        $this->callSubmitEvent($uuid);
+
+        session()->flash('success', $story->title.', Submitted for approval.');
+
+        return redirect()->route('stories.index');
+    }
+
+    public function callSubmitEvent($uuid)
+    {
+        return event(new SubmitEvent($uuid));
+    }
 }

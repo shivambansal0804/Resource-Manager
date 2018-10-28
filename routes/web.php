@@ -15,6 +15,7 @@ Route::get('/', 'PageController@welcome')->name('welcome');
 Route::get('/about', 'PageController@about')->name('about');
 Route::get('/contact', 'PageController@contact')->name('contact');
 Route::get('/team', 'PageController@team')->name('team');
+Route::get('/editions', 'PageController@editions')->name('editions');
 Route::get('/test', 'PageController@test');
 
 // Join the newsletter
@@ -27,7 +28,7 @@ Route::post('/login', 'Auth\LoginController@login');
 // Password Reset
 Route::post('/password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 Route::get('/password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
-Route::post('/password/reset', 'Auth\ResetPasswordController@reset');
+Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
 Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 
 // Superuser Routes
