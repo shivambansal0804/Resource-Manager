@@ -1,18 +1,17 @@
 @extends('layouts.app') 
 @section('content')
 
-<section class="cover cover-features imagebg space--lg" data-overlay="2">
+<section class="cover cover-features height--50 imagebg space--lg" data-overlay="2">
     <div class="background-image-holder">
-        <img src="/img/work-1.jpg" alt="">
-        {{-- <img alt="background" src="{{ $image->getFirstMediaUrl('images', 'fullscreen')}}" /> --}}
+        <img alt="background" src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen')}}" />
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-lg-7">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
                 <h1>
                     {{ $story->title }}
                 </h1>
-                <p class="lead">
+                <p class="">
                    {{ $story->biliner }}
                 </p>
             </div>
@@ -45,7 +44,7 @@
                         </p>
                         @if ($story->status == 'draft')
                         <div>
-                            <a class="btn btn--primary btn--sm" href="{{ route('stories.edit', $story->uuid)}}">
+                            <a class="btn btn--sm" href="{{ route('stories.edit', $story->uuid)}}">
                                 <span class="btn__text">Edit</span>
                             </a>
                             <a class="btn btn--sm" href="{{ route('stories.submit', $story->uuid )}}">

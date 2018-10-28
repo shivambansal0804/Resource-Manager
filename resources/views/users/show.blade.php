@@ -6,11 +6,11 @@
             <div class="col-lg-8">
                 <div class="boxed boxed--lg boxed--border">
                     <div class="text-block text-center">
-                        <img alt="avatar" src="{{ asset('img/avatar-round-2.png')}}" class="image--md" />
+                        <img alt="avatar" src="{{ $user->getFirstMediaUrl('avatars', 'thumb') }}" class="image--md" />
                         <span class="h5">{{ $user->name }}</span>
-                        <span>{ user type }</span>
+                        <span>@foreach ($user->roles as $item) {{$item->name}} @endforeach</span>
                         <span class="label">
-                            @foreach ($user->roles as $item) {{$item->name}} @endforeach
+                            <a href="{{ route('users.role.edit', $user->uuid) }}" class="text-white">@foreach ($user->roles as $item) {{$item->name}} @endforeach</a>
                         </span>
                     </div>
                     <div class="text-block clearfix text-center">
@@ -34,7 +34,7 @@
                     <ul class="social-list list-inline list--hover">
                         <li>
                             <a href="#">
-                                <i class="socicon socicon-google icon icon--xs"></i>
+                                <i class="socicon socicon-mail icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
@@ -87,76 +87,7 @@
                     </ul>
                 </div>
                 
-                <div class="boxed boxed--border">
-                    <h4>Recent Activity</h4>
-                    <ul>
-                        <li class="clearfix">
-                            <div class="row">
-                                <div class="col-lg-2 col-3 text-center">
-                                    <div class="icon-circle">
-                                        <i class="icon icon--lg material-icons">comment</i>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 col-7">
-                                    <span class="type--fine-print">21st July, 2017</span>
-                                    <a href="#" class="block color--primary">Check out the relaunched Scope</a>
-                                    <p>
-                                        Discourse in writing dealing with a particular point or idea.
-                                    </p>
-                                </div>
-                            </div>
-                            <hr>
-                        </li>
-                        <li class="clearfix">
-                            <div class="row">
-                                <div class="col-lg-2 col-3 text-center">
-                                    <div class="icon-circle">
-                                        <i class="icon icon--lg material-icons">mode_edit</i>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-7">
-                                    <span class="type--fine-print">14th July, 2017</span>
-                                    <a href="#" class="block color--primary">Tips for web typography</a>
-                                    <p>
-                                        To write beside or "written beside" is a self-contained unit of a discourse in writing dealing with a particular point or idea.
-                                    </p>
-                                </div>
-                            </div>
-                            <hr>
-                        </li>
-                        <li class="clearfix">
-                            <div class="row">
-                                <div class="col-lg-2 col-3 text-center">
-                                    <div class="icon-circle">
-                                        <i class="icon icon--lg material-icons">favorite</i>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-7">
-                                    <span class="type--fine-print">12th July, 2017</span>
-                                    <a href="#" class="block color--primary">Where do you source your stock photography?</a>
-                                </div>
-                            </div>
-                            <hr>
-                        </li>
-                        <li class="clearfix">
-                            <div class="row">
-                                <div class="col-lg-2 col-3 text-center">
-                                    <div class="icon-circle">
-                                        <i class="icon icon--lg material-icons">comment</i>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-7">
-                                    <span class="type--fine-print">3rd July, 2017</span>
-                                    <a href="#" class="block color--primary">Share your rapid development workflow</a>
-                                    <p>
-                                        Of a discourse in writing dealing with a particular point or idea.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="#" class="type--fine-print pull-right">View All</a>
-                </div>
+
             </div>
         </div>
         <!--end of row-->

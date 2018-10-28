@@ -20,25 +20,23 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8">
-            <form method="POST" action="{{ route('users.permission.update', $user->uuid) }}">
+            <form method="POST" action="{{ route('users.permission.update', $user->uuid) }}" class="row mt-0">
                 @csrf
-                <div class="form-group row">
+                <div class="col-md-12">
                     <select name="permissions" id="">
                         @foreach ($allPermissions as $item)
                             <option value="{{$item->name}}">{{ $item->display_name }}</option>
                         @endforeach
-                    </select> (implement select 2 here and send and array of permissions
-                    id to post)
+                    </select> 
                 </div>
 
-                <div class="form-group row mb-0">
-                    <div class="col-md-8 offset-md-4">
-                        <button type="submit" class="btn btn-primary">
-                            {{ __('Update') }}
-                        </button>
-                    </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn--sm">
+                        Change Permissions
+                    </button>
                 </div>
             </form>
+            <hr>
             <ul class="accordion accordion-2 accordion--oneopen">
                 @foreach ($userPermissions as $item)
                 <li>

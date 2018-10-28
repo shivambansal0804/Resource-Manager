@@ -205,7 +205,7 @@
             <ul class="social-list list-inline list--hover">
                 <li>
                     <a href="#">
-                        <i class="socicon socicon-google icon icon--xs"></i>
+                        <i class="socicon socicon-mail icon icon--xs"></i>
                     </a>
                 </li>
                 <li>

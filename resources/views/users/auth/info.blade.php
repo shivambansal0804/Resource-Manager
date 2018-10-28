@@ -1,8 +1,8 @@
 @extends('layouts.app') 
 @section('content')
-<section id="start" class="height-100 cover cover-features imagebg space--lg" data-overlay="2">
+<section id="start" class="cover cover-fullscreen height-100 cover cover-features imagebg space--lg" data-overlay="2">
     <div class="background-image-holder">
-        <img alt="background" src="{{ asset('img/landing-info.jpg')}}" />
+        <img alt="background" src="{{ asset('img/back.jpg')}}" />
     </div>
     <div class="container">
         <div class="row justify-content-center">
@@ -36,9 +36,9 @@
             </div>
             <div class="col-md-8">
                 <div class="triptych border--round">
-                    <img alt="Image" src="{{ asset('img/info-page-1.jpg') }}" />
-                    <img alt="Image" src="{{ asset('img/info-page-2.jpg') }}" />
-                    <img alt="Image" src="{{ asset('img/info-page-3.jpg') }}" />
+                    <img alt="Image" src="{{ asset('img/gallery/codtu/8.jpg') }}" />
+                    <img alt="Image" src="{{ asset('img/gallery/codtu/23.jpg') }}" />
+                    <img alt="Image" src="{{ asset('img/gallery/codtu/26.jpg') }}" />
                 </div>
             </div>
         </div>
@@ -125,11 +125,12 @@
                         </div>
 
                         <div class="col-md-2 text-center pt-2">
-                            <i class="socicon socicon-google icon icon--xs"></i>
+                            <i class="socicon socicon-mail icon icon--xs"></i>
                         </div>
                         <div class="col-md-10">
                             <input type="text" class="validate-required" name="display_mail" value="{{ old('display_mail') ? old('display_mail') : $user->display_mail }}"
                                 required />
+                                <span><small>This will be your public email.</small></span>
                         </div>
                     </div>
 

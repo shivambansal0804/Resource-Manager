@@ -120,7 +120,14 @@ class StoryController extends Controller
             'status'            => $request->status
         ];
 
-        $story = auth()->user()->story()->where('uuid' , $uuid)->firstOrFail()->update($data);
+        $story = auth()->user()->story()->where('uuid' , $uuid)->firstOrFail();
+        
+        $story->update($data);
+
+        if (isset($request['blog_image'])) {
+            $story->clearMediaCollection('blog_images');
+            $story->addMediaFromRequest('blog_image')->toMediaCollection('blog_images');
+        } 
         
         if($data['status'] == 'pending') 
             $this->callSubmitEvent($uuid);
