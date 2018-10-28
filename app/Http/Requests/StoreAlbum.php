@@ -25,7 +25,7 @@ class StoreAlbum extends FormRequest
     {
         return [
             'name' => 'required|max:255',
-            'cover' => 'mimes:jpeg,jpg,png|required|max:4000'
+            'cover' => 'mimes:jpeg,jpg,png|required|max:1000'
         ];
     }
 }

@@ -97,10 +97,11 @@
                             </div>
                             <div class="hover-element__reveal" data-overlay="9">
                                 <div class="project-thumb__title middle text-center">
-                                    <h5>Name </h5>
+                                    <h5>{{ $item->name }} </h5>
                                     <span>{{ $item->biliner }}</span>
                                     <br>
                                     <span><small>Posted by {{ $item->user->name}}</small></span>
+                                    <br> {{ $item->status }}
                                 </div>
                             </div>
                         </a>
