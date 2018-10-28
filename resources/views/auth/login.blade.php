@@ -16,23 +16,12 @@
 </style>
 @endsection
 @section('content')
-<<<<<<< HEAD
 <section class="cover cover-fullscreen height-100 imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1">
 
     <div class="container pos-vertical-center">
         <div class="row" >
             <div class="login col-md-4 col-lg-4" >
 
-=======
-<section class="height-100 height-100--xs imagebg" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1">
-	<div class="container pos-vertical-center">
-        <div class="row">
-            <div class="col-md-7 col-lg-5">
-                <h2>Login to DTUtimes</h2>
-                <p class="lead">
-                    Welcome back, sign in with your existing Stack account credentials
-                </p>
->>>>>>> b998128923bd00005832b4059ed70a5c8fd8ddc9
                 
 
                 
