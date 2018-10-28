@@ -17,6 +17,7 @@ class CreateImagesTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('album_id')->unsigned();
+            $table->string('slug')->unique();
             $table->text('name')->nullable();
             $table->text('biliner')->nullable();
             $table->enum('status', ['draft', 'pending', 'published']);

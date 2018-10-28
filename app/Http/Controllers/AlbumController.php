@@ -41,6 +41,7 @@ class AlbumController extends Controller
         $album = auth()->user()->album()->create([
             'name'      => $request->name,
             'biliner'   => $request->biliner,
+            'slug'      => str_slug($request->name, "-").'-'.rand(100, 999),
             'album_id'  => isset($request->album_id) ? $request->album_id : NULL,
             'status'    => 'draft'
         ]); 
@@ -103,6 +104,7 @@ class AlbumController extends Controller
         $album->update([
             'name'      => $request->name,
             'biliner'   => $request->biliner,
+            'slug'      => str_slug($request->name, "-").'-'.rand(100, 999),
             'cover'     => $request->cover
         ]);
 
