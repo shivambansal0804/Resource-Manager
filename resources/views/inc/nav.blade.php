@@ -11,7 +11,7 @@
                     <!-- Logo
                     ============================================= -->
                 <div id="logo">
-                        <a href="{{ route('welcome') }}" class="standard-logo" data-dark-logo="img/logo-dark.png"><img src="img/dtulog.png" ></a>
+                        <a href="{{ route('welcome') }}" class="standard-logo" data-dark-logo="{{ asset('img/logo-dark.png') }}"><img src="{{ asset('img/dtulog.png') }}" ></a>
 
                 </div><!-- #logo end -->
 

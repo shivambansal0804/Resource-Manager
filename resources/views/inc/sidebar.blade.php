@@ -41,11 +41,8 @@
                                 <ul class="menu-vertical">
                                     <li>
                                         <a href="{{ route('stories.index')}}">
-<<<<<<< HEAD
-                                            Your Stories
-=======
+
                                             Your stories
->>>>>>> c53b201085e0675ca0e2ec3ee5b1f245e2c8868d
                                         </a>
                                     </li>
                                     <li>
