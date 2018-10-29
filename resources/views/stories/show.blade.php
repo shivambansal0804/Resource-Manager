@@ -1,33 +1,14 @@
 @extends('layouts.app') 
 @section('content')
 
-<section class="cover cover-features imagebg space--lg" data-overlay="2">
-    <div class="background-image-holder">
-        <img src="/img/work-1.jpg" alt="">
-        {{-- <img alt="background" src="{{ $image->getFirstMediaUrl('images', 'fullscreen')}}" /> --}}
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-lg-7">
-                <h1>
-                    {{ $story->title }}
-                </h1>
-                <p class="lead">
-                   {{ $story->biliner }}
-                </p>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
 <section>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
                 <article> 
                     <div class="article__title">
-                        <span>{{ $story->created_at->diffForHumans()}}, </span>
+                        <h1 class="h2">{{ $story->title }}</h1>
+                        Created By <strong>{{$story->user->name}},</strong> {{ $story->created_at->diffForHumans()}}
                         <span class="
                                 @if($story->status == 'draft') text-warning
                                 @elseif($story->status == 'published') text-success
@@ -35,6 +16,17 @@
                             {{ $story->status }}
                         </span>
                     </div>
+
+                    <div class="text-center">
+                        @if ($story->getFirstMediaUrl('blog_images', 'fullscreen'))
+                             <img alt="background" src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" />
+                        @else
+                            <img src="{{ asset('svg/gallery.svg') }}" style="max-width:20rem;" alt="">
+                        @endif
+                       
+                    </div>
+                    
+                    <br>
 
                     <div class="article__body">
                         <p class="small">
@@ -45,7 +37,7 @@
                         </p>
                         @if ($story->status == 'draft')
                         <div>
-                            <a class="btn btn--primary btn--sm" href="{{ route('stories.edit', $story->uuid)}}">
+                            <a class="btn btn--sm" href="{{ route('stories.edit', $story->uuid)}}">
                                 <span class="btn__text">Edit</span>
                             </a>
                             <a class="btn btn--sm" href="{{ route('stories.submit', $story->uuid )}}">

@@ -17,6 +17,7 @@ class CreateAlbumsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('album_id')->unsigned()->nullable();
+            $table->string('slug')->unique();
             $table->text('biliner')->nullable();
             $table->enum('status', ['draft', 'pending', 'published']);
             $table->string('name')->default('New Album');

@@ -47,7 +47,9 @@ class UserController extends Controller
      */
     public function show()
     {
-        return view('users.auth.show');
+        $stories = auth()->user()->story()->where('status', 'published')->get();
+
+        return view('users.auth.show')->withStories($stories);
     }
 
     /**

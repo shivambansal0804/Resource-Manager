@@ -113,6 +113,11 @@ Route::group(['prefix' => 'blog'], function() {
 });
 
 // Gallery routes
+Route::group(['prefix' => 'gallery'], function () {
+    Route::get('/', 'GalleryConntroller@index')->name('gallery.index');
+    Route::get('/{slug}', 'GalleryController@show')->name('gallery.show');
+});
+
 // read
 
 // First Time Login Routes

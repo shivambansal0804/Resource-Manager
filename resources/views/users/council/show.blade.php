@@ -20,9 +20,14 @@
                         <p class="small">
                             <small>{{ $story->biliner }}</small>
                         </p>
+
+                        <div>
+                            <img src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" alt="">
+                        </div>
                         <p>
                             {!! $story->body !!}
                         </p>
+
                         @if ($story->status == 'pending')
                         <div>
                             <a class="btn btn--sm" href="{{ route('council.publish', $story->uuid)}}">

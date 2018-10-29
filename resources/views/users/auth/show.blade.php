@@ -6,7 +6,7 @@
 <section class="switchable feature-large">
     <div class="container">
         <div class="row justify-content-around">
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 text-center">
                 <img alt="Image" class="border--round" src="{{ $user->getFirstMediaUrl('avatars', 'thumb') }}" />
             </div>
             <div class="col-md-7 offset-md-1 col-lg-5">
@@ -84,6 +84,7 @@
     </div>
     <!--end of container-->
 </section>
+
 <section class="text-center height-50">
     <div class="container pos-vertical-center">
         <div class="row">
@@ -98,43 +99,35 @@
     </div>
     <!--end of container-->
 </section>
-<section>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="process-1">
-                    <div class="process__item">
-                        <h4>An idea becomes a budding
-                            <br> hobby business &mdash; 2012</h4>
-                        <img alt="Image" src="img/cowork-3.jpg" class="border--round" />
-                        <p>
-                            Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out,
-                            you'll be making attractive sites faster than any traditional HTML template.
-                        </p>
+
+
+
+
+@if ($stories->count())
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="process-1">
+                        @foreach ($stories as $item)
+                        <div class="process__item">
+                            <h4>{{ $item->title }}
+                                <br> <span><small>{{ $item->created_at->diffForHumans() }}</small></span>
+                            </h4>
+                            
+                            <img alt="Image" src="{{ $item->getFirstMediaUrl('blog_images', 'thumb') }}" class="border--round" />
+                            <p>
+                                {{ $item->biliner }}
+                            </p>
+                        </div>
+                        @endforeach
                     </div>
-                    <div class="process__item">
-                        <h4>Succsessfully funded through
-                            <br> Bray Investments</h4>
-                        <img alt="Image" src="img/cowork-1.jpg" class="border--round" />
-                        <p>
-                            Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out,
-                            you'll be making attractive sites faster than any traditional HTML template.
-                        </p>
-                    </div>
-                    <div class="process__item">
-                        <h4>Posted Profit Q2 2015</h4>
-                        <img alt="Image" src="img/cowork-5.jpg" class="border--round" />
-                        <p>
-                            Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out,
-                            you'll be making attractive sites faster than any traditional HTML template.
-                        </p>
-                    </div>
+                    <!--end process-->
                 </div>
-                <!--end process-->
             </div>
+            <!--end of row-->
         </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
+        <!--end of container-->
+    </section>
+@endif
 @endsection
