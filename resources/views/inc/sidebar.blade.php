@@ -40,14 +40,13 @@
                             <div class="dropdown__content">
                                 <ul class="menu-vertical">
                                     <li>
-                                        <a href="{{ route('stories.index')}}">
-
-                                            Your stories
+                                        <a href="{{ route('stories.create') }}">
+                                            New Story
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('stories.create') }}">
-                                            Create Story
+                                        <a href="{{ route('stories.index')}}">
+                                            Your Stories
                                         </a>
                                     </li>
 
@@ -55,7 +54,7 @@
                                     @if (auth()->user()->can('publish-story'))
                                     <li>
                                         <a href="{{ route('council.stories.index')}}" >
-                                            Pending 
+                                            Pending Stories
                                         </a>
                                     </li> 
                                     @endif
@@ -73,13 +72,13 @@
                                 <ul class="menu-vertical">
                                     <li>
                                         <a href="{{ route('categories.index') }}">
-                                            All categories
+                                            All Categories
                                         </a>
                                     </li>
                                     @if (auth()->user()->can('create-category'))
                                     <li>
                                         <a href="{{ route('categories.create') }}">
-                                            Create
+                                            Create Category
                                         </a>
                                     </li>
                                     @endif
@@ -99,14 +98,14 @@
                                 <ul class="menu-vertical">
                                     <li>
                                         <a href="{{ route('albums.index')}}">
-                                            All
+                                            All Albums
                                         </a>
                                     </li>
 
                                     @if (auth()->user()->can('create-album'))
                                     <li>
                                         <a href="{{ route('albums.create') }}">
-                                            Create 
+                                            Create Album
                                         </a>
                                     </li>
                                     @endif
@@ -114,8 +113,29 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="{{ route('images.me') }}">Images</a>
+                    <li class="dropdown">
+                        <span class="dropdown__trigger">
+                            Album
+                        </span>
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <ul class="menu-vertical">
+                                    <li>
+                                        <a href="{{ route('images.me') }}">
+                                            All
+                                        </a>
+                                    </li>
+
+                                    @if (auth()->user()->can('publish-image'))
+                                    <li>
+                                        <a href="{{ route('albums.create') }}">
+                                            Create Album
+                                        </a>
+                                    </li>
+                                    @endif
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                 @endif
 
