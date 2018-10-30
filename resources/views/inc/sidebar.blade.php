@@ -41,6 +41,7 @@
                                 <ul class="menu-vertical">
                                     <li>
                                         <a href="{{ route('stories.index')}}">
+
                                             Your stories
                                         </a>
                                     </li>
@@ -123,7 +124,7 @@
                 @if (auth()->user()->hasRole('superuser'))
                 <hr>
                 <li class="dropdown">
-                    <span>
+                    <span class="dropdown__trigger">
                         Superuser
                     </span>
                     <div class="dropdown__container">
