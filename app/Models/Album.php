@@ -13,7 +13,7 @@ class Album extends Model implements HasMedia
     use Uuids;
     use HasMediaTrait;
 
-    protected $fillable = ['name', 'user_id', 'uuid', 'album_id', 'status', 'biliner'];
+    protected $fillable = ['name', 'user_id', 'uuid', 'album_id', 'status', 'biliner', 'slug'];
 
     public function registerMediaConversions(Media $media = null)
     {
