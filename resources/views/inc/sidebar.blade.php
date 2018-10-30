@@ -109,15 +109,6 @@
                                         </a>
                                     </li>
                                     @endif
-
-                                    {{-- Publish Story --}}
-                                    @if (auth()->user()->can('publish-album'))
-                                    <li>
-                                        <a href="{{ route('council.stories.index')}}" >
-                                            Pending 
-                                        </a>
-                                    </li> 
-                                    @endif
                                 </ul>
                             </div>
                         </div>

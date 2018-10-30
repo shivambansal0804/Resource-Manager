@@ -164,6 +164,7 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::put('stories/pending/{uuid}', 'User\CouncilController@update')->name('council.update');
         // publish 
         Route::get('stories/pending/{uuid}/publish', 'User\CouncilController@publish')->name('council.publish');
+        
     });
 
     // Stories Routes
