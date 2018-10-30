@@ -38,7 +38,7 @@ class StoryController extends Controller
         $title = 'New Story';
 
         $story = auth()->user()->story()->create([
-            'title' => $title,
+            'title' => '',
             'slug' => str_slug($title, "-").'-'.rand(10, 9999)
         ]);
 

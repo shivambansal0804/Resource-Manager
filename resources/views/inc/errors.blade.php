@@ -1,6 +1,6 @@
 @if ($errors->any())
 <div class="notification  pos-right pos-top" data-animation="from-top" data-autoshow="200">
-    <div class="boxed bg--dark boxed--border border--round box-shadow">
+    <div class="boxed boxed--border border--round box-shadow">
         <div class="text-block">
             <h5>Errors</h5>
             <p>
