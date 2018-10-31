@@ -112,7 +112,10 @@ Route::group(['prefix' => 'blog'], function() {
 
 // Gallery routes
 Route::group(['prefix' => 'gallery'], function () {
+    // Index of Gallery
     Route::get('/', 'GalleryController@index')->name('gallery.index');
+
+    // Gallery show
     Route::get('/{slug}', 'GalleryController@show')->name('gallery.show');
 });
 
