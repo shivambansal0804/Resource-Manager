@@ -128,6 +128,40 @@ class AlbumController extends Controller
         return redirect()->route('albums.show', $album->uuid);
     }
 
+    public function publish($uuid)
+    {
+        $album = Album::whereUuid($uuid)->firstOrFail();
+
+        if ($album->status == 'published') {
+            session()->flash('success', $album->name.', Already Published.');
+            return redirect()->route('albums.show', $album->uuid);
+        }
+        
+        $album->update([
+            'status' => 'published'
+        ]);
+
+        session()->flash('success', $album->name.', Published');
+        return redirect()->route('albums.show', $album->uuid);
+    }
+
+    public function draft($uuid)
+    {
+        $album = Album::whereUuid($uuid)->firstOrFail();
+
+        if ($album->status == 'draft') {
+            session()->flash('success', $album->name.', Already In draft.');
+            return redirect()->route('albums.show', $album->uuid);
+        }
+        
+        $album->update([
+            'status' => 'draft'
+        ]);
+
+        session()->flash('success', $album->name.', saved in drafts.');
+        return redirect()->route('albums.show', $album->uuid);
+    }
+
     /**
      * Remove the specified resource from storage.
      *

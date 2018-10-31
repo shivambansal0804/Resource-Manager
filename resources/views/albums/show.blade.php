@@ -15,29 +15,57 @@
                     {{ $album->biliner }}
                 </p>
                 
-                @if (auth()->user()->can('delete-album'))
-                    <a class="btn btn--sm type--uppercase" href="{{ route('albums.index') }}" onclick="event.preventDefault();
-                        document.getElementById('delete-form').submit();">
+                <div>
+                    <a class="btn btn--sm type--uppercase" href="{{ route('images.create', $album->uuid) }}">
+                        <span class="btn__text">Add Images</span>
+                    </a>
+
+                    <a class="btn btn--sm type--uppercase" href="{{ route('images.index', $album->uuid) }}">
+                        <span class="btn__text">Uploads</span>
+                    </a>
+
+                    @if (auth()->user()->can('publish-album') && $album->status != 'published')
+                    <a class="btn btn--sm type--uppercase" href="{{ route('albums.publish', $album->uuid) }}">
                         <span class="btn__text">
-                            Delete 
+                            Publish
                         </span>
                     </a>
-                    
-                @endif
+                    @endif
 
-                @if (auth()->user()->can('update-album'))
-                    <a class="btn btn--sm type--uppercase" href="{{ route('albums.edit', $album->uuid) }}">
-                    <span class="btn__text">
-                        Edit
-                    </span>
-                </a>
-                @endif
-                <a class="btn btn--sm type--uppercase" href="{{ route('images.create', $album->uuid) }}">
-                    <span class="btn__text">Add Images</span>
-                </a>
-                <a class="btn btn--sm type--uppercase" href="{{ route('images.index', $album->uuid) }}">
-                    <span class="btn__text">Uploads</span>
-                </a>
+                    @if (auth()->user()->can('publish-album') && $album->status == 'published')
+                    
+                    <a class="btn btn--sm type--uppercase" href="{{ route('albums.draft', $album->uuid) }}">
+                        <span class="btn__text">
+                            Save to drafts
+                        </span>
+                    </a>
+                    @endif
+                </div>
+                <p></p>
+
+
+                <div>
+                    @if ($album->status != 'published')
+                        @if (auth()->user()->can('update-album'))
+                            <a class="btn btn--sm type--uppercase" href="{{ route('albums.edit', $album->uuid) }}">
+                            <span class="btn__text">
+                                Edit
+                            </span>
+                        </a>
+                        @endif
+
+                        @if (auth()->user()->can('delete-album'))
+                        <a class="btn btn--sm type--uppercase" href="{{ route('albums.index') }}" onclick="event.preventDefault();
+                            document.getElementById('delete-form').submit();">
+                                <span class="btn__text">
+                                    Delete this Album 
+                                </span>
+                            </a>
+                            
+                        @endif
+                    @endif
+                </div>
+
            
             </div>
             

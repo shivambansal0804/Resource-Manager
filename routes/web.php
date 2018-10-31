@@ -191,9 +191,7 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::put('/{uuid}', 'AlbumController@update')->name('albums.update');
         Route::get('/{uuid}/submit', 'AlbumController@submit')->name('albums.submit');
         Route::delete('/{uuid}', 'AlbumController@destroy')->name('albums.destroy');
-        // publish
         Route::get('/{uuid}/publish', 'AlbumController@publish')->name('albums.publish')->middleware('permission:publish-album');
-        // save back to draft
         Route::get('/{uuid}/draft', 'AlbumController@draft')->name('albums.draft')->middleware('permission:publish-album');
         
         // Images Routes
@@ -209,11 +207,10 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
             Route::put('/{image}', 'ImageController@update')->name('images.update');
             Route::delete('/{image}', 'ImageController@destory')->name('images.destroy');
         });
-
-
     });
 
-    Route::get('/images', 'ImageController@me')->name('images.me')->middleware('role:superuser|council|photographer|coordinator'); // User images
+    Route::get('/uploads', 'ImageController@me')->name('images.me');// User images
+    
 
 
 

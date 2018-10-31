@@ -78,7 +78,7 @@
                                     @if (auth()->user()->can('create-category'))
                                     <li>
                                         <a href="{{ route('categories.create') }}">
-                                            Create Category
+                                            New Category
                                         </a>
                                     </li>
                                     @endif
@@ -105,7 +105,7 @@
                                     @if (auth()->user()->can('create-album'))
                                     <li>
                                         <a href="{{ route('albums.create') }}">
-                                            Create Album
+                                            New Album
                                         </a>
                                     </li>
                                     @endif
@@ -113,15 +113,20 @@
                             </div>
                         </div>
                     </li>
+
+                    <li>
+                        <a href="{{ route('images.me')}}">
+                            All Images
+                        </a>
+                    </li>
                 @endif
 
                 
 
                 @if (auth()->user()->hasRole('superuser'))
-                <hr>
                 <li class="dropdown">
                     <span class="dropdown__trigger">
-                        Superuser
+                        Manage
                     </span>
                     <div class="dropdown__container">
                         <div class="dropdown__content">
@@ -133,12 +138,12 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('users.index') }}">
-                                        All users
+                                        All Users
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ route('users.create') }}">
-                                        Create User
+                                        New User
                                     </a>
                                 </li>
                                 <li>
@@ -166,11 +171,13 @@
                             <div class="dropdown__content">
                                 <ul class="menu-vertical">
                                     <li>
-                                        <a href="{{ route('campaigns.index')}}">All</a>
+                                        <a href="{{ route('campaigns.index')}}">
+                                            All Campaign
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('campaigns.create') }}">
-                                            Create
+                                            New Campaign
                                         </a>
                                     </li>
                                 </ul>
@@ -188,7 +195,7 @@
         </div>
 
 
-        <hr>
+        <br>
         <footer class="footer-3 text-center space--xs ">
             <ul class="social-list list-inline list--hover">
                 <li>
