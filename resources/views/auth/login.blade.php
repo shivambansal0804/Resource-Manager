@@ -38,8 +38,8 @@
                             <span>Remember me</span>
 
                             <br>
-                            <span class="type--fine-print block" >Forgot your username or password?
-                                <a href="http://dtutimes.me/password/email">Recover account</a>
+                            <span class="type--fine-print block" >Forgot password?
+                                <a href="{{ route('password.request') }}">Recover account</a>
                             </span>
 
                         </div>

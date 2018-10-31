@@ -5,7 +5,6 @@
 @endsection
  
 @section('content')
-
 <section id="" class="">
     <div class="container">
         <div class="row justify-content-center">
