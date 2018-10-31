@@ -147,6 +147,7 @@ class StoryController extends Controller
     {
         $story = auth()->user()->story()->whereUuid($uuid)->firstOrFail();
         $title = $story->title;
+        $story->clearMediaCollection('blog_images');
         
         $story->delete();
 

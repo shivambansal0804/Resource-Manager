@@ -108,8 +108,6 @@ Route::group(['prefix' => 'blog'], function() {
     
     // Single Story Route
     Route::get('/{slug}', 'BlogController@show')->name('blog.show');
-    
-    
 });
 
 // Gallery routes

@@ -41,7 +41,7 @@
                         <div class="widget subscribe-widget clearfix dark" style="margin:30px 0; width:300px; display:inline-block;">
                             <h5 style="text-align:center;"><strong>Subscribe</strong> to Our Newsletter:</h5>
                             <div class="widget-subscribe-form-result" style="display:inline-block;"></div>
-                            <form id="widget-subscribe-form" action="" role="form" method="post" class="nobottommargin">
+                            <form id="widget-subscribe-form" action="{{ route('subscribers.join') }}" role="form" method="post" class="nobottommargin">
                                 <div class="input-group divcenter" style="margin-top:-20px;">
                                     <span class="input-group-addon"><i class="icon-email2"></i></span>
                                     <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
