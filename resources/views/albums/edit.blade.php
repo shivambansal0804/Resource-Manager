@@ -24,7 +24,7 @@
                             </div>
                             <div class="col-md-12">
                                 <label>Biliner</label>
-                                <input type="text" name="biliner" placeholder="Biliner" class="validate-required" value="{{ old('biliner') ? old('biliner') : '' }}"
+                                <input type="text" name="biliner" placeholder="Biliner" class="validate-required" value="{{ old('biliner') ? old('biliner') : $album->biliner }}"
                                     />
                             </div>
 

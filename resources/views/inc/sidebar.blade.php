@@ -113,30 +113,6 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown">
-                        <span class="dropdown__trigger">
-                            Album
-                        </span>
-                        <div class="dropdown__container">
-                            <div class="dropdown__content">
-                                <ul class="menu-vertical">
-                                    <li>
-                                        <a href="{{ route('images.me') }}">
-                                            All
-                                        </a>
-                                    </li>
-
-                                    @if (auth()->user()->can('publish-image'))
-                                    <li>
-                                        <a href="{{ route('albums.create') }}">
-                                            Create Album
-                                        </a>
-                                    </li>
-                                    @endif
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
                 @endif
 
                 
