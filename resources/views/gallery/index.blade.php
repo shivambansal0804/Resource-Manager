@@ -194,7 +194,7 @@
                         <div class="row dark clearfix">
                             @foreach ($albums as $item)
                                 <div class="col-sm-4 center">
-                                    <a href="gallery sodtu.html">
+                                    <a href="{{gallery.show}}">
                                         <div style="margin: 0 auto;max-width: 235px; height: 300px; padding: 25px; background: url('{{ asset('img/gallery/thumbnails/album-bg.svg') }}') no-repeat center center; background-size: 100%;">
                                             <img src="{{ $item->getFirstMediaUrl('covers', 'cover')}}" alt="img01" style="" />
                                         </div>
