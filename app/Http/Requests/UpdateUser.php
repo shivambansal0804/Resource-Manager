@@ -33,7 +33,7 @@ class UpdateUser extends FormRequest
             'facebook' => 'required',
             'instagram' => 'required',
             'display_mail' => 'required',
-            'avatar' => 'mimes:jpeg,jpg,png|required|max:1000'
+            'avatar' => 'mimes:jpeg,jpg,png|max:1000'
         ];
     }
 }

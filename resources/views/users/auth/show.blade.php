@@ -47,6 +47,14 @@
                             </a>
                         </li>
                     </ul>
+
+                    <div>
+                        <a href="{{ route('me.edit') }}" class="btn btn--sm">
+                            <span class="btn__text">
+                                Edit info
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div> 
         </div>

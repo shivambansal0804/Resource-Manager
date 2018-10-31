@@ -58,9 +58,9 @@ class UserController extends Controller
      * @param
      * @return \Illuminate\Http\Response
      */
-    public function edit($uuid)
+    public function edit()
     {
-        // 
+        return view('users.auth.edit');
     }
 
     /**

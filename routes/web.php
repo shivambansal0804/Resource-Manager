@@ -132,8 +132,9 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
     Route::get('/me', 'User\UserController@show')->name('me.show');
-    // Categories Routes 
+    Route::get('/me/edit', 'User\UserController@edit')->name('me.edit');
 
+    // Categories Routes 
         // Create Category
         Route::middleware('permission:create-category')->group(function () {
             Route::get('/categories/create', 'CategoryController@create')->name('categories.create');
