@@ -40,13 +40,13 @@
                             <div class="dropdown__content">
                                 <ul class="menu-vertical">
                                     <li>
-                                        <a href="{{ route('stories.index')}}">
-                                            Your stories
+                                        <a href="{{ route('stories.create') }}">
+                                            New Story
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('stories.create') }}">
-                                            Create Story
+                                        <a href="{{ route('stories.index')}}">
+                                            Your Stories
                                         </a>
                                     </li>
 
@@ -54,7 +54,7 @@
                                     @if (auth()->user()->can('publish-story'))
                                     <li>
                                         <a href="{{ route('council.stories.index')}}" >
-                                            Pending 
+                                            Pending Stories
                                         </a>
                                     </li> 
                                     @endif
@@ -72,13 +72,13 @@
                                 <ul class="menu-vertical">
                                     <li>
                                         <a href="{{ route('categories.index') }}">
-                                            All categories
+                                            All Categories
                                         </a>
                                     </li>
                                     @if (auth()->user()->can('create-category'))
                                     <li>
                                         <a href="{{ route('categories.create') }}">
-                                            Create
+                                            New Category
                                         </a>
                                     </li>
                                     @endif
@@ -98,42 +98,35 @@
                                 <ul class="menu-vertical">
                                     <li>
                                         <a href="{{ route('albums.index')}}">
-                                            All
+                                            All Albums
                                         </a>
                                     </li>
 
                                     @if (auth()->user()->can('create-album'))
                                     <li>
                                         <a href="{{ route('albums.create') }}">
-                                            Create 
+                                            New Album
                                         </a>
                                     </li>
-                                    @endif
-
-                                    {{-- Publish Story --}}
-                                    @if (auth()->user()->can('publish-album'))
-                                    <li>
-                                        <a href="{{ route('council.stories.index')}}" >
-                                            Pending 
-                                        </a>
-                                    </li> 
                                     @endif
                                 </ul>
                             </div>
                         </div>
                     </li>
+
                     <li>
-                        <a href="{{ route('images.me') }}">Images</a>
+                        <a href="{{ route('images.me')}}">
+                            All Images
+                        </a>
                     </li>
                 @endif
 
                 
 
                 @if (auth()->user()->hasRole('superuser'))
-                <hr>
                 <li class="dropdown">
-                    <span>
-                        Superuser
+                    <span class="dropdown__trigger">
+                        Manage
                     </span>
                     <div class="dropdown__container">
                         <div class="dropdown__content">
@@ -145,12 +138,12 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('users.index') }}">
-                                        All users
+                                        All Users
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ route('users.create') }}">
-                                        Create User
+                                        New User
                                     </a>
                                 </li>
                                 <li>
@@ -178,11 +171,13 @@
                             <div class="dropdown__content">
                                 <ul class="menu-vertical">
                                     <li>
-                                        <a href="{{ route('campaigns.index')}}">All</a>
+                                        <a href="{{ route('campaigns.index')}}">
+                                            All Campaign
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('campaigns.create') }}">
-                                            Create
+                                            New Campaign
                                         </a>
                                     </li>
                                 </ul>
@@ -200,7 +195,7 @@
         </div>
 
 
-        <hr>
+        <br>
         <footer class="footer-3 text-center space--xs ">
             <ul class="social-list list-inline list--hover">
                 <li>

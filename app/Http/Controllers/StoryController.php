@@ -38,7 +38,7 @@ class StoryController extends Controller
         $title = 'New Story';
 
         $story = auth()->user()->story()->create([
-            'title' => $title,
+            'title' => '',
             'slug' => str_slug($title, "-").'-'.rand(10, 9999)
         ]);
 
@@ -147,6 +147,7 @@ class StoryController extends Controller
     {
         $story = auth()->user()->story()->whereUuid($uuid)->firstOrFail();
         $title = $story->title;
+        $story->clearMediaCollection('blog_images');
         
         $story->delete();
 

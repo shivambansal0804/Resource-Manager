@@ -50,6 +50,20 @@
         <script src="{{ asset('js/app/smooth-scroll.min.js') }}"></script>
         <script src="{{ asset('js/app/scripts.js') }}"></script>
 
+        <script>
+            $(document).ready(function () {
+                $('.tab__content section.switchable').mouseenter(function () {
+                    $(this).append('<div class="switchable-toggle label">Switch Sides</div>');
+                });
+                $('.tab__content section.switchable').mouseleave(function () {
+                    $(this).find('.switchable-toggle').remove();
+                });
+                $(document).on('click', '.switchable-toggle', function () {
+                    $(this).closest('section').toggleClass('switchable--switch');
+                });
+            });
+        </script>
+
         {{-- Page Scripts --}}
         @yield('scripts')
 </body>

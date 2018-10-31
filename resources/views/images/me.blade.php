@@ -25,7 +25,7 @@
                 @if($item->album)
                     <div class="col-md-4 col-12 masonry__item" data-masonry-filter="{{ $item->album->name }}">
                         <div class="project-thumb hover-element height-40">
-                            <a href="#">
+                            <a href="{{ route('images.show', [$item->album->uuid, $item->uuid] ) }}">
                                 <div class="hover-element__initial">
                                     <div class="background-image-holder">
                                         <img alt="background" src="{{ $item->getFirstMediaUrl('images', 'fullscreen') }}" />

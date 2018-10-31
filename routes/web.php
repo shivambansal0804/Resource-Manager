@@ -108,13 +108,14 @@ Route::group(['prefix' => 'blog'], function() {
     
     // Single Story Route
     Route::get('/{slug}', 'BlogController@show')->name('blog.show');
-    
-    
 });
 
 // Gallery routes
 Route::group(['prefix' => 'gallery'], function () {
-    Route::get('/', 'GalleryConntroller@index')->name('gallery.index');
+    // Index of Gallery
+    Route::get('/', 'GalleryController@index')->name('gallery.index');
+
+    // Gallery show
     Route::get('/{slug}', 'GalleryController@show')->name('gallery.show');
 });
 
@@ -164,6 +165,7 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::put('stories/pending/{uuid}', 'User\CouncilController@update')->name('council.update');
         // publish 
         Route::get('stories/pending/{uuid}/publish', 'User\CouncilController@publish')->name('council.publish');
+        
     });
 
     // Stories Routes
@@ -189,6 +191,8 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::put('/{uuid}', 'AlbumController@update')->name('albums.update');
         Route::get('/{uuid}/submit', 'AlbumController@submit')->name('albums.submit');
         Route::delete('/{uuid}', 'AlbumController@destroy')->name('albums.destroy');
+        Route::get('/{uuid}/publish', 'AlbumController@publish')->name('albums.publish')->middleware('permission:publish-album');
+        Route::get('/{uuid}/draft', 'AlbumController@draft')->name('albums.draft')->middleware('permission:publish-album');
         
         // Images Routes
         Route::group(['prefix' => '{uuid}/images', 'middleware' => 'CheckAlbum'], function() {
@@ -198,16 +202,15 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
             Route::get('/{image}', 'ImageController@show')->name('images.show');
             Route::get('/{image}/edit', 'ImageController@edit')->name('images.edit');
             Route::get('/{image}/submit', 'ImageController@submit')->name('images.submit');
-            Route::get('/{image}/draft', 'ImageController@draft')->name('images.draft');
-            Route::get('/{image}/publish', 'ImageController@publish')->name('images.publish');
+            Route::get('/{image}/draft', 'ImageController@draft')->name('images.draft')->middleware('permission:publish-image');
+            Route::get('/{image}/publish', 'ImageController@publish')->name('images.publish')->middleware('permission:publish-image');
             Route::put('/{image}', 'ImageController@update')->name('images.update');
             Route::delete('/{image}', 'ImageController@destory')->name('images.destroy');
         });
-
-
     });
 
-    Route::get('/images', 'ImageController@me')->name('images.me'); // User images
+    Route::get('/uploads', 'ImageController@me')->name('images.me');// User images
+    
 
 
 

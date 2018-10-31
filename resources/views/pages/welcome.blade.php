@@ -1,11 +1,249 @@
-@extends('layouts.main') 
-@section('title')
-<title>DTU Times</title>
-@endsection
-@section('links')
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-@endsection 
-@section('content') 
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>DTU Times</title>
+
+{{-- Theme css --}}
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+            rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/main/bootstrap.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/main/style.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/main/dark.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/main/font-icons.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/main/animate.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/main/magnific-popup.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/main/responsive.css') }}" type="text/css" />
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+		<style>
+				::-webkit-scrollbar {
+				display: none;
+				}
+				.modal{
+			  display:none;
+			  position: fixed;
+			  z-index:200;
+			  left: 0;
+			  top:0;
+				height:100%;
+			  width:100%;
+			  overflow: auto;
+			  background-color: rgba(0,0,0,0.5);
+			}
+
+			.modal-content{
+				position:sticky;
+			  background-color:#f4f4f4;
+			  margin: 7% auto;
+				width: 90%;
+			  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+			  animation-name:modalopen;
+			  animation-duration:1s;
+			}
+
+			.modal-header h2, .modal-footer h3{
+			  margin:0;
+			}
+
+			.modal-header{
+			  background:black;
+			  padding:15px;
+			  color:white;
+			}
+
+			.modal-body{
+			  padding:10px 20px;
+			}
+
+			.modal-footer{
+			  background:white;
+			  padding:10px;
+			  color:black;
+			  text-align: center;
+			}
+
+			.closeBtn{
+			  color:#ccc;
+			  float: right;
+			  font-size:30px;
+			  color:#fff;
+			}
+
+			.closeBtn:hover,.closeBtn:focus{
+			  color:red;
+			  text-decoration: none;
+			  cursor:pointer;
+			}
+
+			@keyframes modalopen{
+			  from{ opacity: 0}
+			  to {opacity: 1}
+			}
+			@media (min-width: 530px) {
+				.resp_width {
+			    width: 65%;
+			  }
+			}
+			@media (min-width: 800px) {
+			  .modal-content {
+			    width: 75%;
+					height: 85%
+			  }
+				.resp_width {
+			    width: 65%;
+			  }
+				.modal{
+					overflow:hidden;
+				}
+			}
+			@media (min-width: 992px) {
+			  .modal-content {
+			    width: 60%;
+					height: 85%;
+			  }
+				.resp_width {
+			    width: 65%;
+			  }
+				.modal{
+					overflow:hidden;
+				}
+			}
+			@media (min-width: 1200px) {
+			  .modal-content {
+			    width: 50%;
+					height: 80%;
+			  }
+				.resp_width {
+			    width: 65%;
+			  }
+				.modal{
+					overflow:hidden;
+				}
+			}
+	</style>
+</head> 
+
+<body class="stretched">
+        <!-- Document Wrapper
+    ============================================= -->
+        <div id="wrapper" class="clearfix">
+            <!-- modal -->
+
+            <div id="simpleModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                            <span class="closeBtn" style="margin-top:-15px;">&times;</span>
+                            <h1 style="text-align:center; color:#EEE; font-variant:small-caps; margin:0;">Sign up to keep in touch</h1>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="widget subscribe-widget clearfix resp_width" style="margin:15px auto 30px auto;">
+                            <h5 style="text-align:center;"><strong>Subscribe</strong> to Our Newsletter:</h5>
+                            <div class="widget-subscribe-form-result" style="margin-top:-10px;"></div>
+                            <form id="widget-subscribe-form" action="" role="form" method="post" class="nobottommargin">
+                                <div class="input-group divcenter" style="">
+                                    <span class="input-group-addon"><i class="icon-email2"></i></span>
+                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="submit" style="background-color:#1ABC9C;">Subscribe</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="margin:0 20px 20px 20px;">
+                        <h4 style="margin:0;">More ways to stay connected: </h4>
+                        <br><br>
+                        <div class="row clear-bottommargin">
+                            <div class="col-md-4 col-sm-4 col-xs-12 clearfix height-xs">
+                                <div class="feature-box fbox-center fbox-bg fbox-plain" style="padding-top:30px;">
+                                    <div class="fbox-icon">
+                                        <a href="mailto:dtutimes@dtu.ac.in"><i class="icon-email2"></i></a>
+                                    </div>
+                                    <h3>Email Us <br><span class="subtitle">dtutimes@dtu.ac.in</span></h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-12 clearfix height-xs">
+                                <div class="feature-box fbox-center fbox-bg fbox-plain" style="padding-top:30px;">
+                                    <div class="fbox-icon">
+                                        <a href="https://www.facebook.com/dtutimes"><i class="icon-facebook2"></i></a>
+                                    </div>
+                                    <h3>Follow us on Facebook<span class="subtitle">21K Likes</span></h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-12 clearfix height-xs">
+                                <div class="feature-box fbox-center fbox-bg fbox-plain" style="padding-top:30px;">
+                                    <div class="fbox-icon">
+                                        <a href="http://www.instagram.com/dtu_times"><i class="icon-instagram2"></i></a>
+                                    </div>
+                                    <h3>Follow us on Instagram<span class="subtitle">3.3K Followers</span></h3>
+                                </div>
+                            </div>
+
+                        </div><!-- Contact Info End -->
+                </div>
+
+            </div>
+        </div>
+        <!-- modal end -->
+
+        <!-- Header
+        ============================================= -->
+<header id="header" class="transparent-header dark full-header sticky">
+
+        <div id="header-wrap">
+
+            <div class="container clearfix">
+
+                <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                <div id="logo">
+                        <a href="{{ route('welcome') }}" class="standard-logo" data-dark-logo="img/logo-dark.png"><img src="img/dtulog.png" ></a>
+
+                </div><!-- #logo end -->
+
+                                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu">
+
+                        <ul>
+                            <li><a href="{{ route('welcome') }}"><div>Home</div></a>
+                            </li>
+                                
+                            <li class="mega-menu"><a href="{{ route('about') }}"><div>About Us</div></a>
+                            </li>
+                                
+                            <li class="mega-menu"><a href="{{ route('editions') }}"><div>Editions</div></a>
+                            </li>
+                                                        <li><a href="{{ route('blog.index') }}"><div>Blog</div></a>
+                            </li>
+                            
+                            <li><a href="gallery.html"><div>Gallery</div></a>
+                            </li>
+                                            
+                            <li><a href="{{ route('team') }}"><div>Team</div></a>
+                            </li>
+                             <li><a href="{{ route('contact') }}"><div>Contact Us</div></a>
+                            </li>                       
+
+                        </ul>
+                        
+
+                     </nav><!-- #primary-menu end -->
+
+
+            </div>
+
+        </div>
+
+</header><!-- #header end -->
 
 <section id="slider" class="force-full-screen full-screen">
 
@@ -414,9 +652,125 @@ Read on as Hitee Singh, 1st Year MBA writes about how unbiased storytelling can 
 
 		</section><!-- #content end -->
 
-@endsection
+	 <footer id="footer"  class="footer">
 
-@section('scripts')
+
+            <div id="copyrights" style="background-color:#111111;">
+                <div class="footer-content" >
+                            <div class="container">
+                                    <div class="row" style="margin:auto; text-align:center;">
+
+                                        <div class="footer-col col-md-5 col-sm-6 col-xs-12" style="display:inline-block; box-sizing:border-box;">
+                                                <div class="footer-col-inner">
+                                                    <div class="footer-col-inner" style="text-align:justify;">
+                                                            <h3 style="color:white; text-align:center;">About</h3>
+                                                            <p style="margin-top:45px;">DTU Times is the Official Newsletter of Delhi Technological University, formerly known as Delhi College of Engineering.<br>
+                                                            We warmly welcome you to the revamped DTU Times Website. Explore the various sections, browse the blog or scan out the archive. You are sure to find content to suit your appetite, and more. There’s something in store for everyone!</p>
+
+                                                    </div>
+                                                </div><!--//footer-col-inner-->
+                                        </div>
+
+                                    <div class="footer-col col-md-7 col-sm-6 col-sm-pull-0 col-xs-12" style="display:inline-block; box-sizing:border-box;">
+                                            <div class="footer-col-inner" style="text-align:center;">
+                                                <h3 style="color:white;">Connect with us</h3>
+
+                                                    <div class="footer-col col-md-7 col-mf-offset-1 col-sm-7 col-xs-12 col-xs-offset-0" style=" box-sizing:border-box;">
+                                                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdtutimes&tabs&width=270&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="270" height="130" style="border:none;overflow:auto;margin:20px 0px;display:inline-block;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                                                    </div>
+                                            </div><!--//footer-col-inner-->
+
+                                            <!-- InstaWidget -->
+                                            <div class="footer-col col-md-5 col-sm-5 col-xs-12" style="text-align:center; margin-top:0px; padding:0px; box-sizing:border-box;">
+                                                <a style="display:inline-block;" href="https://instawidget.net/v/user/dtu_times" id="link-61708c0555b801885f4641cb4a7da195bb8fa5c93906abdfe397b99cf9ae6706">@dtu_times</a>
+                                                <script src="https://instawidget.net/js/instawidget.js?u=61708c0555b801885f4641cb4a7da195bb8fa5c93906abdfe397b99cf9ae6706&width=170px"></script>
+                                            </div>
+
+                                    </div><!--//foooter-col-->
+                                    </div>
+                                    </div>
+                    </div><!--//footer-content-->
+
+                    <div class="bottom-bar" style="text-align:center;">
+                        <div class="widget subscribe-widget clearfix dark" style="margin:30px 0; width:300px; display:inline-block;">
+                            <h5 style="text-align:center;"><strong>Subscribe</strong> to Our Newsletter:</h5>
+                            <div class="widget-subscribe-form-result" style="display:inline-block;"></div>
+                            <form id="widget-subscribe-form" action="" role="form" method="post" class="nobottommargin">
+                                <div class="input-group divcenter" style="margin-top:-20px;">
+                                    <span class="input-group-addon"><i class="icon-email2"></i></span>
+                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="submit" style="background-color:#1ABC9C;">Subscribe</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+
+                            <div class="container" style="margin-top:30px">
+                                            <small class="copyright col-md-12 col-sm-12 col-xs-12" style="color:white; text-align:center;">Copyright &copy; 2018 DTU Times</small>
+                            </div><!--//container-->
+                    </div><!--//bottom-bar-->
+
+
+                </div><!-- #copyrights end -->
+
+
+            </footer>
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+        {{-- Theme Scripts --}}
+    <!-- External JavaScripts
+    ============================================= -->
+    <!-- External JavaScripts
+    ============================================= -->
+    <script type="text/javascript" src="js/main/jquery.js"></script>
+    <script type="text/javascript" src="js/main/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="js/main/functions.js"></script>
+
+
+
+
+<script>
+			$(document).ready(function(){
+					setTimeout(function(){
+						PopUp();
+					},5000); // 5000 to load it after 5 seconds from page load
+			});
+
+			// Get modal element
+			var modal = document.getElementById('simpleModal');
+			// Get close button
+			var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+			// Listen for close click
+			closeBtn.addEventListener('click', closeModal);
+			// Listen for outside click
+			window.addEventListener('click', outsideClick);
+
+			// Function to open modal
+			function PopUp(){
+			  modal.style.display = 'block';
+			}
+
+			// Function to close modal
+			function closeModal(){
+			  modal.style.display = 'none';
+			}
+
+			// Function to close modal if outside click
+			function outsideClick(e){
+			  if(e.target == modal){
+			    modal.style.display = 'none';
+			  }
+			}
+</script>
 
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	
@@ -439,5 +793,5 @@ mainVideo.mediaelementplayer();
         
         
 </script>
-
-@endsection
+</body>
+</html>

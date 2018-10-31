@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-8">
                 <h1>
-                    Welcome To DTUtimes
+                    Welcome To DTU Times
                 </h1>
                 <p class="lead">
                     Stack offers a clean and contemporary look to suit a range of purposes from corporate, tech startup, marketing site to digital
@@ -16,7 +16,7 @@
                 </p>
                 <a class="btn btn--primary type--uppercase" href="#update-section" data-scroll>
                     <span class="btn__text">
-                        Update your info
+                        Update Your Info
                     </span>
                 </a>
             </div>
@@ -154,6 +154,4 @@
     <!--end of container-->
 </section>
 
-
-<p>data_of_birth: {{$user->data_of_birth}} </p>
 @endsection

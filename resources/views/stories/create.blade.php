@@ -5,7 +5,6 @@
 @endsection
  
 @section('content')
-
 <section id="" class="">
     <div class="container">
         <div class="row justify-content-center">
@@ -15,7 +14,7 @@
                     @csrf @method('PUT')
 
                     <div class="col-md-12">
-                        <input type="text" class="custom__input custom__input--text size--1" placeholder="New Story" autocomplete="off" name="title"
+                        <input type="text" class="custom__input custom__input--text size--1" placeholder="Give this story some title" autocomplete="off" name="title"
                             value="{{ old('title') ? old('title'): $story->title }}" required>
                     </div>
 
