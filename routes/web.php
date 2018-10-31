@@ -189,9 +189,9 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::get('/{uuid}/submit', 'AlbumController@submit')->name('albums.submit');
         Route::delete('/{uuid}', 'AlbumController@destroy')->name('albums.destroy');
         // publish
-        Route::get('/{uuid}/publish', 'AlbumController@publish')->name('albums.publish')->middleware('permission:album-publish');
+        Route::get('/{uuid}/publish', 'AlbumController@publish')->name('albums.publish')->middleware('permission:publish-album');
         // save back to draft
-        Route::get('/{uuid}/draft', 'AlbumController@draft')->name('albums.draft')->middleware('permission:album-publish');
+        Route::get('/{uuid}/draft', 'AlbumController@draft')->name('albums.draft')->middleware('permission:publish-album');
         
         // Images Routes
         Route::group(['prefix' => '{uuid}/images', 'middleware' => 'CheckAlbum'], function() {
@@ -201,8 +201,8 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
             Route::get('/{image}', 'ImageController@show')->name('images.show');
             Route::get('/{image}/edit', 'ImageController@edit')->name('images.edit');
             Route::get('/{image}/submit', 'ImageController@submit')->name('images.submit');
-            Route::get('/{image}/draft', 'ImageController@draft')->name('images.draft')->middleware('permission:image-publish');
-            Route::get('/{image}/publish', 'ImageController@publish')->name('images.publish')->middleware('permission:image-publish');
+            Route::get('/{image}/draft', 'ImageController@draft')->name('images.draft')->middleware('permission:publish-image');
+            Route::get('/{image}/publish', 'ImageController@publish')->name('images.publish')->middleware('permission:publish-image');
             Route::put('/{image}', 'ImageController@update')->name('images.update');
             Route::delete('/{image}', 'ImageController@destory')->name('images.destroy');
         });
