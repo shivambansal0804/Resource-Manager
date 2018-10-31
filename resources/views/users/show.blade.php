@@ -15,20 +15,26 @@
                     </div>
                     <div class="text-block clearfix text-center">
                         <ul class="row row--list">
-                            <li class="col-md-4">
-                                <span class="type--fine-print block">Location</span>
-                                <span>San Francisco&nbsp;</span>
-                            </li>
-                            <li class="col-md-4">
+                            <li class="col-md-6">
                                 <span class="type--fine-print block">Joined </span>
                                 <span>{{ $user->created_at->diffForHumans() }}</span>
                             </li>
-                            <li class="col-md-4">
+                            <li class="col-md-6">
                                 <span class="type--fine-print block">Contact</span>
                                 <a href="#">{{ $user->email }}</a>
                             </li>
                     </div>
                     </ul>
+                </div>
+                <div class="boxed bg--none text-center">
+                    <a href="{{ route('users.index') }}" class="btn btn--sm btn--primary" onclick="event.preventDefault(); 
+                                                document.getElementById('delete-form').submit();">
+                        <span class="btn__text">Delete User</span>
+                    </a>
+
+                    <form id="delete-form" action="{{route('users.destroy', $user->uuid)}}" method="post">
+                        @csrf @method('DELETE')
+                    </form>
                 </div>
                 <div class="boxed text-center">
                     <ul class="social-list list-inline list--hover">
