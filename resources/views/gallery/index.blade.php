@@ -1,38 +1,39 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>DTU Times Gallery</title>
 
-        {{-- Theme css --}}
-        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
-            rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/bootstrap.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/style.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/dark.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/font-icons.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/animate.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/magnific-popup.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/responsive.css') }}" type="text/css" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="{{ asset('css/main/swiper.css') }}" type="text/css" />
+    <title>DTU Times Gallery</title>
 
-        <link rel="stylesheet" href="{{ asset('css/main/photography.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/photography-addons.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/et-line.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/phot%20fonts.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('css/main/colors.php?color=c85e51') }}" type="text/css" />
-        {{-- Page css --}}
-        
-    </head>
-    <body class="stretched">
-        <!-- Document Wrapper
+    {{-- Theme css --}}
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/bootstrap.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/dark.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/font-icons.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/animate.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/magnific-popup.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/responsive.css') }}" type="text/css" />
+
+    <link rel="stylesheet" href="{{ asset('css/main/swiper.css') }}" type="text/css" />
+
+    <link rel="stylesheet" href="{{ asset('css/main/photography.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/photography-addons.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/et-line.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/phot%20fonts.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main/colors.php?color=c85e51') }}" type="text/css" /> {{-- Page css --}}
+
+</head>
+
+<body class="stretched">
+    <!-- Document Wrapper
     ============================================= -->
-        <div id="wrapper" class="clearfix">
-            <header id="header" class="dark full-header sticky">
+    <div id="wrapper" class="clearfix">
+        <header id="header" class="dark full-header sticky">
 
             <div id="header-wrap">
 
@@ -40,48 +41,72 @@
 
                     <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-                        <!-- Logo
+                    <!-- Logo
                         ============================================= -->
                     <div id="logo">
-                            <a href="{{ route('welcome') }}" class="standard-logo" data-dark-logo="{{ asset('img/logo-dark.png') }}"><img src="{{ asset('img/dtulog.png') }}" ></a>
-
-                    </div><!-- #logo end -->
-
-                                        <!-- Primary Navigation
-                        ============================================= -->
-                        <nav id="primary-menu">
-
-                            <ul>
-                                <li><a href="{{ route('welcome') }}"><div>Home</div></a>
-                                </li>
-                                    
-                                <li class="mega-menu"><a href="{{ route('about') }}"><div>About Us</div></a>
-                                </li>
-                                    
-                                <li class="mega-menu"><a href="{{ route('editions') }}"><div>Editions</div></a>
-                                </li>
-                                                            <li><a href="{{ route('blog.index') }}"><div>Blog</div></a>
-                                </li>
-                                
-                                <li><a href="{{ route('gallery.index') }}"><div>Gallery</div></a>
-                                </li>
-                                                
-                                <li><a href="{{ route('team') }}"><div>Team</div></a>
-                                </li>
-                                 <li><a href="{{ route('contact') }}"><div>Contact Us</div></a>
-                                </li>                       
-
-                            </ul>
-                            
-
-                         </nav><!-- #primary-menu end -->
-
+                        <a href="{{ route('welcome') }}" class="standard-logo" data-dark-logo="{{ asset('img/logo-dark.png') }}"><img src="{{ asset('img/dtulog.png') }}" ></a>
 
                     </div>
+                    <!-- #logo end -->
+
+                    <!-- Primary Navigation
+                        ============================================= -->
+                    <nav id="primary-menu">
+
+                        <ul>
+                            <li>
+                                <a href="{{ route('welcome') }}">
+                                    <div>Home</div>
+                                </a>
+                            </li>
+
+                            <li class="mega-menu">
+                                <a href="{{ route('about') }}">
+                                    <div>About Us</div>
+                                </a>
+                            </li>
+
+                            <li class="mega-menu">
+                                <a href="{{ route('editions') }}">
+                                    <div>Editions</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('blog.index') }}">
+                                    <div>Blog</div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{{ route('gallery.index') }}">
+                                    <div>Gallery</div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{{ route('team') }}">
+                                    <div>Team</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('contact') }}">
+                                    <div>Contact Us</div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                    </nav>
+                    <!-- #primary-menu end -->
+
 
                 </div>
 
-            </header><!-- #header end -->
+            </div>
+
+        </header>
+        <!-- #header end -->
 
 
         <!-- Slider
@@ -95,9 +120,9 @@
                             <div class="slider-text">
 
                                 <h3>Serenity Symbolised</h3>
-                            
 
-                                
+
+
 
                             </div>
                         </div>
@@ -107,9 +132,9 @@
                             <div class="slider-text">
 
                                 <h3>Delhi's Largest Events</h3>
-                                
 
-                                
+
+
                                 <span></span>
 
                             </div>
@@ -120,7 +145,7 @@
                             <div class="slider-text">
 
                                 <h3>International Stars</h3>
-                                
+
 
                             </div>
                         </div>
@@ -130,7 +155,7 @@
                             <div class="slider-text">
 
                                 <h3>Beautiful by Nature</h3>
-                                
+
 
 
                             </div>
@@ -141,9 +166,9 @@
                             <div class="slider-text">
 
                                 <h3>Budding Athletes Galore</h3>
-                                
 
-                            
+
+
                                 <span></span>
 
                             </div>
@@ -154,9 +179,9 @@
                             <div class="slider-text">
 
                                 <h3>The Crown of DTU</h3>
-                                
 
-                                
+
+
                                 <span></span>
 
                             </div>
@@ -165,12 +190,16 @@
                 </div>
                 <div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
                 <div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
-                <div id="slide-number"><div id="slide-number-current"></div><span></span><div id="slide-number-total"></div></div>
+                <div id="slide-number">
+                    <div id="slide-number-current"></div><span></span>
+                    <div id="slide-number-total"></div>
+                </div>
             </div>
 
             <a href="#" data-scrollto="#content" data-offset="0" class="dark one-page-arrow"><i class="icon-line-grid"></i></a>
 
-        </section><!-- #Slider End -->
+        </section>
+        <!-- #Slider End -->
 
         <!-- Content
         ============================================= -->
@@ -193,14 +222,14 @@
                         </div>
                         <div class="row dark clearfix">
                             @foreach ($albums as $item)
-                                <div class="col-sm-4 center">
-                                    <a href="{{ route('gallery.show', $item->slug ) }}">
-                                        <div style="margin: 0 auto;max-width: 235px; height: 300px; padding: 25px; background: url('{{ asset('img/gallery/thumbnails/album-bg.svg') }}') no-repeat center center; background-size: 100%;">
-                                            <img src="{{ $item->getFirstMediaUrl('covers', 'cover')}}" alt="img01" style="" />
-                                        </div>
-                                        <h5 class="ls1 t400">{{ $item->name }}</h5>
-                                    </a>
-                                </div>
+                            <div class="col-sm-4 center">
+                                <a href="{{ route('gallery.show', $item->slug ) }}">
+                                    <div style="margin: 0 auto;max-width: 235px; height: 300px; padding: 25px; background-size: 100%;">
+                                        <img src="{{ $item->getFirstMediaUrl('covers', 'cover')}}" alt="img01" style="" />
+                                    </div>
+                                    <h5 class="ls1 t400">{{ $item->name }}</h5>
+                                </a>
+                            </div>
                             @endforeach
                         </div>
                     </div>
@@ -209,7 +238,8 @@
                 </div>
             </div>
 
-        </section><!-- #content end -->
+        </section>
+        <!-- #content end -->
 
         <div class="clear"></div>
 
@@ -242,17 +272,20 @@
 
                 </div>
 
-            </div><!-- #copyrights end -->
+            </div>
+            <!-- #copyrights end -->
 
-        </footer><!-- #footer end -->
+        </footer>
+        <!-- #footer end -->
 
-    </div><!-- #wrapper end -->
+    </div>
+    <!-- #wrapper end -->
 
     <!-- Go To Top
     ============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
 
-  
+
     <!-- External JavaScripts
     ============================================= -->
     <script type="text/javascript" src="{{ asset('js/main/jquery.js') }}"></script>
@@ -264,9 +297,8 @@
 
     <script src="{{ asset('js/main/photography-addons.js') }}"></script>
 
-  
+
     <script>
-  
         (function() {
             var support = { transitions: Modernizr.csstransitions },
                 // transition end event name
@@ -328,8 +360,8 @@
             var swiperSlider = $('.swiper-parent')[0].swiper;
             swiperSlider.enableKeyboardControl();
         });
-
     </script>
 
 </body>
+
 </html>
