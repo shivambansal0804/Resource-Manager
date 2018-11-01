@@ -139,24 +139,6 @@
 			============================================= -->
         <div>
 
-            <div style="margin-bottom:2rem;">
-                <a href="http://facebook.com/dtutimes" class="">
-                    <div class="social-icon facebook">
-                        <i class="fab fa-facebook-f icon" style=""></i>
-                    </div>
-                </a>
-                <a href="http://instagram.com/dtu_times" class=" si-borderless si-facebook">
-                    <div class="social-icon instagram">
-                        <i class="fab fa-instagram icon"></i>
-                    </div>
-                </a>
-                <a href="mailto:dtutimes@dtu.ac.in" class=" si-borderless si-facebook">
-                    <div class="social-icon mail">
-                        <i class="far fa-envelope icon"></i>
-                    </div>
-                </a>
-            </div>
-
             <div class="col_full center " style="color:lightgrey; font-size: .7rem;">
                 Developed by
                 <br> Abhishek, Manish, Nandana, Rajyawardhan and Sambhav

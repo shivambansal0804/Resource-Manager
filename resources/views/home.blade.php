@@ -87,7 +87,8 @@
                                 {{ $item->description }}
                             </p>
                             <p>
-                                <small>Created by{{ \App\User::find($item->user_id) ? \App\User::find($item->user_id)->name : 'Not found' }},</small>                                @if ($item->completed_by)
+                                <small>Created by{{ \App\User::find($item->user_id) ? \App\User::find($item->user_id)->name : 'Not found' }},</small>                                
+                                @if ($item->completed_by)
                                     <small>
                                         Completed By {{ \App\User::find($item->completed_by) ? \App\User::find($item->completed_by)->name : 'The User has been deleted or Not found' }}, {{ \Carbon\Carbon::parse($item->completed_at)->diffForHumans() }}
                                     </small>
