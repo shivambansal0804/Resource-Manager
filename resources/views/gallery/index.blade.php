@@ -224,7 +224,7 @@
                             @foreach ($albums as $item)
                             <div class="col-sm-4 center">
                                 <a href="{{ route('gallery.show', $item->slug ) }}">
-                                    <div style="margin: 0 auto;max-width: 235px; height: 300px; padding: 25px; background-size: 100%;">
+                                    <div style="margin: 0 auto;max-width: 235px; padding: 25px; background-size: 100%;">
                                         <img src="{{ $item->getFirstMediaUrl('covers', 'cover')}}" alt="img01" style="" />
                                     </div>
                                     <h5 class="ls1 t400">{{ $item->name }}</h5>
