@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-        crossorigin="anonymous">
+  
     <style>
         * {
             padding: 0;
@@ -103,11 +102,6 @@
             color: white;
         }
 
-        @media (min-width:992px) {
-            .container>* {
-                text-align: center;
-            }
-        }
     </style>
 </head>
 
@@ -120,14 +114,14 @@
         </div>
     </div>
     <div class="container" style="padding:1rem 0 2rem 0;">
-        <h1 class="heading-1">
+        <h1 class="heading-1" style="text-center">
             <small>Welcome</small>
             <small>To DTU Times.</small>
         </h1>
 
         <div>
             <div style="text-align: center; margin-top: 1rem;">
-                <img style="max-width: 14rem;" src="https://image.flaticon.com/icons/svg/1060/1060307.svg" alt="">
+                <img style="max-width: 14rem;" src="{{ env('APP_URL').'/svg/password.svg' }}" alt="">
             </div>
             <div class="text" style="margin-bottom:20px; text-align:center;">
                 <p>
@@ -144,24 +138,6 @@
         <!-- Copyrights
 			============================================= -->
         <div>
-
-            <div style="margin-bottom:2rem;">
-                <a href="http://facebook.com/dtutimes" class="">
-                    <div class="social-icon facebook">
-                        <i class="fab fa-facebook-f icon" style=""></i>
-                    </div>
-                </a>
-                <a href="http://instagram.com/dtu_times" class=" si-borderless si-facebook">
-                    <div class="social-icon instagram">
-                        <i class="fab fa-instagram icon"></i>
-                    </div>
-                </a>
-                <a href="mailto:dtutimes@dtu.ac.in" class=" si-borderless si-facebook">
-                    <div class="social-icon mail">
-                        <i class="far fa-envelope icon"></i>
-                    </div>
-                </a>
-            </div>
 
             <div class="col_full center " style="color:lightgrey; font-size: .7rem;">
                 Developed by

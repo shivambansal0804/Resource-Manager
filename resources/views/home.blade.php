@@ -15,60 +15,69 @@
     <!--end of container-->
 </section>
 
-<section class="pt-5 pb-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1 hidden-sm"></div>
-            <div class="col-md-4">
-                <div class="feature feature-2 boxed boxed--border">
-                    <h2 class="d-inline">10</h2>
-                    <div class="feature__body">
-                        <h4 class="m-0">Total Stories</h4>
-                        <small>lorem ispum dolor situm dplor.</small>
+@if (!auth()->user()->hasRole('photographer'))
+    <section class="pt-5 pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 hidden-sm"></div>
+                <div class="col-md-4">
+                    <div class="feature feature-2 boxed boxed--border">
+                        <h2 class="d-inline">{{ auth()->user()->story()->get()->count() }}</h2>
+                        <div class="feature__body">
+                            <h4 class="m-0">Total Stories</h4>
+                            <small>lorem ispum dolor situm dplor.</small>
+                        </div>
                     </div>
+                    <!--end feature-->
                 </div>
-                <!--end feature-->
-            </div>
-
-            <div class="col-md-2 text-center">
-                <div class="feature feature-2 boxed boxed--border">
-                    <h4 class="mb-0">10</h4>
-                    <small>Pending</small>
+    
+                <div class="col-md-2 text-center">
+                    <div class="feature feature-2 boxed boxed--border">
+                        <h4 class="mb-0">{{ auth()->user()->story()->whereStatus('pending')->get()->count() }}</h4>
+                        <small>Pending</small>
+                    </div>
+                    <!--end feature-->
                 </div>
-                <!--end feature-->
-            </div>
-
-            <div class="col-md-2 text-center">
-                <div class="feature feature-2 boxed boxed--border">
-                    <h4 class="mb-0">10</h4>
-                    <small>Published</small>
+    
+                <div class="col-md-2 text-center">
+                    <div class="feature feature-2 boxed boxed--border">
+                        <h4 class="mb-0">{{ auth()->user()->story()->whereStatus('published')->get()->count() }}</h4>
+                        <small>Published</small>
+                    </div>
+                    <!--end feature-->
                 </div>
-                <!--end feature-->
-            </div>
-
-            <div class="col-md-2 text-center">
-                <div class="feature feature-2 boxed boxed--border">
-                    <h4 class="mb-0">10</h4>
-                    <small>Draft</small>
+    
+                <div class="col-md-2 text-center">
+                    <div class="feature feature-2 boxed boxed--border">
+                        <h4 class="mb-0">{{ auth()->user()->story()->whereStatus('draft')->get()->count() }}</h4>
+                        <small>Draft</small>
+                    </div>
+                    <!--end feature-->
                 </div>
-                <!--end feature-->
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="pt-0 pb-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <small>Latest published: </small> <br>
-                <small>Last story submitted for approval:</small>
+
+    <section class="pt-0 pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    @php
+                        $published = auth()->user()->story()->whereStatus('published')->latest()->first();
+                        $pending = auth()->user()->story()->whereStatus('pending')->latest()->first();
+
+                    @endphp
+                    <small>Latest published: {{ $published ? $published->title : 'No story Published yet'  }}</small> <br>
+                    <small>Last story submitted for approval: {{ $pending ? $pending->title : 'No story submitted for approval yet' }}</small>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="pt-0">
+@endif
+
+<section class="{{ auth()->user()->hasRole('photographer') ? 'pt-5' : 'pt-0' }}">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-10">
@@ -87,7 +96,8 @@
                                 {{ $item->description }}
                             </p>
                             <p>
-                                <small>Created by{{ \App\User::find($item->user_id) ? \App\User::find($item->user_id)->name : 'Not found' }},</small>                                @if ($item->completed_by)
+                                <small>Created by{{ \App\User::find($item->user_id) ? \App\User::find($item->user_id)->name : 'Not found' }},</small>                                
+                                @if ($item->completed_by)
                                     <small>
                                         Completed By {{ \App\User::find($item->completed_by) ? \App\User::find($item->completed_by)->name : 'The User has been deleted or Not found' }}, {{ \Carbon\Carbon::parse($item->completed_at)->diffForHumans() }}
                                     </small>
