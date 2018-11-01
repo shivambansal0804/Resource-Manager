@@ -25,9 +25,15 @@ class GalleryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($uuid)
+    public function show($slug)
     {
-        //
+        $album = Album::whereSlug($slug)->firstOrFail();
+
+        $images = $album->image()->where('status', 'published')->get();
+
+        $subs = $album->child()->with('user')->get();
+        
+        return view('gallery.show', ['album' => $album, 'subs' => $subs, 'images' => $images ]);
     }
 
 }

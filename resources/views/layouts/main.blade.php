@@ -51,7 +51,7 @@
     ============================================= -->
     <script type="text/javascript" src="{{ asset('js/main/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main/plugins.js') }}"></script>
-
+    {{-- <script src="{{asset('js/main/photography-addons.js')}}"></script> --}}
     <!-- Footer Scripts
     ============================================= -->
     <script type="text/javascript" src="{{ asset('js/main/functions.js') }}"></script>
