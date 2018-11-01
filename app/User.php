@@ -68,5 +68,10 @@ class User extends Authenticatable implements HasMedia
         return $this->hasMany('App\Models\Image');
     }
 
+    public function todo() 
+    {
+        return $this->hasMany('App\Models\Todo');
+    }
+
 }
 

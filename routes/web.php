@@ -134,6 +134,12 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
     Route::get('/me', 'User\UserController@show')->name('me.show');
     Route::get('/me/edit', 'User\UserController@edit')->name('me.edit');
 
+    Route::group(['prefix' =>'todos'], function () {
+        Route::post('/', 'HomeController@storeTodo')->name('todos.store');
+        Route::get('/{id}/done', 'HomeController@doneTodo')->name('todos.done');
+        Route::delete('/{id}', 'HomeController@destroyTodo')->name('todos.destroy');
+    });
+
     // Categories Routes 
         // Create Category
         Route::middleware('permission:create-category')->group(function () {
