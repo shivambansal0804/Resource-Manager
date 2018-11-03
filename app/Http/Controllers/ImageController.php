@@ -97,9 +97,16 @@ class ImageController extends Controller
      * @param  \App\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Image $image)
+    public function update(Request $request, $uuid, $image)
     {
-        //
+        $temp = \App\Models\Album::whereUuid($uuid)->firstOrFail()->image()->update([
+            'name'    => $request->name,
+            'biliner' => $request->biliner,
+            'slug'      => str_slug($request->name, "-").'-'.rand(100, 999),
+            'status'  => 'draft'
+        ]);
+
+        return redirect()->route('images.show', [$uuid, $image]);
     }
 
     /**
