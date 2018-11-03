@@ -100,12 +100,11 @@ class ImageController extends Controller
     public function update(Request $request, $uuid, $image)
     {
         if($request->has('name') && $request->has('biliner')){
-            $temp = \App\Models\Album::whereUuid($uuid)->firstOrFail()->image();
+            $temp = \App\Models\Album::whereUuid($uuid)->firstOrFail()->image()->whereUuid($image);
         
             $temp->update([
                 'name'    => $request->name,
-                'biliner' => $request->biliner,
-                'status'  => 'draft'
+                'biliner' => $request->biliner
             ]);
         }
         
@@ -148,6 +147,6 @@ class ImageController extends Controller
             'status'    => 'draft'
         ]);
 
-        return redirect()->route('albums.show', $uuid);
+        return redirect()->back();
     }
 }

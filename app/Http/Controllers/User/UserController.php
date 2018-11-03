@@ -60,7 +60,7 @@ class UserController extends Controller
      */
     public function edit()
     {
-        return view('users.auth.edit');
+        return view('users.auth.edit', ['user' => auth()->user()]);
     }
 
     /**
@@ -90,8 +90,7 @@ class UserController extends Controller
         $updated = $user->update($data);
 
         if (isset($request['avatar'])) {
-            $image = $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
-            
+            $image = $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');   
         }
 
         return redirect()->route('dashboard');

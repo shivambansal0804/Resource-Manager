@@ -20,7 +20,13 @@
                     <div>
                         
 
-                    @if ( (auth()->user()->id == $image->user->id || auth()->user()->can('publish-image')) && $image->status == 'draft' )
+                    @if ( auth()->user()->id == $image->user->id && $image->status == 'draft' )
+                        <a class="btn btn--sm type--uppercase" href="{{ route('images.edit', [$image->album->uuid, $image->uuid] )}}">
+                            <span class="btn__text">
+                                Edit 
+                            </span>
+                        </a>
+                    @elseif (auth()->user()->can('publish-image') && $image->status != 'published')
                         <a class="btn btn--sm type--uppercase" href="{{ route('images.edit', [$image->album->uuid, $image->uuid] )}}">
                             <span class="btn__text">
                                 Edit 

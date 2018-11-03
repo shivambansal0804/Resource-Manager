@@ -1,9 +1,6 @@
 @extends('layouts.app') 
 @section('content')
 
-@php
-    $user = auth()->user();
-@endphp
 <section class="cover bg--secondary">
     <div class="container">
         <div class="row justify-content-center">
