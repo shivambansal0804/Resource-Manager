@@ -105,7 +105,6 @@ class ImageController extends Controller
             $temp->update([
                 'name'    => $request->name,
                 'biliner' => $request->biliner,
-                'slug'      => str_slug($request->name, "-").'-'.rand(100, 999999),
                 'status'  => 'draft'
             ]);
         }
