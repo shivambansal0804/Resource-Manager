@@ -22,6 +22,13 @@ class CouncilController extends Controller
         return view('users.council.index', ['stories' => $stories]);
     }
 
+    public function publishedIndex()
+    {
+        $stories = Story::where('status', 'published')->get();
+
+        return view('users.council.', ['stories' => $stories]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -78,8 +85,12 @@ class CouncilController extends Controller
      */
     public function update(StoreStory $request, $uuid)
     {
-        Story::whereUuid($uuid)->firstOrFail()->update($request->all());
-        return redirect()->route('council.index');
+        $story = Story::whereUuid($uuid)->firstOrFail();
+
+        $story->update($request->all());
+
+        event(new StoryPublished($story));
+        return redirect()->route('council.stories.index');
     }
 
     /**
@@ -93,12 +104,12 @@ class CouncilController extends Controller
         //
     }
 
-    public function draft(StoreStory $request, $uuid)
-    {
+    public function draft(Request $request, $uuid)
+    { 
         $story = Story::where('Uuid', $uuid)->firstOrFail()->update([
             'status' => 'draft'
         ]);
-        return redirect()->route('council.index');
+        return redirect()->route('council.stories.index');
     }
 
     public function publish($uuid)

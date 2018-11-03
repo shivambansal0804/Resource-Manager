@@ -164,14 +164,15 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         
     Route::middleware('role:superuser|council')->group(function () {
         Route::get('/stories/pending', 'User\CouncilController@index')->name('council.stories.index');
+        Route::get('/stories/published', 'User\CouncilController@publishedIndex')->name('council.stories.published');
         Route::get('/stories/pending/{uuid}', 'User\CouncilController@show' )->name('council.stories.show');
-        Route::put('/stories/pending/{uuid}/draft', 'User\CouncilController@draft')->name('council.draft');
-        Route::get('stories/pending/{uuid}/edit', 'User\CouncilController@edit')->name('council.edit');
+        Route::put('/stories/pending/{uuid}/draft', 'User\CouncilController@draft')->name('council.stories.draft');
+        Route::get('stories/pending/{uuid}/edit', 'User\CouncilController@edit')->name('council.stories.edit');
 
         // update
-        Route::put('stories/pending/{uuid}', 'User\CouncilController@update')->name('council.update');
+        Route::put('stories/pending/{uuid}', 'User\CouncilController@update')->name('council.stories.update');
         // publish 
-        Route::get('stories/pending/{uuid}/publish', 'User\CouncilController@publish')->name('council.publish');
+        Route::get('stories/pending/{uuid}/publish', 'User\CouncilController@publish')->name('council.stories.publish');
         
     });
 

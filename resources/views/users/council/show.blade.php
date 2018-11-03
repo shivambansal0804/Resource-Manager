@@ -30,14 +30,17 @@
 
                         @if ($story->status == 'pending')
                         <div>
-                            <a class="btn btn--sm" href="{{ route('council.publish', $story->uuid)}}">
+                            <a class="btn btn--sm" href="{{ route('council.stories.edit', $story->uuid)}}">
+                                <span class="btn__text">Edit</span>
+                            </a>
+                            <a class="btn btn--sm" href="{{ route('council.stories.publish', $story->uuid)}}">
                                 <span class="btn__text">Publish</span>
                             </a>
                             <a class="btn btn--sm" href="{{ route('stories.index' )}}" onclick="event.preventDefault();
                                                             document.getElementById('draft-form').submit();">
                                 <span class="btn__text">Save back To draft</span>
                             </a>
-                            <form id="draft-form" class="d-inline" action="{{ route('council.draft', $story->uuid)}}" method="post">
+                            <form id="draft-form" class="d-inline" action="{{ route('council.stories.draft', $story->uuid)}}" method="post">
                                 @csrf @method('PUT')
                             </form>
                         </div>                            

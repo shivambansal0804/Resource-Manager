@@ -57,6 +57,11 @@
                                             Pending Stories
                                         </a>
                                     </li> 
+                                    <li>
+                                        <a href="{{ route('council.stories.published')}}" >
+                                            Published Stories
+                                        </a>
+                                    </li>
                                     @endif
                                 </ul>
                             </div>
