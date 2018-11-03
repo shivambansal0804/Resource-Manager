@@ -102,7 +102,7 @@ class ImageController extends Controller
         $temp = \App\Models\Album::whereUuid($uuid)->firstOrFail()->image()->update([
             'name'    => $request->name,
             'biliner' => $request->biliner,
-            'slug'      => str_slug($request->name, "-").'-'.rand(100, 999),
+            'slug'      => str_slug($request->name, "-").'-'.rand(100, 999999),
             'status'  => 'draft'
         ]);
 
