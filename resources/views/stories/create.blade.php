@@ -117,63 +117,63 @@
                 } );
                 
            
-        function wordCount(ele)
-        {
-            var regex = /(<([^>]+)>)/ig;
-            var string = ele.trim().replace(regex, ' ').replace(/&nbsp;/g, ' ').replace(/  +/g, ' ');
-            var num = string.trim().split(' ').length;
-            return num;
-        }
+        // function wordCount(ele)
+        // {
+        //     var regex = /(<([^>]+)>)/ig;
+        //     var string = ele.trim().replace(regex, ' ').replace(/&nbsp;/g, ' ').replace(/  +/g, ' ');
+        //     var num = string.trim().split(' ').length;
+        //     return num;
+        // }
 
         
-        setInterval(() => {
-            changeStatus('Saving....')
+        // setInterval(() => {
+        //     changeStatus('Saving....')
             
-            autoSave();
-        }, 50000);
+        //     autoSave();
+        // }, 50000);
 
-        function changeStatus(text) {
-            var elem = $('#status');
-            elem.text(text);
-            setTimeout(() => {
-                elem.text('');
-            }, 5000);
-        }
+        // function changeStatus(text) {
+        //     var elem = $('#status');
+        //     elem.text(text);
+        //     setTimeout(() => {
+        //         elem.text('');
+        //     }, 5000);
+        // }
 
-        function autoSave() {
-            const URL = '{{ route('stories.autosave', $story->uuid )}}'
-             var save = $.ajax(URL, {
-                method: 'PUT',
-                data: {
-                    '_token': $('input[name=_token]').val(),
-                    'title': $('input[name="title"]').val(),
-                    'body': editor.getData(),
-                    'biliner': $('textarea[name="biliner"]').val(),
-                    'meta_title': $('textarea[name="meta_title"]').val(),
-                    'meta_description': $('textarea[name="meta_description"]').val(),
-                },
-                success : function(data) {
-                    if ((data.error)) {
-                        console.log(data.error)
-                    }
-                    else{
-                        changeStatus('Saved')
-                    }
-                }
-            })
-        }
+        // function autoSave() {
+        //     const URL = '{{ route('stories.autosave', $story->uuid )}}'
+        //      var save = $.ajax(URL, {
+        //         method: 'PUT',
+        //         data: {
+        //             '_token': $('input[name=_token]').val(),
+        //             'title': $('input[name="title"]').val(),
+        //             'body': editor.getData(),
+        //             'biliner': $('textarea[name="biliner"]').val(),
+        //             'meta_title': $('textarea[name="meta_title"]').val(),
+        //             'meta_description': $('textarea[name="meta_description"]').val(),
+        //         },
+        //         success : function(data) {
+        //             if ((data.error)) {
+        //                 console.log(data.error)
+        //             }
+        //             else{
+        //                 changeStatus('Saved')
+        //             }
+        //         }
+        //     })
+        // }
 
-        var wordsInLine = 17;
+        // var wordsInLine = 17;
 
-        var bilinerRow = 2;
+        // var bilinerRow = 2;
 
-        var biliner = $('#biliner');
-        biliner.keyup(function () {
-            var count = wordCount($('#biliner').val());
-            var row = count / wordsInLine;
-            $(this).attr('rows', row + 1);
-            bilinerRow = row            
-        })
+        // var biliner = $('#biliner');
+        // biliner.keyup(function () {
+        //     var count = wordCount($('#biliner').val());
+        //     var row = count / wordsInLine;
+        //     $(this).attr('rows', row + 1);
+        //     bilinerRow = row            
+        // })
         
         });
 </script>

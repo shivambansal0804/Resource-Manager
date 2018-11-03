@@ -162,7 +162,7 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         // Delete Category
         Route::delete('/categories/{name}', 'CategoryController@destroy')->name('categories.destroy')->middleware('permission:delete-category');
         
-    Route::middleware('role:superuser|council')->group(function () {
+    Route::group(['prefix' => 'council', 'middleware' => 'role:superuser|council'], function () {
         Route::get('/stories/pending', 'User\CouncilController@index')->name('council.stories.index');
         Route::get('/stories/published', 'User\CouncilController@publishedIndex')->name('council.stories.published');
         Route::get('/stories/pending/{uuid}', 'User\CouncilController@show' )->name('council.stories.show');
