@@ -62,37 +62,9 @@
     </div>
     <!--end of container-->
 </section>
-<section class="section space--sm">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="boxed boxed--border">
-                    <ul class="row row--list clearfix text-center">
-                        <li class="col-md-3 col-6">
-                            <span class="h6 type--uppercase type--fade">Likes</span>
-                            <span class="h3">220</span>
-                        </li>
-                        <li class="col-md-3 col-6">
-                            <span class="h6 type--uppercase type--fade">Articles</span>
-                            <span class="h3">14</span>
-                        </li>
-                        <li class="col-md-3 col-6">
-                            <span class="h6 type--uppercase type--fade">Comments</span>
-                            <span class="h3">2,129</span>
-                        </li>
-                        <li class="col-md-3 col-6">
-                            <span class="h6 type--uppercase type--fade">Following</span>
-                            <span class="h3">119</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
 
+
+@if ($stories->count())
 <section class="text-center height-50">
     <div class="container pos-vertical-center">
         <div class="row">
@@ -111,7 +83,7 @@
 
 
 
-@if ($stories->count())
+
     <section>
         <div class="container">
             <div class="row justify-content-center">

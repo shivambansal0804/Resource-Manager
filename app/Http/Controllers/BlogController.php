@@ -28,8 +28,16 @@ class BlogController extends Controller
     public function show($slug)
     {
         $story = Story::where(['slug'=> $slug, 'status' => 'published'])->with('user')->firstOrFail();
-    
-        return view('blog.show', ['story' => $story]);
+
+        $stories = [];
+
+        if ($story->category) {
+            $category = Category::whereSlug($story->category->slug)->first();
+
+            $stories = $category->story()->whereStatus('published')->latest()->get();
+        }
+
+        return view('blog.show', ['story' => $story, 'stories' => $stories]);
     }
 
     /**

@@ -26,7 +26,7 @@ class CouncilController extends Controller
     {
         $stories = Story::where('status', 'published')->get();
 
-        return view('users.council.', ['stories' => $stories]);
+        return view('users.council.published', ['stories' => $stories]);
     }
 
     /**
