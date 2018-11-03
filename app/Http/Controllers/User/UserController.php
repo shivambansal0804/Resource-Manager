@@ -85,11 +85,12 @@ class UserController extends Controller
             'activated' => true
         ];
         
-        $user = auth()->user();
+        $user = \Auth::user();
 
         $updated = $user->update($data);
 
         if (isset($request['avatar'])) {
+            $user->clearMediaCollection('avatars');
             $image = $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');   
         }
 

@@ -36,7 +36,7 @@ Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'checkAct
     Route::get('/', 'User\SuperuserController@index')->name('superuser.dashboard');
     Route::get('/roles', 'RoleController@index')->name('roles.index');
     Route::get('/permissions', 'PermissionController@index')->name('permissions.index');
-    Route::group(['prefix' => 'user'], function () {
+    Route::group(['prefix' => 'members'], function () {
         Route::get('/', 'User\SuperuserController@indexUser')->name('users.index');
         Route::get('/create', 'User\SuperuserController@createUser')->name('users.create');
         Route::post('/', 'User\SuperuserController@storeUser')->name('users.store');

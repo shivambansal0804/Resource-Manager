@@ -143,12 +143,12 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('users.index') }}">
-                                        All Users
+                                        All Members
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ route('users.create') }}">
-                                        New User
+                                        New Member
                                     </a>
                                 </li>
                                 <li>
