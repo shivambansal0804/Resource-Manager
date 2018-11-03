@@ -97,7 +97,7 @@ class ImageController extends Controller
      * @param  \App\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $uuid, $image)
+    public function update(StoreImage $request, $uuid, $image)
     {
         $temp = \App\Models\Album::whereUuid($uuid)->firstOrFail()->image()->update([
             'name'    => $request->name,
