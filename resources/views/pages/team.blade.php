@@ -1712,9 +1712,6 @@
 										<i class="icon-linkedin"></i>
 										<i class="icon-linkedin"></i>
 									</a>
-
-
-
 								</div>
 							</div>
 						</div>
