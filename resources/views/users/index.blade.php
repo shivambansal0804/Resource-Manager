@@ -6,9 +6,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-lg-8">
-                <h1>All Users</h1>
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nisi? Saepe, itaque error. Totam, fuga quia a 
+                <h1>All Members</h1>
+                <p>
+                    List of all the members of the DTU Times team.
                 </p>
             </div>
         </div>

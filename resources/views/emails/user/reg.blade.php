@@ -126,7 +126,7 @@
             <div class="text" style="margin-bottom:20px; text-align:center;">
                 <p>
                     <h5>Hey {{ $user->name }}, Welcome to DTU Times.</h5><br> Happy to have you on board! <br> You can login
-                    with {{ $password }} as your password.
+                    with <strong>{{ $password }}</strong> as your password.
                 </p>
             </div>
         </div><br><br>
@@ -141,7 +141,7 @@
 
             <div class="col_full center " style="color:lightgrey; font-size: .7rem;">
                 Developed by
-                <br> crankShaft, manishsahani999, nandana-21, akxx33
+                <br> crankShaft, manishsahani999, nandana-21, akxx33, sambhavjain9138
                 <br>
                 <br> &copy; DTU Times 2017. All Rights Reserved.
             </div>

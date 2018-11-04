@@ -29,24 +29,32 @@
                         Launching an attractive and scalable website quickly and affordably is important for modern startups &mdash; Stack offers
                         massive value without looking 'bargain-bin'.
                     </p>
+                    <p>
+                        <strong>Contact no:</strong> 8449349990
+                    </p>
                     <ul class="social-list list-inline list--hover">
                         <li>
-                            <a href="#">
+                            <a href="mailto:imagine054@gmail.com">
                                 <i class="socicon socicon-mail icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="socicon socicon-google icon icon--xs"></i>
+                            <a href="https://m.facebook.com/rajyavardhan.singh.75">
+                                <i class="socicon socicon-facebook icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="socicon socicon-twitter icon icon--xs"></i>
+                            <a href="https://www.github.com/ak33xx/">
+                                <i class="socicon socicon-github icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/rajyavardhan-singh">
+                                <i class="socicon socicon-linkedin icon icon--xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ak33xx">
                                 <i class="socicon socicon-instagram icon icon--xs"></i>
                             </a>
                         </li>
@@ -120,25 +128,33 @@
                         Launching an attractive and scalable website quickly and affordably is important for modern startups &mdash; Stack offers
                         massive value without looking 'bargain-bin'.
                     </p>
+                    <p>
+                        <strong>Contact no:</strong> 9911347437
+                    </p>
                     <ul class="social-list list-inline list--hover">
                         <li>
-                            <a href="#">
+                            <a href="mailto:mani00mani@gmail.com">
                                 <i class="socicon socicon-mail icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/manish.s1999">
                                 <i class="socicon socicon-facebook icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.github.com/manishsahani999">
                                 <i class="socicon socicon-github icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/man_ish999/">
                                 <i class="socicon socicon-instagram icon icon--xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/manish-sahani-95640614b/">
+                                <i class="socicon socicon-linkedin icon icon--xs"></i>
                             </a>
                         </li>
                     </ul>
@@ -168,22 +184,22 @@
                     </p>
                     <ul class="social-list list-inline list--hover">
                         <li>
-                            <a href="#">
+                            <a href="mailto:nandana.tiwari.99@gmail.com">
                                 <i class="socicon socicon-mail icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="socicon socicon-google icon icon--xs"></i>
+                            <a href="https://www.github.com/nandand-21/">
+                                <i class="socicon socicon-github icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="socicon socicon-twitter icon icon--xs"></i>
+                            <a href="https://www.facebook.com/nandana219">
+                                <i class="socicon socicon-facebook icon icon--xs"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/nandana_tiwari/">
                                 <i class="socicon socicon-instagram icon icon--xs"></i>
                             </a>
                         </li>
@@ -212,9 +228,10 @@
                         Launching an attractive and scalable website quickly and affordably is important for modern startups &mdash; Stack offers
                         massive value without looking 'bargain-bin'.
                     </p>
+                    <p><strong>Contact no:</strong> 9979106989</p>
                     <ul class="social-list list-inline list--hover">
                         <li>
-                            <a href="#">
+                            <a href="mailto:sambhavjain9138@gmail.com">
                                 <i class="socicon socicon-mail icon icon--xs"></i>
                             </a>
                         </li>
@@ -224,8 +241,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="socicon socicon-twitter icon icon--xs"></i>
+                            <a href="https://www.github.com/sambhavjain9138">
+                                <i class="socicon socicon-github icon icon--xs"></i>
                             </a>
                         </li>
                         <li>

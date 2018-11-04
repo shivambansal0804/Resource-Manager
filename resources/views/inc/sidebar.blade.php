@@ -191,22 +191,22 @@
         <footer class="footer-3 text-center space--xs ">
             <ul class="social-list list-inline list--hover ml-auto mr-auto">
                 <li>
-                    <a href="#">
+                    <a href="mailto:dtutimes@dtu.ac.in">
                         <i class="socicon socicon-mail icon icon--xs"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://twitter.com/dtutimes">
                         <i class="socicon socicon-twitter icon icon--xs"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/dtutimes/">
                         <i class="socicon socicon-facebook icon icon--xs"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/dtu_times/?hl=en">
                         <i class="socicon socicon-instagram icon icon--xs"></i>
                     </a>
                 </li>
@@ -219,7 +219,10 @@
             </div>
             <div class="text-center">
                 <span class="type--fade">
-                    <small><a href="{{ route('dev.index') }}">Developers</a></small>
+                    <small>
+                        Got any issues. Contact the
+                        <a href="{{ route('dev.index') }}" class="text-primary"> Developers.</a>
+                    </small>
                 </span>
             </div>
         </footer>
