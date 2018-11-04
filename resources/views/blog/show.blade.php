@@ -30,7 +30,7 @@
                     <!-- Single Post
                             ============================================= -->
                     <div class="entry clearfix">
-
+                        <br>
                         <!-- Entry Title
                                 ============================================= -->
                         <div class="entry-title">

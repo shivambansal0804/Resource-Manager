@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-<title>Blog | DTU Times</title>
+<title> DTU Times | Blog</title>
 @endsection
 @section('content')
         <!-- Page Title
@@ -30,7 +30,7 @@
                     <!-- Posts
                     ============================================= -->
                     <div id="posts" class="post-grid grid-container post-masonry post-timeline grid-2 clearfix">
-
+                        <br><br>
                         <div class="timeline-border"></div>
                     @foreach ($stories as $item)
 
