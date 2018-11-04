@@ -14,7 +14,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $stories = Story::where('status', 'published')->with('user')->latest();
+        $stories = Story::where('status', 'published')->with('user')->latest()->get();
         
         return view('blog.index', ['stories' => $stories]);
     }
