@@ -62,7 +62,6 @@
                     {{-- <div id="load-next-posts" class="center">
                         <a href="blog-timeline-2.html" class="button button-3d button-dark button-large button-rounded">Load more..</a>
                     </div> --}}
-                    {{ $stories->links() }}
                 </div>
 
             </div>
