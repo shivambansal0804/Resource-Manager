@@ -171,7 +171,7 @@
                                                 </div>
                                                 <div class="entry-c">
                                                     <div class="entry-title">
-                                                        <h4><a href="#">{{ $item->title }}</a></h4>
+                                                        <h4><a href="{{ route('blog.show', $item->slug) }}">{{ $item->title }}</a></h4>
                                                     </div>
                                                     <ul class="entry-meta">
                                                         <li>{{ $item->created_at->diffForHumans()}}</li>
