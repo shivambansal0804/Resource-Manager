@@ -113,6 +113,9 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
     Route::get('/me', 'User\UserController@show')->name('me.show');
     Route::get('/me/edit', 'User\UserController@edit')->name('me.edit');
+
+    Route::get('/devlopers', 'HomeController@devIndex')->name('dev.index');
+
     Route::group(['prefix' =>'todos'], function () {
         Route::post('/', 'HomeController@storeTodo')->name('todos.store');
         Route::get('/{id}/done', 'HomeController@doneTodo')->name('todos.done');
