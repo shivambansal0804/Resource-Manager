@@ -121,7 +121,7 @@
 
         <div>
             <div style="text-align: center; margin-top: 1rem;">
-                <img style="max-width: 14rem;" src="http://dtutimes.me/img/mailer-img.jpg" alt="">
+                <img style="max-width: 14rem;" src="http://dtutimes.me/img/mailer-img.png" alt="">
             </div>
             <div class="text" style="margin-bottom:20px; text-align:center;">
                 <p>
@@ -142,7 +142,7 @@
             <div class="col_full center " style="color:lightgrey; font-size: .7rem;">
                 Developed by
                 <br> crankShaft, manishsahani999, nandana-21, akxx33
-
+                <br>
                 <br> &copy; DTU Times 2017. All Rights Reserved.
             </div>
 

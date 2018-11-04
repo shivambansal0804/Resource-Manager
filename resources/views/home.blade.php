@@ -5,8 +5,8 @@
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
                 <h1>Dashboard</h1>
-                <p class="">
-                    A comprehensive guide to creating fast, responsive websites &mdash; including input from 5 veteran designers and developers
+                <p>
+                    Welcome to the backdoor for the DTU Times website.
                 </p>
             </div>
         </div>
