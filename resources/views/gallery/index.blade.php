@@ -253,7 +253,7 @@
                 <div class="container clearfix">
 
                     <div class="col_full center nobottommargin topmargin-sm">
-                        &copy; DTU Times 2017. All Rights Reserved.<br><br>
+                        &copy; DTU Times 2018. All Rights Reserved.<br><br>
                         <a href="http://facebook.com/DTUTimes" target="_blank" class="social-icon inline-block si-small si-borderless si-rounded si-facebook">
                             <i class="icon-facebook"></i>
                             <i class="icon-facebook"></i>

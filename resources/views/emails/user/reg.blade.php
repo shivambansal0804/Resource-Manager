@@ -140,10 +140,11 @@
         <div>
 
             <div class="col_full center " style="color:lightgrey; font-size: .7rem;">
+                &copy; DTU Times 2018. All Rights Reserved.
+                <br>
+                <br> 
                 Developed by
                 <br> crankShaft, manishsahani999, nandana-21, akxx33, sambhavjain9138
-                <br>
-                <br> &copy; DTU Times 2017. All Rights Reserved.
             </div>
 
         </div>
