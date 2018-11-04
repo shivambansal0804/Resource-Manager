@@ -32,9 +32,7 @@
                         </span>
                         </div>
                         <div class="accordion__content">
-                            <small>
-                            {{ $item->uuid }}
-                        </small> {{ $item->subject }}
+                            {{ $item->subject }}
                             <br>
                             <small>
                             Created <strong>{{ $item->created_at->diffForHumans() }}</strong>
