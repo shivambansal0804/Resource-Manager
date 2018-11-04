@@ -167,7 +167,7 @@
                                             @foreach ($stories as $item)
                                             <div class="spost clearfix">
                                                 <div class="entry-image">
-                                                    <a href="#" class="nobg"><img class="img-circle" src="{{ $item->getFirstMediaUrl('blog_images', 'thumb') }}" alt=""></a>
+                                                    <a href="{{ route('blog.show', $item->slug) }}" class="nobg"><img class="img-circle" src="{{ $item->getFirstMediaUrl('blog_images', 'thumb') }}" alt=""></a>
                                                 </div>
                                                 <div class="entry-c">
                                                     <div class="entry-title">
