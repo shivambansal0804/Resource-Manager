@@ -35,7 +35,7 @@
                 <div class="timeline-border"></div>
                 @foreach ($stories as $item)
 
-                <div class="wow slideInUp entry clearfix ">
+                <div class="wow slideInUp entry clearfix " data-wow-delay=".5s">
                     <div class="entry-timeline">
                         <div class="timeline-divider"></div>
                     </div>
