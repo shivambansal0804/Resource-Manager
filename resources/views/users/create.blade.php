@@ -6,7 +6,7 @@
             <div class="col-md-10 col-lg-8">
                 <h1>Create New User</h1>
                 <p class="lead">
-                    Build lean, beautiful websites with a clean and contemporary look to suit a range of purposes.
+                   It's time to welcome that new recruit to the DTU Times family.
                 </p>
                 <hr>
             </div>

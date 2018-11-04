@@ -7,7 +7,8 @@
             <div class="col-md-10 col-lg-8">
                 <h1>All Permissions</h1>
                 <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nisi? Saepe, itaque error. Totam, fuga quia a
+                    Not everyone can't be granted the same permissions. Some are bound to have more than others. Roles are the different levels
+                    of permissions granted to the users.
                 </p>
             </div>
         </div>
