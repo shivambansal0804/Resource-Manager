@@ -1,6 +1,6 @@
 @extends('layouts.main') 
 @section('title')
-<title>Editions | DTUTimes</title>
+<title>Editions | DTU Times</title>
 @endsection
 @section('links')
 <link rel="stylesheet" href="css/main/writer.css" type="text/css" />

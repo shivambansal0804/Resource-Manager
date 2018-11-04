@@ -114,14 +114,14 @@
         </div>
     </div>
     <div class="container" style="padding:1rem 0 2rem 0;">
-        <h1 class="heading-1" style="text-center">
+        <h1 class="heading-1" style="text-align:center;">
             <small>Welcome</small>
             <small>To DTU Times.</small>
         </h1>
 
         <div>
             <div style="text-align: center; margin-top: 1rem;">
-                <img style="max-width: 14rem;" src="{{ env('APP_URL').'/svg/password.svg' }}" alt="">
+                <img style="max-width: 14rem;" src="http://dtutimes.me/img/mailer-img.jpg" alt="">
             </div>
             <div class="text" style="margin-bottom:20px; text-align:center;">
                 <p>
@@ -133,7 +133,7 @@
         <a href="{{ env('APP_URL').'/login' }}" class="btn">Login</a>
     </div><br><br>
 
-    <footer id="" class="" style="background-color: black; text-align:center;">
+    <footer id="" class="" style="background-color: black; text-align:center; padding: 1rem;">
 
         <!-- Copyrights
 			============================================= -->
@@ -141,13 +141,9 @@
 
             <div class="col_full center " style="color:lightgrey; font-size: .7rem;">
                 Developed by
-                <br> Abhishek, Manish, Nandana, Rajyawardhan and Sambhav
-            </div>
+                <br> crankShaft, manishsahani999, nandana-21, akxx33
 
-            <div class="col_full center nobottommargin topmargin-sm">
-                <p style="color:#555; font-size: .8rem;">&copy; DTU Times 2017. All Rights Reserved.</br>
-                    </br>
-                </p>
+                <br> &copy; DTU Times 2017. All Rights Reserved.
             </div>
 
         </div>

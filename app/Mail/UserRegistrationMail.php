@@ -33,7 +33,7 @@ class UserRegistrationMail extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->from('mani00manu@gmail.com')->subject("Welcome to DTUtimes, {$this->user->name}")
+        return $this->from('mani00manu@gmail.com')->subject("Welcome to DTU Times, {$this->user->name}")
                  ->markdown('emails.user.reg')->with([
                      'password' => $this->password
                  ]);

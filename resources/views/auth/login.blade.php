@@ -14,7 +14,7 @@
                             <img src="{{ asset('img/logo-white.png') }}">
                         </div>
                         <div class="col-md-12 text-center">
-                            <h3>DTUTIMES</h3>
+                            <h3>DTU TIMES</h3>
                         </div>
                         <div class="col-md-12">
                             <input placeholder="Email" type="email" name="email" value=""
