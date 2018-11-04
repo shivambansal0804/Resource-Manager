@@ -125,14 +125,14 @@
         <h2 style="font-variant: small-caps;; font-size:30px; text-align:center;">{{ $story->title }}</h2>
         <br><br>
         <div>
-            <img src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" alt="image" class="respImg">
+            <img src="{{ env('APP_URL').'/'.$story->getFirstMediaUrl('blog_images', 'fullscreen') }}" alt="image" class="respImg">
             <div class="text" style="margin-bottom:20px; text-align:left;">
                 <p>
                     {{ $story->biliner }}
                 </p>
             </div>
         </div><br><br>
-        <a href="{{ env('APP_URL').'/blog/'.$story->slug }}" class="btn">Read Full Article</a>
+        <a href="{{ env('APP_URL').'/blog/'.$story->slug }}" class="btn" style="color:white;">Read Full Article</a>
     </div><br><br>
 
     <footer id="" class="" style="background-color: black; text-align:center; padding: 1rem;">
