@@ -116,7 +116,7 @@
     <div class="head">
         <div class="container">
             <div class="logo" style="text-align:center;">
-                <img src="http://dtutimes.me/images/logo-dark.png" alt="">
+                <img src="http://dtutimes.me/img/logo-dark.png" alt="">
             </div>
         </div>
     </div>
