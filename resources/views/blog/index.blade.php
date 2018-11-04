@@ -1,80 +1,84 @@
-@extends('layouts.main')
+@extends('layouts.main') 
 @section('title')
 <title> Blog | DTU Times</title>
 @endsection
+ 
 @section('content')
-        <!-- Page Title
+<!-- Page Title
         ============================================= -->
-        <section id="page-title">
+<section id="page-title">
 
-            <div class="container clearfix">
-                <h1>Blog</h1>
-                <span>Latest Blog Posts</span>
-                <ol class="breadcrumb">
-                    <li><a href="#"></a></li>
-                    <li class="active"></li>
-                </ol>
-            </div>
+    <div class="container clearfix">
+        <h1>Blog</h1>
+        <span>Latest Blog Posts</span>
+        <ol class="breadcrumb">
+            <li><a href="#"></a></li>
+            <li class="active"></li>
+        </ol>
+    </div>
 
-        </section>
-        <!-- #page-title end -->
+</section>
+<!-- #page-title end -->
 
-        <!-- Content
+<!-- Content
         ============================================= -->
-        <section id="content">
+<section id="content">
 
-            <div class="content-wrap">
+    <div class="content-wrap">
 
-                <div class="container clearfix">
+        <div class="container clearfix">
 
-                    <!-- Posts
+            <!-- Posts
                     ============================================= -->
-                    <div id="posts" class="post-grid grid-container post-masonry post-timeline grid-2 clearfix">
-                        <br><br>
-                        <div class="timeline-border"></div>
-                    @foreach ($stories as $item)
+            <div id="posts" class="post-grid grid-container post-masonry post-timeline grid-2 clearfix">
+                <br><br>
+                <div class="timeline-border"></div>
+                @foreach ($stories as $item)
 
-                        <div class="entry clearfix">
-                            <div class="entry-timeline">
-                                <div class="timeline-divider"></div>
-                            </div>
-                            <div class="entry-image">
-                                <a href="{{ $item->getFirstMediaUrl('blog_images', 'fullscreen') }}" data-lightbox="image"><img src="{{ $item->getFirstMediaUrl('blog_images', 'fullscreen') }}" class="image_fade"></a>
-                            </div>
-                            <div class="entry-title">
-                                <h2><a rel="noopener noreferrer" target="_blank" href="{{route('blog.show', $item->slug)}}">{{ $item->title }}</a></h2>
-                            </div>
-                            <ul class="entry-meta clearfix">
-                                <li><i class="icon-calendar3"></i>{{ $item->created_at->diffForHumans()}}</li>
-
-                                <li><i class="icon-camera-retro"></i></li>
-                            </ul>
-                            <div class="entry-content" style="overflow-wrap: break-word;">
-                                <p>{{ $item->biliner }}</p>
-                                <a rel="noopener noreferrer" target="_blank" href="{{route('blog.show', $item->slug)}}" class="more-link">Read More</a>
-                            </div>
-                        </div>
-                    @endforeach
-
+                <div class="wow slideInUp entry clearfix " data-wow-delay="1s">
+                    <div class="entry-timeline">
+                        <div class="timeline-divider"></div>
                     </div>
-                    <!-- #posts end -->
+                    <div class="entry-image">
+                        <a href="{{ $item->getFirstMediaUrl('blog_images', 'fullscreen') }}" data-lightbox="image"><img src="{{ $item->getFirstMediaUrl('blog_images', 'fullscreen') }}" class="image_fade"></a>
+                    </div>
+                    <div class="entry-title">
+                        <h2><a rel="noopener noreferrer" target="_blank" href="{{route('blog.show', $item->slug)}}">{{ $item->title }}</a></h2>
+                    </div>
+                    <ul class="entry-meta clearfix">
+                        <li><i class="icon-calendar3"></i>{{ $item->created_at->diffForHumans()}}</li>
 
-                    {{-- <div id="load-next-posts" class="center">
-                        <a href="blog-timeline-2.html" class="button button-3d button-dark button-large button-rounded">Load more..</a>
-                    </div> --}}
+                        <li><i class="icon-camera-retro"></i></li>
+                    </ul>
+                    <div class="entry-content" style="overflow-wrap: break-word;">
+                        <p>{{ $item->biliner }}</p>
+                        <a rel="noopener noreferrer" target="_blank" href="{{route('blog.show', $item->slug)}}" class="more-link">Read More</a>
+                    </div>
                 </div>
+                @endforeach
 
             </div>
+            <!-- #posts end -->
 
-        </section>
-        <!-- #content end -->
+            {{--
+            <div id="load-next-posts" class="center">
+                <a href="blog-timeline-2.html" class="button button-3d button-dark button-large button-rounded">Load more..</a>
+            </div> --}}
+        </div>
+
+    </div>
+
+</section>
+<!-- #content end -->
 @endsection
-
-       
-
- @section('scripts')
-    <script type="text/javascript">
-        jQuery(window).load(function(){
+ 
+@section('scripts')
+<script src="/js/main/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script type="text/javascript">
+    jQuery(window).load(function(){
 
             var $container = $('#posts');
 
@@ -123,6 +127,5 @@
             });
 
         });
-    </script>
-
+</script>
 @endsection
