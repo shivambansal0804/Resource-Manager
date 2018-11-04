@@ -37,7 +37,7 @@
 	<link rel="stylesheet" href="{{ asset('css/main/colors.php?color=c85e51')}}" type="text/css" />
 	<!-- Document Title
 	============================================= -->
-	<title>DTU Times Gallery</title>
+	<title> {{ $album->name }} |DTU Times </title>
 </head>
 
 <body class="stretched ">

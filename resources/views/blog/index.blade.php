@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-<title> DTU Times | Blog</title>
+<title> Blog | DTU Times</title>
 @endsection
 @section('content')
         <!-- Page Title

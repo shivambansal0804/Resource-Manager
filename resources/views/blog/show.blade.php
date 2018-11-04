@@ -1,6 +1,6 @@
 @extends('layouts.main') 
 @section('title')
-<title>DTU Times | {{ $story->title }}</title>
+<title>{{ $story->title }} | DTU Times </title>
 @endsection
  
 @section('content')

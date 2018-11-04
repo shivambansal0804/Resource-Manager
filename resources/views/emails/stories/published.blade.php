@@ -125,7 +125,7 @@
         <h2 style="font-variant: small-caps;; font-size:30px; text-align:center;">{{ $story->title }}</h2>
         <br><br>
         <div>
-            <img src="{{ $item->getFirstMediaUrl('blog_images', 'fullscreen') }}" alt="image" class="respImg">
+            <img src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" alt="image" class="respImg">
             <div class="text" style="margin-bottom:20px; text-align:left;">
                 <p>
                     {{ $story->biliner }}
