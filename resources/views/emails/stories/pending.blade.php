@@ -116,12 +116,12 @@
     <div class="head">
         <div class="container">
             <div class="logo" style="text-align:center;">
-                <img src="http://dtutimes.dtu.ac.in/images/logo-dark.png" alt="">
+                <img src="http://dtutimes.me/images/logo-dark.png" alt="">
             </div>
         </div>
     </div>
     <div class="container">
-        <h1 class="heading-1">Blog Published</h1><br>
+        <h1 class="heading-1">Blog awaiting Approval</h1><br>
         <h2 style="font-variant: small-caps;; font-size:30px; text-align:center;">{{ $story->title }}</h2>
         <br><br>
         <div>
