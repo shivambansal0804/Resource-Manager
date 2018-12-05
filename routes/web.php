@@ -49,9 +49,9 @@ Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'checkAct
     });    
 });
 
-Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser', 'checkActivatedUser']], function() {
+Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|coordinator', 'checkActivatedUser']], function() {
     Route::get('/', 'User\SuperuserController@index')->name('council.dashboard');
-    Route::group(['prefix' => 'campaign'], function () {
+    Route::group(['prefix' => 'campaign', 'middleware' => 'role:council|superuser'], function () {
         Route::get('/', 'Email\CampaignController@index')->name('campaigns.index');
         Route::get('/create', 'Email\CampaignController@create')->name('campaigns.create');
         Route::post('/', 'Email\CampaignController@store')->name('campaigns.store');
@@ -62,7 +62,7 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser', 
         Route::delete('/{uuid}', 'Email\CampaignController@destroy')->name('campaigns.destroy');
     });
 
-    Route::group(['prefix' => 'subscriber'], function () {
+    Route::group(['prefix' => 'subscriber', 'middleware' => 'role:council|superuser'], function () {
         Route::get('/', 'Email\SubscriberController@index')->name('subscribers.index');
         Route::get('/create', 'Email\SubscriberController@create')->name('subscribers.create');
         Route::post('/', 'Email\SubscriberController@store')->name('subscribers.store');
@@ -72,9 +72,10 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser', 
         Route::delete('/{uuid}', 'Email\SubscriberController@destroy')->name('subscribers.destroy');
     });
 
-    Route::group(['prefix' => 'stories'], function () {
+    Route::group(['prefix' => 'stories', 'middleware' => 'role:council|superuser|coordinator'], function () {
         Route::get('/pending', 'User\CouncilController@index')->name('council.stories.index');
         Route::get('/published', 'User\CouncilController@publishedIndex')->name('council.stories.published');
+        Route::delete('/published/{uuid}', 'User\CouncilController@publishedDestroy')->name('council.stories.destory');
         Route::group(['prefix' => 'pending'], function() {
             Route::get('/{uuid}', 'User\CouncilController@show' )->name('council.stories.show');
             Route::put('/{uuid}/draft', 'User\CouncilController@draft')->name('council.stories.draft');

@@ -220,7 +220,7 @@
             <div class="text-center">
                 <span class="type--fade">
                     <small>
-                        Got any issues. Contact the
+                        Got any issues? Contact the
                         <a href="{{ route('dev.index') }}" class="text-primary"> Developers.</a>
                     </small>
                 </span>
