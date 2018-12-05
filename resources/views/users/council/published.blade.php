@@ -43,10 +43,22 @@
                                 </small>
                             <div class="text-right d-block">
                                 <a class="btn btn--sm type--uppercase" href="{{route('blog.show', $item->slug)}}">
-                                        <span class="btn__text">
-                                            Read Story
-                                        </span>
-                                    </a>
+                                    <span class="btn__text">
+                                        Read Story
+                                    </span>
+                                </a>
+                                <a class="btn btn--sm type--uppercase"
+                                    href="{{ route('council.stories.published') }}" 
+                                    onclick="event.preventDefault(); 
+                                                document.getElementById('delete-form').submit(); "
+                                    >
+                                    <span class="btn__text">
+                                        Delete
+                                    </span>
+                                </a>
+                                <form id="delete-form" action="{{ route('council.stories.destory', $item->uuid )}}" method="POST">
+                                    @csrf @method('DELETE')
+                                </form>
                             </div>
                         </div>
                     </li>

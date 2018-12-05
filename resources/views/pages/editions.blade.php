@@ -1,6 +1,6 @@
 @extends('layouts.main') 
 @section('title')
-<title>Editions | DTUTimes</title>
+<title>Editions | DTU Times</title>
 @endsection
 @section('links')
 <link rel="stylesheet" href="css/main/writer.css" type="text/css" />
@@ -78,7 +78,7 @@
 						    <div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
-										<a href="{{ route('43') }}" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/43.jpg" alt="Book Image"></a>
+										<a href="editions/43" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/43.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 43</a></h2>
 											<small class="book-category"><a href="edition41.pdf">May'18-July'18</a></small>
@@ -90,7 +90,7 @@
                             <div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec42.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/42.jpg" alt="Book Image"></a>
+										<a href="editions/42" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/42.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 42</a></h2>
 											<small class="book-category"><a href="edition40.pdf">Feb'18-April'18</a></small>
@@ -104,7 +104,7 @@
 							<div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec41.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/41.jpg" alt="Book Image"></a>
+										<a href="editions/41" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/41.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 41</a></h2>
 											<small class="book-category"><a href="edition39.pdf">Nov'17-Jan'18</a></small>
@@ -116,7 +116,7 @@
 							<div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec40.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/40.jpg" alt="Book Image"></a>
+										<a href="editions/40" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/40.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a href="#">Edition 40</a></h2>
 																						<small class="book-category"><a href="edition39.pdf">Aug'17-Oct'17</a></small>
@@ -131,7 +131,7 @@
 							<div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec39.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/39.jpg" alt="Book Image"></a>
+										<a href="editions/39" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/39.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a href="#">Edition 39</a></h2>
 																						<small class="book-category"><a href="edition39.pdf">Oct’16-Nov’16</a></small>
@@ -144,7 +144,7 @@
 														<div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec38.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/38.jpg" alt="Book Image"></a>
+										<a href="editions/38" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/38.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a href="#">Edition 38</a></h2>
 																						<small class="book-category"><a href="edition39.pdf">Nov‘16-Feb‘17</a></small>
@@ -176,7 +176,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec35.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/35.jpg" alt="Book Image"></a>
+										<a href="editions/35" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/35.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 35</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -193,7 +193,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec34.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/34.jpg" alt="Book Image"></a>
+										<a href="editions/34" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/34.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 34</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -214,7 +214,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec33.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/33.jpeg" alt="Book Image"></a>
+										<a href="editions/33" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/33.jpeg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 33</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -232,7 +232,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec32.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/32.jpeg" alt="Book Image"></a>
+										<a href="editions/32" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/32.jpeg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 32</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -249,7 +249,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec31.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/31.jpg" alt="Book Image"></a>
+										<a href="editions/31" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/31.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 31</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -263,7 +263,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec30.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/30.jpg" alt="Book Image"></a>
+										<a href="editions/30" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/30.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 30</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -278,7 +278,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec29.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/29.jpg" alt="Book Image"></a>
+										<a href="editions/29" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/29.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 29</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -294,7 +294,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec28.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/28.jpg" alt="Book Image"></a>
+										<a href="editions/28" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/28.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 28</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -311,7 +311,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec27.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/27.jpg" alt="Book Image"></a>
+										<a href="editions/27" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/27.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 27</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -328,7 +328,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec26.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/26.jpg" alt="Book Image"></a>
+										<a href="editions/26" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/26.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 26</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
@@ -345,7 +345,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec25.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/25.jpeg" alt="Book Image"></a>
+										<a href="editions/25" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/25.jpeg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 25</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>

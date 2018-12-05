@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>DTUtimes | Not found</title>
+	<title>DTU Times | Internal Server Error</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Site Description Here">
 	
@@ -21,9 +21,9 @@
 			<div class="container pos-vertical-center">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="h1--large">404</h1>
+						<h1 class="h1--large">500</h1>
 						<p class="lead">
-							The page you were looking for was not found.
+							Internal Server Error
 						</p>
 						<a href="/">Go back to home page</a>
 					</div>

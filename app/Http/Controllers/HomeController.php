@@ -51,4 +51,9 @@ class HomeController extends Controller
         $this->todo->destroy($id);
         return redirect()->back();        
     }
+
+    public function devIndex()
+    {
+        return view('pages.dev');
+    }
 }

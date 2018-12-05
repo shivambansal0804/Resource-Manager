@@ -5,8 +5,8 @@
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
                 <h1>Dashboard</h1>
-                <p class="">
-                    A comprehensive guide to creating fast, responsive websites &mdash; including input from 5 veteran designers and developers
+                <p>
+                    Welcome to the backdoor for the DTU Times website.
                 </p>
             </div>
         </div>
@@ -96,10 +96,10 @@
                                 {{ $item->description }}
                             </p>
                             <p>
-                                <small>Created by{{ \App\User::find($item->user_id) ? \App\User::find($item->user_id)->name : 'Not found' }},</small>                                
+                                <small>Created by {{ \App\User::find($item->user_id) ? \App\User::find($item->user_id)->name : 'Not found' }},</small>                                
                                 @if ($item->completed_by)
                                     <small>
-                                        Completed By {{ \App\User::find($item->completed_by) ? \App\User::find($item->completed_by)->name : 'The User has been deleted or Not found' }}, {{ \Carbon\Carbon::parse($item->completed_at)->diffForHumans() }}
+                                        Completed by {{ \App\User::find($item->completed_by) ? \App\User::find($item->completed_by)->name : 'The User has been deleted or Not found' }}, {{ \Carbon\Carbon::parse($item->completed_at)->diffForHumans() }}
                                     </small>
                                 @else
                                     <small>
@@ -126,7 +126,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            @if (auth()->user()->hasRole('council') || auth()->user()->hasRole('superuser'))
+                            @if (auth()->user()->hasRole('council') || auth()->user()->hasRole('superuser') || auth()->user()->hasRole('coordinator'))
                                 <small class="mr-3">Visibile to: </small>
                                 <br class="hidden-lg">
                                 <div class="input-radio input-radio--innerlabel">

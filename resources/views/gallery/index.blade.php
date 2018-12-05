@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DTU Times Gallery</title>
+    <title>Gallery | DTU Times </title>
 
     {{-- Theme css --}}
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
@@ -258,7 +258,7 @@
                 <div class="container clearfix">
 
                     <div class="col_full center nobottommargin topmargin-sm">
-                        &copy; DTU Times 2017. All Rights Reserved.<br><br>
+                        &copy; DTU Times 2018. All Rights Reserved.<br><br>
                         <a href="http://facebook.com/DTUTimes" target="_blank" class="social-icon inline-block si-small si-borderless si-rounded si-facebook">
                             <i class="icon-facebook"></i>
                             <i class="icon-facebook"></i>

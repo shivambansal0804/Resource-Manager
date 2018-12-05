@@ -33,46 +33,26 @@ Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('pass
 Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 
 // Superuser Routes
-Route::group(['prefix' => 'superuser', 'middleware' => ['role:superuser', 'checkActivatedUser']], function() {
-
-    // Dashboard
+Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'checkActivatedUser']], function() {
     Route::get('/', 'User\SuperuserController@index')->name('superuser.dashboard');
-
-    // Roles
     Route::get('/roles', 'RoleController@index')->name('roles.index');
-    
-    // Permissions
     Route::get('/permissions', 'PermissionController@index')->name('permissions.index');
-
-    // user
-        // All Users
-        Route::get('/users', 'User\SuperuserController@indexUser')->name('users.index');
-
-        // Create User
-        Route::get('/users/create', 'User\SuperuserController@createUser')->name('users.create');
-        Route::post('/users', 'User\SuperuserController@storeUser')->name('users.store');
-
-        // Show User
-        Route::get('/users/{uuid}', 'User\SuperuserController@showUser')->name('users.show');
-
-        // Change Permissions 
-        Route::get('/users/{uuid}/permissions', 'User\SuperuserController@editPermissionUser')->name('users.permission.edit');
-        Route::post('/users/{uuid}/permissions', 'User\SuperuserController@updatePermissionUser')->name('users.permission.update');
-
-        // Change Role (sync)
-        Route::get('/users/{uuid}/role', 'User\SuperuserController@editRoleUser')->name('users.role.edit');
-        Route::post('/users/{uuid}/role', 'User\SuperuserController@updateRoleUser')->name('users.role.update');
-
-        // Delete User
-        Route::delete('/users/{uuid}', 'User\SuperuserController@destroyUser')->name('users.destroy');
+    Route::group(['prefix' => 'members'], function () {
+        Route::get('/', 'User\SuperuserController@indexUser')->name('users.index');
+        Route::get('/create', 'User\SuperuserController@createUser')->name('users.create');
+        Route::post('/', 'User\SuperuserController@storeUser')->name('users.store');
+        Route::get('/{uuid}', 'User\SuperuserController@showUser')->name('users.show'); 
+        Route::get('/{uuid}/permissions', 'User\SuperuserController@editPermissionUser')->name('users.permission.edit');
+        Route::post('/{uuid}/permissions', 'User\SuperuserController@updatePermissionUser')->name('users.permission.update');
+        Route::get('/{uuid}/role', 'User\SuperuserController@editRoleUser')->name('users.role.edit');
+        Route::post('/{uuid}/role', 'User\SuperuserController@updateRoleUser')->name('users.role.update');
+        Route::delete('/{uuid}', 'User\SuperuserController@destroyUser')->name('users.destroy');
+    });    
 });
 
-Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser', 'checkActivatedUser']], function() {
-    // Dashboard
+Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|coordinator', 'checkActivatedUser']], function() {
     Route::get('/', 'User\SuperuserController@index')->name('council.dashboard');
-
-    // Campaign Routes
-    Route::group(['prefix' => 'campaign'], function () {
+    Route::group(['prefix' => 'campaign', 'middleware' => 'role:council|superuser'], function () {
         Route::get('/', 'Email\CampaignController@index')->name('campaigns.index');
         Route::get('/create', 'Email\CampaignController@create')->name('campaigns.create');
         Route::post('/', 'Email\CampaignController@store')->name('campaigns.store');
@@ -83,8 +63,7 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser', 
         Route::delete('/{uuid}', 'Email\CampaignController@destroy')->name('campaigns.destroy');
     });
 
-    // Subscriber Counts
-    Route::group(['prefix' => 'subscriber'], function () {
+    Route::group(['prefix' => 'subscriber', 'middleware' => 'role:council|superuser'], function () {
         Route::get('/', 'Email\SubscriberController@index')->name('subscribers.index');
         Route::get('/create', 'Email\SubscriberController@create')->name('subscribers.create');
         Route::post('/', 'Email\SubscriberController@store')->name('subscribers.store');
@@ -93,42 +72,46 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser', 
         Route::put('/{uuid}', 'Email\SubscriberController@update')->name('subscribers.update');
         Route::delete('/{uuid}', 'Email\SubscriberController@destroy')->name('subscribers.destroy');
     });
+
+    Route::group(['prefix' => 'stories', 'middleware' => 'role:council|superuser|coordinator'], function () {
+        Route::get('/pending', 'User\CouncilController@index')->name('council.stories.index');
+        Route::get('/published', 'User\CouncilController@publishedIndex')->name('council.stories.published');
+        Route::delete('/published/{uuid}', 'User\CouncilController@publishedDestroy')->name('council.stories.destory');
+        Route::group(['prefix' => 'pending'], function() {
+            Route::get('/{uuid}', 'User\CouncilController@show' )->name('council.stories.show');
+            Route::put('/{uuid}/draft', 'User\CouncilController@draft')->name('council.stories.draft');
+            Route::get('/{uuid}/edit', 'User\CouncilController@edit')->name('council.stories.edit');
+            Route::put('/{uuid}', 'User\CouncilController@update')->name('council.stories.update');
+            Route::get('/{uuid}/publish', 'User\CouncilController@publish')->name('council.stories.publish');
+        });
+        
+    });
 });
 
 // Blog routes
 Route::group(['prefix' => 'blog'], function() {
-    // Index page of blog
     Route::get('/', 'BlogController@index')->name('blog.index');
-
-    // Blog Category Routes
     Route::group(['prefix' => 'categories'], function () {
-        // Index of Categories
         Route::get('/', 'BlogController@indexCategory')->name('blog.categories.index');
         Route::get('/{slug}', 'BlogController@showCategory')->name('blog.categories.show');
     });
-    
-    // Single Story Route
     Route::get('/{slug}', 'BlogController@show')->name('blog.show');
 });
 
 // Gallery routes
 Route::group(['prefix' => 'gallery'], function () {
-    // Index of Gallery
     Route::get('/', 'GalleryController@index')->name('gallery.index');
-
-    // Gallery show
     Route::get('/{slug}', 'GalleryController@show')->name('gallery.show');
 });
 
-
-// Edition Routes
 Route::group(['prefix' => 'editions'], function () {
-    
-    Route::view('/{num}', 'ajax.{num}')->name('{num}');
- });
-// read
+    Route::get('/{id}', function ($id) {
+        $base = 'ajax.'.$id;
+        return view($base);
+    });
+});
 
-// First Time Login Routes
+
 Route::middleware('auth')->group(function () {
     Route::get('/me/info', 'User\UserController@info')->name('me.info');
     Route::put('/user/{uuid}', 'User\UserController@update')->name('me.update');
@@ -137,9 +120,10 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
-
     Route::get('/me', 'User\UserController@show')->name('me.show');
     Route::get('/me/edit', 'User\UserController@edit')->name('me.edit');
+
+    Route::get('/devlopers', 'HomeController@devIndex')->name('dev.index');
 
     Route::group(['prefix' =>'todos'], function () {
         Route::post('/', 'HomeController@storeTodo')->name('todos.store');
@@ -147,41 +131,22 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::delete('/{id}', 'HomeController@destroyTodo')->name('todos.destroy');
     });
 
-    // Categories Routes 
-        // Create Category
-        Route::middleware('permission:create-category')->group(function () {
-            Route::get('/categories/create', 'CategoryController@create')->name('categories.create');
-            Route::post('/categories', 'CategoryController@store')->name('categories.store');
+        Route::group(['prefix' => 'categories'], function () {
+            Route::middleware('permission:create-category')->group(function () {
+                Route::get('/create', 'CategoryController@create')->name('categories.create');
+                Route::post('/', 'CategoryController@store')->name('categories.store');
+            });
+            Route::middleware('permission:read-category')->group(function () {
+                Route::get('/', 'CategoryController@index')->name('categories.index');
+                Route::get('/{slug}', 'CategoryController@show')->name('categories.show');
+            }); 
+            Route::middleware('permission:edit-category')->group(function () {
+                Route::get('/{slug}/edit', 'CategoryController@edit')->name('categories.edit');
+                Route::put('/{slug}', 'CategoryController@update')->name('categories.update');
+            });
+            Route::delete('/{slug}', 'CategoryController@destroy')->name('categories.destroy')->middleware('permission:delete-category');
         });
-
-        // All Category
-        Route::middleware('permission:read-category')->group(function () {
-            Route::get('/categories', 'CategoryController@index')->name('categories.index');
-            Route::get('/categories/{slug}', 'CategoryController@show')->name('categories.show');
-        });        
-
-        // Edit Category
-        Route::middleware('permission:edit-category')->group(function () {
-            Route::get('/categories/{slug}/edit', 'CategoryController@edit')->name('categories.edit');
-            Route::put('/categories/{slug}', 'CategoryController@update')->name('categories.update');
-        });
-
-        // Delete Category
-        Route::delete('/categories/{name}', 'CategoryController@destroy')->name('categories.destroy')->middleware('permission:delete-category');
         
-    Route::middleware('role:superuser|council')->group(function () {
-        Route::get('/stories/pending', 'User\CouncilController@index')->name('council.stories.index');
-        Route::get('/stories/published', 'User\CouncilController@publishedIndex')->name('council.stories.published');
-        Route::get('/stories/pending/{uuid}', 'User\CouncilController@show' )->name('council.stories.show');
-        Route::put('/stories/pending/{uuid}/draft', 'User\CouncilController@draft')->name('council.stories.draft');
-        Route::get('stories/pending/{uuid}/edit', 'User\CouncilController@edit')->name('council.stories.edit');
-
-        // update
-        Route::put('stories/pending/{uuid}', 'User\CouncilController@update')->name('council.stories.update');
-        // publish 
-        Route::get('stories/pending/{uuid}/publish', 'User\CouncilController@publish')->name('council.stories.publish');
-        
-    });
 
     // Stories Routes
     Route::group(['prefix' => 'stories', 'middleware' => ['role:superuser|council|columnist|coordinator']], function() {
@@ -192,7 +157,7 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::get('/{uuid}/edit', 'StoryController@edit')->name('stories.edit');
         Route::get('/{uuid}/submit', 'StoryController@submit')->name('stories.submit');
         Route::put('/{uuid}', 'StoryController@update')->name('stories.update');
-        Route::put('/{uuid}/autosave', 'StoryController@autoSave')->name('stories.autosave');
+        // Route::put('/{uuid}/autosave', 'StoryController@autoSave')->name('stories.autosave');
         Route::delete('/{uuid}', 'StoryController@destroy')->name('stories.destroy');
     });
 

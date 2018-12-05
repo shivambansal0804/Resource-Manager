@@ -97,9 +97,19 @@ class ImageController extends Controller
      * @param  \App\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Image $image)
+    public function update(Request $request, $uuid, $image)
     {
-        //
+        if($request->has('name') && $request->has('biliner')){
+            $temp = \App\Models\Album::whereUuid($uuid)->firstOrFail()->image()->whereUuid($image);
+        
+            $temp->update([
+                'name'    => $request->name,
+                'biliner' => $request->biliner
+            ]);
+        }
+        
+
+        return redirect()->route('images.show', [$uuid, $image]);
     }
 
     /**
@@ -137,6 +147,6 @@ class ImageController extends Controller
             'status'    => 'draft'
         ]);
 
-        return redirect()->route('albums.show', $uuid);
+        return redirect()->back();
     }
 }

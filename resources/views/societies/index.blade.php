@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-<title>Blog | DTU Times</title>
+<title>Societies | DTU Times</title>
 @endsection
 @section('content')
 <!-- Page Title
@@ -9,7 +9,7 @@
 
 			<div class="container clearfix">
 				<h1>socities/teams</h1>
-<span>List of all socities in DTU</span>
+				<span>List of all socities in DTU</span>
 			</div>
 
 		</section><!-- #page-title end -->

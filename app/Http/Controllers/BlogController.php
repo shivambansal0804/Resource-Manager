@@ -14,8 +14,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $stories = Story::where('status', 'published')->latest()->with('user')->paginate(10);
-
+        $stories = Story::where('status', 'published')->with('user')->latest()->get();
+        
         return view('blog.index', ['stories' => $stories]);
     }
 
@@ -28,8 +28,10 @@ class BlogController extends Controller
     public function show($slug)
     {
         $story = Story::where(['slug'=> $slug, 'status' => 'published'])->with('user')->firstOrFail();
-    
-        return view('blog.show', ['story' => $story]);
+
+        $stories = Story::where('status', 'published')->latest()->paginate(3);
+
+        return view('blog.show', ['story' => $story, 'stories' => $stories]);
     }
 
     /**

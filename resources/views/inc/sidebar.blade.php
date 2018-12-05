@@ -5,7 +5,7 @@
                 <img alt="avatar" src="{{ asset('img/logo-light.png') }}" class="image--md" />
             </a>
 
-            
+
         </div>
         <div class="text-block">
             <h4>
@@ -30,105 +30,97 @@
                     </a>
                 </li>
 
-                {{-- Stories option --}}
-                @if (!auth()->user()->hasRole('photographer'))
-                    <li class="dropdown">
-                        <span class="dropdown__trigger">
+                {{-- Stories option --}} @if (!auth()->user()->hasRole('photographer'))
+                <li class="dropdown">
+                    <span class="dropdown__trigger">
                             Story
                         </span>
-                        <div class="dropdown__container">
-                            <div class="dropdown__content">
-                                <ul class="menu-vertical">
-                                    <li>
-                                        <a href="{{ route('stories.create') }}">
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('stories.create') }}">
                                             New Story
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('stories.index')}}">
+                                </li>
+                                <li>
+                                    <a href="{{ route('stories.index')}}">
                                             Your Stories
                                         </a>
-                                    </li>
+                                </li>
 
-                                    {{-- Publish Story --}}
-                                    @if (auth()->user()->can('publish-story'))
-                                    <li>
-                                        <a href="{{ route('council.stories.index')}}" >
+                                {{-- Publish Story --}} @if (auth()->user()->can('publish-story'))
+                                <li>
+                                    <a href="{{ route('council.stories.index')}}">
                                             Pending Stories
                                         </a>
-                                    </li> 
-                                    <li>
-                                        <a href="{{ route('council.stories.published')}}" >
+                                </li>
+                                <li>
+                                    <a href="{{ route('council.stories.published')}}">
                                             Published Stories
                                         </a>
-                                    </li>
-                                    @endif
-                                </ul>
-                            </div>
+                                </li>
+                                @endif
+                            </ul>
                         </div>
-                    </li>
-                    {{-- Category option --}}
-                    <li class="dropdown">
-                        <span class="dropdown__trigger">
+                    </div>
+                </li>
+                {{-- Category option --}}
+                <li class="dropdown">
+                    <span class="dropdown__trigger">
                             Category
                         </span>
-                        <div class="dropdown__container">
-                            <div class="dropdown__content">
-                                <ul class="menu-vertical">
-                                    <li>
-                                        <a href="{{ route('categories.index') }}">
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('categories.index') }}">
                                             All Categories
                                         </a>
-                                    </li>
-                                    @if (auth()->user()->can('create-category'))
-                                    <li>
-                                        <a href="{{ route('categories.create') }}">
+                                </li>
+                                @if (auth()->user()->can('create-category'))
+                                <li>
+                                    <a href="{{ route('categories.create') }}">
                                             New Category
                                         </a>
-                                    </li>
-                                    @endif
-                                </ul>
-                            </div>
+                                </li>
+                                @endif
+                            </ul>
                         </div>
-                    </li>
-                @endif
-
-                @if (!auth()->user()->hasRole('columnist'))
-                    <li class="dropdown">
-                        <span class="dropdown__trigger">
+                    </div>
+                </li>
+                @endif @if (!auth()->user()->hasRole('columnist'))
+                <li class="dropdown">
+                    <span class="dropdown__trigger">
                             Album
                         </span>
-                        <div class="dropdown__container">
-                            <div class="dropdown__content">
-                                <ul class="menu-vertical">
-                                    <li>
-                                        <a href="{{ route('albums.index')}}">
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('albums.index')}}">
                                             All Albums
                                         </a>
-                                    </li>
+                                </li>
 
-                                    @if (auth()->user()->can('create-album'))
-                                    <li>
-                                        <a href="{{ route('albums.create') }}">
+                                @if (auth()->user()->can('create-album'))
+                                <li>
+                                    <a href="{{ route('albums.create') }}">
                                             New Album
                                         </a>
-                                    </li>
-                                    @endif
-                                </ul>
-                            </div>
+                                </li>
+                                @endif
+                            </ul>
                         </div>
-                    </li>
+                    </div>
+                </li>
 
-                    <li>
-                        <a href="{{ route('images.me')}}">
+                <li>
+                    <a href="{{ route('images.me')}}">
                             All Images
                         </a>
-                    </li>
-                @endif
-
-                
-
-                @if (auth()->user()->hasRole('superuser'))
+                </li>
+                @endif @if (auth()->user()->hasRole('superuser'))
                 <li class="dropdown">
                     <span class="dropdown__trigger">
                         Manage
@@ -143,12 +135,12 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('users.index') }}">
-                                        All Users
+                                        All Members
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ route('users.create') }}">
-                                        New User
+                                        New Member
                                     </a>
                                 </li>
                                 <li>
@@ -165,69 +157,72 @@
                         </div>
                     </div>
                 </li>
-                @endif
-
-                @if (auth()->user()->hasRole(['council', 'superuser'])) 
-                    <li class="dropdown">
-                        <span>
+                @endif @if (auth()->user()->hasRole(['council', 'superuser']))
+                <li class="dropdown">
+                    <span>
                             Campaigns
                         </span>
-                        <div class="dropdown__container">
-                            <div class="dropdown__content">
-                                <ul class="menu-vertical">
-                                    <li>
-                                        <a href="{{ route('campaigns.index')}}">
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('campaigns.index')}}">
                                             All Campaign
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('campaigns.create') }}">
+                                </li>
+                                <li>
+                                    <a href="{{ route('campaigns.create') }}">
                                             New Campaign
                                         </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li>
-                        <a href="{{ route('subscribers.index')}}">Subscribers</a>
-                    </li>
+                    </div>
+                </li>
+                <li>
+                    <a href="{{ route('subscribers.index')}}">Subscribers</a>
+                </li>
                 @endif
-                
+
             </ul>
-
-            
         </div>
-
 
         <br>
         <footer class="footer-3 text-center space--xs ">
-            <ul class="social-list list-inline list--hover">
+            <ul class="social-list list-inline list--hover ml-auto mr-auto">
                 <li>
-                    <a href="#">
+                    <a href="mailto:dtutimes@dtu.ac.in">
                         <i class="socicon socicon-mail icon icon--xs"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://twitter.com/dtutimes">
                         <i class="socicon socicon-twitter icon icon--xs"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/dtutimes/">
                         <i class="socicon socicon-facebook icon icon--xs"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/dtu_times/?hl=en">
                         <i class="socicon socicon-instagram icon icon--xs"></i>
                     </a>
                 </li>
             </ul>
             <div>
                 <span class="type--fine-print type--fade">
-                    DTUtimes
+                    DTU Times
                     <span class="update-year"></span>
+                </span>
+            </div>
+            <div class="text-center">
+                <span class="type--fade">
+                    <small>
+                        Got any issues? Contact the
+                        <a href="{{ route('dev.index') }}" class="text-primary"> Developers.</a>
+                    </small>
                 </span>
             </div>
         </footer>

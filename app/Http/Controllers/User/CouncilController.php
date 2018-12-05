@@ -26,8 +26,18 @@ class CouncilController extends Controller
     {
         $stories = Story::where('status', 'published')->get();
 
-        return view('users.council.', ['stories' => $stories]);
+        return view('users.council.published', ['stories' => $stories]);
     }
+
+    public function publishedDestroy($uuid)
+    {
+        $story = Story::where('uuid', $uuid)->firstOrFail();
+
+        $story->delete();
+
+        return redirect()->route('council.stories.published');
+    }
+
 
     /**
      * Show the form for creating a new resource.

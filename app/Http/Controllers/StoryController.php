@@ -51,20 +51,20 @@ class StoryController extends Controller
      * @param  \Illuminate\Http\Request  $gi
      * @return \Illuminate\Http\Response
      */
-    public function autoSave(Request $request)
-    {
-        $data = [
-            'title'             => $request->title,
-            'body'              => $request->body,
-            'meta_title'        => $request->meta_title,
-            'meta_description'  => $request->meta_description,
-            'biliner'           => $request->biliner,
-        ];
+    // public function autoSave(Request $request)
+    // {
+    //     $data = [
+    //         'title'             => $request->title,
+    //         'body'              => $request->body,
+    //         'meta_title'        => $request->meta_title,
+    //         'meta_description'  => $request->meta_description,
+    //         'biliner'           => $request->biliner,
+    //     ];
 
-        $story = auth()->user()->story()->update($data);
+    //     $story = auth()->user()->story()->update($data);
 
-        return response()->json('saved');
-    }
+    //     return response()->json('saved');
+    // }
 
     /**
      * Display the specified resource.

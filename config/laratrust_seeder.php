@@ -23,10 +23,11 @@ return [
         ],
         'coordinator' => [
             'profile' => 'r,u',
-            'story' => 'c,r,u,d',
+            'story' => 'c,r,u,d,p',
             'gallery' => 'c,r,u,d',
-            'album' => 'r,u',
-            'category' => 'c,r,u,d'
+            'album' => 'c,r,u,d,p',
+            'category' => 'c,r,u,d',
+            'image' => 'p'
         ],
         'columnist' => [
             'profile' => 'r,u',

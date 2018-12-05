@@ -95,7 +95,8 @@ class SubscriberController extends Controller
 
     public function join(StoreSubscriber $request)
     {
-        return $this->create($request->email);
+        $this->create($request->email);
+        return response()->json(['message' => 'Subscribed']);   
     }
 
 }

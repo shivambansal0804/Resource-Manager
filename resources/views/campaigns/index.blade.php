@@ -6,8 +6,9 @@
         <div class="row">
             <div class="col-md-10 col-lg-8">
                 <h1>All Campaigns</h1>
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nisi? Saepe, itaque error. Totam, fuga quia a
+                <p>
+                    Campaigns are an essential part of DTU Times. Online campaigns are done in order to reach to a wider audience, and deliver
+                    content apart from the edition. It is because of the campaigns that DTUites talk about Times.
                 </p>
             </div>
         </div>
@@ -31,9 +32,7 @@
                         </span>
                         </div>
                         <div class="accordion__content">
-                            <small>
-                            {{ $item->uuid }}
-                        </small> {{ $item->subject }}
+                            {{ $item->subject }}
                             <br>
                             <small>
                             Created <strong>{{ $item->created_at->diffForHumans() }}</strong>

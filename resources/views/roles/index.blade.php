@@ -7,7 +7,7 @@
             <div class="col-md-10 col-lg-8">
                 <h1>All Roles</h1>
                 <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nisi? Saepe, itaque error. Totam, fuga quia a
+                    Everyone has a different role in Times. Hence different usage of the website.
                 </p>
             </div>
         </div>

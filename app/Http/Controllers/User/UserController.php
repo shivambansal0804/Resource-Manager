@@ -60,7 +60,7 @@ class UserController extends Controller
      */
     public function edit()
     {
-        return view('users.auth.edit');
+        return view('users.auth.edit', ['user' => auth()->user()]);
     }
 
     /**
@@ -85,13 +85,13 @@ class UserController extends Controller
             'activated' => true
         ];
         
-        $user = auth()->user();
+        $user = \Auth::user();
 
         $updated = $user->update($data);
 
         if (isset($request['avatar'])) {
-            $image = $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
-            
+            $user->clearMediaCollection('avatars');
+            $image = $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');   
         }
 
         return redirect()->route('dashboard');

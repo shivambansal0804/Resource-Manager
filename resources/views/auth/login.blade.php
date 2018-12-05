@@ -5,16 +5,16 @@
 
     <div class="container pos-vertical-center">
         <div class="row justify-content-center" >
-            <div class="login col-md-4 col-lg-4" >
+            <div class="col-md-4 col-lg-4" >
                 
-                <form method="POST" action="{{ route('login') }}" class="row mt-0">
+                <form method="POST" action="{{ route('login') }}" class="row ml-auto mt-0">
                     @csrf
                     
                         <div class="col-md-12 text-center">
                             <img src="{{ asset('img/logo-white.png') }}">
                         </div>
                         <div class="col-md-12 text-center">
-                            <h3>DTUTIMES</h3>
+                            <h3>DTU TIMES</h3>
                         </div>
                         <div class="col-md-12">
                             <input placeholder="Email" type="email" name="email" value=""
