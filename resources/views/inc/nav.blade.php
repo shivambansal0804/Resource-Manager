@@ -33,6 +33,9 @@
                             
                             <li><a href="{{ route('gallery.index') }}"><div>Gallery</div></a>
                             </li>
+
+                            <li><a href="{{ route('societies.index') }}"><div>Societies</div></a>
+                            </li>
                                             
                             <li><a href="{{ route('team') }}"><div>Team</div></a>
                             </li>

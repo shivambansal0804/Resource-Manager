@@ -78,7 +78,7 @@
 						    <div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
-										<a href="ajax/book-pagec43.html" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/43.jpg" alt="Book Image"></a>
+										<a href="{{ route('43') }}" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/43.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 43</a></h2>
 											<small class="book-category"><a href="edition41.pdf">May'18-July'18</a></small>
