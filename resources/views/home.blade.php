@@ -126,7 +126,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            @if (auth()->user()->hasRole('council') || auth()->user()->hasRole('superuser'))
+                            @if (auth()->user()->hasRole('council') || auth()->user()->hasRole('superuser') || auth()->user()->hasRole('coordinator'))
                                 <small class="mr-3">Visibile to: </small>
                                 <br class="hidden-lg">
                                 <div class="input-radio input-radio--innerlabel">
