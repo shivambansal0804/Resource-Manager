@@ -18,6 +18,7 @@ Route::get('/team', 'PageController@team')->name('team');
 Route::get('/editions', 'PageController@editions')->name('editions');
 Route::get('/test', 'PageController@test');
 
+
 // Join the newsletter
 Route::post('/subscribe', 'Email\SubscriberController@join')->name('subscribers.join');
 
@@ -103,7 +104,14 @@ Route::group(['prefix' => 'gallery'], function () {
     Route::get('/{slug}', 'GalleryController@show')->name('gallery.show');
 });
 
-// First Time Login Routes
+Route::group(['prefix' => 'editions'], function () {
+    Route::get('/{id}', function ($id) {
+        $base = 'ajax.'.$id;
+        return view($base);
+    });
+});
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/me/info', 'User\UserController@info')->name('me.info');
     Route::put('/user/{uuid}', 'User\UserController@update')->name('me.update');
@@ -182,5 +190,13 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
     });
 
     Route::get('/uploads', 'ImageController@me')->name('images.me');// User images
+
+
     
+});
+// Society Routes
+Route::group(['prefix' => 'societies'], function () {
+    // Index of Society
+    Route::view('/', 'societies.index')->name('societies.index');
+
 });
