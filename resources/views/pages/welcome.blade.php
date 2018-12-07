@@ -343,6 +343,23 @@
 			<div id="oc-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-margin="20" data-loop="true" data-nav="true"
 			 data-pagi="true" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="3" data-items-lg="4">
 
+
+				<div class="oc-item">
+					<a href="{{ route ('editions') }}">
+						<div class="entry clearfix">
+							<div class="entry-image">
+								<img class="image_fade" src="/img/44.jpg" alt="Standard Post with Image">
+							</div>
+							<div class="entry-title">
+								<h2><a href="{{ route('editions') }}">Edition 44</a></h2>
+							</div>
+							<div class="entry-content">
+								<a href="{{ route('editions') }}" class="more-link">Read More</a>
+							</div>
+						</div>
+					</a>
+				</div>
+
 				<div class="oc-item">
 					<a href="{{ route ('editions') }}">
 						<div class="entry clearfix">
