@@ -27,7 +27,7 @@
 							<div class="emphasis-title bottommargin-sm">
 								<h1 class="400" data-animate="fadeInUp" data-delay="600">Read the Latest Print Editions by<br><span><em>DTU Times</em></span>.</h1>
 							</div>
-							<a data-animate="fadeIn" href="#content" style="transition-duration: 5s" class="button button-large button-border button-white button-light button-rounded capitalize notopmargin"><span>Read them all</span></a><br class="hidden-lg hidden-md">
+							<a data-animate="fadeIn" href="https://drive.google.com/drive/folders/1fSuXKN7DKOAQqSAuWFN7rd3JGl2_h4W2?usp=sharing" style="transition-duration: 5s" class="button button-large button-border button-white button-light button-rounded capitalize notopmargin"><span>Download</span></a><br class="hidden-lg hidden-md">
 							
 						</div>
 					</div>
