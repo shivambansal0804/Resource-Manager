@@ -9,7 +9,7 @@
 
 			<div class="container clearfix">
 				<h1>socities/teams</h1>
-				<span>List of all socities in DTU</span>
+<span>List of all socities in DTU</span>
 			</div>
 
 		</section><!-- #page-title end -->
@@ -48,694 +48,736 @@
 
 						<article class="portfolio-item pf-media pf-team">
 							<div class="portfolio-image">
-								<a href="society/altair.html">
-									<img src="img/society/techteam/altair.jpg" alt="altair">
+								<a href="societies/single/altair">
+									<img src="img/society/altair/1.jpg" alt="altair">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techteam/altair.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/altair.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/altair/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/altair" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/altair.html">Altair</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-team">
-							<div class="portfolio-image">
-								<a href="society/auv.html">
-									<img src="img/society/techteam/auv.jpg" alt="auv">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techteam/auv.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/auv.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/auv.html">Autonomous Underground Vehicle</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-team">
-							<div class="portfolio-image">
-								<a href="society/defianz.html">
-									<img src="img/society/techteam/defianz.jpg" alt="defianz">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techteam/defianz.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/defianz.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/defianz.html">Defianz</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-team">
-							<div class="portfolio-image">
-								<a href="society/hertz.html">
-									<img src="img/society/techteam/hertz.jpg" alt="hertz">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techteam/hertz.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/hertz.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/hertz.html">Hertz</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-team">
-							<div class="portfolio-image">
-								<a href="society/inferno.html">
-									<img src="img/society/techteam/inferno.png" alt="inferno">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techteam/inferno.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/inferno.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/inferno.html">Inferno</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-team">
-							<div class="portfolio-image">
-								<a href="society/okami.html">
-									<img src="img/society/techteam/okami.png" alt="okami">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techteam/okami.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/okami.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/okami.html">Team Okami Racing</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-team">
-							<div class="portfolio-image">
-								<a href="society/raftaar.html">
-									<img src="img/society/techteam/raftaar.jpg" alt="raftaar">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techteam/raftaar.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/raftaar.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/raftaar.html">Raftaar</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-team">
-							<div class="portfolio-image">
-								<a href="society/supermileage.html">
-									<img src="img/society/techteam/supermileage.jpg" alt="supermileage">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techteam/supermileage.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/supermileage.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/supermileage.html">Supermileage</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-team">
-							<div class="portfolio-image">
-								<a href="society/uas.html">
-									<img src="img/society/techteam/uas.jpg" alt="uas">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techteam/uas.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/uas.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/uas.html">Unmanned Aircraft System - DTU</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/altair">Altair</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-tech">
 							<div class="portfolio-image">
-								<a href="society/optima.html">
-									<img src="img/society/techsoc/optima.jpg" alt="optima">
+								<a href="societies/single/asme">
+									<img src="img/society/asme/1.jpg" alt="asme">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/optima.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/optima.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/asme/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/asme" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/optima.html">Optima DTU</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/asme">ASME</a></h3>
 							</div>
 						</article>
 
-
-						<article class="portfolio-item pf-media pf-tech">
+						<article class="portfolio-item pf-media pf-misc">
 							<div class="portfolio-image">
-								<a href="society/asme.html">
-									<img src="img/society/techsoc/asme.jpg" alt="asme">
+								<a href="societies/single/assets">
+									<img src="img/society/assets/1.jpg" alt="assets">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/asme.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/asme.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/assets/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/assets" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/asme.html">American Society of Mechanical Engineers</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/assets">Assets</a></h3>
 							</div>
 						</article>
 
-						<article class="portfolio-item pf-media pf-tech">
+						<article class="portfolio-item pf-media pf-team">
 							<div class="portfolio-image">
-								<a href="society/casrae.html">
-									<img src="img/society/techsoc/casrae.jpg" alt="casrae">
+								<a href="societies/single/auv">
+									<img src="img/society/auv/1.jpg" alt="auv">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/casrae.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/casrae.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/auv/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/auv" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/casrae.html">Centre for Advanced Studies and Research in Automotive Engineering</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-tech">
-							<div class="portfolio-image">
-								<a href="society/ieee.html">
-									<img src="img/society/techsoc/ieee.png" alt="ieee">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/ieee.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/ieee.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/ieee.html">Institute of Electrical and Electronics Engineers</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/auv">AUV - DTU</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-tech">
 							<div class="portfolio-image">
-								<a href="society/iiche.html">
-									<img src="img/society/techsoc/iiche.jpg" alt="iiche">
+								<a href="societies/single/casrae">
+									<img src="img/society/casrae/1.jpg" alt="casrae">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/iiche.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/iiche.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/casrae/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/casrae" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/iiche.html">Indian Institute of Chemical Engineers</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/casrae">CASRAE</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/cognitiveminds">
+									<img src="img/society/cognitivemind/1.jpg" alt="Cognitive minds">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/cognitivemind/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/cognitiveminds" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/cognitiveminds">Cognitive Minds</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-tech">
 							<div class="portfolio-image">
-								<a href="society/csi.html">
-									<img src="img/society/techsoc/csi.png" alt="csi">
+								<a href="societies/single/csi">
+									<img src="img/society/csi/1.png" alt="csi">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/csi.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/csi.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/csi/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/csi" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/csi.html">CSI DTU</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/csi">CSI DTU</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/cubix">
+									<img src="img/society/cubix/1.jpg" alt="cubix">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/cubix/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/toast" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/cubix">Cubix DTU</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-team">
+							<div class="portfolio-image">
+								<a href="societies/single/defianz">
+									<img src="img/society/defianz/1.jpg" alt="defianz">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/defianz/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/defianz" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/defianz">Defianz</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/delhi42">
+									<img src="img/society/delhi42/1.png" alt="d42">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/delhi42/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/delhi42" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/delhi42">Delhi 42 : The DTU Quiz Club</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/deltechmun">
+									<img src="img/society/deltechmun/1.jpg" alt="deltech mun">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/deltechmun/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/deltechmun" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/deltechmun">Deltech MUN & Debating Society</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="societies/single/dtubhangra">
+									<img src="img/society/dtubhangra/1.jpg" alt="bhangra">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/dtubhangra/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/dtubhangra" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/dtubhangra">DTU Bhangra</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/ecell">
+									<img src="img/society/ecell/1.jpg" alt="ecell">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/ecell/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/ecell" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/ecell">E-Cell DTU</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/elixir">
+									<img src="img/society/elixir/1.jpg" alt="elixir">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/elixir/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/elixir" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/elixir">Elixir</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/globalyouth">
+									<img src="img/society/globalyouth/1.jpg" alt="global youth">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/globalyouth/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/globalyouth" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/globalyouth">Global Youth</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-team">
+							<div class="portfolio-image">
+								<a href="societies/single/hertz">
+									<img src="img/society/hertz/1.jpg" alt="hertz">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/hertz/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/hertz" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/hertz">Hertz</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-tech">
 							<div class="portfolio-image">
-								<a href="society/sme.html">
+								<a href="societies/single/ieee">
+									<img src="img/society/ieee/1.png" alt="ieee">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/ieee/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/ieee" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/ieee">IEEE</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/igts">
+									<img src="img/society/igts/1.png" alt="igts">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/igts/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/igts" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/igts">IGTS</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-tech">
+							<div class="portfolio-image">
+								<a href="societies/single/iiche">
+									<img src="img/society/iiche/1.jpg" alt="iiche">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/iiche/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/iiche" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/iiche">IIChE</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-team">
+							<div class="portfolio-image">
+								<a href="societies/single/inferno">
+									<img src="img/society/inferno/1.png" alt="inferno">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/inferno/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/inferno" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/inferno">Inferno</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-tech">
+							<div class="portfolio-image">
+								<a href="societies/single/iosd">
+									<img src="img/society/iosd/1.png" alt="iosd">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/iosd/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/iosd" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/iosd">IOSD</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="societies/single/kalakriti">
+									<img src="img/society/kalakriti/1.jpg" alt="kalakriti">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/kalakriti/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/kalakriti" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/kalakriti">Kalakriti</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-tech">
+							<div class="portfolio-image">
+								<a href="societies/single/macs">
+									<img src="img/society/macs/1.jpg" alt="macs">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/macs/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/macs" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/macs">Maths and Computing Society</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="societies/single/madhurima">
+									<img src="img/society/madhurima/1.jpg" alt="madhurima">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/madhurima/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/madhurima" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/madhurima">Madhurima</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="societies/single/nrityangana">
+									<img src="img/society/nrityangana/1.jpg" alt="nrityangana">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/nrityangana/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/nrityangana" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/nrityangana">Nrityangana</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/nss">
+									<img src="img/society/nss/1.png" alt="nss">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/nss/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/nss" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/nss">National Service Scheme</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-team">
+							<div class="portfolio-image">
+								<a href="societies/single/okami">
+									<img src="img/society/okami/1.png" alt="okami">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/okami/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/okami" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/okami">Team Okami Racing</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-tech">
+							<div class="portfolio-image">
+								<a href="societies/single/optima">
+									<img src="img/society/optima/1.jpg" alt="optima">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/optima/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/optima" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/optima">Optima DTU</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="societies/single/panache">
+									<img src="img/society/panache/1.jpg" alt="panache">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/panache/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/panache" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/panache">Panache</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="societies/single/parchhayi">
+									<img src="img/society/parchhayi/1.jpg" alt="parchayi">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/parchhayi/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/parchhayi" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/parchhayi">Parchhayi</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="societies/single/pratibimb">
+									<img src="img/society/pratibimb/1.jpg" alt="pratibimb">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/pratibimb/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/pratibimb" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/pratibimb">Pratibimb</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-team">
+							<div class="portfolio-image">
+								<a href="societies/single/raftaar">
+									<img src="img/society/raftaar/1.jpg" alt="raftaar">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/raftaar/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/raftaar" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/raftaar">Raftaar</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/rotaract">
+									<img src="img/society/rotaract/1.jpg" alt="rotaract">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/rotaract/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/rotaract" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/rotaract">Rotaract</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/rt">
+									<img src="img/society/rt/1.jpg" alt="roundtable">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/rt/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/rt" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/rt">Round Table DTU</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-tech">
+							<div class="portfolio-image">
+								<a href="societies/single/sae">
+									<img src="img/society/sae/1.jpg" alt="sae">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/sae/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/sae" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/sae">Society of Automotive Engineers</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="societies/single/sahitya">
+									<img src="img/society/sahitya/1.jpg" alt="sahitya">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/sahitya/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/sahitya" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/sahitya">Sahitya</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-tech">
+							<div class="portfolio-image">
+								<a href="societies/single/scee">
+									<img src="img/society/scee/1.png" alt="scee">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/scee/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/scee" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/scee">SCEE</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/ses">
+									<img src="img/society/ses/1.jpg" alt="ses">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/ses/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/ses" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/ses">SES DTU</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-tech">
+							<div class="portfolio-image">
+								<a href="societies/single/sme">
 									<img src="img/society/techsoc/sme.png" alt="sme">
 								</a>
 								<div class="portfolio-overlay">
 									<a href="img/society/techsoc/sme.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/sme.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="societies/single/sme" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/sme.html">SME DTU</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/sme">SME DTU</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-tech">
 							<div class="portfolio-image">
-								<a href="society/iosd.html">
-									<img src="img/society/techsoc/iosd.png" alt="iosd">
+								<a href="societies/single/spare">
+									<img src="img/society/spare/1.jpg" alt="spare">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/iosd.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/iosd.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/spare/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/spare" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/iosd.html">International Organisation of Software Developers</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/spare">SPARE</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-tech">
 							<div class="portfolio-image">
-								<a href="society/macs.html">
-									<img src="img/society/techsoc/macs.jpg" alt="macs">
+								<a href="societies/single/srdtu">
+									<img src="img/society/srdtu/1.jpg" alt="sr">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/macs.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/macs.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/srdtu/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/srdtu" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/macs.html">Maths and Computing Society</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/srdtu">Society of Robotics - DTU</a></h3>
 							</div>
 						</article>
 
-						<article class="portfolio-item pf-media pf-tech">
+						<article class="portfolio-item pf-media pf-team">
 							<div class="portfolio-image">
-								<a href="society/sae.html">
-									<img src="img/society/techsoc/sae.jpg" alt="sae">
+								<a href="societies/single/supermileage">
+									<img src="img/society/supermileage/1.jpg" alt="supermileage">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/sae.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/sae.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/supermileage/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/supermileage" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/sae.html">Society of Automotive Engineers</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/supermileage">Supermileage</a></h3>
 							</div>
 						</article>
 
-						<article class="portfolio-item pf-media pf-tech">
+						<article class="portfolio-item pf-media pf-misc">
 							<div class="portfolio-image">
-								<a href="society/scee.html">
-									<img src="img/society/techsoc/scee.png" alt="scee">
+								<a href="societies/single/tedx">
+									<img src="img/society/tedx/1.jpg" alt="tedx">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/scee.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/scee.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/tedx/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/tedx" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/scee.html">Society of Civil and Environmental Engineers</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/tedx">TedX DTU</a></h3>
 							</div>
 						</article>
 
-						<article class="portfolio-item pf-media pf-tech">
+						<article class="portfolio-item pf-media pf-misc">
 							<div class="portfolio-image">
-								<a href="society/srdtu.html">
-									<img src="img/society/techsoc/sr.jpg" alt="sr">
+								<a href="societies/single/toast">
+									<img src="img/society/toast/1.jpg" alt="toastmasters">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/sr.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/srdtu.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/toast/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/toast" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/srdtu.html">Society of Robotics - DTU</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/toast">Toastmasters DTU</a></h3>
 							</div>
 						</article>
 
-						<article class="portfolio-item pf-media pf-tech">
+						<article class="portfolio-item pf-media pf-team">
 							<div class="portfolio-image">
-								<a href="society/spare.html">
-									<img src="img/society/techsoc/spare.jpg" alt="spare">
+								<a href="societies/single/uas">
+									<img src="img/society/uas/1.jpg" alt="uas">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/techsoc/spare.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/spare.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/uas/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/uas" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/spare.html">Society of Physics and Advanced Research in Electronics</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/uas">UAS - DTU</a></h3>
 							</div>
 						</article>
 
-
-						<article class="portfolio-item pf-media pf-cult">
+						<article class="portfolio-item pf-media pf-team">
 							<div class="portfolio-image">
-								<a href="society/dtubhangra.html">
-									<img src="img/society/cultsoc/bhangra.jpg" alt="bhangra">
+								<a href="societies/single/ugv">
+									<img src="img/society/ugv/1.png" alt="ugv">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/bhangra.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/dtubhangra.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/ugv/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/ugv" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/dtubhangra.html">DTU Bhangra</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-cult">
-							<div class="portfolio-image">
-								<a href="society/kalakriti.html">
-									<img src="img/society/cultsoc/kalakriti.jpg" alt="kalakriti">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/kalakriti.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/kalakriti.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/kalakriti.html">Kalakriti</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/ugv">DTU - Unmanned Ground Vehicle</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-cult">
 							<div class="portfolio-image">
-								<a href="society/madhurima.html">
-									<img src="img/society/cultsoc/madhurima.jpg" alt="madhurima">
+								<a href="societies/single/vibe">
+									<img src="img/society/vibe/1.jpg" alt="vibe">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/madhurima.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/madhurima.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/vibe/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/vibe" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/madhurima.html">Madhurima</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/vibe">Vibe</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-cult">
 							<div class="portfolio-image">
-								<a href="society/nrityangana.html">
-									<img src="img/society/cultsoc/nrityangana.jpg" alt="nrityangana">
+								<a href="societies/single/zenith">
+									<img src="img/society/zenith/1.png" alt="zenith">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/nrityangana.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/nrityangana.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/zenith/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/zenith" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/nrityangana.html">Nrityangana</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/zenith">Zenith</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-cult">
 							<div class="portfolio-image">
-								<a href="society/panache.html">
-									<img src="img/society/cultsoc/panache.jpg" alt="panache">
+								<a href="societies/single/zephyr">
+									<img src="img/society/zephyr/1.jpg" alt="zephyr">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/panache.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/panache.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/zephyr/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/zephyr" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/panache.html">Panache</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-cult">
-							<div class="portfolio-image">
-								<a href="society/parchayyi.html">
-									<img src="img/society/cultsoc/parchayi.jpg" alt="parchayi">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/parchayi.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/parchayyi.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/parchayyi.html">Parchayi</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-cult">
-							<div class="portfolio-image">
-								<a href="society/pratibimb.html">
-									<img src="img/society/cultsoc/pratibimb.jpg" alt="pratibimb">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/pratibimb.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/pratibimb.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/pratibimb.html">Pratibimb</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-cult">
-							<div class="portfolio-image">
-								<a href="society/sahitya.html">
-									<img src="img/society/cultsoc/sahitya.jpg" alt="sahitya">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/sahitya.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/sahitya.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/sahitya.html">Sahitya</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-cult">
-							<div class="portfolio-image">
-								<a href="society/vibe.html">
-									<img src="img/society/cultsoc/vibe.jpg" alt="vibe">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/cultsoc/vibe.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/vibe.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/vibe.html">Vibe</a></h3>
-							</div>
-						</article>
-
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/assets.html">
-									<img src="img/society/miscsoc/assets.jpg" alt="assets">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/assets.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/assets.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/assets.html">Assets</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/cognitiveminds.html">
-									<img src="img/society/miscsoc/Cognitive minds.jpg" alt="Cognitive minds">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/Cognitive minds.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/cognitiveminds.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/cognitiveminds.html">Cognitive Minds</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/delhi42.html">
-									<img src="img/society/miscsoc/d42.png" alt="d42">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/d42.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/delhi42.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/delhi42.html">Delhi 42 : The DTU Quiz Club</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/deltechmun.html">
-									<img src="img/society/miscsoc/deltech mun.jpg" alt="deltech mun">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/deltech mun.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/deltechmun.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/deltechmun.html">Deltech MUN & Debating Society</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/ecell.html">
-									<img src="img/society/miscsoc/ecell.jpg" alt="ecell">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/ecell.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/ecell.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/ecell.html">E-Cell DTU</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/elixir.html">
-									<img src="img/society/miscsoc/elixir.jpg" alt="elixir">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/elixir.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/elixir.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/elixir.html">Elixir</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/globalyouth.html">
-									<img src="img/society/miscsoc/global youth.jpg" alt="global youth">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/global youth.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/globalyouth.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/globalyouth.html">Global Youth</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/igts.html">
-									<img src="img/society/miscsoc/igts.jpg" alt="igts">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/igts.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/igts.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/igts.html">Indian Game Theory Society</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/nss.html">
-									<img src="img/society/miscsoc/nss.jpg" alt="nss">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/nss.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/nss.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/nss.html">National Service Scheme</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/rotaract.html">
-									<img src="img/society/miscsoc/rotaract.jpg" alt="rotaract">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/rotaract.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/rotaract.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/rotaract.html">Rotaract</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/rt.html">
-									<img src="img/society/miscsoc/roundtable.jpg" alt="roundtable">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/roundtable.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/rt.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/rt.html">Round Table DTU</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/toast.html">
-									<img src="img/society/miscsoc/toastmasters.jpg" alt="toastmasters">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/toastmasters.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/toast.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/toast.html">Toastmasters DTU</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/cubix.html">
-									<img src="img/society/miscsoc/cubix.jpg" alt="cubix">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/cubix.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/toast.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/cubix.html">Cubix DTU</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/tedx.html">
-									<img src="img/society/miscsoc/tedx.png" alt="tedx">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/tedx.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/tedx.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/tedx.html">TedX DTU</a></h3>
-							</div>
-						</article>
-
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="society/ses.html">
-									<img src="img/society/miscsoc/ses.jpg" alt="ses">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="img/society/miscsoc/ses.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="society/ses.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="society/ses.html">SES DTU</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/zephyr">Zephyr</a></h3>
 							</div>
 						</article>
 
@@ -745,5 +787,5 @@
 
 			</div>
 
-        </section><!-- #content end -->
+		</section><!-- #content end -->
     @endsection
