@@ -318,7 +318,7 @@
 					<div class="slider-caption slider-caption-center">
 						<h2 data-animate="fadeInUp">DTU Times</h2>
 						<p data-animate="fadeInUp" data-delay="200">The Official University Newsletter of DTU</p>
-						<a data-animate="fadeInUp" data-delay="400" href="route{{ ('editions') }}" class="button button-border button-light button-rounded button-large noleftmargin nobottommargin"
+						<a data-animate="fadeInUp" data-delay="400" href="{{ route('editions') }}" class="button button-border button-light button-rounded button-large noleftmargin nobottommargin"
 						 style="margin-top: 30px;">check out our latest edition</a>
 
 
