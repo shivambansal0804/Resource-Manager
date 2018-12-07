@@ -22,12 +22,11 @@
             <div class="col-md-6 col-lg-5 offset-lg-1">
                 <div class="switchable__text">
                     <div class="text-block">
-                        <h2>Rajayavardhan</h2>
+                        <h2>Rajyavardhan</h2>
                         <span>Coordinator</span>
                     </div>
                     <p class="lead">
-                        Launching an attractive and scalable website quickly and affordably is important for modern startups &mdash; Stack offers
-                        massive value without looking 'bargain-bin'.
+                        Takes one, to know one.
                     </p>
                     <p>
                         <strong>Contact no:</strong> 8449349990
@@ -80,7 +79,7 @@
                         <span>Web Developer</span>
                     </div>
                     <p class="lead">
-                        Launching an attractive and scalable website quickly and affordably is important for modern startups &mdash; Stack offers massive value without looking 'bargain-bin'.
+                       Needless to say, and I keep a check. Crash at my place and you're a wreack.
                     </p>
                     <ul class="social-list list-inline list--hover">
                         <li>
@@ -125,8 +124,7 @@
                         <span>Web Developer</span>
                     </div>
                     <p class="lead">
-                        Launching an attractive and scalable website quickly and affordably is important for modern startups &mdash; Stack offers
-                        massive value without looking 'bargain-bin'.
+                        The cold black cloud is comming down but who cares, feels like I am knocking on hells door.
                     </p>
                     <p>
                         <strong>Contact no:</strong> 9911347437
@@ -175,12 +173,11 @@
             <div class="col-md-6 col-lg-5">
                 <div class="switchable__text">
                     <div class="text-block">
-                        <h2>Nandana</h2>
+                        <h2>Nandana/Slow ladki</h2>
                         <span>Web Developer</span>
                     </div>
                     <p class="lead">
-                        Launching an attractive and scalable website quickly and affordably is important for modern startups &mdash; Stack offers
-                        massive value without looking 'bargain-bin'.
+                        It's an odd thing but anyone who disappears is said to be in San Francisco.
                     </p>
                     <ul class="social-list list-inline list--hover">
                         <li>
@@ -225,8 +222,7 @@
                         <span>Web Developer</span>
                     </div>
                     <p class="lead">
-                        Launching an attractive and scalable website quickly and affordably is important for modern startups &mdash; Stack offers
-                        massive value without looking 'bargain-bin'.
+                        I know it's not ordinary. But who ever loved ordinary?
                     </p>
                     <p><strong>Contact no:</strong> 9979106989</p>
                     <ul class="social-list list-inline list--hover">

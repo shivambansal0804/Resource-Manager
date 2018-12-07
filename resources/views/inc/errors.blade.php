@@ -3,9 +3,6 @@
     <div class="boxed boxed--border border--round box-shadow">
         <div class="text-block">
             <h5>Errors</h5>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </p>
             <ul>
                 @foreach ($errors->all() as $error)
                 <li><strong>{{ $error }}</strong></li>
