@@ -8,8 +8,8 @@
 		<section id="page-title">
 
 			<div class="container clearfix">
-				<h1>socities/teams</h1>
-<span>List of all socities in DTU</span>
+				<h1>societies/teams</h1>
+<span>List of all societies in DTU</span>
 			</div>
 
 		</section><!-- #page-title end -->
@@ -28,7 +28,7 @@
 
 						<li class="activeFilter"><a href="#" data-filter="*">Show All</a></li>
 						<li><a href="#" data-filter=".pf-tech">Technical</a></li>
-						<li><a href="#" data-filter=".pf-team">Teams</a></li>
+						<li><a href="#" data-filter=".pf-team">Tech Teams</a></li>
 						<li><a href="#" data-filter=".pf-cult">Cultural</a></li>
 						<li><a href="#" data-filter=".pf-misc">Miscellaneous</a></li>
 
@@ -687,7 +687,7 @@
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="societies/single/tedx">TedX DTU</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/tedx">TEDx DTU</a></h3>
 							</div>
 						</article>
 
