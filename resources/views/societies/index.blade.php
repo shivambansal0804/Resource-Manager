@@ -229,7 +229,7 @@
 						<article class="portfolio-item pf-media pf-misc">
 							<div class="portfolio-image">
 								<a href="societies/single/ecell">
-									<img src="img/society/ecell/1.jpg" alt="ecell">
+									<img src="img/society/ecell/1.png" alt="ecell">
 								</a>
 								<div class="portfolio-overlay">
 									<a href="img/society/ecell/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
