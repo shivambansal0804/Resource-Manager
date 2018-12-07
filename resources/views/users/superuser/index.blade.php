@@ -10,10 +10,6 @@
                     </div>
                     <br>
                     <h2>Welcome {{ auth()->user()->name }}</h2>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit eligendi, rem autem porro provident veniam aperiam dicta
-                        deserunt nemo reprehenderit illo eum soluta eos atque beatae exercitationem ad omnis deleniti.
-                    </p>
                 </div>
             </div>
         </div>
