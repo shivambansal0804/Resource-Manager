@@ -1743,7 +1743,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/Illustrators/AKASH%20CHAUHAN.jpg" alt="Akash Chauhan">
+									<img src="/img/team/Illustrators/Akash%20Chauhan.jpg" alt="Akash Chauhan">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
