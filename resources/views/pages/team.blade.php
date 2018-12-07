@@ -881,7 +881,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/Columnists/Hitee%20Singh.JPG" alt="Nix Maxwell">
+									<img src="/img/team/Columnists/Hitee%20Singh.jpg" alt="Nix Maxwell">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -965,7 +965,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="img/team/Columnists/Kripi%20Badonia.JPG" alt="John Doe">
+									<img src="img/team/Columnists/Kripi%20Badonia.jpg" alt="John Doe">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -1743,7 +1743,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/Illustrators/AKASH%20CHAUHAN.JPG" alt="Akash Chauhan">
+									<img src="/img/team/Illustrators/AKASH%20CHAUHAN.jpg" alt="Akash Chauhan">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -1768,7 +1768,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/Illustrators/Akshansh%20Aggarwal.JPEG" alt="Akshansh Aggarwal">
+									<img src="/img/team/Illustrators/Akshansh%20Aggarwal.jpeg" alt="Akshansh Aggarwal">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -1818,7 +1818,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/Illustrators/Ananya%20Aggarwal.JPG" alt="Ananya Aggarwal">
+									<img src="/img/team/Illustrators/Ananya%20Aggarwal.jpg" alt="Ananya Aggarwal">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -1842,7 +1842,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/Illustrators/Anirudh%20Kundu.JPEG" alt="Anirudh Kundu">
+									<img src="/img/team/Illustrators/Anirudh%20Kundu.jpeg" alt="Anirudh Kundu">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -1912,7 +1912,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src=".//img/team/Illustrators/Gopika%20Gopakumar.JPEG" alt="Gopika Gopakumar">
+									<img src=".//img/team/Illustrators/Gopika%20Gopakumar.jpeg" alt="Gopika Gopakumar">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -1961,7 +1961,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src=".//img/team/Illustrators/Medhavi%20Thakur.JPEG" alt="Medhavi Thakur">
+									<img src=".//img/team/Illustrators/Medhavi%20Thakur.jpeg" alt="Medhavi Thakur">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -1982,7 +1982,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src=".//img/team/Illustrators/Samujjwal%20Pandey.JPEG" alt="Samujjwal Pandey">
+									<img src=".//img/team/Illustrators/Samujjwal%20Pandey.jpeg" alt="Samujjwal Pandey">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -2003,7 +2003,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src=".//img/team/Illustrators/Tanmay%20Singh.JPG" alt="Tanmay Singh">
+									<img src=".//img/team/Illustrators/Tanmay%20Singh.jpg" alt="Tanmay Singh">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
