@@ -38,7 +38,7 @@
    
             
             @if (Route::currentRouteName() === 'blog.show')
-                @include('inc.footer_show')
+                @include('inc.footer2')
             @else 
                 @include('inc.footer')
             @endif
