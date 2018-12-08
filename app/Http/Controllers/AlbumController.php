@@ -173,7 +173,7 @@ class AlbumController extends Controller
         $album = auth()->user()->album()->whereUuid($uuid)->firstOrFail();
         $name = $album->name;
 
-        $album->media->each->delete();
+        $album->each->delete();
 
         $album->delete();
 
