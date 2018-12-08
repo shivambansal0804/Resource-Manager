@@ -50,8 +50,7 @@
                                 ============================================= -->
                         <div class="entry-image">
                             @if ($story->getFirstMediaUrl('blog_images', 'fullscreen'))
-                            <img alt="background" src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" /> @else
-                            <img src="{{ asset('svg/gallery.svg') }}" style="max-width:20rem;" alt=""> @endif
+                            <img alt="background" src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" /> @endif
                         </div>
                         <!-- .entry-image end -->
 

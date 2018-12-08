@@ -7,9 +7,6 @@
                 <h1>
                     Published Stories
                 </h1>
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nisi? Saepe, itaque error. Totam, fuga quia a
-                </p>
             </div>
         </div>
         <!--end of row-->
@@ -42,7 +39,7 @@
                                     Created <strong>{{ $item->created_at->diffForHumans() }}</strong>
                                 </small>
                             <div class="text-right d-block">
-                                <a class="btn btn--sm type--uppercase" href="{{route('blog.show', $item->slug)}}">
+                                <a class="btn btn--sm type--uppercase" target="_blank" href="{{route('blog.show', $item->slug)}}">
                                     <span class="btn__text">
                                         Read Story
                                     </span>

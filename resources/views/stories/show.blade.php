@@ -20,8 +20,6 @@
                     <div class="text-center">
                         @if ($story->getFirstMediaUrl('blog_images', 'fullscreen'))
                              <img alt="background" src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" />
-                        @else
-                            <img src="{{ asset('svg/gallery.svg') }}" style="max-width:20rem;" alt="">
                         @endif
                        
                     </div>

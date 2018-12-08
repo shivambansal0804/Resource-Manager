@@ -25,7 +25,6 @@
                         <h2 class="d-inline">{{ auth()->user()->story()->get()->count() }}</h2>
                         <div class="feature__body">
                             <h4 class="m-0">Total Stories</h4>
-                            <small>lorem ispum dolor situm dplor.</small>
                         </div>
                     </div>
                     <!--end feature-->
@@ -68,7 +67,7 @@
                         $pending = auth()->user()->story()->whereStatus('pending')->latest()->first();
 
                     @endphp
-                    <small>Latest published: {{ $published ? $published->title : 'No story Published yet'  }}</small> <br>
+                    <small>Latest published: {{ $published ? $published->title : 'No story published yet'  }}</small> <br>
                     <small>Last story submitted for approval: {{ $pending ? $pending->title : 'No story submitted for approval yet' }}</small>
                 </div>
             </div>
@@ -81,7 +80,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-10">
-                <h3>Todo list</h3>
+                <h3>To-do list</h3>
                 <ol class="process-3">
                     @foreach ($todos as $item)
                     <li class="process_item">
@@ -135,11 +134,11 @@
                                 </div>
                                 <div class="input-radio input-radio--innerlabel">
                                     <input id="columnist" type="radio" name="for" value="columnist" />
-                                    <label for="columnist">Columnist</label>
+                                    <label for="columnist">Columnists</label>
                                 </div>
                                 <div class="input-radio input-radio--innerlabel">
                                     <input id="photographer" type="radio" name="for" value="photographer" />
-                                    <label for="photographer">Photographer</label>
+                                    <label for="photographer">Photographers</label>
                                 </div>
                             @elseif (auth()->user()->hasRole('columnist'))
                                 <input type="hidden" name="for" value="columnist">
