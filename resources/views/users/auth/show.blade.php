@@ -94,8 +94,9 @@
                             <h4>{{ $item->title }}
                                 <br> <span><small>{{ $item->created_at->diffForHumans() }}</small></span>
                             </h4>
-                            
-                            <img alt="Image" src="{{ $item->getFirstMediaUrl('blog_images', 'thumb') }}" class="border--round" />
+                            @if ($item->getFirstMediaUrl('blog_images', 'thumb'))
+                                <img alt="Image" src="{{ $item->getFirstMediaUrl('blog_images', 'thumb') }}" class="border--round" />                                
+                            @endif
                             <p>
                                 {{ $item->biliner }}
                             </p>
