@@ -67,32 +67,7 @@
 </section>
 <section>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="pagination">
-                    <ol>
-                        <li>
-                            <a href="#">&laquo;</a>
-                        </li>
-                        <li>
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li class="pagination__current">3</li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">&raquo;</a>
-                        </li>
-                    </ol>
-
-                </div>
-            </div>
-        </div>
-        <!--end of row-->
+        {{ $stories->links() }}
     </div>
     <!--end of container-->
 </section>
