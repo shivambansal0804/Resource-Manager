@@ -591,29 +591,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="/img/team/Columnists/Rohan%20Mishra.jpg" alt="Rohan Mishra">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Rohan <br>Mishra</h5>
-										<h6>Assistant Editor</h6>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="facebook.com/rohan.mishra94
-" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-
-								</div>
-							</div>
-						</div>
+					
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -1063,32 +1041,6 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="img/team/Columnists/Parth_Goel.jpeg" alt="Parth Goel">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Parth <br>Goel</h5>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/parth.goel.5
-" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/parthgoel/
-" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-
-
-								</div>
-							</div>
-						</div>
-
 
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">

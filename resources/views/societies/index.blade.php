@@ -9,7 +9,7 @@
 
 			<div class="container clearfix">
 				<h1>societies/teams</h1>
-<span>List of all societies in DTU</span>
+			<span>List of all societies and team in DTU</span>
 			</div>
 
 		</section><!-- #page-title end -->

@@ -79,7 +79,7 @@
                         <span>Web Developer</span>
                     </div>
                     <p class="lead">
-                       Needless to say, and I keep a check. Crash at my place and you're a wreack.
+                       Needless to say, and I keep a check. Crash at my place and you're a wreck.
                     </p>
                     <ul class="social-list list-inline list--hover">
                         <li>
@@ -124,7 +124,7 @@
                         <span>Web Developer</span>
                     </div>
                     <p class="lead">
-                        The cold black cloud is comming down but who cares, feels like I am knocking on hells door.
+                        The cold black cloud is coming down but who cares, feels like I am knocking on hell's door.
                     </p>
                     <p>
                         <strong>Contact no:</strong> 9911347437

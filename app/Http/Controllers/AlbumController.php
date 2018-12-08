@@ -173,9 +173,9 @@ class AlbumController extends Controller
         $album = auth()->user()->album()->whereUuid($uuid)->firstOrFail();
         $name = $album->name;
 
-        $album->media->each->delete();
+        // $album->delete();
+        return $album->getMedia('covers');
 
-        $album->delete();
 
         session()->flash('success', $name.', Deleted!');
         return redirect()->route('albums.index');
