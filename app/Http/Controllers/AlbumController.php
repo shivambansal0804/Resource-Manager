@@ -172,8 +172,9 @@ class AlbumController extends Controller
     {
         $album = auth()->user()->album()->whereUuid($uuid)->firstOrFail();
         $name = $album->name;
-       
-        $album->clearMediaCollection('covers');
+
+        $album->media->each->delete();
+
         $album->delete();
 
         session()->flash('success', $name.', Deleted!');
