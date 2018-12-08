@@ -23,7 +23,7 @@ class StoryController extends Controller
     public function index()
     {
 
-        $stories = auth()->user()->story()->latest()->get();
+        $stories = auth()->user()->story()->latest()->paginate(20);
         
         return view('stories.index', ['stories' => $stories]);
     }
