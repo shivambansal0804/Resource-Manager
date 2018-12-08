@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-md-12">
                         <label>Email Address:</label>
-                        <input type="email" name="email" placeholder="Your Email" class="validate-required" value="{{ old('email') ? old('email') : '' }}" />
+                        <input type="email" name="email" placeholder="Email" class="validate-required" value="{{ old('email') ? old('email') : '' }}" />
                     </div>
 
                     <div class="col-md-12">
