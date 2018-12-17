@@ -28,6 +28,11 @@
 								<div class="slider-wrap">
 									<div class="slide"><img src="/img/society/altair/1.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/altair/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/6.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/7.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>
@@ -37,6 +42,11 @@
 								<div class="slider-wrap">
 									<div class="slide"><img src="/img/society/altair/1.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/altair/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/6.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/altair/7.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>

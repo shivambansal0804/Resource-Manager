@@ -28,6 +28,11 @@
 								<div class="slider-wrap">
 									<div class="slide"><img src="/img/society/okami/1.png" alt="Image"></div>
 									<div class="slide"><img src="/img/society/okami/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/6.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/7.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>
@@ -37,6 +42,11 @@
 								<div class="slider-wrap">
 									<div class="slide"><img src="/img/society/okami/1.png" alt="Image"></div>
 									<div class="slide"><img src="/img/society/okami/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/6.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/okami/7.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>

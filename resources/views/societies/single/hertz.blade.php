@@ -28,6 +28,10 @@
 								<div class="slider-wrap">
 									<div class="slide"><img src="/img/society/hertz/1.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/hertz/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/hertz/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/hertz/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/hertz/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/hertz/6.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>
@@ -37,6 +41,10 @@
 								<div class="slider-wrap">
 									<div class="slide"><img src="/img/society/hertz/1.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/hertz/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/hertz/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/hertz/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/hertz/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/hertz/6.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>
