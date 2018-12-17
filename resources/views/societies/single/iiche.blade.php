@@ -32,6 +32,9 @@
 									<div class="slide"><img src="/img/society/iiche/3.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/iiche/4.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/iiche/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/iiche/6.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/iiche/7.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/iiche/8.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>
@@ -44,6 +47,9 @@
 									<div class="slide"><img src="/img/society/iiche/3.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/iiche/4.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/iiche/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/iiche/6.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/iiche/7.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/iiche/8.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>

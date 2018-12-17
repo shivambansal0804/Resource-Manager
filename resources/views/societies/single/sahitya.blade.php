@@ -28,6 +28,10 @@
 								<div class="slider-wrap">
 									<div class="slide"><img src="/img/society/sahitya/1.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/sahitya/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sahitya/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sahitya/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sahitya/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sahitya/6.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>
@@ -37,6 +41,10 @@
 								<div class="slider-wrap">
 									<div class="slide"><img src="/img/society/sahitya/1.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/sahitya/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sahitya/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sahitya/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sahitya/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sahitya/6.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>

@@ -214,15 +214,30 @@
 						<article class="portfolio-item pf-media pf-misc">
 							<div class="portfolio-image">
 								<a href="societies/single/elixir">
-									<img src="img/society/elixir/1.jpg" alt="elixir">
+									<img src="img/society/elixir/1.png" alt="elixir">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/elixir/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="img/society/elixir/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
 									<a href="societies/single/elixir" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
 								<h3 style="display: inline-block;"><a href="societies/single/elixir">Elixir</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-misc">
+							<div class="portfolio-image">
+								<a href="societies/single/enactus">
+									<img src="img/society/enactus/0.jpg" alt="enactus">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/enactus/0.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/enactus" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/enactus">Enactus DTU</a></h3>
 							</div>
 						</article>
 
@@ -298,6 +313,21 @@
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
 								<h3 style="display: inline-block;"><a href="societies/single/iiche">IIChE</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-tech">
+							<div class="portfolio-image">
+								<a href="societies/single/imche">
+									<img src="img/society/imche/1.png" alt="imche">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="img/society/imche/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/imche" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="societies/single/imche">IMchE</a></h3>
 							</div>
 						</article>
 
@@ -648,16 +678,16 @@
 
 						<article class="portfolio-item pf-media pf-misc">
 							<div class="portfolio-image">
-								<a href="societies/single/tedx">
-									<img src="img/society/tedx/1.jpg" alt="tedx">
+								<a href="societies/single/TEDx">
+									<img src="img/society/TEDx/1.jpg" alt="TEDx">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="img/society/tedx/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="societies/single/tedx" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/TEDx/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/TEDx" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="societies/single/tedx">TEDx DTU</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/TEDx">TEDx DTU</a></h3>
 							</div>
 						</article>
 
@@ -758,4 +788,5 @@
 			</div>
 
 		</section><!-- #content end -->
+
     @endsection

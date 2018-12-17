@@ -32,6 +32,7 @@
 									<div class="slide"><img src="/img/society/asme/3.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/asme/4.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/asme/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/asme/6.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>
@@ -44,6 +45,7 @@
 									<div class="slide"><img src="/img/society/asme/3.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/asme/4.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/asme/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/asme/6.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>

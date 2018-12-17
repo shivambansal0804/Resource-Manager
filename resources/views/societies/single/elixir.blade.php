@@ -27,8 +27,15 @@
 						<div class="fslider customjs bottommargin-sm">
 							<div class="flexslider" id="slider">
 								<div class="slider-wrap">
-									<div class="slide"><img src="/img/society/elixir/1.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/1.png" alt="Image"></div>
 									<div class="slide"><img src="/img/society/elixir/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/6.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/7.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/8.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/9.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>
@@ -36,8 +43,15 @@
 						<div class="fslider customjs bottommargin-sm">
 							<div class="flexslider" id="carousel">
 								<div class="slider-wrap">
-									<div class="slide"><img src="/img/society/elixir/1.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/1.png" alt="Image"></div>
 									<div class="slide"><img src="/img/society/elixir/2.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/3.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/4.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/6.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/7.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/8.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/elixir/9.jpg" alt="Image"></div>
 								</div>
 							</div>
 						</div>

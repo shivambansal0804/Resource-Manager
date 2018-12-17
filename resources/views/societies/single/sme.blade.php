@@ -26,7 +26,7 @@
 						<div class="fslider customjs bottommargin-sm">
 							<div class="flexslider" id="slider">
 								<div class="slider-wrap">
-									<div class="slide"><img src="/img/society/sme/1.png" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sme/1.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/sme/2.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/sme/3.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/sme/4.jpg" alt="Image"></div>
@@ -41,7 +41,7 @@
 						<div class="fslider customjs bottommargin-sm">
 							<div class="flexslider" id="carousel">
 								<div class="slider-wrap">
-									<div class="slide"><img src="/img/society/sme/1.png" alt="Image"></div>
+									<div class="slide"><img src="/img/society/sme/1.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/sme/2.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/sme/3.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/sme/4.jpg" alt="Image"></div>
