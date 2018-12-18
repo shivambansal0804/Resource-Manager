@@ -77,7 +77,7 @@
 						============================================= -->
 						<ul class="portfolio-meta bottommargin">
 							<li><span><i class="icon-user"></i>Student Head:</span> Gitanjali Jaggi</li>
-							<li><span><i class="icon-link"></i>Website Link:</span> <a href="http://roundtabledtu.org/">Society of Robotics</a></li>
+							<li><span><i class="icon-link"></i>Website Link:</span> <a href="http://roundtabledtu.org/">Round Table</a></li>
 							<li><span><i class="icon-call"></i>Phone Number:</span> +91 7503791769</li>
 						</ul>
 						<!-- Portfolio Single - Meta End -->

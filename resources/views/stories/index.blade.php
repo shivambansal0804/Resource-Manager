@@ -7,9 +7,6 @@
             <div class="row">
                 <div class="col-md-10 col-lg-8">
                     <h1>All Stories</h1>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nisi? Saepe, itaque error. Totam, fuga quia a
-                    </p>
                 </div>
             </div>
             <!--end of row-->
@@ -74,35 +71,7 @@
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="pagination">
-                        <ol>
-                            <li>
-                                <a href="#">&laquo;</a>
-                            </li>
-                            <li>
-                                <a href="#">1</a>
-                            </li>
-                            <li>
-                                <a href="#">2</a>
-                            </li>
-                            <li class="pagination__current">3</li>
-                            <li>
-                                <a href="#">4</a>
-                            </li>
-                            <li>
-                                <a href="#">&raquo;</a>
-                            </li>
-                        </ol>
-    
-                    </div>
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
+        {{ $stories->links() }}
     </section>
 @else
     <section class="space--lg">

@@ -52,7 +52,7 @@
 								<div class="fbox-icon">
 									<a href="https://www.facebook.com/dtutimes"><i class="icon-facebook2"></i></a>
 								</div>
-								<h3>Follow us on Facebook<span class="subtitle">20K Likes</span></h3>
+								<h3>Follow us on Facebook<span class="subtitle">25K Likes</span></h3>
 							</div>
 						</div>
 
@@ -61,7 +61,7 @@
 								<div class="fbox-icon">
 									<a href="http://www.instagram.com/dtu_times"><i class="icon-instagram2"></i></a>
 								</div>
-								<h3>Follow us on Instagram<span class="subtitle">1.5K Followers</span></h3>
+								<h3>Follow us on Instagram<span class="subtitle">3K Followers</span></h3>
 							</div>
 						</div>
 

@@ -19,7 +19,7 @@
                 </form>
                 <br>
                 <p>
-                    <small>if you are still facing problem, mail us at dtutimes@dtu.ac.in.</small>
+                    <small>After Submitting the form please check your email address for password reset link. If you are still facing problem, mail us at dtutimes@dtu.ac.in.</small>
                 </p>
             </div>
         </div>

@@ -71,7 +71,7 @@
             <div class="col-md-8 col-lg-6">
                 <h1>History</h1>
                 <p class="lead">
-                    An innovative collective of like-minded folks making useful and enduring technology products
+                   Things said earlier this year.
                 </p>
             </div>
         </div>
@@ -94,8 +94,9 @@
                             <h4>{{ $item->title }}
                                 <br> <span><small>{{ $item->created_at->diffForHumans() }}</small></span>
                             </h4>
-                            
-                            <img alt="Image" src="{{ $item->getFirstMediaUrl('blog_images', 'thumb') }}" class="border--round" />
+                            @if ($item->getFirstMediaUrl('blog_images', 'thumb'))
+                                <img alt="Image" src="{{ $item->getFirstMediaUrl('blog_images', 'thumb') }}" class="border--round" />                                
+                            @endif
                             <p>
                                 {{ $item->biliner }}
                             </p>

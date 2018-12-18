@@ -5,9 +5,6 @@
         <div class="row">
             <div class="col-md-10 col-lg-8">
                 <h1>All Categories</h1>
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nisi? Saepe, itaque error. Totam, fuga quia a
-                </p>
             </div>
         </div>
         <!--end of row-->

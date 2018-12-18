@@ -145,7 +145,7 @@
                 &copy; DTU Times 2018. All Rights Reserved.
                 <br>
                 <br> Developed by
-                <br> crankShaft, manishsahani999, nandana-21, akxx33, sambhavjain9138
+                <br> crankShaft, manishsahani999, nandana-21, ak33xx, sambhavjain9138
             </div>
 
         </div>

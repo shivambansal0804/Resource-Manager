@@ -36,7 +36,12 @@
             <!-- Footer
         ============================================= -->
    
-            @include('inc.footer')
+            
+            @if (Route::currentRouteName() === 'blog.show')
+                @include('inc.footer2')
+            @else 
+                @include('inc.footer')
+            @endif
 
         </div><!-- #wrapper end -->
 

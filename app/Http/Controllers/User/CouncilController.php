@@ -24,7 +24,7 @@ class CouncilController extends Controller
 
     public function publishedIndex()
     {
-        $stories = Story::where('status', 'published')->get();
+        $stories = Story::where('status', 'published')->latest()->paginate(20);
 
         return view('users.council.published', ['stories' => $stories]);
     }

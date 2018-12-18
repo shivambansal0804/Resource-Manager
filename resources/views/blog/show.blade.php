@@ -50,8 +50,7 @@
                                 ============================================= -->
                         <div class="entry-image">
                             @if ($story->getFirstMediaUrl('blog_images', 'fullscreen'))
-                            <img alt="background" src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" /> @else
-                            <img src="{{ asset('svg/gallery.svg') }}" style="max-width:20rem;" alt=""> @endif
+                            <img alt="background" src="{{ $story->getFirstMediaUrl('blog_images', 'fullscreen') }}" /> @endif
                         </div>
                         <!-- .entry-image end -->
 
@@ -65,39 +64,6 @@
                             <!-- Post Single - Content End -->
 
                             <div class="clear"></div>
-
-                            <!-- Post Single - Share
-                                    ============================================= -->
-                            <div class="si-share noborder clearfix">
-                                <span>Share this Post:</span>
-                                <div>
-                                    <a href="#" class="social-icon si-borderless si-facebook">
-                                                <i class="icon-facebook"></i>
-                                                <i class="icon-facebook"></i>
-                                            </a>
-                                    <a href="#" class="social-icon si-borderless si-twitter">
-                                                <i class="icon-twitter"></i>
-                                                <i class="icon-twitter"></i>
-                                            </a>
-                                    <a href="#" class="social-icon si-borderless si-pinterest">
-                                                <i class="icon-pinterest"></i>
-                                                <i class="icon-pinterest"></i>
-                                            </a>
-                                    <a href="#" class="social-icon si-borderless si-gplus">
-                                                <i class="icon-gplus"></i>
-                                                <i class="icon-gplus"></i>
-                                            </a>
-                                    <a href="#" class="social-icon si-borderless si-rss">
-                                                <i class="icon-rss"></i>
-                                                <i class="icon-rss"></i>
-                                            </a>
-                                    <a href="#" class="social-icon si-borderless si-email3">
-                                        <i class="icon-email3"></i>
-                                        <i class="icon-email3"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Post Single - Share End -->
 
                         </div>
                     </div>
