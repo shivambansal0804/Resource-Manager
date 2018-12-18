@@ -226,7 +226,7 @@
 							</div>
 						</article>
 
-						<article class="portfolio-item pf-media pf-cult">
+						<article class="portfolio-item pf-media pf-tech">
 							<div class="portfolio-image">
 								<a href="/societies/single/ecell">
 									<img src="/img/society/ecell/1.jpg" alt="bhangra">
