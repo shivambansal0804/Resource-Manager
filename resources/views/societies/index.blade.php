@@ -61,6 +61,21 @@
 							</div>
 						</article>
 
+						<article class="portfolio-item pf-media pf-team">
+							<div class="portfolio-image">
+								<a href="/societies/single/asme">
+															<img src="/img/society/asme/1.jpg" alt="asme">
+														</a>
+								<div class="portfolio-overlay">
+									<a href="/img/society/asme/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="/societies/single/asme" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="/societies/single/asme">ASME</a></h3>
+							</div>
+						</article>
+
 						<article class="portfolio-item pf-media pf-misc">
 							<div class="portfolio-image">
 								<a href="/societies/single/assets">
@@ -208,6 +223,21 @@
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
 								<h3 style="display: inline-block;"><a href="/societies/single/dtubhangra">DTU Bhangra</a></h3>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-cult">
+							<div class="portfolio-image">
+								<a href="/societies/single/ecell">
+									<img src="/img/society/ecell/1.jpg" alt="bhangra">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="/img/society/ecell/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="/societies/single/ecell" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc" style="text-align: center;">
+								<h3 style="display: inline-block;"><a href="/societies/single/ecell">Ecell</a></h3>
 							</div>
 						</article>
 
