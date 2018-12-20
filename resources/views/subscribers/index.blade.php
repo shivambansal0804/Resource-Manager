@@ -41,7 +41,7 @@
                     @foreach ($subscribers as $item)
                     <li>
                         <div class="accordion__title">
-                            <span class="h5">{{$item->email}} {{ $item->id }}
+                            <span class="h5">{{$item->email}} 
                                 <small>
                                     {{ $item->status }}                              
                                 </small>
