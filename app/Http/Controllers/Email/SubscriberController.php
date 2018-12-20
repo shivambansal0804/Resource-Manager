@@ -89,7 +89,8 @@ class SubscriberController extends Controller
      */
     public function destroy($id)
     {
-        Subscriber::whereUuid($id)->firstOrFail()->delete();
+        return Subscriber::whereUuid($id)->firstOrFail();
+        // ->delete();
 
         return redirect()->back();
     }
