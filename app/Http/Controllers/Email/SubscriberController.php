@@ -87,9 +87,9 @@ class SubscriberController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($uuid)
+    public function destroy($id)
     {
-        Subscriber::whereUuid($uuid)->firstOrFail()->delete();
+        Subscriber::whereUuid($id)->firstOrFail()->delete();
         return redirect()->back();
     }
 

@@ -41,7 +41,7 @@
                     @foreach ($subscribers as $item)
                     <li>
                         <div class="accordion__title">
-                            <span class="h5">{{$item->email}}
+                            <span class="h5">{{$item->email}} {{ $item->id }}
                                 <small>
                                     {{ $item->status }}                              
                                 </small>
@@ -57,13 +57,13 @@
                                 <a class="btn btn--sm type--uppercase"
                                     href="{{ route('subscribers.index') }}" 
                                     onclick="event.preventDefault(); 
-                                                document.getElementById('delete-form').submit(); "
+                                                document.getElementById('delete-sub').submit(); "
                                     >
                                     <span class="btn__text">
-                                        Delete
+                                        Delete 
                                     </span>
                                 </a>
-                                <form id="delete-form" action="{{ route('subscribers.destroy', $item->id )}}" method="POST">
+                                <form id="delete-sub" action="{{ route('subscribers.destroy', $item->uuid )}}" method="POST">
                                     @csrf @method('DELETE')
                                 </form>
                             </div>
@@ -76,35 +76,4 @@
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="pagination">
-                    <ol>
-                        <li>
-                            <a href="#">&laquo;</a>
-                        </li>
-                        <li>
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li class="pagination__current">3</li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">&raquo;</a>
-                        </li>
-                    </ol>
-
-                </div>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
 @endsection

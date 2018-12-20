@@ -70,7 +70,7 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|co
         Route::get('/{uuid}', 'Email\SubscriberController@show')->name('subscribers.show');
         Route::get('/{uuid}/edit', 'Email\SubscriberController@edit')->name('subscribers.edit');
         Route::put('/{uuid}', 'Email\SubscriberController@update')->name('subscribers.update');
-        Route::delete('/{uuid}', 'Email\SubscriberController@destroy')->name('subscribers.destroy');
+        Route::delete('/{id}', 'Email\SubscriberController@destroy')->name('subscribers.destroy');
     });
 
     Route::group(['prefix' => 'stories', 'middleware' => 'role:council|superuser|coordinator'], function () {
