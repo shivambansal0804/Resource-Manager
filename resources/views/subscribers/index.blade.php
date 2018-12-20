@@ -55,17 +55,11 @@
                                     </span>
                                 </a>
                                 <a class="btn btn--sm type--uppercase"
-                                    href="{{ route('subscribers.index') }}" 
-                                    onclick="event.preventDefault(); 
-                                                document.getElementById('delete-sub').submit(); "
-                                    >
+                                    href="{{ route('subscribers.destroy', $item->uuid )}}" >
                                     <span class="btn__text">
                                         Delete 
                                     </span>
                                 </a>
-                                <form id="delete-sub" action="{{ route('subscribers.destroy', $item->uuid )}}" method="POST">
-                                    @csrf @method('DELETE')
-                                </form>
                             </div>
                         </div>
                     </li>
