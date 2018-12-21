@@ -495,8 +495,6 @@
 									<div class="slider-wrap">
 										<div class="slide"><a href="/img/portfolio/batch1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch1.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/batch2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/batch3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch3.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/batch4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch4.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/batch5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch5.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/batch6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch6.jpg" alt="Standard Post with Gallery"></a></div>
 									</div>
@@ -548,7 +546,6 @@
 								<div class="flexslider">
 									<div class="slider-wrap">
 										<div class="slide"><a href="/img/portfolio/fn1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn1.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fn2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn2.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/fn3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn3.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/fn4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn4.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/fn5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn5.jpg" alt="Standard Post with Gallery"></a></div>
@@ -618,7 +615,6 @@
 									<div class="slider-wrap">
 										<div class="slide"><a href="/img/portfolio/o1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o1.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/o2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/o3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o3.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/o4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o4.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/o5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o5.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/o6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o6.jpg" alt="Standard Post with Gallery"></a></div>
@@ -648,7 +644,6 @@
 							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
 								<div class="flexslider">
 									<div class="slider-wrap">
-										<div class="slide"><a href="/img/portfolio/en1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/en1.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/en2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/en2.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/en3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/en3.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/en4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/en4.jpg" alt="Standard Post with Gallery"></a></div>
@@ -737,8 +732,6 @@
 										<div class="slide"><a href="/img/portfolio/y.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/y1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y1.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/y2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/y3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y3.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/y4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y4.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/y5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y5.jpg" alt="Standard Post with Gallery"></a></div>
 									</div>
 								</div>
@@ -850,7 +843,6 @@
 									<div class="slider-wrap">
 										<div class="slide"><a href="/img/portfolio/fw1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw1.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/fw2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fw3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw3.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/fw4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw4.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/fw5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw5.jpg" alt="Standard Post with Gallery"></a></div>
 									</div>
@@ -879,7 +871,6 @@
 									<div class="slider-wrap">
 										<div class="slide"><a href="/img/portfolio/igt1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/igt1.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/igt2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/igt2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/igt3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/igt3.jpg" alt="Standard Post with Gallery"></a></div>
 										<div class="slide"><a href="/img/portfolio/igt4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/igt4.jpg" alt="Standard Post with Gallery"></a></div>
 									</div>
 								</div>

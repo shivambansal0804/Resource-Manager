@@ -228,23 +228,23 @@
 
 						<article class="portfolio-item pf-media pf-tech">
 							<div class="portfolio-image">
-								<a href="/societies/single/ecell">
-									<img src="/img/society/ecell/1.jpg" alt="bhangra">
+								<a href="societies/single/ecell">
+									<img src="img/society/ecell/1.jpg" alt="ecell">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="/img/society/ecell/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="/societies/single/ecell" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									<a href="img/society/ecell/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="societies/single/ecell" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="/societies/single/ecell">Ecell</a></h3>
+								<h3 style="display: inline-block;"><a href="societies/single/ecell">E-Cell DTU</a></h3>
 							</div>
 						</article>
 
 						<article class="portfolio-item pf-media pf-misc">
 							<div class="portfolio-image">
-								<a href="/societies/single/elixir">
-									<img src="/img/society/elixir/1.png" alt="elixir">
+								<a href="societies/single/elixir">
+									<img src="img/society/elixir/1.png" alt="elixir">
 								</a>
 								<div class="portfolio-overlay">
 									<a href="/img/society/elixir/1.png" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
