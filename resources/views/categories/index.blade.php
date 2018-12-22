@@ -42,17 +42,11 @@
                                         </span>
                                     </a>
                                 @endif @if (auth()->user()->can('delete-category'))
-                                    <a class="btn btn--sm m-0 type--uppercase"
-                                        href="{{ route('categories.index') }}" 
-                                        onclick="event.preventDefault(); 
-                                                 document.getElementById('delete-form').submit(); "
-                                        >
-                                        <span class="btn__text">
-                                            Delete
-                                        </span>
-                                    </a>
-                                    <form id="delete-form" action="{{ route('categories.destroy', $item->id )}}" method="POST">
+                                    <form id="delete-form" style="display:inline-block;" action="{{ route('categories.destroy', $item->id )}}" method="POST">
                                         @csrf @method('DELETE')
+                                        <button style="padding: .4rem 2rem; margin-bottom: -1rem;" type="submit" class="btn btn--sm type--uppercase">
+                                            Delete
+                                        </button>
                                     </form>
                                 @endif
                             </div>
