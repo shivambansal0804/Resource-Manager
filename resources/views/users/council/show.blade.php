@@ -7,7 +7,12 @@
                 <article> 
                     <div class="article__title">
                         <h1 class="h2">{{ $story->title }}</h1>
-                        Created By <strong>{{$story->user->name}},</strong> {{ $story->created_at->diffForHumans()}}
+                        Created By 
+                        <strong>
+                            @if ($story->user->name)
+                                {{$story->user->name}}
+                            @endif,
+                        </strong> {{ $story->created_at->diffForHumans()}}
                         <span class="
                                 @if($story->status == 'draft') text-warning
                                 @elseif($story->status == 'published') text-success
