@@ -9,7 +9,7 @@
                         <h1 class="h2">{{ $story->title }}</h1>
                         Created By 
                         <strong>
-                            @if ($story->user->name)
+                            @if ($story->user)
                                 {{$story->user->name}}
                             @endif,
                         </strong> {{ $story->created_at->diffForHumans()}}
