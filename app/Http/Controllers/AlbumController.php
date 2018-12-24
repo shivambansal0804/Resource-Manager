@@ -170,7 +170,7 @@ class AlbumController extends Controller
      */
     public function destroy($uuid)
     {
-        $album = auth()->user()->album()->whereUuid($uuid)->firstOrFail();
+        $album = Album::whereUuid($uuid)->firstOrFail();
         $name = $album->name;
 
         $album->delete();

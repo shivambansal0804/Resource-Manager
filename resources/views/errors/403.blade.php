@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>DTU Times | Not found</title>
+	<title>DTU Times</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Site Description Here">
 
