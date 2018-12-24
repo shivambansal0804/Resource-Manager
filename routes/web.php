@@ -164,11 +164,11 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
     // Album Routes
     Route::group(['prefix' => 'albums', 'middleware' => ['role:superuser|council|photographer|coordinator']], function() {
         Route::get('/', 'AlbumController@index')->name('albums.index');
-        Route::get('/create', 'AlbumController@create')->name('albums.create');
-        Route::post('/', 'AlbumController@store')->name('albums.store');
+        Route::get('/create', 'AlbumController@create')->name('albums.create')->middleware('permission:create-album');
+        Route::post('/', 'AlbumController@store')->name('albums.store')->middleware('permission:create-album');
         Route::get('/{uuid}', 'AlbumController@show')->name('albums.show');
-        Route::get('/{uuid}/edit', 'AlbumController@edit')->name('albums.edit');
-        Route::put('/{uuid}', 'AlbumController@update')->name('albums.update');
+        Route::get('/{uuid}/edit', 'AlbumController@edit')->name('albums.edit')->middleware('permission:edit-album');
+        Route::put('/{uuid}', 'AlbumController@update')->name('albums.update')->middleware('permissions:update-album');
         Route::get('/{uuid}/submit', 'AlbumController@submit')->name('albums.submit');
         Route::delete('/{uuid}', 'AlbumController@destroy')->name('albums.destroy');
         Route::get('/{uuid}/publish', 'AlbumController@publish')->name('albums.publish')->middleware('permission:publish-album');
