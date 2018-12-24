@@ -78,7 +78,7 @@ class AlbumController extends Controller
      */
     public function edit($uuid)
     {
-        $album = auth()->user()->album()->whereUuid($uuid)->with(['image'])->firstOrFail();
+        $album = Album::whereUuid($uuid)->with(['image'])->firstOrFail();
         $subs = $album->child()->get();
 
         if($album->status != 'draft'){
