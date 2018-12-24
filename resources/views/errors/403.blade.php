@@ -22,7 +22,6 @@
 				<div class="row">
 					<div class="col-md-12">
 						<img class="image--md" src="{{ asset('svg/barrier.svg')}}" alt="">
-						<h1 class="h1--large">403</h1>
 						<p class="lead">
 							Permission denied
 						</p>
