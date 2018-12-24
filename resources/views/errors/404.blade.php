@@ -22,7 +22,6 @@
 				<div class="row">
 					<div class="col-md-12">
 						<img class="image--md" src="{{ asset('svg/error-404.svg')}}" alt="">
-						<h1 class="h1--large">404</h1>
 						<p class="lead">
 							Not Found
 						</p>
