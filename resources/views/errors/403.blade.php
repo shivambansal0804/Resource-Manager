@@ -21,9 +21,10 @@
 			<div class="container pos-vertical-center">
 				<div class="row">
 					<div class="col-md-12">
+						<img src="{{ asset('img/logofav.1.png')}}" alt="">
 						<h1 class="h1--large">403</h1>
 						<p class="lead">
-							We're currently making some improvements — Check back soon
+							Permission denied
 						</p>
 						<a href="/">Go back to home page</a>
 					</div>
