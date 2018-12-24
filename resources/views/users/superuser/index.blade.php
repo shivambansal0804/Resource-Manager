@@ -7,7 +7,7 @@
                 <div class="col-md-12 col-lg-10">
                     <h1>Hi, {{ auth()->user()->name }}</h1>
                     <p>
-                        Welcome to the backdoor for the DTU Times website.
+                        Welcome to Superuser's Dashboard.
                     </p>
                 </div>
             </div>
