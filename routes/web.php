@@ -167,7 +167,7 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::get('/create', 'AlbumController@create')->name('albums.create')->middleware('permission:create-album');
         Route::post('/', 'AlbumController@store')->name('albums.store')->middleware('permission:create-album');
         Route::get('/{uuid}', 'AlbumController@show')->name('albums.show');
-        Route::get('/{uuid}/edit', 'AlbumController@edit')->name('albums.edit')->middleware('permission:edit-album');
+        Route::get('/{uuid}/edit', 'AlbumController@edit')->name('albums.edit')->middleware('permission:update-album');
         Route::put('/{uuid}', 'AlbumController@update')->name('albums.update')->middleware('permissions:update-album');
         Route::get('/{uuid}/submit', 'AlbumController@submit')->name('albums.submit');
         Route::delete('/{uuid}', 'AlbumController@destroy')->name('albums.destroy');
