@@ -14,6 +14,8 @@
                 <p class="">
                     {{ $album->biliner }}
                 </p>
+
+                <small>{{ $album->status }}</small>
                 
                 <div>
                     <a class="btn btn--sm type--uppercase" href="{{ route('images.create', $album->uuid) }}">
