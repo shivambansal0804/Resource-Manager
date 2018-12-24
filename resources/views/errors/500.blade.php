@@ -21,7 +21,7 @@
 			<div class="container pos-vertical-center">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="h1--large">500</h1>
+						<img class="image--md" src="{{ asset('svg/cloud.svg')}}" alt="">
 						<p class="lead">
 							An unexpected error has occured preventing the page from loading.
 						</p>
