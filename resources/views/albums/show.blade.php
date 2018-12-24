@@ -13,9 +13,12 @@
                 </h1>
                 <p class="">
                     {{ $album->biliner }}
+
+                    <br>
+                    <small class="text-white">{{ $album->status }}</small>
                 </p>
 
-                <small>{{ $album->status }}</small>
+                
                 
                 <div>
                     <a class="btn btn--sm type--uppercase" href="{{ route('images.create', $album->uuid) }}">
