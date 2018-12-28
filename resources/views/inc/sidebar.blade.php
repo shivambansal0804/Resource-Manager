@@ -161,7 +161,7 @@
                 @endif @if (auth()->user()->hasRole(['council', 'superuser']))
                 <li class="dropdown">
                     <span>
-                        Stats    
+                        Insights    
                     </span>
                     <div class="dropdown__container">
                         <div class="dropdown__content">

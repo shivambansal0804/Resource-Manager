@@ -11,12 +11,11 @@ class StatsController extends Controller
 {
     public function indexStories()
     {
-        $monthly = $this->getMonthlyCount();
-        $monthlyPublished = $this->getMonthlyCount('published');
-        $monthlyDraft = $this->getMonthlyCount('draft');
         return view('stats.stories', [
-            'monthly' => $monthly,
-            'draft'   => $monthlyDraft
+            'total' => $this->getMonthlyCount(),
+            'draft'   => $this->getMonthlyCount('draft'),
+            'pending'   => $this->getMonthlyCount('pending'),
+            'published'   => $this->getMonthlyCount('published')
         ]);
     }
 
