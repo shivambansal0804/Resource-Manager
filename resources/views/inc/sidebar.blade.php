@@ -160,6 +160,27 @@
                 @endif @if (auth()->user()->hasRole(['council', 'superuser']))
                 <li class="dropdown">
                     <span>
+                        Stats    
+                    </span>
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('stats.stories')}}">
+                                        Story
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('stats.albums') }}">
+                                        Album
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <span>
                             Campaigns
                         </span>
                     <div class="dropdown__container">

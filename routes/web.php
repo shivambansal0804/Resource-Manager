@@ -73,7 +73,7 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|co
         Route::get('/{uuid}/delete', 'Email\SubscriberController@destroy')->name('subscribers.destroy');
     });
 
-    Route::group(['prefix' => 'stories', 'middleware' => 'role:council|superuser|coordinator'], function () {
+    Route::group(['prefix' => 'stories'], function () {
         Route::get('/pending', 'User\CouncilController@index')->name('council.stories.index');
         Route::get('/published', 'User\CouncilController@publishedIndex')->name('council.stories.published');
         Route::delete('/published/{uuid}', 'User\CouncilController@publishedDestroy')->name('council.stories.destory');
@@ -85,6 +85,11 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|co
             Route::get('/{uuid}/publish', 'User\CouncilController@publish')->name('council.stories.publish');
         });
         
+    });
+
+    Route::group(['prefix' => 'stats'], function () {
+        Route::get('/stories', 'StatsController@indexStories')->name('stats.stories');
+        Route::get('/albums', 'StatsController@indexAlbums')->name('stats.albums');
     });
 });
 
