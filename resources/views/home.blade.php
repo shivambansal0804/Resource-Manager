@@ -155,7 +155,12 @@
                     borderWidth: 1
                 }]
             },
+            options: {
+                legend: {
+                    display: true,
+                    position: 'left'
+                }
+            }
         });
-        myChart.defaults.global.legend = { position: 'left' }
     </script>
 @endsection
