@@ -42,7 +42,6 @@ class StatsController extends Controller
 
         $temp = [];
         $count = [];
-
         foreach ($stories as $key => $value) {
             $temp[(int)$key] = count($value);
         }
