@@ -120,6 +120,9 @@
                 },
                 ]
             },
+            options: {
+                maintainAspectRatio: true,
+            }
         });
     </script>
 @endsection
