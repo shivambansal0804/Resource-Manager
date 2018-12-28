@@ -156,5 +156,6 @@
                 }]
             },
         });
+        Chart.defaults.global.legend = { position: 'left' }
     </script>
 @endsection
