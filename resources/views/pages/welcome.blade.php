@@ -930,7 +930,7 @@
 
 	{{-- Theme Scripts --}}
 	<!-- External JavaScripts
-    ============================================= -->
+    ============================================ -->
 	<!-- External JavaScripts
     ============================================= -->
 	<script type="text/javascript" src="js/main/jquery.js"></script>
