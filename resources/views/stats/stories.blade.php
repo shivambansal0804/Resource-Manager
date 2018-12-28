@@ -121,7 +121,7 @@
                 ]
             },
             options: {
-                maintainAspectRatio: true,
+                reponsive: true,
             }
         });
     </script>
