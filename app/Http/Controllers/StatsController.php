@@ -20,6 +20,11 @@ class StatsController extends Controller
         ]);
     }
 
+    public function indexAlbums()
+    {
+        return view('error.503');
+    }
+
     public function getMonthlyCount($status = null)
     {
         if ($status) {
