@@ -22,7 +22,7 @@ class StatsController extends Controller
 
     public function indexAlbums()
     {
-        return view('error.503');
+        return view('errors.503');
     }
 
     public function getMonthlyCount($status = null)
