@@ -110,16 +110,17 @@
                                         </a>
                                 </li>
                                 @endif
+
+                                <li>
+                                    <a href="{{ route('images.me')}}">
+                                        All Images
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <a href="{{ route('images.me')}}">
-                            All Images
-                        </a>
-                </li>
                 @endif @if (auth()->user()->hasRole('superuser'))
                 <li class="dropdown">
                     <span class="dropdown__trigger">
