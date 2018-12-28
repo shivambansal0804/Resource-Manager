@@ -1098,6 +1098,30 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
+									<img src="img/team/Columnists/Saurabh%20Tiwari.jpg" alt="Saurabh">
+								</div>
+								<div class="team-desc">
+									<div class="team-title">
+										<h5>Saurabh<br>Tiwari</h5>
+									</div>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/stthegreat
+" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a target="_blank" rel="noopener noreferrer" href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-xs-6 bottommargin">
+							<div class="team">
+								<div class="team-image">
 									<img src="img/team/Columnists/Shruti%20Kumar.jpg" alt="Shruti">
 								</div>
 								<div class="team-desc">
@@ -2169,32 +2193,6 @@
 							</div>
 						</div>
 
-
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="/img/team/WebDevelopers/Abhishek.jpeg" alt="Abhishek">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Abhishek <br> Sharma</h5>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/absharma1099" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/absharma1099/" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-
-
-								</div>
-							</div>
-							<br><br>
-						</div>
-
-
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -2216,6 +2214,7 @@
 
 								</div>
 							</div>
+							<br><br>
 						</div>
 
 						<div class="col-md-2 col-xs-6 bottommargin">
