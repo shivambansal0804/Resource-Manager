@@ -345,7 +345,7 @@
 					<div class="entry clearfix">
 						<div class="book-wrap">
 									<div class="book-card">
-										<a href="editions/28" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/28.jpeg" alt="Book Image"></a>
+										<a href="editions/28" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/editions/28.jpg" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 28</a></h2>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
