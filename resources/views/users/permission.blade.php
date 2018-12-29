@@ -45,7 +45,7 @@
                     </div>
                     <div class="accordion__content">
                         {{ $item->description }}
-                        <a href="#">Remvoe</a>
+                        <a href="#">Remove</a>
                     </div>
                 @endforeach
             </ul>

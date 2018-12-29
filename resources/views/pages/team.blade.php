@@ -67,7 +67,7 @@
 				<li><a href="#designers" data-toggle="tab">Designers</a></li>
 				<li><a href="#illustrators" data-toggle="tab">Illustrators</a></li>
 				<li><a href="#photographers" data-toggle="tab">Photographers</a></li>
-				<li><a href="#webdevelopers" data-toggle="tab">Web-Developers</a></li>
+				<li><a href="#webdevelopers" data-toggle="tab">Developers</a></li>
 
 			</ul>
 
@@ -2164,7 +2164,7 @@
 				</div>
 				<div class="tab-pane fade" id="webdevelopers" style="margin-left:10%; margin-right:10%">
 					<div class="fancy-title title-border">
-						<h3>Web-Developers</h3><br>
+						<h3>Developers</h3><br>
 
 					</div>
 
