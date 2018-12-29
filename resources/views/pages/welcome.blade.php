@@ -943,6 +943,7 @@
 
 
 
+@if(!isset($_COOKIE['DTUnewsletter'])):
 	<script>
 		$(document).ready(function(){
 					setTimeout(function(){
@@ -962,21 +963,22 @@
 
 			// Function to open modal
 			function PopUp(){
-			  modal.style.display = 'block';
+			modal.style.display = 'block';
 			}
 
 			// Function to close modal
 			function closeModal(){
-			  modal.style.display = 'none';
+			modal.style.display = 'none';
 			}
 
 			// Function to close modal if outside click
 			function outsideClick(e){
-			  if(e.target == modal){
-			    modal.style.display = 'none';
-			  }
+			if(e.target == modal){
+				modal.style.display = 'none';
+			}
 			}
 	</script>
+@endif
 
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 

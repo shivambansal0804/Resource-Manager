@@ -27,6 +27,7 @@ class SubscriberController extends Controller
      */
     public function create($email)
     {
+        setcookie("DTUnewsletter",$email,time()+(10 * 365 * 24 * 60 * 60));
         return Subscriber::create([
             'email' => $email
         ]);
@@ -89,7 +90,9 @@ class SubscriberController extends Controller
      */
     public function destroy($uuid)
     {
+        $cemail=Subscriber::whereUuid($uuid)->firstOrFail();
         Subscriber::whereUuid($uuid)->firstOrFail()->delete();
+        setcookie("DTUnewsletter",$cemail,time()-(100));
         return redirect()->back();
     }
 
