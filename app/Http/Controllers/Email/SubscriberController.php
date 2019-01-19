@@ -91,8 +91,8 @@ class SubscriberController extends Controller
     public function destroy($uuid)
     {
         $cemail=Subscriber::whereUuid($uuid)->firstOrFail();
-        Subscriber::whereUuid($uuid)->firstOrFail()->delete();
         setcookie("DTUnewsletter",$cemail,time()-(100));
+        $cemail->delete();
         return redirect()->back();
     }
 
