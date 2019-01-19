@@ -21,7 +21,7 @@
 			<div class="container pos-vertical-center">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="h1--large">503</h1>
+						<img src="{{ asset('svg/excavator.svg') }}" alt="" class="image--md">
 						<p class="lead">
 							We're currently making some improvements — Check back soon
 						</p>

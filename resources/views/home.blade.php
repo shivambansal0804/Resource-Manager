@@ -1,4 +1,6 @@
 @extends('layouts.app') 
+
+
 @section('content')
 <section class="pt-5 pb-5 border--bottom">
     <div class="container">
@@ -15,53 +17,13 @@
     <!--end of container-->
 </section>
 
+
+
 @if (!auth()->user()->hasRole('photographer'))
-    <section class="pt-5 pb-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 hidden-sm"></div>
-                <div class="col-md-4">
-                    <div class="feature feature-2 boxed boxed--border">
-                        <h2 class="d-inline">{{ auth()->user()->story()->get()->count() }}</h2>
-                        <div class="feature__body">
-                            <h4 class="m-0">Total Stories</h4>
-                        </div>
-                    </div>
-                    <!--end feature-->
-                </div>
-    
-                <div class="col-md-2 text-center">
-                    <div class="feature feature-2 boxed boxed--border">
-                        <h4 class="mb-0">{{ auth()->user()->story()->whereStatus('pending')->get()->count() }}</h4>
-                        <small>Pending</small>
-                    </div>
-                    <!--end feature-->
-                </div>
-    
-                <div class="col-md-2 text-center">
-                    <div class="feature feature-2 boxed boxed--border">
-                        <h4 class="mb-0">{{ auth()->user()->story()->whereStatus('published')->get()->count() }}</h4>
-                        <small>Published</small>
-                    </div>
-                    <!--end feature-->
-                </div>
-    
-                <div class="col-md-2 text-center">
-                    <div class="feature feature-2 boxed boxed--border">
-                        <h4 class="mb-0">{{ auth()->user()->story()->whereStatus('draft')->get()->count() }}</h4>
-                        <small>Draft</small>
-                    </div>
-                    <!--end feature-->
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="pt-0 pb-5">
+    <section>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-4 mb-3">
                     @php
                         $published = auth()->user()->story()->whereStatus('published')->latest()->first();
                         $pending = auth()->user()->story()->whereStatus('pending')->latest()->first();
@@ -70,10 +32,12 @@
                     <small>Latest published: {{ $published ? $published->title : 'No story published yet'  }}</small> <br>
                     <small>Last story submitted for approval: {{ $pending ? $pending->title : 'No story submitted for approval yet' }}</small>
                 </div>
+                <div class="col-md-6">
+                    <canvas id="myChart"></canvas>
+                </div>
             </div>
         </div>
     </section>
-
 @endif
 
 <section class="{{ auth()->user()->hasRole('photographer') ? 'pt-5' : 'pt-0' }}">
@@ -163,4 +127,40 @@
     </div>
     <!--end of container-->
 </section>
+@endsection
+
+@php
+    $total = auth()->user()->story()->get()->count();
+    $pending = auth()->user()->story()->whereStatus('pending')->get()->count();
+    $published = auth()->user()->story()->whereStatus('published')->get()->count();
+    $draft = auth()->user()->story()->whereStatus('draft')->get()->count();
+@endphp
+
+@section('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["Total", "Draft", "Pending", "Published",],
+                datasets: [{
+                    data: [{{ $total }}, {{ $draft }}, {{ $pending }}, {{ $published }}],
+                    backgroundColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(10, 199, 172, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend: {
+                    display: true,
+                    position: 'left'
+                }
+            }
+        });
+    </script>
 @endsection

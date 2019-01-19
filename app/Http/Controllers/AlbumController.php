@@ -78,7 +78,7 @@ class AlbumController extends Controller
      */
     public function edit($uuid)
     {
-        $album = auth()->user()->album()->whereUuid($uuid)->with(['image'])->firstOrFail();
+        $album = Album::whereUuid($uuid)->with(['image'])->firstOrFail();
         $subs = $album->child()->get();
 
         if($album->status != 'draft'){
@@ -170,13 +170,11 @@ class AlbumController extends Controller
      */
     public function destroy($uuid)
     {
-        $album = auth()->user()->album()->whereUuid($uuid)->firstOrFail();
+        $album = Album::whereUuid($uuid)->firstOrFail();
         $name = $album->name;
 
-        // $album->delete();
-        return $album->getMedia('covers');
-
-
+        $album->delete();
+        
         session()->flash('success', $name.', Deleted!');
         return redirect()->route('albums.index');
     }

@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>DTUtimes | Not found</title>
+	<title>DTUtimes</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Site Description Here">
 
@@ -21,7 +21,7 @@
 			<div class="container pos-vertical-center">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="h1--large">500</h1>
+						<img class="image--md" src="{{ asset('svg/cloud.svg')}}" alt="">
 						<p class="lead">
 							An unexpected error has occured preventing the page from loading.
 						</p>

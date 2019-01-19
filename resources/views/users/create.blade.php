@@ -8,7 +8,6 @@
                 <p class="lead">
                    It's time to welcome that new recruit to the DTU Times family.
                 </p>
-                <hr>
             </div>
         </div>
         <!--end of row-->

@@ -110,16 +110,17 @@
                                         </a>
                                 </li>
                                 @endif
+
+                                <li>
+                                    <a href="{{ route('images.me')}}">
+                                        All Images
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <a href="{{ route('images.me')}}">
-                            All Images
-                        </a>
-                </li>
                 @endif @if (auth()->user()->hasRole('superuser'))
                 <li class="dropdown">
                     <span class="dropdown__trigger">
@@ -158,6 +159,27 @@
                     </div>
                 </li>
                 @endif @if (auth()->user()->hasRole(['council', 'superuser']))
+                <li class="dropdown">
+                    <span>
+                        Insights    
+                    </span>
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('stats.stories')}}">
+                                        Story
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('stats.albums') }}">
+                                        Album
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
                 <li class="dropdown">
                     <span>
                             Campaigns

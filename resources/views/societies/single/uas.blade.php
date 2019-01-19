@@ -31,7 +31,7 @@
 									<div class="slide"><img src="/img/society/uas/2.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/uas/3.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/uas/4.jpg" alt="Image"></div>
-									<div class="slide"><img src="/img/society/uas/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/uas/5.jpeg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/uas/6.jpg" alt="Image"></div>
 								</div>
 							</div>
@@ -44,7 +44,7 @@
 									<div class="slide"><img src="/img/society/uas/2.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/uas/3.jpg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/uas/4.jpg" alt="Image"></div>
-									<div class="slide"><img src="/img/society/uas/5.jpg" alt="Image"></div>
+									<div class="slide"><img src="/img/society/uas/5.jpeg" alt="Image"></div>
 									<div class="slide"><img src="/img/society/uas/6.jpg" alt="Image"></div>
 								</div>
 							</div>

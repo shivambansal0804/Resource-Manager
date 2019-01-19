@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>DTU Times | Not found</title>
+	<title>DTU Times</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Site Description Here">
 
@@ -21,9 +21,9 @@
 			<div class="container pos-vertical-center">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="h1--large">403</h1>
+						<img class="image--md" src="{{ asset('svg/barrier.svg')}}" alt="">
 						<p class="lead">
-							We're currently making some improvements — Check back soon
+							Permission denied
 						</p>
 						<a href="/">Go back to home page</a>
 					</div>
