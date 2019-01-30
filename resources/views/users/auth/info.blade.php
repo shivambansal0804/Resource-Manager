@@ -51,7 +51,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
-                <h1>Update your info <span>@foreach ($user->roles as $item) {{$item->name}} @endforeach</span></h1>
+                <h1>Update your info <span>@foreach ($user->roles as $item) {{$item->display_name}} @endforeach</span></h1>
                 <p class="lead">
                     Build lean, beautiful websites with a clean and contemporary look to suit a range of purposes.
                 </p>

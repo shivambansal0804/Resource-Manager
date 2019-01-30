@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
-use App\Role;
-use App\Http\Requests\StoreRole;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreSociety;
 
-class RoleController extends Controller
+class SocietyHeadController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,7 @@ class RoleController extends Controller
      */
     public function index()
     {
-        $roles = Role::all();
-        return view('roles.index', [
-            'roles' => $roles
-        ]);
+        return auth()->user()->society()->get()->count();
     }
 
     /**
@@ -28,26 +25,34 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('roles.create');
+        return view('users.society_head.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+    * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreRole $request)
+    public function store(StoreSociety $request)
     {
-        $key = $request->name;
-        
-        $role = Role::create([
-            'name' => $key,
-            'display_name' => ucwords(str_replace('_', ' ', $key)),
-            'description' => ucwords(str_replace('_', ' ', $key))
-        ]);
 
-        return redirect()->route('roles.index');
+        $society = auth()->user()->society()->create([
+        'name' => $request->name, 
+            'slug' => str_slug($request->name, "-"),
+            'category' => $request->category,   
+            'description' => $request->description, 
+            'linkedin' => $request->linkedin, 
+            'facebook' => $request->facebook, 
+            'instagram' => $request->instagram, 
+            'contact_mail' => $request->contact_mail, 
+            'head_incharge' => $request->head_incharge, 
+            'pr_incharge' => $request->pr_incharge, 
+            'pr_contact_number' => $request->pr_contact_number,
+            'head_contact_number' => $request->head_contact_number, 
+            'website'  => $request->website 
+        ]);
+        return $society;
     }
 
     /**
@@ -92,6 +97,6 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        // 
+        //
     }
 }
