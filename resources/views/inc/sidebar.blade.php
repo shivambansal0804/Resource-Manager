@@ -38,7 +38,7 @@
                         @endphp
                         <li>
                             <a href="{{ route('society.head.show', $society->slug) }}">
-                                About {{ $society->name }}
+                                About {{ str_limit($society->name, $limit = 27, $end = '...') }} 
                             </a>
                         </li>
 

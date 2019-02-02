@@ -58,7 +58,7 @@ class SocietyHeadController extends Controller
             $society->addMediaFromRequest('logo')->toMediaCollection('soc_logo');
         } 
         
-        return $society;
+        return redirect()->route('society.head.show', $society->slug);
     }
 
     /**
@@ -85,9 +85,13 @@ class SocietyHeadController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        //
+        $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
+
+        return view('users.society_head.edit', [
+            'society' => $society
+        ]);
     }
 
     /**
@@ -97,9 +101,43 @@ class SocietyHeadController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $slug)
     {
-        //
+        $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
+        
+        $society->update([
+            'name' => $request->name, 
+            'slug' => str_slug($request->name, "-"),
+            'description' => $request->description, 
+            'linkedin' => $request->linkedin, 
+            'facebook' => $request->facebook, 
+            'status' => 'draft',
+            'instagram' => $request->instagram, 
+            'contact_mail' => $request->contact_mail, 
+            'head_incharge' => $request->head_incharge, 
+            'pr_incharge' => $request->pr_incharge, 
+            'pr_contact_number' => $request->pr_contact_number,
+            'head_contact_number' => $request->head_contact_number, 
+            'website'  => $request->website 
+        ]); 
+    
+        if ($request->hasFile('logo')) {
+            $society->clearMediaCollection('soc_logo');
+            $society->addMediaFromRequest('logo')->toMediaCollection('soc_logo');
+        } 
+        
+        return redirect()->route('society.head.show', $society->slug);
+    }
+
+    public function updateStatusToPending(Request $request, $slug)
+    {
+        $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
+
+        $society->update(['status' => 'pending']);
+
+        $request->session()->flash('success', 'Pending for Approval');
+
+        return redirect()->route('society.head.show', $society->slug);
     }
 
     /**

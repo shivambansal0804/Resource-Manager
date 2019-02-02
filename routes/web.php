@@ -221,6 +221,9 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::get('/create', 'User\SocietyHeadController@create')->name('society.head.create');
         Route::post('/', 'User\SocietyHeadController@store')->name('society.head.store');
         Route::get('/{slug}', 'User\SocietyHeadController@show')->name('society.head.show');
+        Route::get('/{slug}/pending', 'User\SocietyHeadController@updateStatusToPending')->name('society.head.status.pending');
+        Route::get('/{slug}/edit', 'User\SocietyHeadController@edit')->name('society.head.edit');
+        Route::put('/{slug}', 'User\SocietyHeadController@update')->name('society.head.update');
         Route::group(['prefix' => '{slug}/images'], function () {
             Route::get('/', 'User\SocietyHeadController@imageIndex')->name('society.head.image.index');
             Route::get('/create', 'User\SocietyHeadController@imageCreate')->name('society.head.image.create');
