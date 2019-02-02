@@ -51,7 +51,13 @@ class SocietyHeadController extends Controller
             'pr_contact_number' => $request->pr_contact_number,
             'head_contact_number' => $request->head_contact_number, 
             'website'  => $request->website 
-        ]);
+        ]); 
+
+        if ($request->hasFile('logo')) {
+            $society->clearMediaCollection('soc_logo');
+            $society->addMediaFromRequest('logo')->toMediaCollection('soc_logo');
+        } 
+        
         return $society;
     }
 
@@ -61,9 +67,16 @@ class SocietyHeadController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
+
+        $media = $society->getMedia('soc_images');
+
+        return view('users.society_head.show', [
+            'society' => $society,
+            'media'   => $media
+        ]);
     }
 
     /**
@@ -98,5 +111,36 @@ class SocietyHeadController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function imageIndex($slug)
+    {
+        $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
+
+        $images = $society->getMedia('soc_images');
+
+        return view('societies.images.index', [
+            'society' => $society,
+            'images'   => $images
+        ]);
+    }
+
+    public function imageCreate($slug)
+    {
+        return view('societies.images.create');
+    }
+
+    public function imageStore(Request $request, $slug)
+    {
+        $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
+        if ($request->hasFile('image'))
+        {
+            $society->addMediaFromRequest('image')->toMediaCollection('soc_images');
+            $request->session()->flash('success', 'Image Uploaded :)');
+            return redirect()->back();
+        } else {
+            $request->session()->flash('success','No Image');
+            return redirect()->back();
+        }
     }
 }

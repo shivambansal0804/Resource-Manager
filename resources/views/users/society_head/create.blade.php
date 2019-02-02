@@ -158,6 +158,15 @@
                                 <span><small>This will be your society's public email.</small></span>
                         </div>
                     </div>
+
+                    <br>
+                    <h3><strong>Social Logo</strong></h3>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <input type="file" class="validate-required" name="logo" value="{{ old('logo') ? old('logo') : '' }}">
+                        </div>
+                    </div>
+
                     <hr>
                     <div class="col-md-4 ">
                         <button type="submit" class="btn btn--primary">Update your info</button>

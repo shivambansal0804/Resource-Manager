@@ -32,7 +32,8 @@ class StoreSociety extends FormRequest
             'pr_incharge' => 'required',
             'head_contact_number' => 'required', 
             'website' => 'required',
-            'pr_contact_number' => 'required'
+            'pr_contact_number' => 'required',
+            'logo' => 'mimes:jpeg,jpg,png|required|max:1000'
         ];
     }
 }

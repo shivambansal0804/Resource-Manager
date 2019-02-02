@@ -220,6 +220,12 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::get('/', 'User\SocietyHeadController@index')->name('society.head.index');
         Route::get('/create', 'User\SocietyHeadController@create')->name('society.head.create');
         Route::post('/', 'User\SocietyHeadController@store')->name('society.head.store');
+        Route::get('/{slug}', 'User\SocietyHeadController@show')->name('society.head.show');
+        Route::group(['prefix' => '{slug}/images'], function () {
+            Route::get('/', 'User\SocietyHeadController@imageIndex')->name('society.head.image.index');
+            Route::get('/create', 'User\SocietyHeadController@imageCreate')->name('society.head.image.create');
+            Route::post('/', 'User\SocietyHeadController@imageStore')->name('society.head.image.store');
+        });
     });
 
     

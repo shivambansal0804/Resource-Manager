@@ -30,7 +30,50 @@
                     </a>
                 </li>
 
-                {{-- Stories option --}} @if (!auth()->user()->hasRole('photographer') && !auth()->user()->hasRole('society_head'))
+                <!-- Society Head options -->
+                @if (auth()->user()->hasRole('society_head'))
+                    @if(auth()->user()->society()->get()->count() != 0)
+                        @php
+                            $society = auth()->user()->society()->first();
+                        @endphp
+                        <li>
+                            <a href="{{ route('society.head.show', $society->slug) }}">
+                                About {{ $society->name }}
+                            </a>
+                        </li>
+
+                        <li class="dropdown">
+                            <span class="dropdown__trigger">
+                                    Image
+                                </span>
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <ul class="menu-vertical">
+                                        <li>
+                                            <a href="{{ route('society.head.image.index', $society->slug) }}">
+                                                All Images
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('society.head.image.create', $society->slug) }}">
+                                                Upload New
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    @else 
+                        <li>
+                            <a href="{{ route('society.head.create')}}">
+                                Create Your Society
+                            </a>
+                        </li>
+                    @endif
+                @endif
+
+                {{-- Stories option --}} 
+                @if (!auth()->user()->hasRole('photographer') && !auth()->user()->hasRole('society_head'))
                 <li class="dropdown">
                     <span class="dropdown__trigger">
                             Story

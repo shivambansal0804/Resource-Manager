@@ -40,9 +40,9 @@ a {
     margin: 0 !important;
     padding: 0 !important;
     
-    &--text {
+    // &--text {
         
-    }
+    // }
 
     &--resize-n {
         resize: none;
@@ -94,4 +94,29 @@ a {
 .page-item {
     display: inline-block;
     padding: .6rem;
+}
+
+.file__container {
+    width: 100%;
+    min-height: 20rem;
+    border-radius: 7px;
+    background-color: #fefefe;
+    border: 1px solid lightgrey;
+    position: relative;
+
+    &--text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+}
+
+input#file-input {
+    width: 100%;
+    min-height: 20rem;
+    outline: 1px solid lightgray;
+    opacity: 0;
 }
