@@ -39,13 +39,13 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 text-left">
-                    <h3 class="animated fadeInUp duration-2s delay-2s">Hi, {{ auth()->user()->name }}</h3>
+                    <h3 class="animated fadeInUp duration-2s delay-1s">Hi, {{ auth()->user()->name }}</h3>
                     
                 </div>
                 <div class="col-md-4 col-lg-4">
-                    <h1 class="mb-0 animated fadeInUp duration-2s delay-3s">{{ $society->referrals }}</h1>
-                    <span class="animated fadeInUpBig duration-2s delay-2s">Referrals</span> <br>
-                    <span class="animated fadeInUpBig duration-2s delay-2s" style="font-size: .8rem;">
+                    <h1 class="mb-0 animated fadeInUp duration-2s delay-2s">{{ $society->referrals }}</h1>
+                    <span class="animated fadeInUpBig duration-2s delay-1s">Referrals</span> <br>
+                    <span class="animated fadeInUpBig duration-2s delay-1s" style="font-size: .8rem;">
                         We like recommending good people.
                     </span>
                 </div>
