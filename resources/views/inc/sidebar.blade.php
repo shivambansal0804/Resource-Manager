@@ -30,7 +30,14 @@
                     </a>
                 </li>
 
-                <!-- Society Head options -->
+
+                <!-- 
+                |
+                |
+                | Society Head Section
+                |
+                |
+                 -->
                 @if (auth()->user()->hasRole('society_head'))
                     @if(auth()->user()->society()->get()->count() != 0)
                         @php
@@ -63,6 +70,12 @@
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            <a href="{{ route('society.head.news.index', $society->slug) }}">
+                                News
+                            </a>
+                        </li>
+                        
                     @else 
                         <li>
                             <a href="{{ route('society.head.create')}}">
@@ -72,6 +85,13 @@
                     @endif
                 @endif
 
+                <!-- 
+                |
+                |
+                | Columnist Section
+                |
+                |
+                 -->
                 {{-- Stories option --}} 
                 @if (!auth()->user()->hasRole('photographer') && !auth()->user()->hasRole('society_head'))
                 <li class="dropdown">
@@ -108,7 +128,7 @@
                         </div>
                     </div>
                 </li>
-                {{-- Category option --}}
+
                 <li class="dropdown">
                     <span class="dropdown__trigger">
                             Category
@@ -132,6 +152,14 @@
                         </div>
                     </div>
                 </li>
+
+                <!-- 
+                |
+                |
+                | Photographers Section
+                |
+                |
+                 -->
                 @endif @if (!auth()->user()->hasRole('columnist') && !auth()->user()->hasRole('society_head'))
                 <li class="dropdown">
                     <span class="dropdown__trigger">
@@ -164,6 +192,13 @@
                     </div>
                 </li>
 
+                <!-- 
+                |
+                |
+                | Superuser Section
+                |
+                |
+                 -->
                 @endif @if (auth()->user()->hasRole('superuser'))
                 <li class="dropdown">
                     <span class="dropdown__trigger">
@@ -217,7 +252,37 @@
                         </div>
                     </div>
                 </li>
+
+                <!-- 
+                |
+                |
+                | Council Section
+                |
+                |
+                 -->
                 @endif @if (auth()->user()->hasRole(['council', 'superuser']))
+                <li class="dropdown">
+                    <span>
+                        Society
+                    </span>
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('council.societies.index')}}">
+                                        All Societies
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('stats.albums') }}">
+                                        Pending 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
                 <li class="dropdown">
                     <span>
                         Insights    

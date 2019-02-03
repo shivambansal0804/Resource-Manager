@@ -102,8 +102,13 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|co
             Route::get('/{uuid}/edit', 'User\CouncilController@edit')->name('council.stories.edit');
             Route::put('/{uuid}', 'User\CouncilController@update')->name('council.stories.update');
             Route::get('/{uuid}/publish', 'User\CouncilController@publish')->name('council.stories.publish');
-        });
-        
+        });      
+    });
+
+    Route::group(['prefix' => 'societies'], function () {
+        Route::get('/', 'User\CouncilController@societyIndex')->name('council.societies.index');
+        Route::get('/{slug}', 'User\CouncilController@societyShow')->name('council.societies.show');
+        Route::get('/{slug}/draft', 'User\CouncilController@updateStatusToDraft')->name('society.head.status.draft');
     });
 
     // Stats
@@ -229,6 +234,9 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
             Route::get('/create', 'User\SocietyHeadController@imageCreate')->name('society.head.image.create');
             Route::post('/', 'User\SocietyHeadController@imageStore')->name('society.head.image.store');
         });
+        Route::group(['prefix' => '{slug}/news'], function() {
+            Route::get('/', 'User\SocietyHeadController@newsIndex')->name('society.head.news.index');
+        });  
     });
 
     

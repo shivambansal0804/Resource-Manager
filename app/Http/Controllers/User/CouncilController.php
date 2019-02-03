@@ -4,7 +4,7 @@ namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\{Story, Category};
+use App\Models\{Story, Category, Society};
 use App\Http\Requests\StoreStory;
 use App\Events\StoryPublished;
 
@@ -133,5 +133,31 @@ class CouncilController extends Controller
       event(new StoryPublished($story));
 
       return redirect()->route('blog.show', $story->slug);
+    }
+
+    public function societyIndex()
+    {
+        $societies = Society::all();
+        return view('users.council.societies.index', ['societies' => $societies]);
+    }
+
+    public function societyShow($slug)
+    {
+        $society = Society::whereSlug($slug)->firstOrFail();
+
+        return view('users.society_head.show', [
+            'society' => $society,
+        ]);
+    }
+
+    public function updateStatusToDraft(Request $request, $slug)
+    {
+        $society = Society::whereSlug($slug)->firstOrFail();
+
+        $society->update(['status' => 'draft']);
+
+        $request->session()->flash('success', 'Saved in Drafts');
+
+        return redirect()->route('council.societies.show', $society->slug);
     }
 }

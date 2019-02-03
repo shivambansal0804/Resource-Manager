@@ -33,17 +33,35 @@
                         {{ $society->description }}
                         </p>
 
-                        <a class="btn btn--sm type--uppercase" href="{{ route('society.head.edit', $society->slug) }}" data-scroll>
-                            <span class="btn__text">
-                                Edit
-                            </span>
-                        </a>
-                        @if($society->status == 'draft')
-                            <a class="btn btn--sm type--uppercase" href="{{ route('society.head.status.pending', $society->slug) }}" data-scroll>
+                        @php 
+                            $authSoc = auth()->user()->society()->first();
+                            if($authSoc)
+                                $id = $authSoc->id;
+                            else 
+                                $id = NULL;
+                        @endphp
+
+                        @if ($id == $society->id)
+                            <a class="btn btn--sm type--uppercase" href="{{ route('society.head.edit', $society->slug) }}" data-scroll>
                                 <span class="btn__text">
-                                    Submit for Approval
+                                    Edit
                                 </span>
                             </a>
+                            @if($society->status == 'draft')
+                                <a class="btn btn--sm type--uppercase" href="{{ route('society.head.status.pending', $society->slug) }}" data-scroll>
+                                    <span class="btn__text">
+                                        Submit for Approval
+                                    </span>
+                                </a>
+                            @endif
+                        @else 
+                            @if($society->status != 'draft')
+                                <a class="btn btn--sm type--uppercase" href="{{ route('society.head.status.draft', $society->slug) }}" data-scroll>
+                                    <span class="btn__text">
+                                        Change to Draft
+                                    </span>
+                                </a>
+                            @endif                        
                         @endif
                     </div>
                 </div>

@@ -71,11 +71,8 @@ class SocietyHeadController extends Controller
     {
         $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
 
-        $media = $society->getMedia('soc_images');
-
         return view('users.society_head.show', [
             'society' => $society,
-            'media'   => $media
         ]);
     }
 
@@ -180,5 +177,10 @@ class SocietyHeadController extends Controller
             $request->session()->flash('success','No Image');
             return redirect()->back();
         }
+    }
+
+    public function newsIndex()
+    {
+        return view('societies.news.index');
     }
 }
