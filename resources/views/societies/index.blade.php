@@ -76,21 +76,6 @@
 							</div>
 						</article>
 
-						<article class="portfolio-item pf-media pf-misc">
-							<div class="portfolio-image">
-								<a href="/societies/single/assets">
-									<img src="/img/society/assets/1.jpg" alt="assets">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="/img/society/assets/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="/societies/single/assets" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc" style="text-align: center;">
-								<h3 style="display: inline-block;"><a href="/societies/single/assets">Assets</a></h3>
-							</div>
-						</article>
-
 						<article class="portfolio-item pf-media pf-team">
 							<div class="portfolio-image">
 								<a href="/societies/single/auv">

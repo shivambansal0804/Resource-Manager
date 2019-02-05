@@ -4,7 +4,7 @@ namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\{Story, Category, Society};
+use App\Models\{Story, Category, Society, SocietyNews};
 use App\Http\Requests\StoreStory;
 use App\Events\StoryPublished;
 
@@ -177,6 +177,31 @@ class CouncilController extends Controller
     */
     public function societyNewsIndex()
     {
-        return 1;
+        $news = SocietyNews::latest()->with('society')->get();
+
+        return view('users.council.news.index', [
+            'title' => 'News',
+            'news' => $news
+        ]);
+    }
+
+    public function societyNewsInPending()
+    {
+        $news = SocietyNews::whereStatus('pending')->latest()->with('society')->get();
+
+        return view('users.council.news.index', [
+            'title' => 'All Pending News',
+            'news' => $news
+        ]);
+    }
+
+    public function societyNewsPublished()
+    {
+        $news = SocietyNews::whereStatus('published')->latest()->with('society')->get();
+
+        return view('users.council.news.index', [
+            'title' => 'Published News',
+            'news' => $news
+        ]);
     }
 }

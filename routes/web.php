@@ -110,6 +110,8 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|co
         
         Route::group(['prefix' => 'news'], function () { 
             Route::get('/', 'User\CouncilController@societyNewsIndex')->name('council.societies.news.index');
+            Route::get('/pending', 'User\CouncilController@societyNewsInPending')->name('council.societies.news.pending');
+            Route::get('/published', 'User\CouncilController@societyNewsPublished')->name('council.societies.news.published');
         });
 
         Route::get('/{slug}', 'User\CouncilController@societyShow')->name('council.societies.show');

@@ -300,11 +300,6 @@
                         <div class="dropdown__content">
                             <ul class="menu-vertical">
                                 <li>
-                                    <a href="{{ route('superuser.dashboard') }}">
-                                        Stats
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="{{ route('council.societies.index')}}">
                                         All Societies
                                     </a>
@@ -331,6 +326,16 @@
                                         All News
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="{{ route('council.societies.news.pending')}}">
+                                        Pending News
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('council.societies.news.published')}}">
+                                        Published News
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -343,6 +348,11 @@
                     <div class="dropdown__container">
                         <div class="dropdown__content">
                             <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('superuser.dashboard') }}">
+                                        Stats
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="{{ route('stats.stories')}}">
                                         Story
