@@ -216,12 +216,6 @@
                 |
                  -->
                 @endif @if (auth()->user()->hasRole('superuser'))
-                <li>
-                    <a href="{{ route('superuser.dashboard') }}">
-                        Stats
-                    </a>
-                </li>
-
                 <li class="dropdown">
                     <span class="dropdown__trigger">
                         Member
@@ -305,6 +299,11 @@
                     <div class="dropdown__container">
                         <div class="dropdown__content">
                             <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('superuser.dashboard') }}">
+                                        Stats
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="{{ route('council.societies.index')}}">
                                         All Societies
