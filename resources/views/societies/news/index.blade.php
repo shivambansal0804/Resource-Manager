@@ -6,32 +6,25 @@
 
 @section('content')
 <section class="height-100 p-0">
-      <div class="slide active">
+      @foreach ($news as $item)
+
+      <div class="slide {{ ($loop->index == 0) ? 'active' : ''}}">
             <div class="card row">
-                  <div class="card-img col-md-8"  style="background-image: url('https://images.unsplash.com/photo-1505324453012-a12195b84346?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80');" id="img01"></div>
+                  <div class="card-img col-md-8"  style="background-image: url('{{ $item->getFirstMediaUrl('soc_news_images')}}');" id="img01"></div>
                   <div class="card-content col-md-4">
-                        <p class="card-theme">Travel</p>
-                        <h2 class="">Amongst the giants</h2>
-                        <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellendus vel neque iure aut, eligendi aliquid vero facilis, quia repellat.</p>
-                    <a class="card-link">Read</a>
+                        <p class="">
+                              <small>{{$item->created_at->diffForHumans()}}</small>
+                        </p>
+                        <h2>{{ $item->title }}</h2>
+                        <p class="card-para">
+                              {{ $item->description }}
+                        </p>
+                        <small class="">Views {{ $item->view }} </small>
+                        <a href="" class="card-link">Edit</a>
                   </div>
             </div>
       </div>
-
-      @for ($i = 0; $i < 10; $i++)
-
-      <div class="slide">
-            <div class="card row">
-                  <div class="card-img col-md-8"  style="background-image: url('https://images.unsplash.com/photo-1505324453012-a12195b84346?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80');" id="img01"></div>
-                  <div class="card-content col-md-4">
-                        <p class="card-theme">Travel</p>
-                        <h2>Amongst the giants</h2>
-                        <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellendus vel neque iure aut, eligendi aliquid vero facilis, quia repellat.</p>
-                    <a class="card-link">Read</a>
-                  </div>
-            </div>
-      </div>
-      @endfor
+      @endforeach
       <div class="prevnext">
             <button class="pn-btn" id="prev"></button>
             <button class="pn-btn" id="next"></button>

@@ -24,6 +24,11 @@ class Society extends Model implements HasMedia
     
     public function user()
     {
-        $this->belongsTo('App\User');
+        return $this->belongsTo('App\User');
+    }
+
+    public function news()
+    {
+        return $this->hasMany('App\Models\SocietyNews');
     }
 }

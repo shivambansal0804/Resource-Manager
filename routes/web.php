@@ -235,7 +235,9 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
             Route::post('/', 'User\SocietyHeadController@imageStore')->name('society.head.image.store');
         });
         Route::group(['prefix' => '{slug}/news'], function() {
-            Route::get('/', 'User\SocietyHeadController@newsIndex')->name('society.head.news.index');
+            Route::get('/', 'SocietyNewsController@index')->name('society.head.news.index');
+            Route::get('/create', 'SocietyNewsController@create')->name('society.head.news.create');
+            Route::post('/', 'SocietyNewsController@store')->name('society.head.news.store');
         });  
     });
 

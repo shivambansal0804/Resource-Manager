@@ -178,9 +178,4 @@ class SocietyHeadController extends Controller
             return redirect()->back();
         }
     }
-
-    public function newsIndex()
-    {
-        return view('societies.news.index');
-    }
 }

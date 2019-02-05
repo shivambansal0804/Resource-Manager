@@ -70,12 +70,28 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <a href="{{ route('society.head.news.index', $society->slug) }}">
-                                News
-                            </a>
-                        </li>
-                        
+
+                        <li class="dropdown">
+                            <span class="dropdown__trigger">
+                                    News
+                                </span>
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <ul class="menu-vertical">
+                                        <li>
+                                            <a href="{{ route('society.head.news.index', $society->slug) }}">
+                                                All News
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('society.head.news.create', $society->slug) }}">
+                                                Create New
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>                        
                     @else 
                         <li>
                             <a href="{{ route('society.head.create')}}">
