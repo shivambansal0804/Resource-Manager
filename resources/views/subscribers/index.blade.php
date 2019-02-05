@@ -36,7 +36,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <h3>All Subscriber</h3>
+                <h3>All Subscriber - {{ count($subscribers) }}</h3>
                 <ul class="accordion accordion-2 accordion--oneopen">
                     @foreach ($subscribers as $item)
                     <li>

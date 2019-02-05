@@ -114,6 +114,13 @@ class CouncilController extends Controller
         //
     }
 
+    /*-----------------------------------------
+    |
+    |
+    |   Story Setction
+    |
+    |------------------------------------------
+    */
     public function draft(Request $request, $uuid)
     { 
         $story = Story::where('Uuid', $uuid)->firstOrFail()->update([
@@ -159,5 +166,17 @@ class CouncilController extends Controller
         $request->session()->flash('success', 'Saved in Drafts');
 
         return redirect()->route('council.societies.show', $society->slug);
+    }
+
+    /*-----------------------------------------
+    |
+    |
+    |   News Section
+    |
+    |------------------------------------------
+    */
+    public function societyNewsIndex()
+    {
+        return 1;
     }
 }

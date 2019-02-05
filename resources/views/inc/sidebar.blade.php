@@ -45,7 +45,7 @@
                         @endphp
                         <li>
                             <a href="{{ route('society.head.show', $society->slug) }}">
-                                About {{ str_limit($society->name, $limit = 27, $end = '...') }} 
+                                About {{ str_limit($society->name, $limit = 17, $end = '...') }} 
                             </a>
                         </li>
 
@@ -216,18 +216,19 @@
                 |
                  -->
                 @endif @if (auth()->user()->hasRole('superuser'))
+                <li>
+                    <a href="{{ route('superuser.dashboard') }}">
+                        Stats
+                    </a>
+                </li>
+
                 <li class="dropdown">
                     <span class="dropdown__trigger">
-                        Manage
+                        Member
                     </span>
                     <div class="dropdown__container">
                         <div class="dropdown__content">
                             <ul class="menu-vertical">
-                                <li>
-                                    <a href="{{ route('superuser.dashboard') }}">
-                                        Admin Dashboard
-                                    </a>
-                                </li>
                                 <li>
                                     <a href="{{ route('users.index') }}">
                                         All Members
@@ -238,15 +239,11 @@
                                         New Member
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="{{ route('permissions.index') }}">
-                                        Permissions
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
                 </li>
+
                 <li class="dropdown">
                     <span class="dropdown__trigger">
                         Role
@@ -268,6 +265,30 @@
                         </div>
                     </div>
                 </li>
+
+                <li class="dropdown">
+                    <span class="dropdown__trigger">
+                        Permission
+                    </span>
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('permissions.index') }}">
+                                        All Permissions
+                                    </a>
+                                <!-- </li>
+                                <li>
+                                    <a href="{{ route('roles.create') }}">
+                                        New Role
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                
 
                 <!-- 
                 |
@@ -292,6 +313,23 @@
                                 <li>
                                     <a href="{{ route('stats.albums') }}">
                                         Pending 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <span>
+                        News
+                    </span>
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('council.societies.news.index')}}">
+                                        All News
                                     </a>
                                 </li>
                             </ul>

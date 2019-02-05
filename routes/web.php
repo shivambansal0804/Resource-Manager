@@ -107,6 +107,11 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|co
 
     Route::group(['prefix' => 'societies'], function () {
         Route::get('/', 'User\CouncilController@societyIndex')->name('council.societies.index');
+        
+        Route::group(['prefix' => 'news'], function () { 
+            Route::get('/', 'User\CouncilController@societyNewsIndex')->name('council.societies.news.index');
+        });
+
         Route::get('/{slug}', 'User\CouncilController@societyShow')->name('council.societies.show');
         Route::get('/{slug}/draft', 'User\CouncilController@updateStatusToDraft')->name('society.head.status.draft');
     });

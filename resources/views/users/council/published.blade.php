@@ -47,13 +47,13 @@
                                 <a class="btn btn--sm type--uppercase"
                                     href="{{ route('council.stories.published') }}" 
                                     onclick="event.preventDefault(); 
-                                                document.getElementById('delete-form').submit(); "
+                                                document.getElementById('delete-form--{{$item->id}}').submit(); "
                                     >
                                     <span class="btn__text">
                                         Delete
                                     </span>
                                 </a>
-                                <form id="delete-form" action="{{ route('council.stories.destory', $item->uuid )}}" method="POST">
+                                <form id="delete-form--{{$item->id }}" action="{{ route('council.stories.destory', $item->uuid )}}" method="POST">
                                     @csrf @method('DELETE')
                                 </form>
                             </div>
