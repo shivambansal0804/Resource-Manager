@@ -1669,7 +1669,6 @@
             "time": "2018-07-02T15:55:56+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "php-http/guzzle6-adapter",
             "version": "v1.1.1",
             "source": {
@@ -1833,8 +1832,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-01-26T13:27:02+00:00"
-=======
+            "time": "2016-01-26T13:27:02+00:00",
             "name": "paragonie/sodium_compat",
             "version": "v1.8.0",
             "source": {
@@ -1915,7 +1913,6 @@
                 "side-channel resistant"
             ],
             "time": "2018-11-29T22:33:39+00:00"
->>>>>>> 98113544d7d7e268ec848ec7a7762b65729214d6
         },
         {
             "name": "psr/container",
@@ -2186,7 +2183,6 @@
             "time": "2018-10-13T15:16:03+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "ralouphie/getallheaders",
             "version": "2.0.5",
             "source": {
@@ -2212,7 +2208,7 @@
                 "files": [
                     "src/getallheaders.php"
                 ]
-=======
+            },
             "name": "pusher/pusher-php-server",
             "version": "v3.2.0",
             "source": {
@@ -2245,13 +2241,11 @@
                 "psr-4": {
                     "Pusher\\": "src/"
                 }
->>>>>>> 98113544d7d7e268ec848ec7a7762b65729214d6
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-<<<<<<< HEAD
             "authors": [
                 {
                     "name": "Ralph Khattar",
@@ -2259,8 +2253,7 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "time": "2016-02-11T07:05:27+00:00"
-=======
+            "time": "2016-02-11T07:05:27+00:00",
             "description": "Library for interacting with the Pusher REST API",
             "keywords": [
                 "events",
@@ -2276,7 +2269,6 @@
                 "trigger"
             ],
             "time": "2018-08-13T14:57:32+00:00"
->>>>>>> 98113544d7d7e268ec848ec7a7762b65729214d6
         },
         {
             "name": "ramsey/uuid",

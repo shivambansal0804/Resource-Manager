@@ -343,6 +343,21 @@
 			<div id="oc-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-margin="20" data-loop="true" data-nav="true"
 			 data-pagi="true" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="3" data-items-lg="4">
 
+			 	<div class="oc-item">
+					<a href="{{ route ('editions') }}">
+						<div class="entry clearfix">
+							<div class="entry-image">
+								<img class="image_fade" src="/img/45.png" alt="Standard Post with Image">
+							</div>
+							<div class="entry-title">
+								<h2><a href="{{ route('editions') }}">Edition 45</a></h2>
+							</div>
+							<div class="entry-content">
+								<a href="{{ route('editions') }}" class="more-link">Read More</a>
+							</div>
+						</div>
+					</a>
+				</div>
 
 				<div class="oc-item">
 					<a href="{{ route ('editions') }}">
@@ -487,89 +502,233 @@
 				<!-- Posts
 								============================================= -->
 				<div id="posts" class="post-grid grid-container post-masonry post-masonry-full grid-3 clearfix">
-
-					<div class="entry clearfix">
-						<div class="entry-image clearfix">
-							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
-								<div class="flexslider">
-									<div class="slider-wrap">
-										<div class="slide"><a href="/img/portfolio/batch1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch1.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/batch2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/batch5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch5.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/batch6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/batch6.jpg" alt="Standard Post with Gallery"></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?ref=page_internal">Batch Photos</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>April 10,2018</li>
-
-							<li><i class="icon-picture"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p>DTU Times conducts the Batch Photos of the graduating class every year. The full Batch Photography Session of the
-								graduating batch of 2018 was conducted at the OAT and the individual class wise photos were conducted in the B.R.
-								Ambedkar Auditorium last academic year.</p>
-
-						</div>
-					</div>
-
-					<div class="entry clearfix">
+					
+					<div class="entry clearfix"   >
 						<div class="entry-image">
-							<a href="/img/portfolio/dtusa.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/dtusa.jpg" alt="Standard Post with Image"></a>
+							<a href="/img/portfolio/10years.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/10years.jpg" alt="Standard Post with Image"></a>
 						</div>
 						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/19/interview-dtu-student-association/">Interview | DTU Student Association</a></h2>
+							<h2><a target="_blank" rel="noopener noreferrer" href="http://www.dtutimes.dtu.ac.in/blog/dtu-times-celebrating-10-years-944">Dtu Times - Celebrating 10 Years</a></h2>
 						</div>
 						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i> September 19, 2018</li>
-
+							<li><i class="icon-calendar3"></i> January 21, 2019</li>
+							
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
-							<p>
-								DTU Times interviewed the Student Association of Delhi Technological University –<br> Gaurav Gupta, President, DTU-SA,
-								PIE, Class of 2019<br> Puneet Lamba, Vice President, DTU-SA, ME, Class of 2020<br> Rishav Sethi, General Secretary,
-								DTU-SA, SE, Class of 2020<br> Ritick Ganrai, Joint Secretary, DTU-SA, ECE, Class of 2020
+							<p>DTU Times thanks its readers for their unabating support, as it completes 10 years as the official newsletter of Delhi Technological University.
 							</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/19/interview-dtu-student-association/
-				" class="more-link">Read More</a>
+							<a target="_blank" rel="noopener noreferrer" href="http://www.dtutimes.dtu.ac.in/blog/dtu-times-celebrating-10-years-944"class="more-link">Read More</a>
 						</div>
 					</div>
 
-					<div class="entry clearfix">
+					<div class="entry clearfix"   >
+						<div class="entry-image">
+							<a href="/img/portfolio/cleanenergy.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/cleanenergy.jpg" alt="Standard Post with Image"></a>
+						</div>
+						<div class="entry-title">
+							<h2><a target="_blank" rel="noopener noreferrer" href="http://www.dtutimes.dtu.ac.in/blog/clean-energy-research-center-to-be-set-up-at-dtu-550">Clean Energy Research Center To Be Set Up At DTU</a></h2>
+						</div>
+						<ul class="entry-meta clearfix">
+							<li><i class="icon-calendar3"></i> February 8, 2019</li>
+							
+							<li><i class="icon-camera-retro"></i></li>
+						</ul>
+						<div class="entry-content">
+							<p>Clean Energy Research Centre at Delhi Technological University, under the mentorship of DCE alumnus Prof. Dharendra Yogi Goswami, will be set in partnership with government
+							</p>
+							<a target="_blank" rel="noopener noreferrer" href="http://www.dtutimes.dtu.ac.in/blog/clean-energy-research-center-to-be-set-up-at-dtu-550"class="more-link">Read More</a>
+						</div>
+					</div>
+
+					<div class="entry clearfix"   >
+						<div class="entry-image">
+							<a href="/img/portfolio/anulather.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/anulather.jpg" alt="Standard Post with Image"></a>
+						</div>
+						<div class="entry-title">
+							<h2><a target="_blank" rel="noopener noreferrer" href="http://www.dtutimes.dtu.ac.in/blog/interview-prof-anu-singh-lather-pro-vc-part-i-east-campus-751">INTERVIEW | Prof. Anu Singh Lather, Pro VC | Part I, East Campus</a></h2>
+						</div>
+						<ul class="entry-meta clearfix">
+							<li><i class="icon-calendar3"></i> February 7, 2019</li>
+							
+							<li><i class="icon-camera-retro"></i></li>
+						</ul>
+						<div class="entry-content">
+							<p>DTU Times interviewed Prof. Anu Singh Lather, Pro Vice Chancellor, DTU on the process and experience of setting up the USME, at DTU East Campus.
+							</p>
+							<a target="_blank" rel="noopener noreferrer" href="http://www.dtutimes.dtu.ac.in/blog/interview-prof-anu-singh-lather-pro-vc-part-i-east-campus-751"class="more-link">Read More</a>
+						</div>
+					</div>
+					<div class="entry clearfix"   >
+						<div class="entry-image">
+							<a href="/img/portfolio/avijitdutt.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/avijitdutt.jpg" alt="Standard Post with Image"></a>
+						</div>
+						<div class="entry-title">
+							<h2><a target="_blank" rel="noopener noreferrer" href="http://www.dtutimes.dtu.ac.in/blog/interview-avijit-dutt-417">INTERVIEW | AVIJIT DUTT</a></h2>
+						</div>
+						<ul class="entry-meta clearfix">
+							<li><i class="icon-calendar3"></i> January, 2019</li>
+							
+							<li><i class="icon-camera-retro"></i></li>
+						</ul>
+						<div class="entry-content">
+							<p>DTU Times interviewed filmmaker, actor, theatre director and communications consultant Avijit Dutt, who was at Yuvaan Literature and Film Festival for a panel discussion.
+							</p>
+							<a target="_blank" rel="noopener noreferrer" href="http://www.dtutimes.dtu.ac.in/blog/interview-avijit-dutt-417"class="more-link">Read More</a>
+						</div>
+					</div>
+
+					<div class="entry clearfix"   >
 						<div class="entry-image clearfix">
 							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
 								<div class="flexslider">
 									<div class="slider-wrap">
-										<div class="slide"><a href="/img/portfolio/fn1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn1.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fn3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn3.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fn4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn4.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fn5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn5.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fn6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fn6.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y6.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y2.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y3.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y4.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y5.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y7.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y7.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y8.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y8.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y9.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y9.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y10.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y10.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y11.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y11.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y12.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y12.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y14.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y14.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y15.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y15.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y16.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y16.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y17.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y17.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/y18.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y18.jpg" alt="Standard Post with Gallery"></a></div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Freshers' Night</a></h2>
+							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Yuvaan 2019</a></h2>
 						</div>
 						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>September 14,2018</li>
-
+							<li><i class="icon-calendar3"></i>January, 2019</li>
+						
 							<li><i class="icon-picture"></i></li>
 						</ul>
 						<div class="entry-content">
-							<p> The most awaited, most special and magical day for every fresher around the globe is the Freshers' Night. DTU holds
-								its Freshers' Night towards the end of the Freshers' Week where the various accolades like the Mr. and Ms. Fresher
-								is awarded to the new students.</p>
+							<p>The third edition of Yuvaan, the film and literature festival of Delhi Technological Univesity, was held during the month of January, 2019.  This festival saw a massive footfall of attendees as film lovers and literature fans came together from all around the city. Over the span of three days, many eminent personalities graced the event, with interactive sessions, as the attendees busied themselves, praticipating in various events during the fest.
+							</p>
+							
+						</div>
+					</div>
+					<div class="entry clearfix"   >
+						<div class="entry-image clearfix">
+							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
+								<div class="flexslider">
+									<div class="slider-wrap">
+										<div class="slide"><a href="/img/portfolio/es6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/es6.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/es1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/es1.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/es2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/es2.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/es3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/es3.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/es4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/es4.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/es5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/es5.jpg" alt="Standard Post with Gallery"></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="entry-title">
+							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">E-Summit 2019</a></h2>
+						</div>
+						<ul class="entry-meta clearfix">
+							<li><i class="icon-calendar3"></i>February, 2019</li>
+						
+							<li><i class="icon-picture"></i></li>
+						</ul>
+						<div class="entry-content">
+							<p> Entrepreneurship Cell DTU hosted its flagship event, E-Summit 2019, from 31st January to 2nd February 2019.The event was a colloquy of sharp young minds, bleeding edge professionals and trend-setting companies
+							</p>
+							
+						</div>
+					</div>
+					<div class="entry clearfix"   >
+						<div class="entry-image clearfix">
+							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
+								<div class="flexslider">
+									<div class="slider-wrap">
+										<div class="slide"><a href="/img/portfolio/am4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/am4.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/am1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/am1.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/am2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/am2.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/am3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/am3.jpg" alt="Standard Post with Gallery"></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="entry-title">
+							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Home coming Meet 2019</a></h2>
+						</div>
+						<ul class="entry-meta clearfix">
+							<li><i class="icon-calendar3"></i>February 8, 2019</li>
+						
+							<li><i class="icon-picture"></i></li>
+						</ul>
+						<div class="entry-content">
+							<p> The alumni of the Class of 1959 and 1969 visited the Campus of DTU (formerly known as DCE) and were felicitated. Hon'ble Vice Chancellor Prof. Yogesh Singh and Deputy Chief Minister Sri Manish Sisodia as well as dignitaries from the administration and Alumni Association were present.
+							</p>
+							
+						</div>
+					</div>
+					<div class="entry clearfix"   >
+						<div class="entry-image clearfix">
+							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
+								<div class="flexslider">
+									<div class="slider-wrap">
+										<div class="slide"><a href="/img/portfolio/tf1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/tf1.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/tf2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/tf2.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/tf3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/tf3.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/tf4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/tf4.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/tf5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/tf5.jpg" alt="Standard Post with Gallery"></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="entry-title">
+							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Invictus 2019</a></h2>
+						</div>
+						<ul class="entry-meta clearfix">
+							<li><i class="icon-calendar3"></i>February, 2019</li>
+						
+							<li><i class="icon-picture"></i></li>
+						</ul>
+						<div class="entry-content">
+							<p>Invictus, Delhi Technological Unversity is the Annual Tech-Fest of the University. It was held during the month of February. All the Tech Societies and Teams of DTU host this fest which is a home to a plethora of competitions and exhibitions which see over 15k participants from all over the country.
+							</p>
+							
+						</div>
+					</div>
+					<div class="entry clearfix"   >
+						<div class="entry-image clearfix">
+							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
+								<div class="flexslider">
+									<div class="slider-wrap">
+										<div class="slide"><a href="/img/portfolio/mun1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/mun1.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/mun2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/mun2.jpg" alt="Standard Post with Gallery"></a></div>
+										<div class="slide"><a href="/img/portfolio/mun3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/mun3.jpg" alt="Standard Post with Gallery"></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="entry-title">
+							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Deltech MUN 2019</a></h2>
+						</div>
+						<ul class="entry-meta clearfix">
+							<li><i class="icon-calendar3"></i>January, 2019</li>
+						
+							<li><i class="icon-picture"></i></li>
+						</ul>
+						<div class="entry-content">
+							<p> The DelTech MUN and Debating Society organised DelTech Model United Nations on 19-20 January 2019. The Chief Guest was Mr.Sanam Sutirath Wazir, a human rights activist.
+							</p>
+							
 						</div>
 					</div>
 
-					<div class="entry clearfix">
+					<div class="entry clearfix"   >
 						<div class="entry-image">
 							<a href="/img/portfolio/kuchyadein.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/kuchyadein.jpg" alt="Standard Post with Image"></a>
 						</div>
@@ -578,134 +737,16 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> August 16, 2018</li>
-
+							
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
 							<p>कॉलेज में कदम रखते शिवेंद्र की विडम्बना का वर्णन करते, लोकेश नारायण शंकर, द्वितीय वर्ष, आई टी.</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/16/कुछ-यादें-ऐसी-भी/#more-7643"
-							 class="more-link">Read More</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/16/कुछ-यादें-ऐसी-भी/#more-7643"class="more-link">Read More</a>
 						</div>
 					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image">
-							<a href="/img/portfolio/y3.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/y3.jpg" alt="Standard Post with Image"></a>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/16/interview-tyesha-kohli-singer/#more-7729">Interview | Tyesha Kohli, Singer</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i> September 16, 2018</li>
-
-							<li><i class="icon-camera-retro"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p>DTU Times interviewed Tyesha Kohli, a proclaimed singer, who was at DTU for a performance in Pehli Mulaqat, an event
-								organised by Yuvaan – The Annual Literary Fest of DTU.</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/16/interview-tyesha-kohli-singer/#more-7729"
-							 class="more-link">Read More</a>
-						</div>
-					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image clearfix">
-							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
-								<div class="flexslider">
-									<div class="slider-wrap">
-										<div class="slide"><a href="/img/portfolio/o1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o1.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/o2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/o4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o4.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/o5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o5.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/o6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/o6.jpg" alt="Standard Post with Gallery"></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Orientation 2018</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>August 2,2018</li>
-
-							<li><i class="icon-picture"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p> The Orientation for newly admitted students of DTU was held at the OAT. The occasion was graced by the presence of
-								Shri. Arvind Kejriwal, Hon'ble Chief Minister of Delhi and Shri. Manish Sisodia, Hon'ble Deputy Chief Minister of
-								Delhi.
-							</p>
-
-						</div>
-					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image clearfix">
-							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
-								<div class="flexslider">
-									<div class="slider-wrap">
-										<div class="slide"><a href="/img/portfolio/en2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/en2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/en3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/en3.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/en4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/en4.jpg" alt="Standard Post with Gallery"></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Ethnic Night '18</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>September 11,2018</li>
-
-							<li><i class="icon-picture"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p> Every year, during the Freshers' Week, the Cultural Council of DTU has its Ethnic Night on the grounds of DTU. In
-								2018, the Ethnic Night was conducted on the ground in front of the Aryabhatta Boys' Hostels and saw students from
-								various years' of study dance to some desi tunes.</p>
-						</div>
-					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image">
-							<a href="/img/portfolio/amanthakur.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/amanthakur.jpg" alt="Standard Post with Image"></a>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/10/02/interview-aman-thakur-gyankunj/">Interview | Aman Thakur, Gyankunj</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>October 2, 2018</li>
-
-							<li><i class="icon-camera-retro"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p>DTU Times interviewed Aman Thakur, an alumnus of DTU and the founder of the NGO Gyankunj.<br> “Our belief is that
-								a liberation of weaker sections of our community can tangibly spread change in the long run.”<br> – Gyankunj Team</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/10/02/interview-aman-thakur-gyankunj/"
-							 class="more-link">Read More</a>
-						</div>
-					</div>
-					<div class="entry clearfix">
-						<div class="entry-image">
-							<a href="/img/portfolio/daring.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/daring.jpg" alt="Standard Post with Image"></a>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/17/daring-to-challenge/#more-7653">Daring to Challenge</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i> August 17, 2018</li>
-
-							<li><i class="icon-camera-retro"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p>Zara Khan, 3rd Year, PSCT and Anushka Sharma, 2nd Year, MAM pen a tribute to former prime minister Atal Bihari Vajpayee.
-							</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/17/daring-to-challenge/#more-7653"
-							 class="more-link">Read More</a>
-						</div>
-					</div>
-
-					<div class="entry clearfix">
+				    
+					<div class="entry clearfix"   >
 						<div class="entry-image">
 							<a href="/img/portfolio/talesoflost.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/talesoflost.jpg" alt="Standard Post with Image"></a>
 						</div>
@@ -714,209 +755,37 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> September 15, 2018</li>
-
+							
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
 							<p> A tale of two best friends from Anushka Sharma, 2nd Year, MAM who had to part ways as a result of an impasse.</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/15/tale-of-the-lost/#more-7714"
-							 class="more-link">Read More</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/15/tale-of-the-lost/#more-7714"class="more-link">Read More</a>
 						</div>
 					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image clearfix">
-							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
-								<div class="flexslider">
-									<div class="slider-wrap">
-										<div class="slide"><a href="/img/portfolio/y.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/y1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y1.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/y2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/y5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/y5.jpg" alt="Standard Post with Gallery"></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Yuvaan-Pehli Mulaqat 2018</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>September 10,2018</li>
-
-							<li><i class="icon-picture"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p> Yuvaan, DTU's official literary fest organised - Pehli Mulaqat, a Comedy Show cum Interactive Session, featuring the
-								Rising Stars of Comedy and Vines to give a taste of an ultimate feel-good event to the fucchas of 2018</p>
-
-						</div>
-					</div>
-
-					<div class="entry clearfix">
+					<div class="entry clearfix"   >
 						<div class="entry-image">
-							<a href="/img/portfolio/gautam.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/gautam.jpg" alt="Standard Post with Image"></a>
+							<a href="/img/portfolio/amanthakur.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/amanthakur.jpg" alt="Standard Post with Image"></a>
 						</div>
 						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/30/cadence18-gautam-thakur-instrumental-category-winner/">Cadence’18: Gautam Thakur, Instrumental Category Winner</a></h2>
+							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/10/02/interview-aman-thakur-gyankunj/">Interview | Aman Thakur, Gyankunj</a></h2>
 						</div>
 						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i> October 30, 2018</li>
-
+							<li><i class="icon-calendar3"></i>October 2, 2018</li>
+							
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
-							<p>DTU Times interviewed Gautam Thakur, Instrumental Category Winner of Cadence’18. He is a second year ME student who
-								mesmerised everyone in the B. R. Ambedkar Auditorium with his performance.</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/30/cadence18-gautam-thakur-instrumental-category-winner/"
-							 class="more-link">Read More</a>
+							<p>DTU Times interviewed Aman Thakur, an alumnus of DTU and the founder of the NGO Gyankunj.<br>
+“Our belief is that a liberation of weaker sections of our community can tangibly spread change in the long run.”<br>
+– Gyankunj Team</p>
+							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/10/02/interview-aman-thakur-gyankunj/"class="more-link">Read More</a>
 						</div>
 					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image">
-							<a href="/img/portfolio/nontech.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/nontech.jpg" alt="Standard Post with Image"></a>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/06/career-focus-non-tech-placement-outlook-2018-3/#more-7638">Career Focus: Non-Tech Placement Outlook 2018 #1</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i> August 6, 2018</li>
-
-							<li><i class="icon-camera-retro"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p> Arnav Saxena, Mathematics and Computing<br> Analyst, Bain Capability Network<br> Tip: 'Try solving guesstimates and
-								case studies with more than one approach. The interviewers will stop you in the middle and ask you to come up with
-								another approach.'
-							</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/06/career-focus-non-tech-placement-outlook-2018-3/#more-7638"
-							 class="more-link">Read More</a>
-						</div>
-					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image">
-							<a href="/img/portfolio/jayesh.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/jayesh.jpg" alt="Standard Post with Image"></a>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/10/01/cadence18-jayesh-kerketta-western-solo-category-winner/">Cadence’18: Jayesh Kerketta, Western Solo Category Winner
-				</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>October 1, 2018</li>
-
-							<li><i class="icon-camera-retro"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p>DTU Times interviewed Jayesh Kerketta, Western Solo Category Winner of Cadence’18. He is a first year Bachelor of
-								Design student who enthralled the audience with his soulful voice.</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/10/01/cadence18-jayesh-kerketta-western-solo-category-winner/"
-							 class="more-link">Read More</a>
-						</div>
-					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image">
-							<a href="/img/portfolio/techplacement.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/techplacement.jpg" alt="Standard Post with Image"></a>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/23/career-focus-tech-placement-outlook-2018-6/#more-7681">Career Focus: Tech Placement Outlook 2018 #3</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i> August 23, 2018</li>
-
-							<li><i class="icon-camera-retro"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p> Rohan Rathi, Computer Engineering<br> Software Engineer, Uber<br> Tip: 'Try to maintain an average CGPA and concentrate
-								on the real-world applications of your field, as the interviewers are more interested in the work you’ve done in
-								the past four years.'</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/23/career-focus-tech-placement-outlook-2018-6/#more-7681"
-							 class="more-link">Read More</a>
-						</div>
-					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image clearfix">
-							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
-								<div class="flexslider">
-									<div class="slider-wrap">
-										<div class="slide"><a href="/img/portfolio/fw1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw1.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fw2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fw4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw4.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/fw5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/fw5.jpg" alt="Standard Post with Gallery"></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">Fresher's Week</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>September 7,2018 - September 14,2018</li>
-
-							<li><i class="icon-picture"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p> The Cultural Council of DTU arranges the Freshers' Week, where many mini game events are held at the hotspots of the
-								campus, in order to give the warmest welcome to the newly admitted students of DTU.</p>
-
-						</div>
-					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image clearfix">
-							<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
-								<div class="flexslider">
-									<div class="slider-wrap">
-										<div class="slide"><a href="/img/portfolio/igt1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/igt1.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/igt2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/igt2.jpg" alt="Standard Post with Gallery"></a></div>
-										<div class="slide"><a href="/img/portfolio/igt4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="/img/portfolio/igt4.jpg" alt="Standard Post with Gallery"></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/dtutimes/photos/?tab=albums">India's got talent</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>August 25,2018</li>
-
-							<li><i class="icon-picture"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p> The DTU Campus was the venue for the auditions of the popular TV reality show - India's Got Talent. With the gates
-								of DTU opened in the morning, many people from around the Northern States arrived to audition for the show in hopes
-								of winning it.
-							</p>
-						</div>
-					</div>
-
-					<div class="entry clearfix">
-						<div class="entry-image">
-							<a href="/img/portfolio/major_sehgal.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/major_sehgal.jpg" alt="Standard Post with Image"></a>
-						</div>
-						<div class="entry-title">
-							<h2><a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/17/interviewretd-major-general-p-k-sehgal/#more-7738">Interview | Retd. Major General P.K. Sehgal</a></h2>
-						</div>
-						<ul class="entry-meta clearfix">
-							<li><i class="icon-calendar3"></i>September 17, 2018</li>
-
-							<li><i class="icon-camera-retro"></i></li>
-						</ul>
-						<div class="entry-content">
-							<p>DTU Times interviewed Retd. Major General PK Sehgal, who was at DTU for an interactive session, organized by the newly
-								elected Student Association.</p>
-							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/09/17/interviewretd-major-general-p-k-sehgal/#more-7738"
-							 class="more-link">Read More</a>
-						</div>
-					</div>
-
-				</div>
-				<!-- #posts end -->
-
+				</div><!-- #posts end -->
 			</div>
-
+			<br>
+			<br>
 		</section>
 		<!-- #content end -->
 
@@ -968,6 +837,9 @@
 
 			// Function to close modal
 			function closeModal(){
+				<?php 
+					setcookie("DTUnewsletter","guest@app.com",time()+(30 * 60));
+				?>
 			modal.style.display = 'none';
 			}
 
