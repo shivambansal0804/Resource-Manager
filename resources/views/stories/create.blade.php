@@ -1,9 +1,9 @@
 @extends('layouts.app')
- 
+
 @section('links')
 <script src="https://cdn.ckeditor.com/ckeditor5/11.1.1/classic/ckeditor.js"></script>
 @endsection
- 
+
 @section('content')
 <section id="" class="">
     <div class="container">
@@ -19,7 +19,7 @@
                     </div>
 
                     <div class="col-md-12">
-                        <textarea type="text" id="biliner" class="custom__input custom__input--resize-n" rows="2" placeholder="Biliners sells the story, give this a biliner."
+                        <textarea type="text" id="biliner" class="custom__input custom__input--resize-n" rows="2" placeholder="Byliner sells the story, give this a byliner."
                             autocomplete="off" name="biliner" required>{{ old('biliner') ? old('biliner'): $story->biliner }}</textarea>
                     </div>
 
@@ -37,7 +37,7 @@
                             @if ($story->category)
                                 <option value="{{ $story->category->name }}">{{$story->category->name}}</option>
                             @endif
-                                 
+
                             @foreach ($categories as $item)
                                 <option value="{{$item->id}}">{{$item->name}}</option>
                             @endforeach
@@ -46,14 +46,14 @@
 
                     <div class="col-md-12">
                         <label>Blog image</label>
-                        <input id="cover" type="file" class="validate-required" name="blog_image" value="{{ old('blog_image') ? old('blog_image') : ''}}">                            
+                        <input id="cover" type="file" class="validate-required" name="blog_image" value="{{ old('blog_image') ? old('blog_image') : ''}}">
                     </div>
 
 
                     <div class="col-md-12">
                         <textarea name="meta_description" id="" cols="30" rows="3" class="form-control" placeholder="Meta Description here" required>{{ old('meta_description') ? old('meta_description'): $story->meta_description }}</textarea>
                     </div>
-                    
+
                     <div class="col-md-12">
                         <textarea name="meta_title" id="" cols="30" rows="3" class="form-control" placeholder="Meta Title here" required>{{ old('meta_title') ? old('meta_title'): $story->meta_title }}</textarea>
                     </div>
@@ -64,7 +64,7 @@
                         </button>
                     </div>
 
-                    <div class="col-sm-6 col-xs-6 col-md-4">  
+                    <div class="col-sm-6 col-xs-6 col-md-4">
                         <button class="btn btn-success text-white btn--icon d-inline" type="submit" name="status" value="pending">
                             <span class="btn__text"><i class="icon-Add-File"></i>Submit for approval</span>
                         </button>
@@ -79,7 +79,7 @@
 
 </section>
 @endsection
- 
+
 @section('scripts')
 
 <script>
@@ -87,7 +87,7 @@
         var editor;
         ClassicEditor
 				.create(document.querySelector( '#body' ), {
-                    removePlugins: [ 
+                    removePlugins: [
                         'Image', 'EasyImage', 'ImageCaption', 'ImageCaption', 'TableToolbar', 'Table',
                         'MediaEmbed', 'ImageUpload', 'CKFinderUploadAdapter'
                     ],
@@ -107,7 +107,7 @@
                             'redo'
                         ]
                     }
-                    
+
                 } )
 				.then( e => {
                     editor = e;
@@ -115,7 +115,7 @@
 				.catch( error => {
 					console.error( 'error' );
                 } );
-        
+
         });
 </script>
 @endsection
