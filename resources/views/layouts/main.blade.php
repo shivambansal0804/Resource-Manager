@@ -5,6 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <!-- GA -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111767284-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-111767284-1');
+        </script>
+        
         @yield('title')
 
         {{-- Theme css --}}
@@ -17,7 +27,7 @@
         <link rel="stylesheet" href="{{ asset('css/main/animate.css') }}" type="text/css" />
         <link rel="stylesheet" href="{{ asset('css/main/magnific-popup.css') }}" type="text/css" />
         <link rel="stylesheet" href="{{ asset('css/main/responsive.css') }}" type="text/css" />
-        {{-- Page css --}}
+        {{-- Page css --}} 
         @yield('links')
     </head>
     <body class="stretched">
