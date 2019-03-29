@@ -14,7 +14,7 @@
                     Stack offers a clean and contemporary look to suit a range of purposes from corporate, tech startup, marketing site to digital
                     storefront.
                 </p>
-                <a class="btn btn--primary type--uppercase" href="#update-section" data-scroll>
+                <a class="btn btn--primary type--uppercase inner-link" href="#update-section" data-scroll>
                     <span class="btn__text">
                         Update Your Info
                     </span>
