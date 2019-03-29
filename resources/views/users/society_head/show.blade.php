@@ -61,7 +61,14 @@
                                         Change to Draft
                                     </span>
                                 </a>
-                            @endif                        
+                                @if($society->status != 'published')
+                                    <a class="btn btn--sm type--uppercase" href="{{ route('society.head.status.publish', $society->slug) }}" data-scroll>
+                                        <span class="btn__text">
+                                            Publish
+                                        </span>
+                                    </a>
+                                @endif     
+                            @endif                    
                         @endif
                     </div>
                 </div>

@@ -6,9 +6,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-lg-8">
-                <h1>All Societies</h1>
+                <h1>
+                    @if (Route::currentRouteName() == 'council.societies.index')
+                        All Stories
+                    @elseif (Route::currentRouteName() == 'council.societies.pending')
+                        All Pending Stories
+                    @else
+                        Something else
+                    @endif
+                </h1>
                 <p>
-                    List of all the societies of the DTU.
+                    @if (Route::currentRouteName() == 'council.societies.index')
+                        List of all the societies of the DTU.
+                    @elseif (Route::currentRouteName() == 'council.societies.pending')
+                        List of all the societies pending for approval.
+                    @else
+                        Something else
+                    @endif
                 </p>
             </div>
         </div>
