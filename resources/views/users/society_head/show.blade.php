@@ -99,6 +99,17 @@
                     <p>
                         <a href="{{$society->website}}">{{$society->website}}</a>
                     </p>
+
+                    @if ($id != $society->id)
+                    <p>
+                        <a class="btn btn--sm type--uppercase" href="{{ route('council.societies.show.images', $society->slug) }}" data-scroll>
+                            <span class="btn__text">
+                                Gallery
+                            </span>
+                        </a>
+                    </p>
+                    @endif
+                    
                 </div>
             </div>
             <!--end of row-->

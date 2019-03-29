@@ -163,6 +163,18 @@ class CouncilController extends Controller
         ]);
     }
 
+    public function societyImageIndex($slug)
+    {
+        $society = Society::whereSlug($slug)->firstOrFail();
+
+        $images = $society->getMedia('soc_images');
+
+        return view('societies.images.index', [
+            'society' => $society,
+            'images'   => $images
+        ]);
+    }
+
     public function updateStatusToDraft(Request $request, $slug)
     {
         $society = Society::whereSlug($slug)->firstOrFail();
@@ -220,5 +232,16 @@ class CouncilController extends Controller
             'title' => 'Published News',
             'news' => $news
         ]);
+    }
+
+    public function updateSocietyNewsToPublished(Request $request, $uuid)
+    {
+        $news = SocietyNews::whereUuid($uuid)->firstOrFail();
+
+        $news->update(['status' => 'published']);
+
+        $request->session()->flash('success', 'Published');
+
+        return redirect()->back();
     }
 }

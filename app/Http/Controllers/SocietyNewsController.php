@@ -14,7 +14,7 @@ class SocietyNewsController extends Controller
      */
     public function index($slug)
     {
-        $news = auth()->user()->society()->whereSlug($slug)->firstOrFail()->news()->get();
+        $news = auth()->user()->society()->whereSlug($slug)->firstOrFail()->news()->latest()->get();
         return view('societies.news.index', ['slug' => $slug, 'news' => $news]);
     }
 
@@ -45,6 +45,19 @@ class SocietyNewsController extends Controller
 
         $request->session()->flash('success', 'News Created.');
         return redirect()->route('society.head.news.index', $slug);
+    }
+
+    public function submitForApproval(Request $request, $slug, $uuid)
+    {
+        $news = auth()->user()->society()->whereSlug($slug)->firstOrFail()->news()->whereUuid($uuid)->firstOrFail();
+        
+        $news->update([
+            'status' => 'pending'
+        ]);
+        
+        $request->session()->flash('success', $news->title.' Submitted for Approval');
+
+        return redirect()->back();
     }
 
     /**
