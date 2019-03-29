@@ -39,13 +39,22 @@
                             <small>
                                 Created <strong>{{ $item->created_at->diffForHumans() }}</strong>
                             </small>
+                            @if (Route::currentRouteName() != 'council.societies.news.index')
                             <p class="mt-2">
-                                <a class="text-success" href="{{route('council.societies.news.publish', $item->uuid)}}">
-                                    <span class="btn__text">
-                                        Publish
-                                    </span>
+
+                                @if (Route::currentRouteName() == 'council.societies.news.pending')
+                                <a class="text-success type--uppercase" href="{{route('council.societies.news.publish', $item->uuid)}}">
+                                    <small>Publish</small>
                                 </a>
+                                @endif
+
+                                @if (Route::currentRouteName() == 'council.societies.news.published')
+                                <a class="text-danger type--uppercase" href="{{route('council.societies.news.draft', $item->uuid)}}">
+                                    <small>Save to drafts</small>
+                                </a>
+                                @endif
                             </p>
+                            @endif
                         </div>
                         <div class="col-md-4">
                             <img alt="Image" class="border--round" src="{{ $item->getFirstMediaUrl('soc_news_images') }}" />

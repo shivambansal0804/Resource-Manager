@@ -244,4 +244,15 @@ class CouncilController extends Controller
 
         return redirect()->back();
     }
+
+    public function updateSocietyNewsToDraft(Request $request, $uuid)
+    {
+        $news = SocietyNews::whereUuid($uuid)->firstOrFail();
+
+        $news->update(['status' => 'draft']);
+
+        $request->session()->flash('success', 'Drafted');
+
+        return redirect()->back();
+    }
 }
