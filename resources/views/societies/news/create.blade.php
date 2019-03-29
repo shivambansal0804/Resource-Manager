@@ -45,7 +45,7 @@
                     
                     <div class="row">
                         <div class="col-md-4 mt-5">
-                            <button type="submit" class="btn">Update your info</button>
+                            <button type="submit" class="btn">Create Event News</button>
                         </div>
                     </div>
                 </form>

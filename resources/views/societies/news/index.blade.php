@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<section class="height-100 p-0">
+<section class="height-100 p-0 d-none d-lg-block">
       @foreach ($news as $item)
 
       <div class="slide {{ ($loop->index == 0) ? 'active' : ''}}">
@@ -15,16 +15,27 @@
                         <p class="">
                               <small>{{$item->created_at->diffForHumans()}}</small>
                         </p>
-                        <h2>{{ $item->title }}</h2>
+                        <h2 class="card-title">{{ $item->title }}</h2>
                         <p class="card-para">
                               {{ $item->description }}
                         </p>
-                        <small class="">Views {{ $item->view }} </small>
-                        <a href="" class="card-link">Edit</a>
+                        <small class="">
+                              Views {{ $item->view }} 
+                              <br>
+                              Status - {{ $item->status}} 
+                        </small>
+                        <p class="p-0">
+                              <a href="" class="card-link">Edit</a>
+
+                              @if ($item->status == 'draft')
+                                    <a href="{{ route('society.head.news.approval', [$slug, $item->uuid] )}}" class="card-link">Submit for approval</a>
+                              @endif
+                        </p>
                   </div>
             </div>
       </div>
       @endforeach
+
       <div class="prevnext">
             <button class="pn-btn" id="prev"></button>
             <button class="pn-btn" id="next"></button>

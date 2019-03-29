@@ -60,15 +60,18 @@ body {
 .card-link {
     color: #fff;
     font-size: 1.8vmin;
-    display: block;
+    margin-right: 1rem;
+    display: inline-block;
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 0.3s ease;
 }
 
-.card-link:after {
-    content: "→";
+.card-title {
+    color: #fff;
 }
+
+
 
 .prevnext {
     position: absolute;

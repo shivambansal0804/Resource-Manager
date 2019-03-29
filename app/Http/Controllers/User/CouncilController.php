@@ -148,12 +148,30 @@ class CouncilController extends Controller
         return view('users.council.societies.index', ['societies' => $societies]);
     }
 
+    public function societiesInPending()
+    {
+        $societies = Society::whereStatus('pending')->latest()->get();
+        return view('users.council.societies.index', ['societies' => $societies]);
+    }
+
     public function societyShow($slug)
     {
         $society = Society::whereSlug($slug)->firstOrFail();
 
         return view('users.society_head.show', [
             'society' => $society,
+        ]);
+    }
+
+    public function societyImageIndex($slug)
+    {
+        $society = Society::whereSlug($slug)->firstOrFail();
+
+        $images = $society->getMedia('soc_images');
+
+        return view('societies.images.index', [
+            'society' => $society,
+            'images'   => $images
         ]);
     }
 
@@ -166,6 +184,17 @@ class CouncilController extends Controller
         $request->session()->flash('success', 'Saved in Drafts');
 
         return redirect()->route('council.societies.show', $society->slug);
+    }
+
+    public function updateStatusToPublished(Request $request, $slug)
+    {
+        $society = Society::whereSlug($slug)->firstOrFail();
+
+        $society->update(['status' => 'published']);
+
+        $request->session()->flash('success', 'Published');
+
+        return redirect()->route('council.societies.show', $society->slug);   
     }
 
     /*-----------------------------------------
@@ -203,5 +232,27 @@ class CouncilController extends Controller
             'title' => 'Published News',
             'news' => $news
         ]);
+    }
+
+    public function updateSocietyNewsToPublished(Request $request, $uuid)
+    {
+        $news = SocietyNews::whereUuid($uuid)->firstOrFail();
+
+        $news->update(['status' => 'published']);
+
+        $request->session()->flash('success', 'Published');
+
+        return redirect()->back();
+    }
+
+    public function updateSocietyNewsToDraft(Request $request, $uuid)
+    {
+        $news = SocietyNews::whereUuid($uuid)->firstOrFail();
+
+        $news->update(['status' => 'draft']);
+
+        $request->session()->flash('success', 'Drafted');
+
+        return redirect()->back();
     }
 }

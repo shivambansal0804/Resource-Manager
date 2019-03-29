@@ -305,7 +305,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('stats.albums') }}">
+                                    <a href="{{ route('council.societies.pending') }}">
                                         Pending 
                                     </a>
                                 </li>
