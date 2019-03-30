@@ -15,6 +15,7 @@
         "nesbot/carbon": "1.32.0 as 1.25",
         "pusher/pusher-php-server": "^3.2",
         "santigarcor/laratrust": "5.0.*",
+        "spatie/laravel-analytics": "^3.6",
         "spatie/laravel-medialibrary": "^7.0.0"
     },
     "require-dev": {

@@ -32,6 +32,21 @@ Route::get('/password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm
 Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
 Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 
+// Society Routes
+Route::group(['prefix' => 'societies'], function () {
+    // Index of Society
+    Route::view('/', 'societies.index')->name('societies.index');
+    // Society Single
+    Route::get('/single/{id}', function ($id) {
+        $base = 'societies.single.'.$id;
+        return view($base);
+    });
+
+});
+
+Route::get('/tracking/societies/referrals/{slug}', 'TrackingController@trackReferrals')->name('track.society.referrals');
+
+
 // Superuser Routes
 Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'checkActivatedUser']], function() {
     
@@ -264,14 +279,4 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
 
     
 });
-// Society Routes
-Route::group(['prefix' => 'societies'], function () {
-    // Index of Society
-    Route::view('/', 'societies.index')->name('societies.index');
-    // Society Single
-    Route::get('/single/{id}', function ($id) {
-        $base = 'societies.single.'.$id;
-        return view($base);
-    });
 
-});

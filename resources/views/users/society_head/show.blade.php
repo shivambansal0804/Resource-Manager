@@ -96,9 +96,11 @@
                             </a>
                         </li>
                     </ul>
+                    @if ($society->website)
                     <p>
-                        <a href="{{$society->website}}">{{$society->website}}</a>
+                        <a href="{{route('track.society.referrals', $society->slug)}}">{{$society->website}}</a>
                     </p>
+                    @endif
 
                     @if ($id != $society->id)
                     <p>
