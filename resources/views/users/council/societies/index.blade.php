@@ -8,9 +8,9 @@
             <div class="col-md-10 col-lg-8">
                 <h1>
                     @if (Route::currentRouteName() == 'council.societies.index')
-                        All Stories
+                        All Societies
                     @elseif (Route::currentRouteName() == 'council.societies.pending')
-                        All Pending Stories
+                        All Pending Societies
                     @else
                         Something else
                     @endif
