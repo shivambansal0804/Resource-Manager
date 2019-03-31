@@ -56,9 +56,9 @@
 
                         <!-- Entry Content
                                 ============================================= -->
-                        <div class="entry-content notopmargin">
+                        <div class="entry-content notopmargin"  style="font-size: 18px;">
 
-                            <p style="font-size: 18px;">{!! $story->body !!}</p>
+                            <p>{!! $story->body !!}</p>
 
 
                             <!-- Post Single - Content End -->
