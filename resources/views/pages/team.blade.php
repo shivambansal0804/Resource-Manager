@@ -7,23 +7,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 <style type="text/css">
 	.btn-primary {
-
 		background: #fff;
 		color: #252525;
 		border-color: #252525;
 		font-weight: bold;
 	}
-
 	.btn-primary:hover {
 		color: #fff;
 		background: #252525;
 		border-color: #fff;
 	}
-
 	.jumbotron {
 		background-color: #fff;
 	}
-
 	.hrstyle {
 		border: 0;
 		height: 1px;
@@ -1158,33 +1154,6 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="img/team/Designers/Dhruv%20jain.jpg" alt="Dhruv">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Dhruv <br>Jain</h5>
-										<h6>Coordinator</h6>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/dhruv.jain.92754
-" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dhruv-jain-163585129/
-" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-
-
-
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
 									<img src="img/team/Designers/Mohsin%20Hussain.png" alt="Mohsin">
 								</div>
 								<div class="team-desc">
@@ -1240,29 +1209,6 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="img/team/Designers/Shubham%20Raturi.jpg" alt="Shubham Raturi">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Shubham<br> Raturi</h5>
-										<h6>Associate</h6>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/shubham.raturi" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-
-
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
 									<img src="/img/team/Designers/Aavriti%20Arora.jpg" alt="Aavriti">
 								</div>
 								<div class="team-desc">
@@ -1309,8 +1255,7 @@
 							</div>
 							<br><br>
 						</div>
-					</div>
-					<div class="row">
+
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -1333,35 +1278,8 @@
 
 								</div>
 							</div>
+							<br><br>
 						</div>
-
-
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="img/team/Designers/Jatin%20Singh.jpeg" alt="Jatin Singh">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Jatin<br> Singh</h5>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100017912922804
-" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jatin-singh-9484b5155/
-" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-
-
-
-								</div>
-							</div>
-						</div>
-
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -1386,7 +1304,10 @@
 
 								</div>
 							</div>
+							<br><br>
 						</div>
+					</div>
+					<div class="row">
 
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
@@ -1465,34 +1386,29 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="/img/team/Designers/Samridh%20Gupta.jpeg" alt="Samridh Gupta">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Samridh<br> Gupta</h5>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/samridh.gupta.1
-" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
+		
+			            <div class="col-md-2 col-xs-6 bottommargin">
+			              <div class="team">
+			                <div class="team-image">
+			                  <img src="img/team/Designers/Shubham%20Raturi.jpg" alt="Shubham Raturi">
+			                </div>
+			                <div class="team-desc">
+			                  <div class="team-title">
+			                    <h5>Shubham<br> Raturi</h5>
+			                  </div>
+			                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/shubham.raturi" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+			                    <i class="icon-facebook"></i>
+			                    <i class="icon-facebook"></i>
+			                  </a>
+			                  <a target="_blank" rel="noopener noreferrer" href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+			                    <i class="icon-linkedin"></i>
+			                    <i class="icon-linkedin"></i>
+			                  </a>
 
 
-
-								</div>
-							</div>
-						</div>
-
-
+			                </div>
+			              </div>
+			            </div>
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -1518,7 +1434,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -1827,29 +1742,29 @@
 
 					<div class="row">
 						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="/img/team/photographer/Aakarsh%20Singh.jpg" alt="Aakarsh Singh">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Aakarsh<br> Singh</h5>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/aakarsh.singh.12
-" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aakarsh-singh-4b666a141/
-" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
+			              <div class="team">
+			                <div class="team-image">
+			                  <img src="/img/team/photographer/Shubham%20Raturi.jpg" alt="Shubham Raturi">
+			                </div>
+			                <div class="team-desc">
+			                  <div class="team-title">
+			                    <h5>Shubham<br> Raturi</h5>
+			                    <h6>Associate</h6>
+			                  </div>
+			                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/shubham.raturi" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+			                    <i class="icon-facebook"></i>
+			                    <i class="icon-facebook"></i>
+			                  </a>
+			                  <a target="_blank" rel="noopener noreferrer" href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+			                    <i class="icon-linkedin"></i>
+			                    <i class="icon-linkedin"></i>
+			                  </a>
 
 
-								</div>
-							</div>
-						</div>
+			                </div>
+			              </div>
+			            </div>
+						
 
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
@@ -1874,6 +1789,7 @@
 
 								</div>
 							</div>
+							<br><br>
 						</div>
 
 						<div class="col-md-2 col-xs-6 bottommargin">
@@ -1900,6 +1816,7 @@
 
 								</div>
 							</div>
+							<br><br>
 						</div>
 
 						<div class="col-md-2 col-xs-6 bottommargin">
@@ -1926,6 +1843,7 @@
 
 								</div>
 							</div>
+							<br><br>
 						</div>
 
 						<div class="col-md-2 col-xs-6 bottommargin">
@@ -1951,7 +1869,9 @@
 
 								</div>
 							</div>
+							<br><br>
 						</div>
+					
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -1975,6 +1895,7 @@
 
 								</div>
 							</div>
+							<br><br>
 						</div>
 					</div>
 
@@ -2055,28 +1976,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="/img/team/photographer/Shubham%20Raturi.jpg" alt="Shubham Raturi">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Shubham<br> Raturi</h5>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/shubham.raturi" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
 
-
-								</div>
-							</div>
-						</div>
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
