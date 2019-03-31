@@ -6,7 +6,7 @@
 <!-- Page Title
 		============================================= -->
 		<section class="container-fluid img-responsive" id="page-title" style="padding: 0 0;">
-        <img src="img/team2018.jpg">
+        <img src="img/team2018.jpeg">
             
 
             
