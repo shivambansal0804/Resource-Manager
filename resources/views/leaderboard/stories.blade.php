@@ -10,7 +10,7 @@
 <section class="cover cover-fullscreen text-center imagebg" data-gradient-bg='#4876BD,#5448BD,#8F48BD,#BD48B1'>
     <div class="container">
         <div class="row justify-content-around">
-            <div class="col-md-8 col-lg-6 pt-5">
+            <div class="col-md-7 pt-5">
                 <div class="cta">
                     <h1 class="mb-0" style="font-size:6rem;"><small>#</small>1</h1>
                     <h2 class="mb-0">{{ $top->name }}</h2>
@@ -24,7 +24,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-4 text-white pt-5">
+            <div class="col-md-5 text-white pt-5">
                 @php $i = 1 @endphp
                 @while($i < count($res) && $i < 5)
                     @php $temp = \App\User::whereUuid($res[$i][1])->first(); @endphp
