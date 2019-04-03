@@ -23,7 +23,7 @@
 					<div class="col-md-12">
 						<img class="image--md" src="{{ asset('svg/blocked.svg')}}" alt="">
 						<p class="lead">
-                            Your account has been blocked by the DTU Times team, reach to us for more info.
+                            Your account has been blocked by the DTU Times team, contact us for more info.
 						</p>
                         <p><small>
 							mail us at <a href="mailto:dtutimes@dtu.ac.in">dtutimes.dtu.ac.in</a>
