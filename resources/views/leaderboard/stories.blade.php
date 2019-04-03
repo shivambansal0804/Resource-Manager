@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-md-7 pt-5">
-                <div class="cta">
+                <div class="cta mt-5">
                     <h1 class="mb-0" style="font-size:6rem;"><small>#</small>1</h1>
                     <h2 class="mb-0">{{ $top->name }}</h2>
                     <a class="btn type--uppercase" href="{{ route('under.construction') }}">
@@ -20,12 +20,13 @@
                         </span>
                     </a>
                     <p class="type--fine-print">
-                    {{ $top->name }}'s stories count is {{ $res[0][0] }}
+                    {{ $top->name }} has published {{ $res[0][0] }} stories.
                     </p>
                 </div>
             </div>
             <div class="col-md-5 text-white pt-5">
                 @php $i = 1 @endphp
+                <br>
                 @while($i < count($res) && $i < 5)
                     @php $temp = \App\User::whereUuid($res[$i][1])->first(); @endphp
                     <div class="row justify-content-right m-2" style="font-size:1.3rem;">
