@@ -32,6 +32,10 @@ Route::get('/password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm
 Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
 Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 
+Route::get('/construction', function () {
+    return view('errors.503');
+})->name('under.construction');
+
 // Society Routes
 Route::group(['prefix' => 'societies'], function () {
     // Index of Society
@@ -193,26 +197,26 @@ Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
         Route::delete('/{id}', 'HomeController@destroyTodo')->name('todos.destroy');
     });
 
-        Route::group(['prefix' => 'categories'], function () {
-            Route::middleware('permission:create-category')->group(function () {
-                Route::get('/create', 'CategoryController@create')->name('categories.create');
-                Route::post('/', 'CategoryController@store')->name('categories.store');
-            });
-            Route::middleware('permission:read-category')->group(function () {
-                Route::get('/', 'CategoryController@index')->name('categories.index');
-                Route::get('/{slug}', 'CategoryController@show')->name('categories.show');
-            }); 
-            Route::middleware('permission:edit-category')->group(function () {
-                Route::get('/{slug}/edit', 'CategoryController@edit')->name('categories.edit');
-                Route::put('/{slug}', 'CategoryController@update')->name('categories.update');
-            });
-            Route::delete('/{slug}', 'CategoryController@destroy')->name('categories.destroy')->middleware('permission:delete-category');
+    Route::group(['prefix' => 'categories'], function () {
+        Route::middleware('permission:create-category')->group(function () {
+            Route::get('/create', 'CategoryController@create')->name('categories.create');
+            Route::post('/', 'CategoryController@store')->name('categories.store');
         });
-        
+        Route::middleware('permission:read-category')->group(function () {
+            Route::get('/', 'CategoryController@index')->name('categories.index');
+            Route::get('/{slug}', 'CategoryController@show')->name('categories.show');
+        }); 
+        Route::middleware('permission:edit-category')->group(function () {
+            Route::get('/{slug}/edit', 'CategoryController@edit')->name('categories.edit');
+            Route::put('/{slug}', 'CategoryController@update')->name('categories.update');
+        });
+        Route::delete('/{slug}', 'CategoryController@destroy')->name('categories.destroy')->middleware('permission:delete-category');
+    });        
 
     // Stories Routes
     Route::group(['prefix' => 'stories', 'middleware' => ['role:superuser|council|columnist|coordinator']], function() {
         Route::get('/', 'StoryController@index')->name('stories.index');
+        Route::get('/leaderboard', 'StoryController@columnistLeaderboardIndex')->name('stories.leaderboard');
         Route::get('/create', 'StoryController@create')->name('stories.create');
         Route::post('/', 'StoryController@store')->name('stories.store');
         Route::get('/{uuid}', 'StoryController@show')->name('stories.show');

@@ -11,8 +11,8 @@
                     Welcome To DTU Times
                 </h1>
                 <p class="lead">
-                    Stack offers a clean and contemporary look to suit a range of purposes from corporate, tech startup, marketing site to digital
-                    storefront.
+                Happy to have you on board! <br>
+                <small>Get started by entering the details below to update your info as the Society head. Make sure to fill out all the details correctly.</small>
                 </p>
                 <a class="btn btn--primary type--uppercase inner-link" href="#update-section" data-scroll>
                     <span class="btn__text">
@@ -31,7 +31,9 @@
             <div class="col-md-8 col-lg-8">
                 <h1>About Us</h1>
                 <p class="lead">
-                    Build lean, beautiful websites with a clean and contemporary look to suit a range of purposes.
+                    <small>
+                    DTU Times is the official newsletter of Delhi Technological University, formerly known as Delhi College of Engineering, credited with the responsibility of complete reportage of developments in the college, complete account of which can be found on our website at dtutimes.dtu.ac.in.
+                    </small>
                 </p>
             </div>
             <div class="col-md-8">
@@ -53,7 +55,9 @@
             <div class="col-md-10 col-lg-8">
                 <h1>Update your info <span>@foreach ($user->roles as $item) {{$item->display_name}} @endforeach</span></h1>
                 <p class="lead">
-                    Build lean, beautiful websites with a clean and contemporary look to suit a range of purposes.
+                   <small>
+                    Please enter the relevant details below. Note that the image uploaded should not be more than  <strong>1 MB.</strong> 
+                   </small>
                 </p>
                 <hr>
             </div>
@@ -141,6 +145,7 @@
                         </div>
                         <div class="col-md-8">
                             <input id="avatar" type="file" class="validate-required" name="avatar" value="{{ old('avatar') ? old('avatar') : $user->avatar}}">                            
+                            <span><small>Max size 1 MB</small></span>
                         </div>
                     </div>
                     <hr>

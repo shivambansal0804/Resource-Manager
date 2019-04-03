@@ -169,6 +169,23 @@
                     </div>
                 </li>
 
+                <li class="dropdown">
+                    <span class="dropdown__trigger">
+                            Leaderboard
+                        </span>
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('stories.leaderboard') }}">
+                                        Columnists
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
                 <!-- 
                 |
                 |

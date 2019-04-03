@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\{Category, Tag, Story};
+use App\{User, Role};
 use App\Http\Requests\StoreStory;
 use App\Events\StorySubmittedForApproval as SubmitEvent;
 use Session;
@@ -179,5 +180,22 @@ class StoryController extends Controller
     public function callSubmitEvent($uuid)
     {
         return event(new SubmitEvent($uuid));
+    }
+
+    public function columnistLeaderboardIndex()
+    {
+        $res = [];
+        $users = User::has('story')->get();
+        
+        foreach($users as $user){
+            $temp = $user->story()->where('status', 'published')->count();
+            array_push($res, [$temp, $user->uuid]);
+        }
+
+        usort($res, function ($a, $b) {
+            return $a[0] < $b[0];
+        });
+        
+        return view('leaderboard.stories', ['res' => $res]);
     }
 }
