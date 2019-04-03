@@ -27,10 +27,32 @@
                     </ul>
                 </div>
                 <div class="boxed bg--none text-center">
-                    <a href="{{ route('users.index') }}" class="btn btn--sm btn--primary" onclick="event.preventDefault(); 
+                    <a href="{{ route('users.index') }}" class="btn btn--sm" onclick="event.preventDefault(); 
                                                 document.getElementById('delete-form').submit();">
                         <span class="btn__text">Delete User</span>
                     </a>
+
+                    
+
+                    @if($user->blocked)
+                        <a href="" class="btn btn--sm" onclick="event.preventDefault(); 
+                                                    document.getElementById('unblock-form').submit();">
+                            <span class="btn__text">Unblock</span>
+                        </a>
+
+                        <form id="unblock-form" action="{{route('users.unblock.single', $user->uuid)}}" method="post">
+                            @csrf @method('PUT')
+                        </form>
+                    @else
+                        <a href="" class="btn btn--sm" onclick="event.preventDefault(); 
+                                                    document.getElementById('block-form').submit();">
+                            <span class="btn__text">Block</span>
+                        </a>
+
+                        <form id="block-form" action="{{route('users.block.single', $user->uuid)}}" method="post">
+                            @csrf @method('PUT')
+                        </form>
+                    @endif
 
                     <form id="delete-form" action="{{route('users.destroy', $user->uuid)}}" method="post">
                         @csrf @method('DELETE')

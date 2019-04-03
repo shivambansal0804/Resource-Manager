@@ -250,6 +250,11 @@
                                         New Member
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="{{ route('users.blocked') }}">
+                                        Blocked Members
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

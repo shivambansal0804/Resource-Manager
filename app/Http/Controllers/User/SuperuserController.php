@@ -30,6 +30,51 @@ class SuperuserController extends Controller
         ]);
     }
 
+    public function blockedUsers()
+    {
+        $users = User::with('roles')->where('blocked', true)->latest()->get();
+
+        return view('users.blocked', [
+            'users' => $users
+        ]);
+    }
+
+    public function unblockAllUsers(Request $request)
+    {
+        $users = User::all();
+
+        foreach ($users as $user) {
+            $user->update(['blocked' => false ]);
+        }
+
+        session()->flash('success', 'Users unblocked!');
+        return redirect()->back();
+    }
+
+    public function unblockUser(Request $resquest, $uuid)
+    {
+        $user = User::whereUuid($uuid)->firstOrFail();
+
+        $user->update(['blocked' => 0]);
+        
+        session()->flash('success', 'User unblocked!');
+
+        return redirect()->back();
+    }
+
+    public function blockUser(Request $resquest, $uuid)
+    {
+        $user = User::whereUuid($uuid)->firstOrFail();
+
+        $user->update(['blocked' => 1]);
+        
+        session()->flash('success', 'User blocked!');
+
+        return redirect()->back();
+    }
+
+
+
     /**
      * Show the for for creating new users
      * @return newly created user

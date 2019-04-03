@@ -31,7 +31,7 @@ class User extends Authenticatable implements HasMedia
         'facebook', 'instagram',
         'display_mail',
         'medium', 'password',
-        'avatar'
+        'avatar', 'blocked'
     ];
 
     public function registerMediaConversions(Media $media = null)

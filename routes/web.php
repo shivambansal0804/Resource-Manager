@@ -52,7 +52,7 @@ Route::get('/tracking/societies/referrals/{slug}', 'TrackingController@trackRefe
 
 
 // Superuser Routes
-Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'checkActivatedUser']], function() {
+Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'CheckBlockedUser', 'checkActivatedUser']], function() {
     
     // Dashboard 
     Route::get('/', 'User\SuperuserController@index')->name('superuser.dashboard');
@@ -71,6 +71,10 @@ Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'checkAct
     Route::group(['prefix' => 'members'], function () {
         Route::get('/', 'User\SuperuserController@indexUser')->name('users.index');
         Route::get('/create', 'User\SuperuserController@createUser')->name('users.create');
+        Route::get('/blocked', 'User\SuperuserController@blockedUsers')->name('users.blocked');
+        Route::post('/unblock', 'User\SuperuserController@unblockAllUsers')->name('users.unblock.all');
+        Route::put('/unblock/{uuid}', 'User\SuperuserController@unblockUser')->name('users.unblock.single');
+        Route::put('/block/{uuid}', 'User\SuperuserController@blockUser')->name('users.block.single');
         Route::post('/', 'User\SuperuserController@storeUser')->name('users.store');
         Route::get('/{uuid}', 'User\SuperuserController@showUser')->name('users.show'); 
         Route::get('/{uuid}/permissions', 'User\SuperuserController@editPermissionUser')->name('users.permission.edit');
@@ -82,7 +86,7 @@ Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'checkAct
 });
 
 // Council Routes
-Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|coordinator', 'checkActivatedUser']], function() {
+Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|coordinator','CheckBlockedUser', 'checkActivatedUser']], function() {
     
     // Dashboard currently using superusers
     Route::get('/', 'User\SuperuserController@index')->name('council.dashboard');
@@ -180,11 +184,14 @@ Route::group(['prefix' => 'editions'], function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/me/info', 'User\UserController@info')->name('me.info');
+    Route::get('/blocked/message', function(){
+        return view('errors.blocked');
+    })->name('me.blocked');
     Route::put('/user/{uuid}', 'User\UserController@update')->name('me.update');
     Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 });
 
-Route::middleware(['auth', 'checkActivatedUser'])->group(function () {
+Route::middleware(['auth', 'CheckBlockedUser', 'checkActivatedUser'])->group(function () {
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
     Route::get('/me', 'User\UserController@show')->name('me.show');
     Route::get('/me/edit', 'User\UserController@edit')->name('me.edit');

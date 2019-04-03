@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>DTUtimes</title>
+	<title>DTUtimes | Blocked</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Site Description Here">
 
@@ -21,12 +21,13 @@
 			<div class="container pos-vertical-center">
 				<div class="row">
 					<div class="col-md-12">
-						<img class="image--md" src="{{ asset('svg/cloud.svg')}}" alt="">
+						<img class="image--md" src="{{ asset('svg/blocked.svg')}}" alt="">
 						<p class="lead">
-							An unexpected error has occured preventing the page from loading.
+                            Your account has been blocked by the DTU Times team, reach to us for more info.
 						</p>
-
-						<a href="/">Go back to home page</a>
+                        <p><small>
+							mail us at <a href="mailto:dtutimes@dtu.ac.in">dtutimes.dtu.ac.in</a>
+						</small></p>
 					</div>
 				</div>
 				<!--end of row-->
