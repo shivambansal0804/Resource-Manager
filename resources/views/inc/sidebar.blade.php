@@ -255,6 +255,11 @@
                                         Blocked Members
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="{{ route('users.unactive') }}">
+                                        Unactive Members
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

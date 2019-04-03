@@ -30,6 +30,21 @@ class SuperuserController extends Controller
         ]);
     }
 
+    public function unactiveUsers()
+    {
+        $users = User::with('roles')->where('activated', false)->latest()->get();
+
+        return view('users.unactive', [
+            'users' => $users
+        ]);
+    }
+
+    public function sendReminderToUnactiveUsers(Request $request)
+    {
+        return redirect()->route('under.construction');
+    }
+
+
     public function blockedUsers()
     {
         $users = User::with('roles')->where('blocked', true)->latest()->get();

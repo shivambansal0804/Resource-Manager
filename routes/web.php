@@ -70,11 +70,19 @@ Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'CheckBlo
     // Members
     Route::group(['prefix' => 'members'], function () {
         Route::get('/', 'User\SuperuserController@indexUser')->name('users.index');
-        Route::get('/create', 'User\SuperuserController@createUser')->name('users.create');
+
+        // Unactive Users system
+        Route::get('/unactive', 'User\SuperuserController@unactiveUsers')->name('users.unactive');
+        Route::post('/unactive/remind', 'User\SuperuserController@sendReminderToUnactiveUsers')->name('users.unactive.reminder');
+
+        // Blocking System
         Route::get('/blocked', 'User\SuperuserController@blockedUsers')->name('users.blocked');
         Route::post('/unblock', 'User\SuperuserController@unblockAllUsers')->name('users.unblock.all');
         Route::put('/unblock/{uuid}', 'User\SuperuserController@unblockUser')->name('users.unblock.single');
         Route::put('/block/{uuid}', 'User\SuperuserController@blockUser')->name('users.block.single');
+
+        // Users CRUD
+        Route::get('/create', 'User\SuperuserController@createUser')->name('users.create');
         Route::post('/', 'User\SuperuserController@storeUser')->name('users.store');
         Route::get('/{uuid}', 'User\SuperuserController@showUser')->name('users.show'); 
         Route::get('/{uuid}/permissions', 'User\SuperuserController@editPermissionUser')->name('users.permission.edit');
