@@ -29,6 +29,7 @@
             </div>
             <div class="col-md-5 text-white pt-5">
                 @php $i = 1 @endphp
+                <h1>Leaderboard</h1>
                 <br>
                 @while($i < count($res) && $i < 5)
                     @php $temp = \App\User::whereUuid($res[$i][1])->first(); @endphp
