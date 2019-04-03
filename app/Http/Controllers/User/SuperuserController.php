@@ -79,7 +79,7 @@ class SuperuserController extends Controller
 
     public function unblockAllUsers(Request $request)
     {
-        $users = User::all();
+        $users = User::where('blocked', true)->get();
 
         foreach ($users as $user) {
             $user->update(['blocked' => false ]);
