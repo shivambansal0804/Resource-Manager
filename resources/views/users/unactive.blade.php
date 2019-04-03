@@ -17,6 +17,44 @@
     <!--end of container-->
 </section>
 
+<section class="text-center ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6">
+                <div class="cta">
+                    <a class="btn btn--gray mb-3 btn type--uppercase" href="" onclick="event.preventDefault();
+                        document.getElementById('unblock-all-form').submit();">
+                        <span class="btn__text">
+                            Send Reminder Mail to All
+                        </span>
+                        <span class="label">{{  count($users) }}</span>
+                    </a>
+                    <form id="unblock-all-form" action="{{ route('users.unactive.reminder') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                    <br>
+
+                    <a class="btn btn--primary btn type--uppercase" href="" onclick="event.preventDefault();
+                        document.getElementById('export-form').submit();">
+                        <span class="btn__text">
+                            Export To Excel
+                        </span>
+                    </a>
+                    <form id="export-form" action="{{ route('users.unactive.export') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                    
+                    <p class="type--fine-print">Got any issues? Contact the 
+                        <a class="text-primary" href="index.html">Developers</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
 <section>
     <div class="container">
         <div class="row justify-content-center">
@@ -59,43 +97,7 @@
     </div>
 </section>
 
-<section class="text-center ">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-lg-6">
-                <div class="cta">
-                    <a class="btn btn--gray mb-2 btn type--uppercase" href="" onclick="event.preventDefault();
-                        document.getElementById('unblock-all-form').submit();">
-                        <span class="btn__text">
-                            Send Reminder Mail to All
-                        </span>
-                        <span class="label">{{  count($users) }}</span>
-                    </a>
-                    <form id="unblock-all-form" action="{{ route('users.unactive.reminder') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                    <br>
 
-                    <a class="btn btn--primary btn type--uppercase" href="" onclick="event.preventDefault();
-                        document.getElementById('export-form').submit();">
-                        <span class="btn__text">
-                            Export To Excel
-                        </span>
-                    </a>
-                    <form id="export-form" action="{{ route('users.unactive.export') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                    
-                    <p class="type--fine-print">Got any issues? Contact the 
-                        <a class="text-primary" href="index.html">Developers</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
 
 
 @endsection
