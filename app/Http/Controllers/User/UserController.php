@@ -114,4 +114,12 @@ class UserController extends Controller
         if ($user->activated) return redirect()->route('dashboard');
         return view('users.auth.info', ['user' => $user]);
     }
+
+    public function blockedMessage()
+    {
+        if (auth()->user()->blocked)
+            return view('errors.blocked');
+        else 
+            return redirect()->route('dashboard');
+    }
 }

@@ -184,9 +184,7 @@ Route::group(['prefix' => 'editions'], function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/me/info', 'User\UserController@info')->name('me.info');
-    Route::get('/blocked/message', function(){
-        return view('errors.blocked');
-    })->name('me.blocked');
+    Route::get('/blocked/message', 'User\UserController@blockedMessage')->name('me.blocked');
     Route::put('/user/{uuid}', 'User\UserController@update')->name('me.update');
     Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 });
