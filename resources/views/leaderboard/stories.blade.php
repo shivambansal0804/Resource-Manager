@@ -12,7 +12,10 @@
         <div class="row justify-content-around">
             <div class="col-md-7 pt-5">
                 <div class="cta mt-5">
-                    <h1 class="mb-0" style="font-size:6rem;"><small>#</small>1</h1>
+                    <!-- <h1 class="mb-0" style="font-size:6rem;"><small>#</small>1</h1> -->
+                    @if($top->getFirstMediaUrl('avatars', 'thumb'))
+                        <img alt="avatar" src="{{ $top->getFirstMediaUrl('avatars', 'thumb') }}" class="border--round image--md" />
+                    @endif
                     <h2 class="mb-0">{{ $top->name }}</h2>
                     <a class="btn type--uppercase" href="{{ route('under.construction') }}">
                         <span class="btn__text">
