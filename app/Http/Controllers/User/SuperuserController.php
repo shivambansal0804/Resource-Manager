@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\User;
 
+use App\User;
+use App\{ Permission, Role };
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUser;
-use App\{ Permission, Role };
-use App\User;
 use App\Events\UserHasRegistered;
+use App\Exports\UnactiveUsersExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class SuperuserController extends Controller
 {
@@ -30,6 +32,15 @@ class SuperuserController extends Controller
         ]);
     }
 
+
+    /*
+    |==================================
+    |
+    |   Unactive Users System
+    |
+    |==================================
+    */
+
     public function unactiveUsers()
     {
         $users = User::with('roles')->where('activated', false)->latest()->get();
@@ -39,12 +50,24 @@ class SuperuserController extends Controller
         ]);
     }
 
+    public function exportUnactiveUsers(Request $request)
+    {
+        return Excel::download(new UnactiveUsersExport, 'unactive_user.xlsx');
+    }
+
     public function sendReminderToUnactiveUsers(Request $request)
     {
         return redirect()->route('under.construction');
     }
 
 
+    /*
+    |==================================
+    |
+    |   Blocked Users System
+    |
+    |==================================
+    */
     public function blockedUsers()
     {
         $users = User::with('roles')->where('blocked', true)->latest()->get();
@@ -90,6 +113,14 @@ class SuperuserController extends Controller
 
 
 
+    
+    /*
+    |==================================
+    |
+    |   User CRUD
+    |
+    |==================================
+    */
     /**
      * Show the for for creating new users
      * @return newly created user
@@ -148,11 +179,27 @@ class SuperuserController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Remove the specified resource from storage.
      *
-     * @param  string  $email
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function destroyUser($uuid)
+    {
+        $user = User::whereUuid($uuid)->firstOrFail();
+        $user->delete();
+        return redirect()->route('users.index');
+    }
+
+
+
+    /*
+    |==================================
+    |
+    |   Users Permissions System
+    |
+    |==================================
+    */
     public function editPermissionUser($uuid)
     {
         $user = User::whereUuid($uuid)->firstOrFail();
@@ -168,30 +215,11 @@ class SuperuserController extends Controller
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function updatePermissionUser(Request $request, $uuid)
     {
-        // $permissions = [];
-
-        // foreach ($request->pemissions as $key) {
-        //     array_push($permissions, $key);
-        // }
 
         $user = User::whereUuid($uuid)->firstOrFail();
-
-        // if($user && $permissions) {
-        //     foreach ($permissions as $item) {
-        //         $permission = Permission::where('name', $item)->first();
-
-        //         $user->attachPermission($permission->id);
-        //     }
-        // }
 
         $permission = Permission::where('name', $request->permissions)->first();
 
@@ -201,12 +229,15 @@ class SuperuserController extends Controller
 
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  string  $email
-     * @return \Illuminate\Http\Response
-     */
+    
+    /*
+    |==================================
+    |
+    |   Users Roles System
+    |
+    |==================================
+    */
+
     public function editRoleUser($uuid)
     {
         $user = User::whereUuid($uuid)->with('roles')->firstOrFail();
@@ -237,16 +268,4 @@ class SuperuserController extends Controller
         return redirect()->route('users.show', $user->uuid);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroyUser($uuid)
-    {
-        $user = User::whereUuid($uuid)->firstOrFail();
-        $user->delete();
-        return redirect()->route('users.index');
-    }
 }

@@ -12,6 +12,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
+        "maatwebsite/excel": "^3.1",
         "nesbot/carbon": "1.32.0 as 1.25",
         "pusher/pusher-php-server": "^3.2",
         "santigarcor/laratrust": "5.0.*",

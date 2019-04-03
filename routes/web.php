@@ -72,7 +72,8 @@ Route::group(['prefix' => 'manage', 'middleware' => ['role:superuser', 'CheckBlo
         Route::get('/', 'User\SuperuserController@indexUser')->name('users.index');
 
         // Unactive Users system
-        Route::get('/unactive', 'User\SuperuserController@unactiveUsers')->name('users.unactive');
+        Route::get('/unactive', 'User\SuperuserController@unactiveUsers')->name('users.unactive');        
+        Route::post('/unactive/export', 'User\SuperuserController@exportUnactiveUsers')->name('users.unactive.export');
         Route::post('/unactive/remind', 'User\SuperuserController@sendReminderToUnactiveUsers')->name('users.unactive.reminder');
 
         // Blocking System
