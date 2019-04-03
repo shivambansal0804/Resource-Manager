@@ -33,7 +33,7 @@
                 <br>
                 @while($i < count($res) && $i < 5)
                     @php $temp = \App\User::whereUuid($res[$i][1])->first(); @endphp
-                    <div class="row justify-content-right m-2" style="font-size:1.3rem;">
+                    <div class="row justify-content-right m-2" style="font-size:1.2rem;">
                         <div class="col-md-3">
                             <span>#</span>
                             <span>{{ $i + 1 }}</span>
