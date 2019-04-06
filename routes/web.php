@@ -285,6 +285,8 @@ Route::middleware(['auth', 'CheckBlockedUser', 'checkActivatedUser'])->group(fun
             Route::get('/', 'User\SocietyHeadController@imageIndex')->name('society.head.image.index');
             Route::get('/create', 'User\SocietyHeadController@imageCreate')->name('society.head.image.create');
             Route::post('/', 'User\SocietyHeadController@imageStore')->name('society.head.image.store');
+            Route::get('/{id}', 'User\SocietyHeadController@imageShow')->name('society.head.image.show');
+            Route::delete('/{id}', 'User\SocietyHeadController@imageDelete')->name('society.head.image.delete');
         });
         // News
         Route::group(['prefix' => '{slug}/news'], function() {

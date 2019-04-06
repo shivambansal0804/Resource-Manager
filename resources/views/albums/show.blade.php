@@ -112,14 +112,8 @@
 <section class="unpad">
     <div class="masonry masonry--gapless">
         <div class="masonry__container">
-            @php
-                $open = false;
-                $first  = true;
-                $i = 0;
-            @endphp
+            
             @foreach ($images as $item)
-
-                
                 <div class="masonry__item {{ ($open) ? 'col-lg-8' : 'col-lg-4' }} col-md-6 col-12" data-masonry-filter="Digital">
                     <div class="project-thumb hover-element height-50">
                         <a href="{{ route('images.show', [$album->uuid, $item->uuid ])}}">
@@ -139,7 +133,7 @@
                             </div>
                         </a>
                     </div>
-            </div>
+                </div>
             {{-- Dynamic width of col --}}
             @php
                 if($first) {

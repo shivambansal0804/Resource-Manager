@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreSociety;
+use Spatie\MediaLibrary\Models\Media;
 
 class SocietyHeadController extends Controller
 {
@@ -177,5 +178,21 @@ class SocietyHeadController extends Controller
             $request->session()->flash('success','No Image');
             return redirect()->back();
         }
+    }
+
+    public function imageShow($slug, $id)
+    {
+        $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
+
+        $media = Media::find($id);
+
+        return view('societies.images.show', ['image' => $media, 'society' => $society]);
+    }   
+
+    public function imageDelete(Request $request, $slug, $id)
+    {
+        $media = Media::find($id)->delete();
+
+        return redirect()->route('society.head.image.index', $slug);
     }
 }

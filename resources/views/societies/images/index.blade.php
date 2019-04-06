@@ -2,28 +2,41 @@
 @section('content')
 
 @if ($images->count())
-    <section class="cover cover-fullscreen height-100 imagebg slider text-center" data-paging="true" data-arrows="true" data-timing="9000">
-        <ul class="slides">
-            @foreach ($images as $item)
-            <li class="imagebg col-lg-4 col-md-6 col-12" data-overlay="1">
-                <div class="background-image-holder">
-                    <img alt="background" src="{{ $item->getUrl()}}" />
+    <section class="pt-5 pb-5 border--bottom">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-5 col-lg-5">
+                    <h1>All Images</h1>
                 </div>
-                <div class="pos-vertical-center">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!-- <h4>{{ $item->name }}</h4> -->
-                            <a href="#">
-                                View Image
-                            </a> 
+                <div class="col-md-3 col-lg-3">
+                    <img class="image--sm" src="{{$society->getFirstMediaUrl('soc_logo')}}" alt="">
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="unpad">
+        <div class="masonry masonry--gapless">
+            <div class="masonry__container">
+                @foreach ($images as $item)
+                    <div class="masonry__item col-lg-4 col-md-6 col-12" data-masonry-filter="Digital">
+                        <div class="project-thumb hover-element height-50">
+                            <a href="{{ route('society.head.image.show', [$society->slug, $item->id]) }}">
+                                <div class="hover-element__initial">
+                                    <div class="background-image-holder">
+                                        <img alt="background" src="{{ $item->getUrl() }}" />
+                                    </div>
+                                </div>
+                                <div class="hover-element__reveal" data-overlay="9">
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </li>
             @endforeach
-        </ul>
+            <!--end of masonry container-->
+        </div>
+        <!--end masonry-->
     </section>
 @else
     <section class="space--lg">
@@ -35,5 +48,4 @@
         </div>
     </section>
 @endif
-
 @endsection
