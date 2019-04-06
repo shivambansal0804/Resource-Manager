@@ -55,7 +55,7 @@ class SocietyNewsController extends Controller
             'status' => 'pending'
         ]);
         
-        $request->session()->flash('success', $news->title.' Submitted for Approval');
+        $request->session()->flash('success', 'Your news was submitted for approval');
 
         return redirect()->back();
     }

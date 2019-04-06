@@ -1,8 +1,8 @@
 @extends('layouts.app') 
 @section('content')
-<section id="start" class="cover cover-fullscreen height-100 cover cover-features imagebg space--lg" data-overlay="2">
+<section id="start" class="cover cover-fullscreen height-100 cover cover-features imagebg space--lg" data-overlay="7">
     <div class="background-image-holder">
-        <img alt="background" src="{{ asset('img/back.jpg')}}" />
+        <img alt="background" src="{{ asset('img/oat.jpg')}}" />
     </div>
     <div class="container">
         <div class="row justify-content-center">
