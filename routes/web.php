@@ -157,6 +157,8 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|co
             Route::get('/publish', 'User\CouncilController@updateStatusToPublished')->name('society.head.status.publish');
         });
 
+        Route::delete('/{id}', 'User\CouncilController@societyDelete')->name('council.societies.destroy');
+
       
     });
 

@@ -163,6 +163,13 @@ class CouncilController extends Controller
         ]);
     }
 
+    public function societyDelete(Request $request, $id)
+    {
+        $society = Society::find($id);
+        $society->delete();
+        return redirect()->route('council.societies.index');
+    }
+
     public function societyImageIndex($slug)
     {
         $society = Society::whereSlug($slug)->firstOrFail();

@@ -67,8 +67,15 @@
                                             Publish
                                         </span>
                                     </a>
-                                @endif     
-                            @endif                    
+                                @endif   
+                            @endif  
+                            <a class="btn btn--sm type--uppercase" href="" onclick="event.preventDefault();
+                            document.getElementById('delete-form').submit();">
+                                <span class="btn__text">
+                                    Delete
+                                </span>
+                            </a>       
+                            <form id="delete-form" action="{{route('council.societies.destroy', $society->id)}}" method="post">@csrf @method('DELETE')</form>             
                         @endif
                     </div>
                 </div>
