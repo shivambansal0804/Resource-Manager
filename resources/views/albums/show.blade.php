@@ -112,6 +112,12 @@
 <section class="unpad">
     <div class="masonry masonry--gapless">
         <div class="masonry__container">
+
+            @php 
+                $open = false;
+                $first = true;
+                $i = 0;
+            @endphp
             
             @foreach ($images as $item)
                 <div class="masonry__item {{ ($open) ? 'col-lg-8' : 'col-lg-4' }} col-md-6 col-12" data-masonry-filter="Digital">

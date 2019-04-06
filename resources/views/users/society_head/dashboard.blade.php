@@ -1,19 +1,85 @@
 @if (auth()->user()->society()->get()->count() == 0)
-    <section>
+    <section class="space--sm border--bottom"> 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-10">
-                        <h3>Hi, You haven't created your society page.</h3>
-                        <p>
-                            <a class="btn btn--sm type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
-                                <span class="btn__text">
-                                    Create Your Society Page
-                                </span>
-                            </a>
-                        </p>                    
+                <div class="col-md-10 pl-5">
+                    <h3>Hi, You haven't created your society page.</h3>             
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="process-stepper clearfix" data-process-steps="3">
+                        <li class="active">
+                            <span>1. First</span>
+                        </li>
+                        <li class="active">
+                            <span>2. Second</span>
+                        </li>
+                        <li class="active">
+                            <span>3. Third base xD </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    <section class="text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                <span class="h1 h1--large">1.</span>
+                                <h4>Launch Builder</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae quas ad officiis 
+                                </p>
+                                <div>
+                                    <a class="btn btn--sm type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
+                                        <span class="btn__text">
+                                            Create Here
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end boxed-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                <span class="h1 h1--large">2.</span>
+                                <h4>Build With Blocks</h4>
+                                <p>
+                                    Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out
+                                </p>
+                            </div>
+                            <!--end boxed-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                <span class="h1 h1--large">3.</span>
+                                <h4>Export Code</h4>
+                                <p>
+                                    Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out
+                                </p>
+                            </div>
+                            <!--end boxed-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
     </section>
 
 @else

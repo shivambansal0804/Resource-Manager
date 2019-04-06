@@ -56,7 +56,7 @@
                 <h1>Update your info <span>@foreach ($user->roles as $item) {{$item->display_name}} @endforeach</span></h1>
                 <p class="lead">
                    <small>
-                    Please enter the relevant details below. Note that the image uploaded should not be more than  <strong>1 MB.</strong> 
+                    Please enter the relevant details below. <br> Note that the image uploaded should not be more than  <strong>1 MB.</strong> 
                    </small>
                 </p>
                 <hr>
@@ -75,22 +75,25 @@
                             <input type="text" name="name" placeholder="Name" class="validate-required" value="{{ $user->name }}" required />
                         </div>
                         <div class="col-md-6">
-                            <label>Username:</label>
+                            <label>Username</label>
                             <input type="text" name="username" placeholder="Username" class="validate-required" value="{{ old('username') ? old('username') : $user->username }}"
                                 required/>
+                            <span class="text-danger"><small>Required</small></span>
                         </div>
                         <div class="col-md-12">
-                            <label>Email Address:</label>
-                            <input type="hidden" name="email" value="{{ $user->email }}">
+                            <label>Email Address</label>
                             <input type="email" name="email" placeholder="Your Email" class="validate-required" value="{{ $user->email }}" disabled />
+                            <span><small>This will not be your public email.</small></span>
+                            <input type="hidden" name="email" value="{{ $user->email }}">
                         </div>
                         <div class="col-md-12">
-                            <label>Password:</label>
+                            <label>Password</label>
                             <input type="password" name="password" placeholder="Password" class="validate-required" />
                         </div>
                         <div class="col-md-12">
                             <label>About You:</label>
                             <textarea name="bio" placeholder="This will be your public bio" class="validate-required" rows="4" required>{{ old('bio') ? old('bio') : $user->bio }}</textarea>
+                            <span><small>Your Formal Introduction.</small></span>
                         </div>
                     </div>
 
@@ -145,12 +148,12 @@
                         </div>
                         <div class="col-md-8">
                             <input id="avatar" type="file" class="validate-required" name="avatar" value="{{ old('avatar') ? old('avatar') : $user->avatar}}">                            
-                            <span><small>Max size 1 MB</small></span>
+                            <span><small>Max size - 1 MB, file type - JPG|JPEG</small></span>
                         </div>
                     </div>
                     <hr>
                     <div class="col-md-4 ">
-                        <button type="submit" class="btn btn--primary">Update your info</button>
+                        <button type="submit" class="btn btn--primary type--uppercase">Update your info</button>
                     </div>
                 </form>
             </div>

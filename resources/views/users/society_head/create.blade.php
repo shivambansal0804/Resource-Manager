@@ -10,8 +10,8 @@
                 <h1>
                     Welcome To Your Society Page
                 </h1>
-                <p class="lead">
-                    Follow instructions for sexsexful creation of your society page. (add code of conduct)
+                <p class="">
+                After the successful creation of your society page, you will be able to upload news and other relevant images to your page. To create the society page, follow the instructions below.
                 </p>
                 <a class="btn btn--primary type--uppercase inner-link" href="#instructions" data-scroll>
                     <span class="btn__text">
@@ -24,36 +24,48 @@
     </div>
     <!--end of container-->
 </section>
-<section id="instructions">
+<section class=" " id="instructions">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <div class="wizard">
-                    <h5>Intro</h5>
-                    <section class="text-center">
-                        <div class="pos-vertical-center">
-                            <h4>Basic info</h4>
-                        </div>
-                    </section>
-                    <h5>Images</h5>
-                    <section class="text-center">
-                        <div class="pos-vertical-center">
-                            <h4>Uploading Images</h4>
-                        </div>
-                    </section>
-                    <h5>Finish</h5>
-                    <section class="text-center">
-                        <div class="pos-vertical-center">
-                            <h4>Things can do after finishing</h4>
-                        </div>
-                    </section>
+            <div class="col-lg-8">
+                <h2 class="text-center">Instructions</h2>
+                <div class="process-1">
+                    <div class="process__item">
+                        <h4>Basic Information</h4>
+                        <p>
+                            Please fill out the details correctly, including the name of the society, 
+                            society’s head’s name and contact number, the society’s PR head’s name and contact number, 
+                            website link of the society and other social info.
+                            <hr>
+                            Make sure the social logo to be uploaded is of the dimension <strong>1056x640</strong> and size  <strong> < 1MB</strong>.
+                            <hr>
+                            It is mandatory to fill out all the fields.  
+                        </p>
+                    </div>
+                    <div class="process__item">
+                        <h4>Images</h4>
+                        <p>
+                            For uploading images to your society page, only upload high-resolution pictures of the dimension “____.” 
+                            <hr>
+                            Note that the image size is less than 1MB.
+                        </p>
+                    </div>
+                    <div class="process__item">
+                        <h4>Finish</h4>
+                        <p>
+                            Please add only the relevant news, supported by high-resolution pictures of the dimension “____” and size < 1MB. 
+                            <hr>
+                            All the news would have to be first submitted for approval before being published.
+                        </p>
+                    </div>
                 </div>
+                <!--end process-->
             </div>
         </div>
         <!--end of row-->
     </div>
     <!--end of container-->
-    </section>
+</section>
 
 <section class="cover bg--secondary">
     <div class="container">
