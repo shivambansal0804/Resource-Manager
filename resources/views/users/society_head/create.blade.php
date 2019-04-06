@@ -60,6 +60,11 @@
                     </div>
                 </div>
                 <!--end process-->
+                <div class="text-center mt-4">
+                    <a class="text-dark type--uppercase inner-link" href="#soc-form" data-scroll>
+                        Go to Form
+                    </a>
+                </div>
             </div>
         </div>
         <!--end of row-->
@@ -67,7 +72,8 @@
     <!--end of container-->
 </section>
 
-<section class="cover bg--secondary">
+
+<section class="cover bg--secondary" id="soc-form">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
@@ -77,7 +83,7 @@
                     <h3><strong>Primary info</strong></h3>
                     <div class="row">
                         <div class="col-md-12">
-                            <label>Name</label>
+                            <label>Name of the Society.</label>
                             <input type="text" name="name" placeholder="Name" class="validate-required" value="{{ old('name') ? old('name') : '' }}" required />
                         </div>
 
@@ -106,22 +112,22 @@
                         </div>
 
                         <div class="col-md-12">
-                            <label>Head Incharge</label>
+                            <label>Head</label>
                             <input type="text" name="head_incharge" placeholder="Name of the society head" class="validate-required" value="{{ old('head_incharge') ? old('head_incharge') : '' }}" />
                         </div>
 
                         <div class="col-md-12">
-                            <label>Society Incharge's Contact no.</label>
+                            <label>Society's Head Contact no.</label>
                             <input type="text" name="head_contact_number" placeholder="Contact no of the society head" class="validate-required" value="{{ old('head_contact_number') ? old('head_contact_number') : '' }}" />
                         </div>
 
                         <div class="col-md-12">
-                            <label>PR Incharge</label>
+                            <label>PR Head</label>
                             <input type="text" name="pr_incharge" placeholder="Name of the society's PR Incharge" class="validate-required" value="{{ old('pr_incharge') ? old('pr_incharge') : '' }}" />
                         </div>
 
                         <div class="col-md-12">
-                            <label>PR Incharge's Contact no.</label>
+                            <label>Society's PR Head Contact no.</label>
                             <input type="text" name="pr_contact_number" placeholder="Contact no of the society's PR Incharge" class="validate-required" value="{{ old('pr_contact_number') ? old('pr_contact_number') : '' }}" />
                         </div>
 
@@ -131,7 +137,7 @@
                         </div>                        
 
                         <div class="col-md-12">
-                            <label>Description:</label>
+                            <label>Description</label>
                             <textarea name="description" placeholder="About your scoiety" class="validate-required" rows="4" required>{{ old('description') ? old('description') : '' }}</textarea>
                         </div>
                     </div>
@@ -181,7 +187,7 @@
 
                     <hr>
                     <div class="col-md-4 ">
-                        <button type="submit" class="btn btn--primary">Update your info</button>
+                        <button type="submit" class="btn btn--primary">Create Society</button>
                     </div>
                 </form>
             </div>

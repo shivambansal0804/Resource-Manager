@@ -14,7 +14,15 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <h3 class="mb-1">Add Images to {{ auth()->user()->society()->first()->name }}'s Page </h3>
-                <span>Uplaod your soc's Event pics, please Don't upload your own pic, we are not intrested in you :) </span>
+                <span>
+                    <small>
+                    Please upload relevant pictures of your event/society.
+                    <br> 
+                    Make sure to maintain a dimension ratio of ‘____*____ .‘ and size <strong>< 1 MB</strong>. 
+                    <br>
+                    Note that pixelated images will be discarded immediately.
+                    </small>
+                </span>
 
                 <p>
                     

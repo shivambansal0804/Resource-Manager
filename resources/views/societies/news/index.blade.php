@@ -5,6 +5,8 @@
 @endsection
 
 @section('content')
+
+@if (count($news))
 <section class="height-100 p-0 d-none d-lg-block">
       @foreach ($news as $item)
 
@@ -41,6 +43,18 @@
             <button class="pn-btn" id="next"></button>
       </div>
 </section>
+
+@else
+<section class="space--lg">
+      <div class="container">
+      <div class="text-center">
+            <img width="150" src="{{ asset('svg/albums.svg') }}" alt="" srcset="">
+            <h3>Nothing here</h3>
+      </div>
+      </div>
+</section>
+@endif
+
 @endsection
 
 

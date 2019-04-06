@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <label>Description</label>
-                            <textarea name="description" placeholder="Description" class="validate-required" required >{{ old('description') ? old('description') : '' }}</textarea>
+                            <textarea name="description" rows="8" placeholder="Description" class="validate-required" required >{{ old('description') ? old('description') : '' }}</textarea>
                         </div>
                     </div>
 
