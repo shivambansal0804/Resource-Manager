@@ -265,6 +265,10 @@ class CouncilController extends Controller
 
     public function deleteSocietyNews(Request $request, $uuid)
     {
-        return 1;
+        $news = SocietyNews::whereUuid($uuid)->firstOrFail();
+
+        $news->delete();
+
+        return redirect()->back();
     }
 }
