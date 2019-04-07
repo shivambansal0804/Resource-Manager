@@ -17,7 +17,6 @@
     <!--end of container-->
 </section>
 
-@if(count($news))
 <section>
     <div class="container">
         <div class="row justify-content-center">
@@ -67,9 +66,5 @@
         </div>
     </div>
 </section>
-
-@endif
-
-@endsection
 
 @endsection

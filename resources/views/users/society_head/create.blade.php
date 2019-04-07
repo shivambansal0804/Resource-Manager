@@ -178,7 +178,7 @@
                     </div>
 
                     <br>
-                    <h3><strong>Social Logo</strong></h3>
+                    <h3><strong>Society Logo</strong></h3>
                     <div class="row">
                         <div class="col-md-10">
                             <input type="file" class="validate-required" name="logo" value="{{ old('logo') ? old('logo') : '' }}">
