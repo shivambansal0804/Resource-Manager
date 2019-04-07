@@ -53,6 +53,12 @@
                                     <small>Save to drafts</small>
                                 </a>
                                 @endif
+
+                                <a class="text-danger type--uppercase" href="" onclick="event.preventDefault();
+                                    document.getElementById('delete-form').submit();">
+                                    <small>Delete</small>
+                                </a>
+                                <form id="delete-form" action="{{route('council.societies.news.draft', $item->uuid)}}" method="post">@csrf @method('DELETE')</form>
                             </p>
                             @endif
                         </div>

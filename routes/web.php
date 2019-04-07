@@ -148,6 +148,7 @@ Route::group(['prefix' => 'council', 'middleware' => ['role:council|superuser|co
             Route::get('/published', 'User\CouncilController@societyNewsPublished')->name('council.societies.news.published');
             Route::get('/{uuid}/publish', 'User\CouncilController@updateSocietyNewsToPublished')->name('council.societies.news.publish');
             Route::get('/{uuid}/draft', 'User\CouncilController@updateSocietyNewsToDraft')->name('council.societies.news.draft');
+            Route::delete('/{uuid}', 'User\CouncilController@deleteSocietyNews')->name('council.societies.news.destroy');
         });
 
         Route::group(['prefix' => '{slug}'], function () { 

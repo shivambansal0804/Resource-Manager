@@ -262,4 +262,9 @@ class CouncilController extends Controller
 
         return redirect()->back();
     }
+
+    public function deleteSocietyNews(Request $request, $uuid)
+    {
+        return 1;
+    }
 }
