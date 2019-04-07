@@ -8,7 +8,7 @@
             <div class="col-md-10 col-lg-8">
                 <h1>{{ $title }}</h1>
                 <p>
-                    List of all the member of the DTU Times team.
+                    List of all News.
                 </p>
             </div>
         </div>
