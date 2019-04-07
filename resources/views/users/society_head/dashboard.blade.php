@@ -15,13 +15,13 @@
                 <div class="col-md-12">
                     <ul class="process-stepper clearfix" data-process-steps="3">
                         <li class="active">
-                            <span>1. First</span>
+                            <span>Create your society page</span>
                         </li>
                         <li class="active">
-                            <span>2. Second</span>
+                            <span>Images</span>
                         </li>
                         <li class="active">
-                            <span>3. Third base xD </span>
+                            <span>Bulletin </span>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +44,7 @@
                                     Enter the details of your society including a high-resolution logo to create the society’s page. 
                                 </p>
                                 <div>
-                                    <a class="type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
+                                    <a class="btn btn--sm type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
                                         <span class="btn__text">
                                             Create Here
                                         </span>
