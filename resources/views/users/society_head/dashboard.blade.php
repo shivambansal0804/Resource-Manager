@@ -71,6 +71,12 @@
                 </div>
             </div>
             <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    <section>
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div>
@@ -83,7 +89,6 @@
                 </div>
             </div>
         </div>
-        <!--end of container-->
     </section>
 
 @else
