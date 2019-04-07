@@ -2037,7 +2037,7 @@
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
-										<h5>Nandana <br> Tiwari</h5>
+										<h5>Slow <br> Ladki</h5>
 									</div>
 									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/nandana219" class="social-icon inline-block si-small si-light si-rounded si-facebook">
 										<i class="icon-facebook"></i>
