@@ -65,10 +65,10 @@
                             @endif
 
                                 <a class="text-danger type--uppercase" href="" onclick="event.preventDefault();
-                                    document.getElementById('delete-form').submit();">
+                                    document.getElementById('delete-form-{{$item->uuid}}').submit();">
                                     <small>Delete</small>
                                 </a>
-                                <form id="delete-form" action="{{route('council.societies.news.destroy', $item->uuid)}}" method="post">@csrf @method('DELETE')</form>
+                                <form id="delete-form-{{$item->uuid}}" action="{{route('council.societies.news.destroy', $item->uuid)}}" method="post">@csrf @method('DELETE')</form>
                                 
                             </p>
                         </div>
