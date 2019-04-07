@@ -138,7 +138,7 @@
 
                         <div class="col-md-12">
                             <label>Description</label>
-                            <textarea name="description" placeholder="About your scoiety" class="validate-required" rows="4" required>{{ old('description') ? old('description') : '' }}</textarea>
+                            <textarea name="description" placeholder="About your society" class="validate-required" rows="4" required>{{ old('description') ? old('description') : '' }}</textarea>
                         </div>
                     </div>
 
