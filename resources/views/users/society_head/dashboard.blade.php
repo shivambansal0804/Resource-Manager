@@ -78,7 +78,7 @@
     <section>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6">
+                <div class="col-md-10 text-center">
                     <div>
                         <a class="btn btn--sm type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
                             <span class="btn__text">
