@@ -23,6 +23,7 @@
             <div class="col-md-8">
                 @foreach ($news as $item)
                     <h4>{{$item->title}}
+                        @if ($item->society)
                         <small class="@if($item->society->category == 'tech') text-danger
                                         @elseif ($item->society->category == 'team') text-success
                                         @elseif ($item->society->category == 'cultural') text-warning
@@ -30,6 +31,7 @@
                         ">   
                         {{ $item->society->name }}                         
                         </small>
+                        @endif
                         <small>({{ $item->status }})</small>
                     </h4>
                     <div class="row">
