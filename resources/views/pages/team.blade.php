@@ -1480,7 +1480,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/Illustrators/Sourajit%20Bhattacharjee.jpeg" alt="Sourajit Bhattacharjee">
+									<img src="/img/team/Illustrators/Sourajit%20Bhattacharjee.jpg" alt="Sourajit Bhattacharjee">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
