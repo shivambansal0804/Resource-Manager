@@ -39,12 +39,12 @@
                         <div class="col-md-4">
                             <div class="feature feature-3 boxed boxed--lg boxed--border">
                                 <span class="h1 h1--large">1.</span>
-                                <h4>Launch Builder</h4>
+                                <h4>Create your society page</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae quas ad officiis 
+                                    Enter the details of your society including a high-resolution logo to create the society’s page. 
                                 </p>
                                 <div>
-                                    <a class="btn btn--sm type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
+                                    <a class="type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
                                         <span class="btn__text">
                                             Create Here
                                         </span>
@@ -56,9 +56,9 @@
                         <div class="col-md-4">
                             <div class="feature feature-3 boxed boxed--lg boxed--border">
                                 <span class="h1 h1--large">2.</span>
-                                <h4>Build With Blocks</h4>
+                                <h4>Images</h4>
                                 <p>
-                                    Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out
+                                    Only upload high-resolution and relevant images only. Note that the size of the image < 1 MB. Pixelated images will be discarded.
                                 </p>
                             </div>
                             <!--end boxed-->
@@ -66,9 +66,9 @@
                         <div class="col-md-4">
                             <div class="feature feature-3 boxed boxed--lg boxed--border">
                                 <span class="h1 h1--large">3.</span>
-                                <h4>Export Code</h4>
+                                <h4>Bulletin</h4>
                                 <p>
-                                    Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out
+                                    Upload appropriate news regarding your society. All the news would have to be first submitted for approval before being published. 
                                 </p>
                             </div>
                             <!--end boxed-->

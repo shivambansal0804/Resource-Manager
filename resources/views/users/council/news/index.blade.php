@@ -58,7 +58,7 @@
                                     document.getElementById('delete-form').submit();">
                                     <small>Delete</small>
                                 </a>
-                                <form id="delete-form" action="{{route('council.societies.news.draft', $item->uuid)}}" method="post">@csrf @method('DELETE')</form>
+                                <form id="delete-form" action="{{route('council.societies.news.destroy', $item->uuid)}}" method="post">@csrf @method('DELETE')</form>
                             </p>
                             @endif
                         </div>
