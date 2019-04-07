@@ -102,6 +102,7 @@
 									</div>
 								</div>
 							</div>
+							<br><br>
 						</div>
 						<div class="col-md-3 col-xs-6 bottommargin">
 							<div class="team">
@@ -724,30 +725,7 @@
 						
 						</div>
 
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="/img/team/Columnists/Ankita%20Chowdhury.jpeg" alt="Ankita Chowdhury">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Ankita <br>Chowdhury</h5><span></span></div>
-									<a href="#
-" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-
-
-
-								</div>
-							</div>
-						</div>					
-
+						
 
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
@@ -796,12 +774,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-
-
-						<!-- <div class="row"> -->
-
-					<div class="row">
+					
 
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
@@ -828,6 +801,12 @@
 							</div>
 						</div>
 						<!-- </div> -->
+					</div>
+
+
+					<!-- <div class="row"> -->
+
+				<div class="row">
 
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
@@ -958,9 +937,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="row">
+					
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -986,6 +963,9 @@
 								</div>
 							</div>
 						</div>
+					</div>
+
+					<div class="row">
 
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
@@ -1113,8 +1093,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
+					
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -1412,7 +1391,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/Illustrators/Sourajit%20Bhattacharjee.jpeg" alt="Sourajit Bhattacharjee">
+									<img src="/img/team/Illustrators/Sourajit%20Bhattacharjee.jpg" alt="Sourajit Bhattacharjee">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -1837,15 +1816,35 @@
 										<i class="icon-linkedin"></i>
 										<i class="icon-linkedin"></i>
 									</a>
-
-
+								</div>
+							</div>
+							<br><br>
+						</div>
+						<div class="col-md-2 col-xs-6 bottommargin">
+							<div class="team">
+								<div class="team-image">
+									<img src="/img/team/photographer/krishmodi.jpg" alt="Krish Modi">
+								</div>
+								<div class="team-desc">
+									<div class="team-title">
+										<h5>Krish <br>Modi</h5>
+									</div>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/nikhil.kerketta.5
+" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nikhil-kerketta-2a0122129
+" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
 
 
 								</div>
 							</div>
 							<br><br>
 						</div>
-
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
@@ -1871,32 +1870,7 @@
 							</div>
 							<br><br>
 						</div>
-					
-						<div class="col-md-2 col-xs-6 bottommargin">
-							<div class="team">
-								<div class="team-image">
-									<img src="/img/team/photographer/NIKHIL%20KERKETTA.jpg" alt="Nikhil Kerketta">
-								</div>
-								<div class="team-desc">
-									<div class="team-title">
-										<h5>Nikhil <br>Kerketta</h5>
-									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/nikhil.kerketta.5
-" class="social-icon inline-block si-small si-light si-rounded si-facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nikhil-kerketta-2a0122129
-" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
-										<i class="icon-linkedin"></i>
-										<i class="icon-linkedin"></i>
-									</a>
-
-
-								</div>
-							</div>
-							<br><br>
-						</div>
+			
 					</div>
 
 					<div class="row">
