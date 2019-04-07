@@ -51,9 +51,9 @@
                         </p>
                     </div>
                     <div class="process__item">
-                        <h4>Finish</h4>
+                        <h4>News</h4>
                         <p>
-                            Please add only the relevant news, supported by high-resolution pictures of the dimension “____” and size < 1MB. 
+                            Please add only the relevant news, supported by high-resolution pictures of size < 1MB. 
                             <hr>
                             All the news would have to be first submitted for approval before being published.
                         </p>
