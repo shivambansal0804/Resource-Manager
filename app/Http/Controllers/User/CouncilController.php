@@ -263,6 +263,23 @@ class CouncilController extends Controller
         return redirect()->back();
     }
 
+    public function editSocietyNews($uuid)
+    {
+        
+        $news = SocietyNews::whereUuid($uuid)->firstOrFail();
+
+        return view('users.council.news.edit')->withNews($news);
+    }
+
+    public function updateSocietyNews(Request $request, $uuid)
+    {
+        $news = SocietyNews::whereUuid($uuid)->firstOrFail();
+
+        $news->update($request->all());
+
+        return redirect()->route('council.societies.news.index');
+    }
+
     public function deleteSocietyNews(Request $request, $uuid)
     {
         $news = SocietyNews::whereUuid($uuid)->firstOrFail();

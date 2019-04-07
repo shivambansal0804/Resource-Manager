@@ -51,10 +51,14 @@
                                 @endif
 
                                 @if (Route::currentRouteName() == 'council.societies.news.published')
-                                <a class="text-danger type--uppercase" href="{{route('council.societies.news.draft', $item->uuid)}}">
+                                <a class="text-primary type--uppercase" href="{{route('council.societies.news.draft', $item->uuid)}}">
                                     <small>Save to drafts</small>
                                 </a>
                                 @endif
+
+                                <a class="text-warning type--uppercase" href="{{route('council.societies.news.edit', $item->uuid)}}">
+                                    <small>Edit</small>
+                                </a>
 
                                 <a class="text-danger type--uppercase" href="" onclick="event.preventDefault();
                                     document.getElementById('delete-form').submit();">
