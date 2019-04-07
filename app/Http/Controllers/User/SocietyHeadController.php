@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreSociety;
 use Spatie\MediaLibrary\Models\Media;
+use App\Models\Society;
 
 class SocietyHeadController extends Controller
 {
@@ -182,7 +183,7 @@ class SocietyHeadController extends Controller
 
     public function imageShow($slug, $id)
     {
-        $society = auth()->user()->society()->whereSlug($slug)->firstOrFail();
+        $society = Society::whereSlug($slug)->firstOrFail();
 
         $media = Media::find($id);
 
@@ -193,6 +194,6 @@ class SocietyHeadController extends Controller
     {
         $media = Media::find($id)->delete();
 
-        return redirect()->route('society.head.image.index', $slug);
+        return redirect()->route('dashboard');
     }
 }
