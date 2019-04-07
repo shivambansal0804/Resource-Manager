@@ -43,13 +43,6 @@
                                 <p>
                                     Enter the details of your society including a high-resolution logo to create the society’s page. 
                                 </p>
-                                <div>
-                                    <a class="btn btn--sm type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
-                                        <span class="btn__text">
-                                            Create Here
-                                        </span>
-                                    </a>
-                                </div>
                             </div>
                             <!--end boxed-->
                         </div>
@@ -78,6 +71,17 @@
                 </div>
             </div>
             <!--end of row-->
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div>
+                        <a class="btn btn--sm type--uppercase" href="{{ route('society.head.create')}}" data-scroll>
+                            <span class="btn__text">
+                                Create Here
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--end of container-->
     </section>
