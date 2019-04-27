@@ -22,8 +22,8 @@
 				<div class="container dark clearfix">
 					<div class="row clearfix">
 						<div class="col-md-6 col-md-offset-1 col-sm-8" data-lightbox="gallery">
+							<a href="img/46.png" data-lightbox="gallery-item" class="slider-book-img" data-animate="fadeInUp"><img src="img/46.png" alt=""></a>
 							<a href="img/45.png" data-lightbox="gallery-item" class="slider-book-img" data-animate="fadeInUp"><img src="img/45.png" alt=""></a>
-							<a href="img/44.jpg" data-lightbox="gallery-item" class="slider-book-img" data-animate="fadeInUp"><img src="img/44.jpg" alt=""></a>
 							<div class="emphasis-title bottommargin-sm">
 								<h1 class="400" data-animate="fadeInUp" data-delay="600">Read the Latest Print Editions by<br><span><em>DTU Times</em></span>.</h1>
 							</div>
@@ -78,6 +78,19 @@
 							<div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
+										<a href="editions/46" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/46.png" alt="Book Image"></a>
+										<div class="book-detail">
+											<h2 class="book-title"><a>Edition 46</a></h2>
+											<small class="book-category"><a href="edition46.pdf">Feb'19-Apr'19</a></small>
+											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-item">
+								<div class="book-wrap">
+									<div class="book-card">
 										<a href="editions/45" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/45.png" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 45</a></h2>
@@ -87,6 +100,7 @@
 									</div>
 								</div>
 							</div>
+
 						    <div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
@@ -99,6 +113,7 @@
 									</div>
 								</div>
 							</div>
+
                             <div class="portfolio-item">
 								<div class="book-wrap">
 									<div class="book-card">
