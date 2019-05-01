@@ -4,14 +4,52 @@
             <a href="{{ route('welcome') }}">
                 <img alt="avatar" src="{{ asset('img/logo-light.png') }}" class="image--md" />
             </a>
-
-
+            <div class="text-center space--xs mt-1">
+                <div>
+                    <span class="type--fine-print type--fade">
+                        DTU Times
+                        <span class="update-year"></span>
+                    </span>
+                </div>
+                <ul class="social-list list-inline list--hover ml-auto mt-3 mb-1 mr-auto">
+                    <li>
+                        <a href="mailto:dtutimes@dtu.ac.in">
+                            <i class="socicon socicon-mail icon icon--xs"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/dtutimes">
+                            <i class="socicon socicon-twitter icon icon--xs"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/dtutimes/">
+                            <i class="socicon socicon-facebook icon icon--xs"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/dtu_times/?hl=en">
+                            <i class="socicon socicon-instagram icon icon--xs"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <span class="type--fade">
+                        <small>
+                            Got any issues? Contact the
+                            <a href="{{ route('dev.index') }}" class="text-primary"> Developers.</a>
+                        </small>
+                    </span>
+                </div>
+            </div>
         </div>
+                
         <div class="text-block">
-            <h4>
-                <a href="{{ route('me.show') }}">{{ auth()->user()->name }}</a>
+            <h4 class="mb-0">
+                <!-- <a href="{{ route('me.show') }}">{{ auth()->user()->name }}</a> -->
+                <span data-tooltip="View or Edit your details."><a href="{{ route('me.show') }}">{{ auth()->user()->name }}</a></span>
             </h4>
-            <span>
+            <small>
                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
                     Logout
@@ -20,7 +58,7 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
-            </span>
+            </small>
         </div>
         <div class="text-block">
             <ul class="menu-vertical">
@@ -422,46 +460,6 @@
 
             </ul>
         </div>
-
-        <br>
-        <footer class="footer-3 text-center space--xs ">
-            <ul class="social-list list-inline list--hover ml-auto mr-auto">
-                <li>
-                    <a href="mailto:dtutimes@dtu.ac.in">
-                        <i class="socicon socicon-mail icon icon--xs"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/dtutimes">
-                        <i class="socicon socicon-twitter icon icon--xs"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/dtutimes/">
-                        <i class="socicon socicon-facebook icon icon--xs"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/dtu_times/?hl=en">
-                        <i class="socicon socicon-instagram icon icon--xs"></i>
-                    </a>
-                </li>
-            </ul>
-            <div>
-                <span class="type--fine-print type--fade">
-                    DTU Times
-                    <span class="update-year"></span>
-                </span>
-            </div>
-            <div class="text-center">
-                <span class="type--fade">
-                    <small>
-                        Got any issues? Contact the
-                        <a href="{{ route('dev.index') }}" class="text-primary"> Developers.</a>
-                    </small>
-                </span>
-            </div>
-        </footer>
     </div>
     <div class="nav-sidebar-column-toggle visible-xs visible-sm" data-toggle-class=".nav-sidebar-column;active">
         <i class="stack-menu"></i>
