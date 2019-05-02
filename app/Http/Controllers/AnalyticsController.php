@@ -19,7 +19,7 @@ class AnalyticsController extends Controller
                 $temp = preg_replace('#^/blog/#', "", $url);
                 $story = Story::where('slug', $temp)->first();
                 if ($story != NULL)
-                    var_dump(array_merge($story, $item));
+                    var_dump($story);
                     // array_push($result, $story);
             }
         }
