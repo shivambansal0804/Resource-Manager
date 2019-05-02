@@ -19,15 +19,16 @@
             <div class="col-md-8">
                 @foreach ($weekViews as $item)
                     @php
-                        $story = \App\Models\Story::where('slug', $item['url'])->first();
+                        $story = \App\Models\Story::where('slug', $item['url'])->with('user')->first();
                     @endphp
                     @if ($story != NULL)
                         <div class="row">
                             <div class="col-md-8">
-                                <h4>{{$story->title}}</h4>
+                                <h5>{{$story->title}}</h5>
+                                <span><small>story by {{$story->user->name }}</small></span>
                             </div>
                             <div class="col-md-4 text-center">
-                                <h1>{{$item['views']}}</h1>
+                                <h2>{{$item['views']}}</h2>
                             </div>
                         </div>
                     @endif
