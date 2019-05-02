@@ -5,7 +5,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
-                <h1>Google Analytics</h1>
+                <h1>Most Visited Stories</h1>
+                <p>Data - last 7 days</p>
             </div>
         </div>
         <!--end of row-->
