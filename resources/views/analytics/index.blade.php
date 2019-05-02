@@ -19,7 +19,7 @@
             <div class="col-md-8">
                 @foreach ($weekViews as $item)
                     @php
-                        $story = \App\Models\Story::where('slug', $item->url)->first();
+                        $story = \App\Models\Story::where('slug', $item['url'])->first();
                     @endphp
                     @if ($story != NULL)
                         <h3>$story->title</h3>
