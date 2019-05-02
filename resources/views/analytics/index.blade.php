@@ -22,7 +22,14 @@
                         $story = \App\Models\Story::where('slug', $item['url'])->first();
                     @endphp
                     @if ($story != NULL)
-                        <h3>$story->title</h3>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>{{$story->title}}</h4>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <h1>{{$item['views']}}</h1>
+                            </div>
+                        </div>
                     @endif
                     <hr>
                 @endforeach
