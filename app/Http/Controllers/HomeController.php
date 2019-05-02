@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Services\TodoService;
 use App\Http\Requests\StoreTodo;
 
+
 class HomeController extends Controller
 {
     /**
@@ -56,4 +57,5 @@ class HomeController extends Controller
     {
         return view('pages.dev');
     }
+
 }

@@ -224,6 +224,8 @@
                     </div>
                 </li>
 
+                
+
                 <!-- 
                 |
                 |
@@ -399,6 +401,23 @@
                                 <li>
                                     <a href="{{ route('council.societies.news.published')}}">
                                         Published News
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <span>
+                        Analytics
+                    </span>
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a href="{{ route('ga.index') }}">
+                                        Dashboard
                                     </a>
                                 </li>
                             </ul>

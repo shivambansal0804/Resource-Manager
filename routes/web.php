@@ -230,7 +230,10 @@ Route::middleware(['auth', 'CheckBlockedUser', 'checkActivatedUser'])->group(fun
             Route::put('/{slug}', 'CategoryController@update')->name('categories.update');
         });
         Route::delete('/{slug}', 'CategoryController@destroy')->name('categories.destroy')->middleware('permission:delete-category');
-    });        
+    }); 
+    
+    // Analytics 
+    Route::get('/analytics', 'AnalyticsController@index')->name('ga.index');
 
     // Stories Routes
     Route::group(['prefix' => 'stories', 'middleware' => ['role:superuser|council|columnist|coordinator']], function() {
