@@ -17,13 +17,10 @@ class AnalyticsController extends Controller
             $url = $item["url"];
             if (preg_match('#^/blog/#', $url) === 1) {
                 $temp = preg_replace('#^/blog/#', "", $url);
-                $story = Story::where('slug', $temp)->first();
-                if ($story != NULL)
-                    var_dump($story);
-                    // array_push($result, $story);
+                array_push($result, ['url' => $temp, 'views' => $item['pageViews']]);
             }
         }
-        return $analytics;
+        return $result;
         return view('analytics.index');
     }
 }
