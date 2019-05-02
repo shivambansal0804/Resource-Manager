@@ -20,7 +20,6 @@ class AnalyticsController extends Controller
                 array_push($result, ['url' => $temp, 'views' => $item['pageViews']]);
             }
         }
-        return $result;
-        return view('analytics.index');
+        return view('analytics.index', ['weekViews' => $result]);
     }
 }
