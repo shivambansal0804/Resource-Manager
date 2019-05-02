@@ -24,15 +24,16 @@
                     @if ($story != NULL)
                         <div class="row">
                             <div class="col-md-8">
-                                <h5>{{$story->title}}</h5>
-                                <span><small>story by {{$story->user->name }}</small></span>
+                                <h5 class="mb-0">{{$story->title}}</h5>
+                                <span><small>Story by {{$story->user->name }}</small></span>
+                                <p><a  href="{{route('blog.show', $item->slug)}}">Read</a></p>
                             </div>
                             <div class="col-md-4 text-center">
                                 <h2>{{$item['views']}}</h2>
                             </div>
                         </div>
+                        <hr>
                     @endif
-                    <hr>
                 @endforeach
             </div>
         </div>
