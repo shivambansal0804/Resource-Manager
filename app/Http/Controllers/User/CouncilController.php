@@ -18,10 +18,7 @@ class CouncilController extends Controller
     public function index()
     {
         $stories = Story::where('status', 'pending')->get();
-        // $stories = db::raw('query');
-        return $stories;
-
-
+ 
         return view('users.council.index', ['stories' => $stories]);
     }
 
