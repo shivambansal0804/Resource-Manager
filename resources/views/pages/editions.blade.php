@@ -81,7 +81,7 @@
 										<a href="editions/47" class="item-quick-view book-image" data-lightbox="ajax"><img src="img/47.png" alt="Book Image"></a>
 										<div class="book-detail">
 											<h2 class="book-title"><a>Edition 47</a></h2>
-											<small class="book-category"><a href="edition46.pdf">Aug'19-Oct'19</a></small>
+											<small class="book-category"><a href="edition46.pdf">May'19-July'19</a></small>
 											<div class="button button-white button-light capitalize button-circle"><i class="icon-line-zoom-in"></i><span>view the edtion</span></div>
 										</div>
 									</div>
