@@ -561,7 +561,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/editors/Parangat%20Mittal.jpeg" alt="Parangat Mittal">
+									<img src="/img/team/editors/Parangat%20Mittal.jpg" alt="Parangat Mittal">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -585,7 +585,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="img/team/editors/Pratik%20Anand.jpeg" alt="Pratik Anand">
+									<img src="img/team/editors/Pratik%20Anand.jpg" alt="Pratik Anand">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -610,7 +610,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/editors/Anushka%20Sharma.jpeg" alt="Anushka Sharma">
+									<img src="/img/team/editors/Anushka%20Sharma.jpg" alt="Anushka Sharma">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -632,7 +632,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/editors/Karan%20Bora.jpeg" alt="Nix Maxwell">
+									<img src="/img/team/editors/Karan%20Bora.jpg" alt="Nix Maxwell">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -655,7 +655,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="img/team/editors/Lokesh%20Narayan.jpeg" alt="Lokesh Narayan Shankar">
+									<img src="img/team/editors/Lokesh%20Narayan.jpg" alt="Lokesh Narayan Shankar">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -678,7 +678,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="img/team/editors/Priyansh%20Soni.jpeg" alt="Priyansh Soni">
+									<img src="img/team/editors/Priyansh%20Soni.jpg" alt="Priyansh Soni">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -706,7 +706,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/editors/Shrey%20Padhi.jpeg" alt="Shrey Padhi">
+									<img src="/img/team/editors/Shrey%20Padhi.jpg" alt="Shrey Padhi">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
@@ -733,7 +733,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin">
 							<div class="team">
 								<div class="team-image">
-									<img src="img/team/editors/Srishti%20Mittal.jpeg" alt="Srishti Mittal">
+									<img src="img/team/editors/Srishti%20Mittal.jpg" alt="Srishti Mittal">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
