@@ -1666,6 +1666,94 @@
 								</div>
 							</div>
 						</div>
+                        <div class="col-md-2 col-xs-6 bottommargin">
+							<div class="team">
+								<div class="team-image">
+									<img src="/img/team/WebDevelopers/aryan.jpg" alt="Aryan">
+								</div>
+								<div class="team-desc">
+									<div class="team-title">
+										<h5>Aryan <br> Ganotra</h5>
+									</div>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.example.com/example" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.example.com/example" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+
+
+								</div>
+							</div>
+						</div>
+                        <div class="col-md-2 col-xs-6 bottommargin">
+							<div class="team">
+								<div class="team-image">
+									<img src="/img/team/WebDevelopers/Kushal.jpg" alt="Kushal">
+								</div>
+								<div class="team-desc">
+									<div class="team-title">
+										<h5>Kushal <br> Gera</h5>
+									</div>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.example.com/example" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.example.com/example" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+
+
+								</div>
+							</div>
+						</div>
+                        <div class="col-md-2 col-xs-6 bottommargin">
+							<div class="team">
+								<div class="team-image">
+									<img src="/img/team/WebDevelopers/ShivamBansal.jpg" alt="Shivam Bansal">
+								</div>
+								<div class="team-desc">
+									<div class="team-title">
+										<h5>Shivam <br> Bansal</h5>
+									</div>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.example.com/example" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.example.com/example" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+
+
+								</div>
+							</div>
+						</div>
+                        <div class="col-md-2 col-xs-6 bottommargin">
+							<div class="team">
+								<div class="team-image">
+									<img src="/img/team/WebDevelopers/ShivamSinghal.jpg" alt="Shivam Singhal">
+								</div>
+								<div class="team-desc">
+									<div class="team-title">
+										<h5>Shivam <br> Singhal</h5>
+									</div>
+									<a target="_blank" rel="noopener noreferrer" href="https://m.facebook.com/shivam.singla.127/" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shivam-singhal-682321175/" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+
+
+								</div>
+							</div>
+						</div>
 
 
 
