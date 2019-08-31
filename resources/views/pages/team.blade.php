@@ -1622,7 +1622,50 @@
 								</div>
 							</div>
 						</div>
+                        <div class="col-md-2 col-xs-6 bottommargin">
+							<div class="team">
+								<div class="team-image">
+									<img src="/img/team/WebDevelopers/Shreyansh.jpg" alt="Shreyansh">
+								</div>
+								<div class="team-desc">
+									<div class="team-title">
+										<h5>Shreyansh <br> Gupta</h5>
+									</div>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/shreyansh.gupta.18" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shreyansh-gupta-b33b41173/" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
 
+
+								</div>
+							</div>
+						</div>
+                        <div class="col-md-2 col-xs-6 bottommargin">
+							<div class="team">
+								<div class="team-image">
+									<img src="/img/team/WebDevelopers/Gaurav.jpeg" alt="Gaurav">
+								</div>
+								<div class="team-desc">
+									<div class="team-title">
+										<h5>Gaurav <br> Khatri</h5>
+									</div>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/gaurav.khatri.00" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gaurav-khatri-809104192/" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+
+
+								</div>
+							</div>
+						</div>
 
 
 
