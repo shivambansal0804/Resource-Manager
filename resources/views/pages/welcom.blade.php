@@ -185,7 +185,7 @@
 								<div class="fbox-icon">
 									<a href="https://www.facebook.com/dtutimes"><i class="icon-facebook2"></i></a>
 								</div>
-								<h3>Follow us on Facebook<span class="subtitle">21K Likes</span></h3>
+								<h3>Follow us on Facebook<span class="subtitle">25K Likes</span></h3>
 							</div>
 						</div>
 
@@ -194,7 +194,7 @@
 								<div class="fbox-icon">
 									<a href="http://www.instagram.com/dtu_times"><i class="icon-instagram2"></i></a>
 								</div>
-								<h3>Follow us on Instagram<span class="subtitle">3.3K Followers</span></h3>
+								<h3>Follow us on Instagram<span class="subtitle">5.2K Followers</span></h3>
 							</div>
 						</div>
 
@@ -278,25 +278,25 @@
                         <ul>
                             <li><a href="{{ route('welcome') }}"><div>Home</div></a>
                             </li>
-                                
+
                             <li class="mega-menu"><a href="{{ route('about') }}"><div>About Us</div></a>
                             </li>
-                                
+
                             <li class="mega-menu"><a href="{{ route('editions') }}"><div>Editions</div></a>
                             </li>
                                                         <li><a href="{{ route('blog.index') }}"><div>Blog</div></a>
                             </li>
-                            
+
                             <li><a href="{{ route('gallery.index') }}"><div>Gallery</div></a>
 							</li>
 
 							<li><a href="{{ route('societies.index') }}"><div>Societies</div></a>
 							</li>
-							                                            
+
                             <li><a href="{{ route('team') }}"><div>Team</div></a>
                             </li>
                              <li><a href="{{ route('contact') }}"><div>Contact Us</div></a>
-                            </li>                       
+                            </li>
 
 
 					</nav>
@@ -518,7 +518,7 @@
 				<!-- Posts
 								============================================= -->
 				<div id="posts" class="post-grid grid-container post-masonry post-masonry-full grid-3 clearfix">
-					
+
 					<div class="entry clearfix"   >
 						<div class="entry-image">
 							<a href="/img/portfolio/10years.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/10years.jpg" alt="Standard Post with Image"></a>
@@ -528,7 +528,7 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> January 21, 2019</li>
-							
+
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
@@ -547,7 +547,7 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> February 8, 2019</li>
-							
+
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
@@ -566,7 +566,7 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> February 7, 2019</li>
-							
+
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
@@ -584,7 +584,7 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> January, 2019</li>
-							
+
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
@@ -624,13 +624,13 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i>January, 2019</li>
-						
+
 							<li><i class="icon-picture"></i></li>
 						</ul>
 						<div class="entry-content">
 							<p>The third edition of Yuvaan, the film and literature festival of Delhi Technological Univesity, was held during the month of January, 2019.  This festival saw a massive footfall of attendees as film lovers and literature fans came together from all around the city. Over the span of three days, many eminent personalities graced the event, with interactive sessions, as the attendees busied themselves, praticipating in various events during the fest.
 							</p>
-							
+
 						</div>
 					</div>
 					<div class="entry clearfix"   >
@@ -653,13 +653,13 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i>February, 2019</li>
-						
+
 							<li><i class="icon-picture"></i></li>
 						</ul>
 						<div class="entry-content">
 							<p> Entrepreneurship Cell DTU hosted its flagship event, E-Summit 2019, from 31st January to 2nd February 2019.The event was a colloquy of sharp young minds, bleeding edge professionals and trend-setting companies
 							</p>
-							
+
 						</div>
 					</div>
 					<div class="entry clearfix"   >
@@ -680,13 +680,13 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i>February 8, 2019</li>
-						
+
 							<li><i class="icon-picture"></i></li>
 						</ul>
 						<div class="entry-content">
 							<p> The alumni of the Class of 1959 and 1969 visited the Campus of DTU (formerly known as DCE) and were felicitated. Hon'ble Vice Chancellor Prof. Yogesh Singh and Deputy Chief Minister Sri Manish Sisodia as well as dignitaries from the administration and Alumni Association were present.
 							</p>
-							
+
 						</div>
 					</div>
 					<div class="entry clearfix"   >
@@ -708,13 +708,13 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i>February, 2019</li>
-						
+
 							<li><i class="icon-picture"></i></li>
 						</ul>
 						<div class="entry-content">
 							<p>Invictus, Delhi Technological Unversity is the Annual Tech-Fest of the University. It was held during the month of February. All the Tech Societies and Teams of DTU host this fest which is a home to a plethora of competitions and exhibitions which see over 15k participants from all over the country.
 							</p>
-							
+
 						</div>
 					</div>
 					<div class="entry clearfix"   >
@@ -734,13 +734,13 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i>January, 2019</li>
-						
+
 							<li><i class="icon-picture"></i></li>
 						</ul>
 						<div class="entry-content">
 							<p> The DelTech MUN and Debating Society organised DelTech Model United Nations on 19-20 January 2019. The Chief Guest was Mr.Sanam Sutirath Wazir, a human rights activist.
 							</p>
-							
+
 						</div>
 					</div>
 
@@ -753,7 +753,7 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> August 16, 2018</li>
-							
+
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
@@ -761,7 +761,7 @@
 							<a target="_blank" rel="noopener noreferrer" href="https://dtutimes.wordpress.com/2018/08/16/कुछ-यादें-ऐसी-भी/#more-7643"class="more-link">Read More</a>
 						</div>
 					</div>
-				    
+
 					<div class="entry clearfix"   >
 						<div class="entry-image">
 							<a href="/img/portfolio/talesoflost.jpg" data-lightbox="image"><img class="image_fade" src="/img/portfolio/talesoflost.jpg" alt="Standard Post with Image"></a>
@@ -771,7 +771,7 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i> September 15, 2018</li>
-							
+
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
@@ -788,7 +788,7 @@
 						</div>
 						<ul class="entry-meta clearfix">
 							<li><i class="icon-calendar3"></i>October 2, 2018</li>
-							
+
 							<li><i class="icon-camera-retro"></i></li>
 						</ul>
 						<div class="entry-content">
@@ -853,7 +853,7 @@
 
 			// Function to close modal
 			function closeModal(){
-				<?php 
+				<?php
 					setcookie("DTUnewsletter","guest@app.com",time()+(30 * 60));
 				?>
 			modal.style.display = 'none';
@@ -874,7 +874,7 @@
 		AOS.init();
 
 	var mainVideo = $('#the-video');
-    
+
 
 if ($(window).width() < 1200 && medQualVersion) {
   mainVideo.append("<source type='video/mp4' src='img/videos/explore.mp4" + medQualVersionSrc + "' />");
