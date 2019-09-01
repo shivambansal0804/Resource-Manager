@@ -89,14 +89,14 @@
 								</div>
 								<div class="col-xs-6 col-md-12">
 
-									<strong>Siddhant Patra</strong>
+									<strong>Shivam Jha</strong>
 									<br>
-									<h6>Editor-in-Chief<br> siddhant.patra1@gmail.com</h6>
+									<h6>Editor-in-Chief<br>shivam.jha3@gmail.com</h6>
 
 								</div>
 								<div class="col-xs-6 col-md-12">
 									<strong>Zara Khan</strong><br>
-									<h6>PR In-charge<br>
+									<h6>Student Head<br>
 									zarakhan9278@gmail.com</h6>
 								</div>
 							</div>

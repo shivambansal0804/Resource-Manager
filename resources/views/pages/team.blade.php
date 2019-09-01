@@ -1675,11 +1675,11 @@
 									<div class="team-title">
 										<h5>Aryan <br> Ganotra</h5>
 									</div>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.example.com/example" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+									<a target="_blank" rel="noopener noreferrer" href="https://m.facebook.com/aryan.ganotra?ref=bookmarks" class="social-icon inline-block si-small si-light si-rounded si-facebook">
 										<i class="icon-facebook"></i>
 										<i class="icon-facebook"></i>
 									</a>
-									<a target="_blank" rel="noopener noreferrer" href="https://www.example.com/example" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+									<a target="_blank" rel="noopener noreferrer" href="https://in.linkedin.com/in/aryan-ganotra-a818aa179" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
 										<i class="icon-linkedin"></i>
 										<i class="icon-linkedin"></i>
 									</a>
