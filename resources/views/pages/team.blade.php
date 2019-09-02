@@ -1740,7 +1740,7 @@
 						<div class="col-md-2 col-xs-6 bottommargin ">
 							<div class="team">
 								<div class="team-image">
-									<img src="/img/team/WebDevelopers/Shreyansh.jpg" alt="Shreyansh">
+									<img src="/img/team/WebDevelopers/shreyansh.jpg" alt="Shreyansh">
 								</div>
 								<div class="team-desc">
 									<div class="team-title">
