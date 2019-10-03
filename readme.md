@@ -1,4 +1,4 @@
-# DTU Times-laravel
+# DTU Times-laravel ..
 
 <p align="center">
     <img src="https://media.licdn.com/dms/image/C560BAQF7IFj7FSYDKg/company-logo_200_200/0?e=1548288000&v=beta&t=oYJ0nGOyvad_EsKAcQIoG6wmHpTKLZuhgzhs0nQt_6Q" />   
